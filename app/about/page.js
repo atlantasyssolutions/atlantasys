@@ -3,8 +3,14 @@ import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'About Us - GPS Tracking Company | Atlanta Systems',
+  title: 'About Us & Executive Leadership | Atlanta Systems — 32+ Years Telematics R&D',
   description: 'Established in 1994, Atlanta Systems is a trusted leader in IoT-GPS Telematics hardware products and solutions with 32+ years of expertise across 27+ countries.',
+  alternates: { canonical: 'https://www.atlantasys.com/about' },
+  openGraph: {
+    title: 'About Us & Executive Leadership | Atlanta Systems',
+    description: 'Established in 1994, Atlanta Systems is a trusted leader in IoT-GPS Telematics hardware products and solutions.',
+    url: 'https://www.atlantasys.com/about'
+  }
 };
 
 export default function AboutPage() {
