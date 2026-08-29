@@ -1,0 +1,642 @@
+export const productsData = [
+  {
+    id: 'atl-140',
+    name: 'ATL 140 AIS-140 GPS Tracker',
+    slug: 'atl-140',
+    category: 'vehicle-telematics',
+    categoryName: 'Vehicle Telematics',
+    image: '/assets/product_img/ATL-140.webp',
+    tag: 'AIS-140 Certified',
+    description: 'Government approved AIS 140 certified VLT device with emergency panic button interface, dual IP transmission, internal battery backup, and e-SIM integration for public and commercial transport.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'RS232/RS485',
+      powersupply: '9-90V DC',
+      bluetooth: 'BT 4.0',
+      sim: 'Micro SIM & e-SIM, e-SIM in Europe version*',
+      ingressprotection: 'IP65',
+      battery: '1000 mAh Li-Ion battery, 3.7 V',
+      antennas: 'GNSS Antenna',
+      memory: '64Mb internal flash memory'
+    }
+  },
+  {
+    id: 'atl-440',
+    name: 'ATL 440 Advanced LTE Tracker',
+    slug: 'atl-440',
+    category: 'vehicle-telematics',
+    categoryName: 'Vehicle Telematics',
+    image: '/assets/product_img/ATL-440.webp',
+    tag: '4G LTE Enterprise',
+    description: 'Enterprise 4G GPS tracking terminal designed for logistics, construction machinery, and fleet management with CAN-bus reading, dual SIM fallback, and rich I/O options.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'CAN',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Dual Micro SIM',
+      ingressprotection: 'IP67',
+      battery: '1000 mAh Li-Po 3.7V',
+      antennas: 'LTE Antenna',
+      memory: '25,000 Log Packets'
+    }
+  },
+  {
+    id: 'e-101',
+    name: 'E-101 Compact Vehicle Tracker',
+    slug: 'e-101',
+    category: 'vehicle-telematics',
+    categoryName: 'Vehicle Telematics',
+    image: '/assets/product_img/E-101.webp',
+    tag: 'Compact Fleet',
+    description: 'Ultra-compact 2G/4G vehicle tracking device featuring real-time location monitoring, engine cut-off relay output, ignition detection, and overspeed alerts.',
+    specs: {
+      connectivity: '2G Band',
+      hardwareconnectors: 'Digital Output',
+      powersupply: '9-90 V DC',
+      bluetooth: 'BT 4.0',
+      sim: 'Micro SIM(3FF)',
+      ingressprotection: 'IP54',
+      battery: '250 mAh Li-Po 3.7V',
+      antennas: 'GSM Antenna',
+      memory: '10,000 Log Packets'
+    }
+  },
+  {
+    id: 'ec-400',
+    name: 'EC 400 CAN-bus Telematics Terminal',
+    slug: 'ec-400',
+    category: 'vehicle-telematics',
+    categoryName: 'Vehicle Telematics',
+    image: '/assets/product_img/EC-400.webp',
+    tag: 'CAN-bus Heavy Duty',
+    description: 'Heavy-duty 4G CAN-bus reader and telematics gateway capable of parsing J1939 and OBD2 protocols for fuel consumption, odometer readings, and engine diagnostics.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'CAN',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP67',
+      battery: '1000 mAh Li-Po 3.7V',
+      antennas: 'GNSS Antenna',
+      memory: '64 Mb'
+    }
+  },
+  {
+    id: 'el-100',
+    name: 'EL 100 Basic Vehicle Tracker',
+    slug: 'el-100',
+    category: 'vehicle-telematics',
+    categoryName: 'Vehicle Telematics',
+    image: '/assets/product_img/EL-100.webp',
+    tag: 'Economical',
+    description: 'Cost-effective GPS tracker designed for taxis, bikes, and light commercial vehicles with internal antennas, low power sleep mode, and geofence alarms.',
+    specs: {
+      connectivity: '2G Band',
+      hardwareconnectors: 'Digital Input',
+      powersupply: '9-90V DC',
+      bluetooth: 'BT 4.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP54',
+      battery: '120mAh Li-Po 3.7V',
+      antennas: 'GNSS Antenna',
+      memory: '6,000 Log Packets'
+    }
+  },
+  {
+    id: 'el-400',
+    name: 'EL 400 4G LTE Vehicle Tracker',
+    slug: 'el-400',
+    category: 'vehicle-telematics',
+    categoryName: 'Vehicle Telematics',
+    image: '/assets/product_img/EL-400.webp',
+    tag: '4G LTE Standard',
+    description: 'Standard 4G vehicle tracking unit with IP65 water resistance, tow detection sensor, remote engine immobilizer, and analog fuel sensor integration.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'Analog Input',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Nano SIM- 4FF',
+      ingressprotection: 'IP65',
+      battery: '260 mAh Li-Po 3.7V',
+      antennas: 'LTE Antenna',
+      memory: '15,000 Log Packets'
+    }
+  },
+  {
+    id: 'el-440',
+    name: 'EL 440 High-Precision Telematics Unit',
+    slug: 'el-440',
+    category: 'vehicle-telematics',
+    categoryName: 'Vehicle Telematics',
+    image: '/assets/product_img/EL-440.webp',
+    tag: 'Multi-Sensor Hub',
+    description: 'High-precision 4G tracking gateway supporting dual fuel sensors, temperature probes, RFID driver identification, and digital tachograph connection.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'RS485',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Micro SIM or eSIM',
+      ingressprotection: 'IP67',
+      battery: '1000 mAh Li-Po 3.7V',
+      antennas: 'GNSS Antenna',
+      memory: '28000+ Log Packets'
+    }
+  },
+  {
+    id: 'eld',
+    name: 'ELD Electronic Logging Device',
+    slug: 'eld',
+    category: 'obd-telematics',
+    categoryName: 'OBD Telematics',
+    image: '/assets/product_img/ELD.webp',
+    tag: 'FMCSA Compliant',
+    description: 'Plug-and-play ELD dongle for commercial fleet Hours of Service (HOS) compliance, driver logs, engine diagnostic monitoring, and Bluetooth mobile sync.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'CAN',
+      powersupply: '8-36V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'eSIM',
+      ingressprotection: 'IP54',
+      battery: '120mAh Li-Po 3.7V',
+      antennas: 'GNSS Antenna',
+      memory: '12,000 Log Packets'
+    }
+  },
+  {
+    id: 'ev-201',
+    name: 'EV 201 Electric Vehicle Telematics Unit',
+    slug: 'ev-201',
+    category: 'vehicle-telematics',
+    categoryName: 'Vehicle Telematics',
+    image: '/assets/product_img/EV-201.webp',
+    tag: 'EV Specialized',
+    description: 'Specialized telematics hardware designed specifically for Electric Vehicles (EVs) and E-Rickshaws with high voltage input (9-90V), BMS battery status, and SOC monitoring.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'CAN',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP67',
+      battery: '300mAh Li-Po 3.7V',
+      antennas: 'GNSS Antenna',
+      memory: '17,000 Log Packets'
+    }
+  },
+  {
+    id: 'fl-100',
+    name: 'FL 100 Fleet Management Tracker',
+    slug: 'fl-100',
+    category: 'vehicle-telematics',
+    categoryName: 'Vehicle Telematics',
+    image: '/assets/product_img/FL-100.webp',
+    tag: 'Fleet Standard',
+    description: 'Versatile fleet tracker equipped with accelerometer for harsh driving detection, door sensor input, remote relay immobilizer, and power disconnect alarm.',
+    specs: {
+      connectivity: '2G Band',
+      hardwareconnectors: 'Digital Input',
+      powersupply: '9-90V DC',
+      bluetooth: 'BT 4.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP65',
+      battery: '250mAh Li-Po 3.7V',
+      antennas: 'GSM Antenna',
+      memory: '12,500 Log Packets (64 Mb Flash)'
+    }
+  },
+  {
+    id: 'fl-400',
+    name: 'FL 400 4G Fleet Telematics Gateway',
+    slug: 'fl-400',
+    category: 'vehicle-telematics',
+    categoryName: 'Vehicle Telematics',
+    image: '/assets/product_img/FL-400.webp',
+    tag: '4G Fleet Gateway',
+    description: 'Advanced 4G LTE fleet telematics unit supporting RS232 camera integration, fuel sensors, Panic SOS button, and dual IP server reporting.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'RS232',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Dual Micro SIM',
+      ingressprotection: 'IP67',
+      battery: '1000 mAh Li-Po 3.7V',
+      antennas: 'LTE Antenna',
+      memory: '32 Mb (17,000 packets on single IP)'
+    }
+  },
+  {
+    id: 'g-100',
+    name: 'G 100 Asset & Container GPS Tracker',
+    slug: 'g-100',
+    category: 'assets-&-personal-telematics',
+    categoryName: 'Assets & Personal Telematics',
+    image: '/assets/product_img/G-100.webp',
+    tag: 'Magnetic Asset',
+    description: 'Self-powered magnetic GPS asset tracker with long-life battery for shipping containers, trailers, construction equipment, and high-value cargo.',
+    specs: {
+      connectivity: '2G Band',
+      hardwareconnectors: '1-Wire',
+      powersupply: '8-55V DC',
+      bluetooth: 'BT 4.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP67',
+      battery: '10000 mAh Heavy Battery',
+      antennas: 'GNSS Antenna',
+      memory: '20,000 Log Packets'
+    }
+  },
+  {
+    id: 'g-400',
+    name: 'G 400 4G Long-Life Asset Tracker',
+    slug: 'g-400',
+    category: 'assets-&-personal-telematics',
+    categoryName: 'Assets & Personal Telematics',
+    image: '/assets/product_img/G-400.webp',
+    tag: '4G Long Life',
+    description: 'Robust 4G asset tracking device engineered for rugged outdoor environments with heavy-duty magnets, light sensor tamper alert, and multi-year battery life.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'Pulse Counter',
+      powersupply: '8-55V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP67',
+      battery: '10000 mAh Heavy Battery',
+      antennas: 'LTE Antenna',
+      memory: '40000 Memory Data (SD Card is optional)'
+    }
+  },
+  {
+    id: 'l-100',
+    name: 'L 100 Vehicle Positioning Tracker',
+    slug: 'l-100',
+    category: 'vehicle-telematics',
+    categoryName: 'Vehicle Telematics',
+    image: '/assets/product_img/L-100.webp',
+    tag: 'Positioning Unit',
+    description: 'Compact vehicle locator device featuring fast GNSS TTFF fix, anti-jamming detection, ignition status monitoring, and low battery alerts.',
+    specs: {
+      connectivity: '2G Band',
+      hardwareconnectors: 'Digital Input',
+      powersupply: '9-90V DC',
+      bluetooth: 'BT 4.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP54',
+      battery: '250 mAh Li-Po 3.7V',
+      antennas: 'GNSS Antenna',
+      memory: '10,000 Log Packets'
+    }
+  },
+  {
+    id: 'l-400',
+    name: 'L 400 4G LTE Vehicle Tracker',
+    slug: 'l-400',
+    category: 'vehicle-telematics',
+    categoryName: 'Vehicle Telematics',
+    image: '/assets/product_img/L-400.webp',
+    tag: '4G Fleet Unit',
+    description: '4G LTE vehicle telematics device designed for logistics trucks, fleet cars, and delivery vehicles with internal antennas and remote relay control.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'Digital Output',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP65',
+      battery: '260mAh Li-Po 3.7V',
+      antennas: 'LTE Antenna',
+      memory: '15,000 Log Packets'
+    }
+  },
+  {
+    id: 'l-400-plus',
+    name: 'L 400+ Advanced 4G Tracker',
+    slug: 'l-400-plus',
+    category: 'vehicle-telematics',
+    categoryName: 'Vehicle Telematics',
+    image: '/assets/product_img/L-400+.webp',
+    tag: '4G Multi-IO',
+    description: 'Enhanced 4G vehicle tracking unit with extra input/output interfaces, BLE 5.0 sensor support, digital fuel sensor compatibility, and crash detection algorithm.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'RS485',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Dual Micro SIM',
+      ingressprotection: 'IP67',
+      battery: '1000mAh Li-Po 3.7V',
+      antennas: 'GNSS Antenna',
+      memory: '25,000 Log Packets'
+    }
+  },
+  {
+    id: 'lc-100',
+    name: 'LC 100 Personal & Asset Beacon Tracker',
+    slug: 'lc-100',
+    category: 'indoor-telematics',
+    categoryName: 'Indoor Telematics',
+    image: '/assets/product_img/LC-100.webp',
+    tag: 'BLE Beacon Tracker',
+    description: 'Ultra-small indoor beacon and personal location device designed for warehouse inventory management, hospital equipment tracking, and worker safety.',
+    specs: {
+      connectivity: 'Channels',
+      hardwareconnectors: '1-Wire',
+      powersupply: '8-36V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP67',
+      battery: '1000 mAh Li-Ion battery, 3.7 V',
+      antennas: 'GNSS Antenna',
+      memory: '10,000 Log Packets'
+    }
+  },
+  {
+    id: 'lc-400',
+    name: 'LC 400 Smart Indoor IoT Gateway',
+    slug: 'lc-400',
+    category: 'indoor-telematics',
+    categoryName: 'Indoor Telematics',
+    image: '/assets/product_img/LC-400.webp',
+    tag: 'Indoor IoT Gateway',
+    description: 'Smart indoor telematics gateway reading BLE beacon signals, RFID tags, and environmental sensors across warehouses, factories, and retail spaces.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'RS232/ RS485',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Nano SIM- 4FF',
+      ingressprotection: 'IP67',
+      battery: '1000 mAh Li-Po 3.7V',
+      antennas: 'LTE Antenna',
+      memory: '80,000 Log Packets'
+    }
+  },
+  {
+    id: 'sense-ev',
+    name: 'SenseEV Smart Battery Management Sensor',
+    slug: 'sense-ev',
+    category: 'iot-sensors',
+    categoryName: 'IoT Sensors',
+    image: '/assets/product_img/SenseEV.webp',
+    tag: 'EV Battery Telemetry',
+    description: 'Intelligent sensor and controller for Electric Vehicles (EVs) measuring individual cell voltages, temperature, State of Charge (SOC), and battery health metrics.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'CAN',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'eSIM',
+      ingressprotection: 'IP67',
+      battery: '300mAh Li-Po 3.7V',
+      antennas: 'GNSS Antenna',
+      memory: '32Mb'
+    }
+  },
+  {
+    id: 'tc-100',
+    name: 'TC 100 Temperature & Cold Chain Tracker',
+    slug: 'tc-100',
+    category: 'iot-sensors',
+    categoryName: 'IoT Sensors',
+    image: '/assets/product_img/TC-100.webp',
+    tag: 'Cold Chain Specialist',
+    description: 'High-precision temperature monitoring telematics device designed for refrigerated trucks, pharma transport, and perishable food logistics.',
+    specs: {
+      connectivity: '2G Band',
+      hardwareconnectors: '1-Wire',
+      powersupply: '9-90V DC',
+      bluetooth: 'BT 4.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP65',
+      battery: '250 mAh Li-Po 3.7V',
+      antennas: 'GSM Antenna',
+      memory: '15,000 Log Packets'
+    }
+  },
+  {
+    id: 'tc-400',
+    name: 'TC 400 4G Multi-Channel Cold Chain Gateway',
+    slug: 'tc-400',
+    category: 'iot-sensors',
+    categoryName: 'IoT Sensors',
+    image: '/assets/product_img/TC-400.webp',
+    tag: '4G Cold Chain Hub',
+    description: '4G cold chain telematics gateway supporting up to 4 digital temperature sensors, humidity probes, door open/close detection, and instant excursion alerts.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: '1-Wire',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP67',
+      battery: '1000 mAh Li-Po 3.7V',
+      antennas: 'LTE Antenna',
+      memory: '41,000 Log Packets'
+    }
+  },
+  {
+    id: 'vtc-090',
+    name: 'VTC 090 AI Dash Cam (Single Lens)',
+    slug: 'vtc-090',
+    category: 'video-telematics',
+    categoryName: 'Video Telematics',
+    image: '/assets/product_img/VTC-090.webp',
+    tag: 'AI Single Camera',
+    description: 'Compact 1080p AI Dash Cam with built-in 4G LTE, GPS tracking, forward-facing collision warning, and instant video event cloud upload.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'RS232',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Nano SIM- 4FF',
+      ingressprotection: 'IP54',
+      battery: '260 mAh Li-Po 3.7V',
+      antennas: 'LTE Antenna',
+      memory: '64Mb Memory Log Packets'
+    }
+  },
+  {
+    id: 'vtc-100',
+    name: 'VTC 100 AI Dual Dash Cam (ADAS + DMS)',
+    slug: 'vtc-100',
+    category: 'video-telematics',
+    categoryName: 'Video Telematics',
+    image: '/assets/product_img/VTC-100.webp',
+    tag: 'ADAS & DMS Flagship',
+    description: 'Flagship dual-camera AI Video Telematics hardware featuring ADAS road safety alerts (lane departure, forward collision) and DMS cabin monitoring (fatigue, phone use).',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'RS232/RS485',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP65',
+      battery: '1000 mAh Li-Po 3.7V',
+      antennas: 'GNSS Antenna',
+      memory: '64 Mb'
+    }
+  },
+  {
+    id: 'vtc-110',
+    name: 'VTC 110 Dual Channel AI Dash Cam',
+    slug: 'vtc-110',
+    category: 'video-telematics',
+    categoryName: 'Video Telematics',
+    image: '/assets/product_img/VTC-110.webp',
+    tag: 'Dual Cam 1080p',
+    description: 'Full HD dual-camera Dash Cam streaming road and cabin video via 4G LTE with G-sensor emergency lock, two-way audio talk, and live tracking.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'RS232',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP65',
+      battery: '1000 mAh Li-Po 3.7V',
+      antennas: 'LTE Antenna',
+      memory: '64 Mb'
+    }
+  },
+  {
+    id: 'vtc-300',
+    name: 'VTC 300 4-Channel Mobile DVR System',
+    slug: 'vtc-300',
+    category: 'video-telematics',
+    categoryName: 'Video Telematics',
+    image: '/assets/product_img/VTC-300.webp',
+    tag: '4-Cam Mobile DVR',
+    description: 'Industrial 4-channel Mobile DVR for buses, trucks, and emergency vehicles connecting up to 4 HD cameras with SD card storage and panic video lock.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'CAN',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Dual Micro SIM',
+      ingressprotection: 'IP67',
+      battery: '1000 mAh Li-Po 3.7V',
+      antennas: 'LTE Antenna',
+      memory: '80,000 Log Packets'
+    }
+  },
+  {
+    id: 'vtc-500',
+    name: 'VTC 500 Enterprise 8-Channel Mobile DVR',
+    slug: 'vtc-500',
+    category: 'video-telematics',
+    categoryName: 'Video Telematics',
+    image: '/assets/product_img/VTC-500.webp',
+    tag: '8-Cam Enterprise DVR',
+    description: 'Heavy-duty 8-channel Mobile Video Recorder with hard disk drive (HDD/SSD) support, AI ADAS, DMS, Blind Spot Detection (BSD), and remote live monitoring.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'CAN',
+      powersupply: '9-90V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Dual Micro SIM',
+      ingressprotection: 'IP67',
+      battery: '1000 mAh Li-Po 3.7V',
+      antennas: 'GNSS Antenna',
+      memory: '80,000 Log Packets'
+    }
+  },
+  {
+    id: 'wp-20c',
+    name: 'WP 20C Smart Taxi Meter & GPS Unit',
+    slug: 'wp-20c',
+    category: 'taxi-gps-meter',
+    categoryName: 'Taxi GPS Meter',
+    image: '/assets/product_img/WP-20C.webp',
+    tag: 'Taxi Fare Meter',
+    description: 'Digital fare taxi meter integrated with GPS tracking, passenger thermal receipt printer, SOS panic button, and roof light controller for municipal taxi fleets.',
+    specs: {
+      connectivity: '2G Band',
+      hardwareconnectors: 'RS232',
+      powersupply: '8-36V DC',
+      bluetooth: 'BT 4.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP54',
+      battery: '1000 mAh Li-Ion battery, 3.7 V',
+      antennas: 'GNSS Antenna',
+      memory: '17,000 Log Packets'
+    }
+  },
+  {
+    id: 'wp-30c',
+    name: 'WP 30C 4G Digital Taxi Meter',
+    slug: 'wp-30c',
+    category: 'taxi-gps-meter',
+    categoryName: 'Taxi GPS Meter',
+    image: '/assets/product_img/WP-30C.webp',
+    tag: '4G Taxi Meter',
+    description: '4G LTE electronic taxi meter compliant with regional transport regulations, featuring real-time fare calculation, driver ID login, and live dispatch integration.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'RS232',
+      powersupply: '8-36V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP65',
+      battery: '1000 mAh Li-Po 3.7V',
+      antennas: 'LTE Antenna',
+      memory: '25,000 Log Packets'
+    }
+  },
+  {
+    id: 'wp-30l',
+    name: 'WP 30L Smart POS & GPS Fare Terminal',
+    slug: 'wp-30l',
+    category: 'taxi-gps-meter',
+    categoryName: 'Taxi GPS Meter',
+    image: '/assets/product_img/WP-30L.webp',
+    tag: 'Smart POS Meter',
+    description: 'All-in-one handheld Android POS and taxi meter supporting contactless card payments, QR code ticketing, thermal printing, and GPS fleet tracking.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'Digital Input',
+      powersupply: '8-36V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Nano SIM- 4FF',
+      ingressprotection: 'IP65',
+      battery: '2000 mAh Heavy Duty',
+      antennas: 'GNSS Antenna',
+      memory: '32Mb'
+    }
+  },
+  {
+    id: 'wp-40g',
+    name: 'WP 40G Heavy-Duty Taxi Fare System',
+    slug: 'wp-40g',
+    category: 'taxi-gps-meter',
+    categoryName: 'Taxi GPS Meter',
+    image: '/assets/product_img/WP-40G.webp',
+    tag: 'Heavy Duty Fare System',
+    description: 'Heavy-duty digital taxi meter system with dual display, voice fare announcement, driver panic button, LED roof sign output, and tamper-evident casing.',
+    specs: {
+      connectivity: '4G Band',
+      hardwareconnectors: 'RS485',
+      powersupply: '8-36V DC',
+      bluetooth: 'BLE 5.0',
+      sim: 'Micro SIM',
+      ingressprotection: 'IP67',
+      battery: '1000 mAh Li-Po 3.7V',
+      antennas: 'LTE Antenna',
+      memory: '64 Mb'
+    }
+  }
+];
+
+export const categories = [
+  { id: 'vehicle-telematics', name: 'Vehicle Telematics', catId: 2 },
+  { id: 'indoor-telematics', name: 'Indoor Telematics', catId: 4 },
+  { id: 'video-telematics', name: 'Video Telematics', catId: 5 },
+  { id: 'assets-&-personal-telematics', name: 'Assets & Personal Telematics', catId: 6 },
+  { id: 'obd-telematics', name: 'OBD Telematics', catId: 7 },
+  { id: 'iot-sensors', name: 'IOT Sensors', catId: 9 },
+  { id: 'taxi-gps-meter', name: 'Taxi GPS Meter', catId: 10 }
+];
