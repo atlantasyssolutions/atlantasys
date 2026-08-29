@@ -29,7 +29,6 @@ const CITIES_MAP = {
   delhi: { name: 'Delhi', country: 'India', region: 'India', corridors: 'Eastern Peripheral Expressway, NH-48', ports: 'Tughlakabad ICD', regulator: 'MoRTH AIS-140 + CCTNS' }
 };
 
-// Generates dynamic, unique, non-repetitive anchor texts for GEO & SEO
 function getDynamicAnchorText(cityObj, seed) {
   const variations = [
     `[${cityObj.name} B2B Fleet Telematics Procurement & SMT Hardware Wholesale Portal](/locations/${cityObj.name.toLowerCase().replace(/\s+/g, '-')})`,
@@ -39,6 +38,146 @@ function getDynamicAnchorText(cityObj, seed) {
     `[${cityObj.name} System Integrator API Throughput & FOTA Specification Portal](/locations/${cityObj.name.toLowerCase().replace(/\s+/g, '-')})`
   ];
   return variations[seed % variations.length];
+}
+
+function parseInlineMarkdown(text) {
+  if (!text) return '';
+  const parts = [];
+  let currentIndex = 0;
+
+  const combinedRegex = /(\[([^\]]+)\]\(([^)]+)\))|(\*\*([^*]+)\*\*)/g;
+  let match;
+
+  while ((match = combinedRegex.exec(text)) !== null) {
+    if (match.index > currentIndex) {
+      parts.push(text.substring(currentIndex, match.index));
+    }
+
+    if (match[1]) {
+      const label = match[2];
+      let url = match[3];
+      if (url.startsWith('https://www.atlantasys.com') || url.startsWith('https://atlantasys.com')) {
+        url = url.replace(/https:\/\/(www\.)?atlantasys\.com/, '');
+        if (!url.startsWith('/')) url = '/' + url;
+      }
+
+      if (url.startsWith('/')) {
+        parts.push(
+          <Link key={match.index} href={url} style={{ color: '#0169A9', fontWeight: '700', textDecoration: 'underline' }}>
+            {label}
+          </Link>
+        );
+      } else {
+        parts.push(
+          <a key={match.index} href={url} target="_blank" rel="noopener noreferrer" style={{ color: '#0169A9', fontWeight: '700', textDecoration: 'underline' }}>
+            {label}
+          </a>
+        );
+      }
+    } else if (match[4]) {
+      parts.push(
+        <strong key={match.index} style={{ color: '#0F2D4E', fontWeight: '700' }}>
+          {match[5]}
+        </strong>
+      );
+    }
+
+    currentIndex = combinedRegex.lastIndex;
+  }
+
+  if (currentIndex < text.length) {
+    parts.push(text.substring(currentIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
+}
+
+function renderRichMarkdown(content) {
+  if (!content) return null;
+  const blocks = content.split(/\n\n+/);
+
+  return blocks.map((block, idx) => {
+    const trimmed = block.trim();
+    if (!trimmed) return null;
+
+    if (trimmed.startsWith('# ')) return null;
+
+    if (trimmed.startsWith('## ')) {
+      const headingText = trimmed.replace(/^##\s+/, '');
+      const headingSlug = headingText.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+
+      if (headingText.toLowerCase().includes('frequently asked questions')) {
+        return (
+          <h2 key={idx} id="faqs" style={{ fontSize: '1.75rem', marginTop: '48px', marginBottom: '20px', color: '#0F2D4E', fontWeight: '800', borderBottom: '2px solid #0169A9', paddingBottom: '10px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <HelpCircle size={24} style={{ color: '#0169A9' }} /> Frequently Asked Questions (FAQs)
+          </h2>
+        );
+      }
+
+      return (
+        <h2 key={idx} id={headingSlug} style={{ fontSize: '1.75rem', marginTop: '44px', marginBottom: '18px', color: '#0F2D4E', fontWeight: '800', borderBottom: '1px solid #E2E8F0', paddingBottom: '10px' }}>
+          {headingText}
+        </h2>
+      );
+    }
+
+    if (trimmed.startsWith('### ')) {
+      const subText = trimmed.replace(/^###\s+/, '');
+      const subSlug = subText.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+      return (
+        <h3 key={idx} id={subSlug} style={{ fontSize: '1.3rem', marginTop: '32px', marginBottom: '14px', color: '#0169A9', fontWeight: '700' }}>
+          {subText}
+        </h3>
+      );
+    }
+
+    if (trimmed.startsWith('* ') || trimmed.startsWith('- ')) {
+      const listItems = trimmed.split('\n').filter(line => line.trim().startsWith('* ') || line.trim().startsWith('- '));
+      return (
+        <ul key={idx} style={{ paddingLeft: '24px', marginBottom: '24px', listStyleType: 'disc' }}>
+          {listItems.map((item, itemIdx) => {
+            const cleanText = item.replace(/^[*-]\s+/, '');
+            return (
+              <li key={itemIdx} style={{ marginBottom: '10px', lineHeight: '1.7', color: '#334155', fontSize: '1.05rem' }}>
+                {parseInlineMarkdown(cleanText)}
+              </li>
+            );
+          })}
+        </ul>
+      );
+    }
+
+    if (/^\d+\.\s+/.test(trimmed)) {
+      const listItems = trimmed.split('\n').filter(line => /^\d+\.\s+/.test(line.trim()));
+      return (
+        <ol key={idx} style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+          {listItems.map((item, itemIdx) => {
+            const cleanText = item.replace(/^\d+\.\s+/, '');
+            return (
+              <li key={itemIdx} style={{ marginBottom: '10px', lineHeight: '1.7', color: '#334155', fontSize: '1.05rem' }}>
+                {parseInlineMarkdown(cleanText)}
+              </li>
+            );
+          })}
+        </ol>
+      );
+    }
+
+    if (trimmed.startsWith('> ')) {
+      const quoteText = trimmed.replace(/^>\s+/, '').replace(/\n>\s+/g, ' ');
+      return (
+        <blockquote key={idx} style={{ background: '#F8FAFC', borderLeft: '4px solid #0169A9', padding: '20px 24px', borderRadius: '0 12px 12px 0', marginBottom: '24px', fontStyle: 'italic', color: '#0F2D4E' }}>
+          {parseInlineMarkdown(quoteText)}
+        </blockquote>
+      );
+    }
+
+    return (
+      <p key={idx} style={{ marginBottom: '20px', lineHeight: '1.8', color: '#334155', fontSize: '1.05rem' }}>
+        {parseInlineMarkdown(trimmed)}
+      </p>
+    );
+  });
 }
 
 export async function generateMetadata({ params }) {
@@ -77,7 +216,6 @@ export default async function ProgrammaticCityBlogPage({ params }) {
 
   if (!blog) notFound();
 
-  // Create deterministic hash for stochastic layout permutations
   const seed = (citySlug.length * 13 + (blogSlug ? blogSlug.length * 7 : 42)) % 5;
   const dynamicAnchor = getDynamicAnchorText(cityInfo, seed);
 
@@ -131,15 +269,14 @@ export default async function ProgrammaticCityBlogPage({ params }) {
               </div>
             </div>
 
-            {/* Decision-Maker Commercial Queries Resolution */}
             <div style={{ marginTop: '20px', borderTop: '1px solid #E2E8F0', paddingTop: '16px', fontSize: '0.875rem', color: '#475569' }}>
               <strong>Procurement & Distributor Directives:</strong> Direct SMT manufacturing lead time: 10-14 days. Volume tier discounts at 500 / 1,000 / 5,000 units. Certified REST API & MQTT pings: up to 10,000 pings/sec per tenant with 0% data loss buffer.
             </div>
           </div>
 
-          {/* Article Body Content */}
+          {/* Article Body Content Formatted with Rich Renderer */}
           <article className="prose" style={{ lineHeight: '1.8', fontSize: '1.05rem', color: '#334155' }}>
-            <div dangerouslySetInnerHTML={{ __html: blog.content.replace(/\n/g, '<br/>') }} />
+            {renderRichMarkdown(blog.content)}
           </article>
 
           {/* Dynamic Non-Duplicate GEO Anchor Hub Link */}
@@ -159,7 +296,7 @@ export default async function ProgrammaticCityBlogPage({ params }) {
               Direct SMT factory pricing, white-label distributor margins, private APN compilation, and certified REST API webhooks for system integrators and fleet operators in {cityInfo.name}, {cityInfo.country}.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
-              <Link href="/contact" className="btn" style={{ background: '#FF6000', color: '#FFFFFF', fontWeight: '700', padding: '12px 28px' }}>
+              <Link href="/contact" className="btn" style={{ background: '#0169A9', color: '#FFFFFF', border: '1px solid #38BDF8', fontWeight: '700', padding: '12px 28px' }}>
                 Request Wholesale Bulk Quotation
               </Link>
               <Link href="/trackers/vehicle-telematics" className="btn" style={{ background: '#FFFFFF', color: '#0F2D4E', fontWeight: '700', padding: '12px 28px' }}>
