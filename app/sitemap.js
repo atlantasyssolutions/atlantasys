@@ -56,7 +56,20 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  // 3. Primary Blog Article Routes
+  // 3. City x Product Matrix Pages (50 Cities x 6 Trackers = 300 Pages)
+  const cityProductRoutes = [];
+  CITIES.forEach((city) => {
+    TRACKERS.forEach((tracker) => {
+      cityProductRoutes.push({
+        url: `${baseUrl}/locations/${city}/${tracker}`,
+        lastModified: lastMod,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      });
+    });
+  });
+
+  // 4. Primary Blog Article Routes
   const blogs = getAllBlogSummaries();
   const blogRoutes = blogs.map((b) => ({
     url: `${baseUrl}/blog/${b.slug}`,
