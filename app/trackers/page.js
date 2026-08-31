@@ -15,7 +15,7 @@ export default function TrackersIndexPage() {
     <>
       <Header />
       <main className="section-padding" style={{ paddingTop: '120px', background: '#FFFFFF' }}>
-        <ProductCatalog initialCategory="vehicle-telematics" />
+        <ProductCatalog initialCategory="all" />
       </main>
       <Footer />
     </>

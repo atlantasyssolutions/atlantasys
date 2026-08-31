@@ -3,8 +3,8 @@ import './globals.css';
 export const metadata = {
   metadataBase: new URL('https://www.atlantasys.com'),
   title: {
-    default: 'GPS Tracking Devices & Fleet Management Software | Atlanta Systems',
-    template: '%s | Atlanta Systems',
+    default: 'Atlanta Systems | GPS Tracking Devices, Fleet Management & Video Telematics',
+    template: '%s',
   },
   description: 'Atlanta Systems delivers enterprise-grade GPS Tracking Devices and Fleet Management Software with Dash Cam video telematics, Video Surveillance, AIS 140 compliant hardware, and Mobile Video Recording for global fleets.',
   alternates: {
