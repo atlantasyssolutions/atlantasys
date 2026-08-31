@@ -1,4 +1,4 @@
-import { getAllBlogs } from '@/lib/blog';
+import { getAllBlogSummaries } from '@/lib/blog';
 
 const CITIES = [
   'dubai', 'abu-dhabi', 'riyadh', 'jeddah', 'dammam', 'kuwait-city', 'doha', 'muscat', 'cairo', 'casablanca',
@@ -50,27 +50,14 @@ export default function sitemap() {
 
   // 2. City Hub Landing Pages (50 Cities)
   const cityRoutes = CITIES.map((city) => ({
-    url: `${baseUrl}/locations/${city}`,
+    url: `${baseUrl}/${city}`,
     lastModified: lastMod,
     changeFrequency: 'weekly',
     priority: 0.8,
   }));
 
-  // 3. City x Product Matrix Pages (50 Cities x 6 Trackers = 300 Pages)
-  const cityProductRoutes = [];
-  CITIES.forEach((city) => {
-    TRACKERS.forEach((tracker) => {
-      cityProductRoutes.push({
-        url: `${baseUrl}/locations/${city}/${tracker}`,
-        lastModified: lastMod,
-        changeFrequency: 'monthly',
-        priority: 0.7,
-      });
-    });
-  });
-
-  // 4. Primary Blog Article Routes (1,300 Articles)
-  const blogs = getAllBlogs();
+  // 3. Primary Blog Article Routes
+  const blogs = getAllBlogSummaries();
   const blogRoutes = blogs.map((b) => ({
     url: `${baseUrl}/blog/${b.slug}`,
     lastModified: lastMod,

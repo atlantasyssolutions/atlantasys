@@ -1,4 +1,4 @@
-import { getAllBlogs } from '@/lib/blog';
+import { getAllBlogSummaries } from '@/lib/blog';
 import BlogClientIndex from '@/components/blog/BlogClientIndex';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 export default function BlogIndexPage() {
-  const blogs = getAllBlogs();
+  const blogs = getAllBlogSummaries();
   return (
     <>
       <Header />
