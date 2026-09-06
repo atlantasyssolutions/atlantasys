@@ -5,7 +5,7 @@
 * **City**: Rotterdam
 * **City Slug**: `rotterdam`
 * **Country**: Netherlands
-* **Geo Region**: Global Logistics
+* **Geo Region**: Europe
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
 * **Author**: Tariq Al-Mansoor
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Rotterdam](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Rotterdam, Netherlands.
-* **[Related Technical Deep-Dive 1](/blog/120-multi-protocol-iot-gateways-jebel-ali-cold-chain)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/126-road-adas-driver-dms-cameras-la-i-710)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/132-radar-camera-fusion-bsd-mexico-city-vans)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Rotterdam](/rotterdam)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Rotterdam, Netherlands. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Combined Reefer Fuel and Temperature Tracking by Atlanta Systems on Miami Produce Hauls](/blog/combined-reefer-fuel-and-temperature-tracking-by-atlanta-systems-on-miami-produce-hauls)**: In-depth telematics analysis and technical implementation guide.
+* **[GSR 2024 ADAS Systems by Atlanta Systems Ready for Installation on Madrid Long-Haul Trucks](/blog/gsr-2024-adas-systems-by-atlanta-systems-ready-for-installation-on-madrid-long-haul-trucks)**: Engineering hardware specifications and fleet performance benchmark.
+* **[AI Dual-Lens Cameras from Atlanta Systems Capturing Evidence on High-Risk Bogotá Corridors](/blog/ai-dual-lens-cameras-from-atlanta-systems-capturing-evidence-on-high-risk-bogot-corridors)**: Enterprise compliance protocols and field deployment architecture.

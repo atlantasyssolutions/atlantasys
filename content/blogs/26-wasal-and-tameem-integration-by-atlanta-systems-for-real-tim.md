@@ -2,8 +2,8 @@
 
 * **Slug**: `wasal-and-tameem-integration-by-atlanta-systems-for-real-time-reporting-across-dammam-petrochemical-routes`
 * **Category**: Cross-Border Telematics
-* **City**: Dammam
-* **City Slug**: `dammam`
+* **City**: Riyadh
+* **City Slug**: `riyadh`
 * **Country**: Saudi Arabia
 * **Geo Region**: MENA
 * **Hardware Model**: G-400 Dual-SIM Gateway
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Dammam](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dammam, Saudi Arabia.
-* **[Related Technical Deep-Dive 1](/blog/262-school-bus-platforms-with-apps-from-atlanta-systems-deployed)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/268-eu-gsr-2024-adas-forward-collision-warning-cameras-by-atlanta-systems-active-in-european-transit-corridor-268)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/274-eu-gsr-2024-adas-forward-collision-warning-cameras-by-atlanta-systems-active-in-european-transit-corridor-274)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Riyadh](/riyadh)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Riyadh, Saudi Arabia. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Full Design-to-Cloud Manufacturing by Atlanta Systems for Heat-Resistant Kuwait City Units](/blog/full-design-to-cloud-manufacturing-by-atlanta-systems-for-heat-resistant-kuwait-city-units)**: In-depth telematics analysis and technical implementation guide.
+* **[Ultrasonic Sensors by Atlanta Systems Providing Accuracy for Multi-Tank Units at Khalifa Port](/blog/ultrasonic-sensors-by-atlanta-systems-providing-accuracy-for-multi-tank-units-at-khalifa-port)**: Engineering hardware specifications and fleet performance benchmark.
+* **[8-Channel Mobile DVRs from Atlanta Systems Supporting Complex Camera Arrays at Port of Long Beach](/blog/8-channel-mobile-dvrs-from-atlanta-systems-supporting-complex-camera-arrays-at-port-of-long-beach)**: Enterprise compliance protocols and field deployment architecture.

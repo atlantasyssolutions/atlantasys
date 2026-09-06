@@ -2,10 +2,10 @@
 
 * **Slug**: `adas-forward-collision-systems-from-atlanta-systems-meeting-gsr-2024-on-paris-a1-a6-corridors`
 * **Category**: AI Video Telematics
-* **City**: Hamburg
-* **City Slug**: `hamburg`
-* **Country**: Germany
-* **Geo Region**: Global Logistics
+* **City**: Paris
+* **City Slug**: `paris`
+* **Country**: France
+* **Geo Region**: Europe
 * **Hardware Model**: VTC-500 BSD Radar System
 * **Author**: Atlanta Safety Engineering
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Hamburg](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Hamburg, Germany.
-* **[Related Technical Deep-Dive 1](/blog/905-verification-and-sealing-standards-for-regulated-urban-trans)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/915-dead-reckoning-fallback-systems-for-uninterrupted-tracking-i)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/927-auxiliary-engine-runtime-and-fuel-consumption-analytics-for-)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Paris](/paris)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Paris, France. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Blind Spot Detection Hardware by Atlanta Systems Enhancing Safety in Dense Mexico City Urban Traffic](/blog/blind-spot-detection-hardware-by-atlanta-systems-enhancing-safety-in-dense-mexico-city-urban-traffic)**: In-depth telematics analysis and technical implementation guide.
+* **[eSIM Devices from Atlanta Systems Enabling Seamless Operation on European Cross-Border Routes](/blog/esim-devices-from-atlanta-systems-enabling-seamless-operation-on-european-cross-border-routes)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Enterprise Integrations by Atlanta Systems Linking Telematics Directly to Port of Long Beach WMS](/blog/enterprise-integrations-by-atlanta-systems-linking-telematics-directly-to-port-of-long-beach-wms)**: Enterprise compliance protocols and field deployment architecture.

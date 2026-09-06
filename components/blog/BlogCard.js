@@ -11,7 +11,7 @@ export default function BlogCard({ blog, cityContext }) {
 
   const [imgSrc, setImgSrc] = useState(primaryImageSrc);
 
-  const targetUrl = cityContext ? `/blog/${cityContext}/${blog.slug}` : `/blog/${blog.slug}`;
+  const targetUrl = `/blog/${blog.slug}`;
 
   return (
     <div className="glass-card" style={{ display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden', padding: 0 }}>
@@ -48,7 +48,7 @@ export default function BlogCard({ blog, cityContext }) {
         {/* Post Title */}
         <h3 style={{ fontSize: '1.2rem', lineHeight: '1.4', marginBottom: '12px', color: 'var(--text-main)', fontWeight: '700' }}>
           <Link href={targetUrl} style={{ textDecoration: 'none', color: 'inherit' }}>
-            {blog.title} {cityContext && `in ${cityContext.charAt(0).toUpperCase() + cityContext.slice(1)}`}
+            {blog.title}
           </Link>
         </h3>
 

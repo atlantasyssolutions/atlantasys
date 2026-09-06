@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/237-8-channel-dvrs-from-atlanta-systems-supporting-extensive-cam)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/242-industrial-4g-lte-m-telematics-gateways-by-atlanta-systems-operating-in-mena-freight-hub-242)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/249-can-bus-j1939-readers-by-atlanta-systems-extracting-ecu-parameters-in-us-intermodal-hub-249)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Milan](/milan)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[NOM-012 Modules by Atlanta Systems Capturing Weight Data on Mexico City Distribution Routes](/blog/nom-012-modules-by-atlanta-systems-capturing-weight-data-on-mexico-city-distribution-routes)**: In-depth telematics analysis and technical implementation guide.
+* **[Tachograph 2.0 Interfaces from Atlanta Systems Supporting Secure Downloads in Frankfurt Fleets](/blog/tachograph-2-0-interfaces-from-atlanta-systems-supporting-secure-downloads-in-frankfurt-fleets)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Indigenous End-to-End Manufacturing by Atlanta Systems Delivering Desert-Ready Hardware for Riyadh](/blog/indigenous-end-to-end-manufacturing-by-atlanta-systems-delivering-desert-ready-hardware-for-riyadh)**: Enterprise compliance protocols and field deployment architecture.

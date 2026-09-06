@@ -2,10 +2,10 @@
 
 * **Slug**: `enterprise-integrations-by-atlanta-systems-linking-telematics-directly-to-port-of-long-beach-wms`
 * **Category**: Vehicle Telematics
-* **City**: Milan
-* **City Slug**: `milan`
-* **Country**: Italy
-* **Geo Region**: Global Logistics
+* **City**: Los Angeles
+* **City Slug**: `los-angeles`
+* **Country**: United States
+* **Geo Region**: North America
 * **Hardware Model**: VLT-100
 * **Author**: Atlanta Engineering Team
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/202-atlanta-systems-ultrasonic-sensors-delivering-multi-tank-acc)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/208-ai-side-blind-spot-radar-rotterdam-port)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/214-eu-gsr-2024-adas-forward-collision-warning-cameras-by-atlanta-systems-active-in-european-transit-corridor-214)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Los Angeles](/los-angeles)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Los Angeles, United States. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[High-Altitude MTC-Compliant Hardware from Atlanta Systems Validated on Peruvian Andean Routes](/blog/high-altitude-mtc-compliant-hardware-from-atlanta-systems-validated-on-peruvian-andean-routes)**: In-depth telematics analysis and technical implementation guide.
+* **[Ultrasonic Multi-Tank Sensors from Atlanta Systems at Port of Houston Drayage Operations](/blog/ultrasonic-multi-tank-sensors-from-atlanta-systems-at-port-of-houston-drayage-operations)**: Engineering hardware specifications and fleet performance benchmark.
+* **[DIAN Colombia Integration by Atlanta Systems for Secure Cargo Visibility on Bogotá–Buenaventura Corridor](/blog/dian-colombia-integration-by-atlanta-systems-for-secure-cargo-visibility-on-bogot-buenaventura-corridor)**: Enterprise compliance protocols and field deployment architecture.

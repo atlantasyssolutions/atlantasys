@@ -5,7 +5,7 @@
 * **City**: Madrid
 * **City Slug**: `madrid`
 * **Country**: Spain
-* **Geo Region**: Global Logistics
+* **Geo Region**: Europe
 * **Hardware Model**: VTC-500 BSD Radar System
 * **Author**: Atlanta Safety Engineering
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Madrid](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Madrid, Spain.
-* **[Related Technical Deep-Dive 1](/blog/645-reefer-fuel-tracking-sensors-from-atlanta-systems-active-at-)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/655-uae-rta-homologated-tracking-devices-by-atlanta-systems-stre)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/667-high-volume-telematics-api-integration-connectors-by-atlanta)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Madrid](/madrid)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Madrid, Spain. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[BSD Blind Spot Detection Hardware by Atlanta Systems Protecting Urban Fleets in Mexico City’s Periférico](/blog/bsd-blind-spot-detection-hardware-by-atlanta-systems-protecting-urban-fleets-in-mexico-citys-perif-rico)**: In-depth telematics analysis and technical implementation guide.
+* **[Wireless Probes by Atlanta Systems Supporting Perishable Food Logistics Through Port of Antwerp](/blog/wireless-probes-by-atlanta-systems-supporting-perishable-food-logistics-through-port-of-antwerp)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Atlanta Systems VLT-100 Delivering Certified AIS 140 Tracking Across Indian National Highways](/blog/atlanta-systems-vlt-100-delivering-certified-ais-140-tracking-across-indian-national-highways)**: Enterprise compliance protocols and field deployment architecture.

@@ -4,6 +4,16 @@ import Footer from '@/components/layout/Footer';
 export const metadata = {
   title: 'Terms & Conditions | Atlanta Systems',
   description: 'Terms & Conditions for purchasing and using Atlanta Systems GPS tracking devices, telematics software, and services.',
+  alternates: {
+    canonical: 'https://www.atlantasys.com/terms-and-condition',
+  },
+  openGraph: {
+    title: 'Terms & Conditions | Atlanta Systems',
+    description: 'Terms & Conditions for Atlanta Systems hardware, software subscriptions, and SLA services.',
+    url: 'https://www.atlantasys.com/terms-and-condition',
+    siteName: 'Atlanta Systems',
+    type: 'website',
+  },
 };
 
 export default function TermsPage() {

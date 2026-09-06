@@ -4,6 +4,16 @@ import Footer from '@/components/layout/Footer';
 export const metadata = {
   title: 'Privacy Policy | Atlanta Systems',
   description: 'Atlanta Systems Pvt. Ltd. Privacy Policy explaining data collection, telematics data security, and compliance.',
+  alternates: {
+    canonical: 'https://www.atlantasys.com/privacy-policy',
+  },
+  openGraph: {
+    title: 'Privacy Policy | Atlanta Systems',
+    description: 'Atlanta Systems Privacy Policy and telematics data security standards.',
+    url: 'https://www.atlantasys.com/privacy-policy',
+    siteName: 'Atlanta Systems',
+    type: 'website',
+  },
 };
 
 export default function PrivacyPolicyPage() {

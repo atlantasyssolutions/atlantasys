@@ -2,8 +2,8 @@
 
 * **Slug**: `wasal-tameem-full-integration-by-atlanta-systems-for-eastern-province-dammam-fleets`
 * **Category**: Cross-Border Telematics
-* **City**: Dammam
-* **City Slug**: `dammam`
+* **City**: Riyadh
+* **City Slug**: `riyadh`
 * **Country**: Saudi Arabia
 * **Geo Region**: MENA
 * **Hardware Model**: G-400 Dual-SIM Gateway
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Dammam](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dammam, Saudi Arabia.
-* **[Related Technical Deep-Dive 1](/blog/11-dms-driver-fatigue-monitoring-from-atlanta-systems-for-long-)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/115-ignition-off-anti-siphoning-jeddah-expressway)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/121-arai-certified-ais-140-gps-trackers-india-transit)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Riyadh](/riyadh)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Riyadh, Saudi Arabia. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Full Manufacturing Ecosystem by Atlanta Systems Producing Heat-Tolerant Units for Kuwait Fleets](/blog/full-manufacturing-ecosystem-by-atlanta-systems-producing-heat-tolerant-units-for-kuwait-fleets)**: In-depth telematics analysis and technical implementation guide.
+* **[Smart Gateways by Atlanta Systems Powering Cold Chain Visibility Between Jebel Ali and Abu Dhabi](/blog/smart-gateways-by-atlanta-systems-powering-cold-chain-visibility-between-jebel-ali-and-abu-dhabi)**: Engineering hardware specifications and fleet performance benchmark.
+* **[High-Altitude MTC-Compliant Hardware from Atlanta Systems Validated on Peruvian Andean Routes](/blog/high-altitude-mtc-compliant-hardware-from-atlanta-systems-validated-on-peruvian-andean-routes)**: Enterprise compliance protocols and field deployment architecture.

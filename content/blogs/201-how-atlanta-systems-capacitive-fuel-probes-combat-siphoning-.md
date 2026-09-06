@@ -5,7 +5,7 @@
 * **City**: Dubai
 * **City Slug**: `dubai`
 * **Country**: United Arab Emirates
-* **Geo Region**: Global Logistics
+* **Geo Region**: MENA
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
 * **Author**: Tariq Al-Mansoor
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Dubai](/trackers/vehicle-telematics)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dubai, United Arab Emirates.
-* **[Related Technical Deep-Dive 1](/blog/204-ota-firmware-updates-obd-ii-dongles-chicago)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/21-ais-140-compliant-end-to-end-platforms-india)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/216-senseev-ble-5-0-wireless-temperature-sensors-by-atlanta-systems-safeguarding-who-gdp-cold-chains-216)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Dubai](/dubai)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dubai, United Arab Emirates. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Capacitive Fuel Probes by Atlanta Systems Reducing Losses at Desert Lay-bys Near Abu Dhabi](/blog/capacitive-fuel-probes-by-atlanta-systems-reducing-losses-at-desert-lay-bys-near-abu-dhabi)**: In-depth telematics analysis and technical implementation guide.
+* **[DMS Fatigue Monitoring from Atlanta Systems Protecting Drivers on Extended Cairo Desert Hauls](/blog/dms-fatigue-monitoring-from-atlanta-systems-protecting-drivers-on-extended-cairo-desert-hauls)**: Engineering hardware specifications and fleet performance benchmark.
+* **[GSR 2024 ADAS Packages from Atlanta Systems Validated for Milan Alpine Operations](/blog/gsr-2024-adas-packages-from-atlanta-systems-validated-for-milan-alpine-operations)**: Enterprise compliance protocols and field deployment architecture.

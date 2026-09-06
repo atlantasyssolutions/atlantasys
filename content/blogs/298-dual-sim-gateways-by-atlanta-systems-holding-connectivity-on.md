@@ -5,7 +5,7 @@
 * **City**: Muscat
 * **City Slug**: `muscat`
 * **Country**: Oman
-* **Geo Region**: Global Logistics
+* **Geo Region**: MENA
 * **Hardware Model**: VLT-100
 * **Author**: Atlanta Engineering Team
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Muscat](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Muscat, Oman.
-* **[Related Technical Deep-Dive 1](/blog/300-senseev-ble-5-0-wireless-temperature-sensors-by-atlanta-systems-safeguarding-who-gdp-cold-chains-300)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/310-ultrasonic-sensors-by-atlanta-systems-providing-precision-re)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/322-wasal-integration-by-atlanta-systems-streaming-continuous-da)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Muscat](/muscat)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Muscat, Oman. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Tachograph 2.0 Remote Download Support by Atlanta Systems in London and Dover Port Operations](/blog/tachograph-2-0-remote-download-support-by-atlanta-systems-in-london-and-dover-port-operations)**: In-depth telematics analysis and technical implementation guide.
+* **[UAE RTA Compliant Devices from Atlanta Systems Covering Dubai and Abu Dhabi Port Corridors](/blog/uae-rta-compliant-devices-from-atlanta-systems-covering-dubai-and-abu-dhabi-port-corridors)**: Engineering hardware specifications and fleet performance benchmark.
+* **[4-Channel MDVRs by Atlanta Systems Providing Full Visibility for School Buses in Santiago](/blog/4-channel-mdvrs-by-atlanta-systems-providing-full-visibility-for-school-buses-in-santiago)**: Enterprise compliance protocols and field deployment architecture.

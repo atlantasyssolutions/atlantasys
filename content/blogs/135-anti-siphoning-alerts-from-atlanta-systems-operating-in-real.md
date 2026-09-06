@@ -5,7 +5,7 @@
 * **City**: Jeddah
 * **City Slug**: `jeddah`
 * **Country**: Saudi Arabia
-* **Geo Region**: Global Logistics
+* **Geo Region**: MENA
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
 * **Author**: Tariq Al-Mansoor
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Jeddah](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Jeddah, Saudi Arabia.
-* **[Related Technical Deep-Dive 1](/blog/138-who-gdp-ble-5-beacons-warsaw-reefers)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/143-sae-j1939-engine-diagnostics-readers-houston)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/15-anti-siphoning-alert-jeddah-makkah-expressway)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Jeddah](/jeddah)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Jeddah, Saudi Arabia. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Ultrasonic Fuel Sensors by Atlanta Systems for Multi-Tank Accuracy in Abu Dhabi’s Khalifa Port Operations](/blog/ultrasonic-fuel-sensors-by-atlanta-systems-for-multi-tank-accuracy-in-abu-dhabis-khalifa-port-operations)**: In-depth telematics analysis and technical implementation guide.
+* **[DMS Fatigue Detection from Atlanta Systems Protecting Drivers on Long Cairo–Alexandria Desert Road Hauls](/blog/dms-fatigue-detection-from-atlanta-systems-protecting-drivers-on-long-cairo-alexandria-desert-road-hauls)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Public Transit Dispatch from Atlanta Systems Improving Performance Metrics in Bucharest](/blog/public-transit-dispatch-from-atlanta-systems-improving-performance-metrics-in-bucharest)**: Enterprise compliance protocols and field deployment architecture.

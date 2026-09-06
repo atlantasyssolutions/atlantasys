@@ -5,7 +5,7 @@
 * **City**: Abu Dhabi
 * **City Slug**: `abu-dhabi`
 * **Country**: United Arab Emirates
-* **Geo Region**: Global Logistics
+* **Geo Region**: MENA
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
 * **Author**: Tariq Al-Mansoor
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Abu Dhabi](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Abu Dhabi, United Arab Emirates.
-* **[Related Technical Deep-Dive 1](/blog/935-secure-authentication-methods-for-remote-access-to-digital-t)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/945-location-geofence-analytics-for-automated-commercial-yard-ac)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/957-redundant-storage-architectures-for-mobile-video-recorders-i)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Abu Dhabi](/abu-dhabi)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Abu Dhabi, United Arab Emirates. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Generator and Reefer Fuel Tracking by Atlanta Systems at Houston Container Terminals](/blog/generator-and-reefer-fuel-tracking-by-atlanta-systems-at-houston-container-terminals)**: In-depth telematics analysis and technical implementation guide.
+* **[Android POS Ticketing by Atlanta Systems Integrated with Dispatch for Casablanca Transit Networks](/blog/android-pos-ticketing-by-atlanta-systems-integrated-with-dispatch-for-casablanca-transit-networks)**: Engineering hardware specifications and fleet performance benchmark.
+* **[ANTT Tracking Platforms from Atlanta Systems Providing Uninterrupted Visibility to Santos](/blog/antt-tracking-platforms-from-atlanta-systems-providing-uninterrupted-visibility-to-santos)**: Enterprise compliance protocols and field deployment architecture.

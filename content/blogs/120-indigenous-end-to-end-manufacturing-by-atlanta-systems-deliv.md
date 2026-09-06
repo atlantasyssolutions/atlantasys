@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Riyadh](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Riyadh, Saudi Arabia.
-* **[Related Technical Deep-Dive 1](/blog/123-non-intrusive-can-induction-clamps-houston)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/129-type-approved-adas-systems-hamburg-gsr-2024)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/135-edge-anti-siphoning-firmware-jeddah-expressway)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Riyadh](/riyadh)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Riyadh, Saudi Arabia. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[End-to-End 4G LTE-M Gateways from Atlanta Systems for Continuous Coverage Across Dubai’s E11 Sheikh Zayed Road](/blog/end-to-end-4g-lte-m-gateways-from-atlanta-systems-for-continuous-coverage-across-dubais-e11-sheikh-zayed-road)**: In-depth telematics analysis and technical implementation guide.
+* **[Android POS Ticketing Terminals by Atlanta Systems for Public Transit Dispatch in Casablanca and Cairo](/blog/android-pos-ticketing-terminals-by-atlanta-systems-for-public-transit-dispatch-in-casablanca-and-cairo)**: Engineering hardware specifications and fleet performance benchmark.
+* **[8-Channel Mobile DVRs from Atlanta Systems Supporting Complex Arrays at Port of Rotterdam](/blog/8-channel-mobile-dvrs-from-atlanta-systems-supporting-complex-arrays-at-port-of-rotterdam)**: Enterprise compliance protocols and field deployment architecture.

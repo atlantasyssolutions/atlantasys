@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Dubai](/trackers/vehicle-telematics)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dubai, United Arab Emirates.
-* **[Related Technical Deep-Dive 1](/blog/156-multi-tank-calibration-software-santos-grain)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/161-arai-icat-certified-ais-140-trackers-india)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/168-4-channel-mdvrs-from-atlanta-systems-covering-critical-angle)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Dubai](/dubai)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dubai, United Arab Emirates. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[WASAL/TAMEEM Full Integration by Atlanta Systems for Eastern Province Dammam Fleets](/blog/wasal-tameem-full-integration-by-atlanta-systems-for-eastern-province-dammam-fleets)**: In-depth telematics analysis and technical implementation guide.
+* **[DMS Fatigue Tools from Atlanta Systems Detecting Risk on Extended Cairo Desert Journeys](/blog/dms-fatigue-tools-from-atlanta-systems-detecting-risk-on-extended-cairo-desert-journeys)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Multi-Tank Tools by Atlanta Systems Supporting Complex Fuel Systems in Brazilian Fleets](/blog/multi-tank-tools-by-atlanta-systems-supporting-complex-fuel-systems-in-brazilian-fleets)**: Enterprise compliance protocols and field deployment architecture.

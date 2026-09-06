@@ -9,6 +9,13 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.atlantasys.com/smart-city-solution',
   },
+  openGraph: {
+    title: 'Smart City IoT & Intelligent Parking Management Solution | Atlanta Systems',
+    description: 'Smart City IoT infrastructure, municipal fleet tracking, automated parking management, and environmental sensor telemetry.',
+    url: 'https://www.atlantasys.com/smart-city-solution',
+    siteName: 'Atlanta Systems',
+    type: 'website',
+  },
 };
 
 export default function SmartCitySolutionPage() {

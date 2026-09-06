@@ -4,6 +4,5 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.atlantasys.com/sitemap.xml',
   };
 }

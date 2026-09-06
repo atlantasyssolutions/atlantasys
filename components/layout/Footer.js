@@ -73,6 +73,11 @@ export default function Footer() {
                       <Link href={`/${city.slug}`}><i className="far fa-map-marker-alt me-1"></i> {city.city}, {city.country}</Link>
                     </li>
                   ))}
+                  <li style={{ marginTop: '8px' }}>
+                    <Link href="/locations" style={{ color: '#0169A9', fontWeight: '700' }}>
+                      <i className="fas fa-globe me-1"></i> View All 37 Global Hubs &rarr;
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>

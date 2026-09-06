@@ -2,10 +2,10 @@
 
 * **Slug**: `nom-012-compliance-modules-by-atlanta-systems-supporting-guadalajara-manzanillo-manufacturing-routes`
 * **Category**: Vehicle Telematics
-* **City**: Milan
-* **City Slug**: `milan`
-* **Country**: Italy
-* **Geo Region**: Global Logistics
+* **City**: Mexico City
+* **City Slug**: `mexico-city`
+* **Country**: Mexico
+* **Geo Region**: Latin America
 * **Hardware Model**: VLT-100
 * **Author**: Atlanta Engineering Team
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/686-ble-5-0-wireless-environmental-beacons-by-atlanta-systems-ac)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/696-nom-012-mexican-weight-and-dimension-compliance-hardware-by-)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/708-dual-tank-fuel-level-calibration-workflows-using-atlanta-sys)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Mexico City](/mexico-city)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Mexico City, Mexico. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[NOM-012 Modules by Atlanta Systems Capturing Weight Data on Mexico City Distribution Routes](/blog/nom-012-modules-by-atlanta-systems-capturing-weight-data-on-mexico-city-distribution-routes)**: In-depth telematics analysis and technical implementation guide.
+* **[4-Channel MDVRs from Atlanta Systems Covering Road and Cabin on Bogotá Andean Routes](/blog/4-channel-mdvrs-from-atlanta-systems-covering-road-and-cabin-on-bogot-andean-routes)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Ultrasonic Multi-Tank Sensors from Atlanta Systems at Port of Houston Drayage Operations](/blog/ultrasonic-multi-tank-sensors-from-atlanta-systems-at-port-of-houston-drayage-operations)**: Enterprise compliance protocols and field deployment architecture.

@@ -5,7 +5,7 @@
 * **City**: Casablanca
 * **City Slug**: `casablanca`
 * **Country**: Morocco
-* **Geo Region**: Global Logistics
+* **Geo Region**: MENA
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
 * **Author**: Tariq Al-Mansoor
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Casablanca](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Casablanca, Morocco.
-* **[Related Technical Deep-Dive 1](/blog/178-who-gdp-ble-5-beacons-warsaw-reefers)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/183-sae-j1939-engine-diagnostics-readers-houston)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/19-wireless-temperature-humidity-frankfurt-gdp)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Casablanca](/casablanca)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Casablanca, Morocco. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Anti-Siphoning Alert Algorithms from Atlanta Systems Deployed on Jeddah–Makkah Expressway Fleets](/blog/anti-siphoning-alert-algorithms-from-atlanta-systems-deployed-on-jeddah-makkah-expressway-fleets)**: In-depth telematics analysis and technical implementation guide.
+* **[UAE RTA and WASAL Compliant Gateways from Atlanta Systems Operating on Dubai E11 and Abu Dhabi E20](/blog/uae-rta-and-wasal-compliant-gateways-from-atlanta-systems-operating-on-dubai-e11-and-abu-dhabi-e20)**: Engineering hardware specifications and fleet performance benchmark.
+* **[ANTT Tracking Platforms from Atlanta Systems Providing Uninterrupted Visibility to Santos](/blog/antt-tracking-platforms-from-atlanta-systems-providing-uninterrupted-visibility-to-santos)**: Enterprise compliance protocols and field deployment architecture.

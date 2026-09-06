@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/294-eco-scoring-systems-from-atlanta-systems-achieving-savings-o)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/30-mtc-peru-and-high-altitude-tracking-by-atlanta-systems-on-li)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/31-dian-colombia-integration-by-atlanta-systems-for-secure-carg)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Milan](/milan)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Enterprise API Integrations by Atlanta Systems Linking Telematics to WMS at Port of Rotterdam](/blog/enterprise-api-integrations-by-atlanta-systems-linking-telematics-to-wms-at-port-of-rotterdam)**: In-depth telematics analysis and technical implementation guide.
+* **[High-Altitude Hardware from Atlanta Systems Certified for Reliable MTC Performance in Peru](/blog/high-altitude-hardware-from-atlanta-systems-certified-for-reliable-mtc-performance-in-peru)**: Engineering hardware specifications and fleet performance benchmark.
+* **[GSR 2024 ADAS Hardware from Atlanta Systems Installed and Validated on Madrid Long-Haul Units](/blog/gsr-2024-adas-hardware-from-atlanta-systems-installed-and-validated-on-madrid-long-haul-units)**: Enterprise compliance protocols and field deployment architecture.

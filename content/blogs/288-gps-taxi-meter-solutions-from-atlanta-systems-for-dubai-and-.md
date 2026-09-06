@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Dubai](/trackers/vehicle-telematics)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dubai, United Arab Emirates.
-* **[Related Technical Deep-Dive 1](/blog/290-school-bus-tracking-with-parent-apps-from-atlanta-systems-in)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/296-industrial-4g-lte-m-telematics-gateways-by-atlanta-systems-operating-in-mena-freight-hub-296)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/304-4-channel-mdvrs-by-atlanta-systems-covering-all-angles-on-bo)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Dubai](/dubai)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dubai, United Arab Emirates. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[UAE RTA Compliant Devices from Atlanta Systems Covering Dubai and Abu Dhabi Port Corridors](/blog/uae-rta-compliant-devices-from-atlanta-systems-covering-dubai-and-abu-dhabi-port-corridors)**: In-depth telematics analysis and technical implementation guide.
+* **[Capacitive Fuel Probes from Atlanta Systems Mitigating Theft at Informal Stops Near Jeddah Port](/blog/capacitive-fuel-probes-from-atlanta-systems-mitigating-theft-at-informal-stops-near-jeddah-port)**: Engineering hardware specifications and fleet performance benchmark.
+* **[ADAS Forward Collision Systems from Atlanta Systems Meeting GSR 2024 on Paris A1/A6 Corridors](/blog/adas-forward-collision-systems-from-atlanta-systems-meeting-gsr-2024-on-paris-a1-a6-corridors)**: Enterprise compliance protocols and field deployment architecture.

@@ -2,10 +2,10 @@
 
 * **Slug**: `wireless-probes-by-atlanta-systems-supporting-perishable-food-logistics-through-port-of-antwerp`
 * **Category**: Cold Chain
-* **City**: Milan
-* **City Slug**: `milan`
-* **Country**: Italy
-* **Geo Region**: Global Logistics
+* **City**: Antwerp
+* **City Slug**: `antwerp`
+* **Country**: Belgium
+* **Geo Region**: Europe
 * **Hardware Model**: SenseEV BLE 5.0 Beacon
 * **Author**: Dr. Joseph Mwangi
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/996-infrared-night-vision-performance-in-driver-safety-monitorin)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/05-capacitive-fuel-probes-riyadh-ring-road)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/1000-atlanta-systems-complete-1000-blog-titles-pool-for-global-te)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Antwerp](/antwerp)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Antwerp, Belgium. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Smart IoT Gateways from Atlanta Systems Aggregating Cold Chain Data Across Santiago–Valparaíso Routes](/blog/smart-iot-gateways-from-atlanta-systems-aggregating-cold-chain-data-across-santiago-valpara-so-routes)**: In-depth telematics analysis and technical implementation guide.
+* **[EU GSR 2024 ADAS-Ready Systems from Atlanta Systems for Milan A4 Turin–Venice Corridor Compliance](/blog/eu-gsr-2024-adas-ready-systems-from-atlanta-systems-for-milan-a4-turin-venice-corridor-compliance)**: Engineering hardware specifications and fleet performance benchmark.
+* **[NOM-012 Tools by Atlanta Systems Capturing Required Data on Monterrey Border Corridors](/blog/nom-012-tools-by-atlanta-systems-capturing-required-data-on-monterrey-border-corridors)**: Enterprise compliance protocols and field deployment architecture.

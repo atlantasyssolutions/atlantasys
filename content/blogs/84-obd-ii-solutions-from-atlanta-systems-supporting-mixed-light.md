@@ -2,10 +2,10 @@
 
 * **Slug**: `obd-ii-solutions-from-atlanta-systems-supporting-mixed-light-and-medium-duty-fleets-in-miami`
 * **Category**: Heavy Assets & Diagnostics
-* **City**: Milan
-* **City Slug**: `milan`
-* **Country**: Italy
-* **Geo Region**: Global Logistics
+* **City**: Miami
+* **City Slug**: `miami`
+* **Country**: United States
+* **Geo Region**: North America
 * **Hardware Model**: EC-400 OBD2 / CAN J1939 Reader
 * **Author**: Atlanta Diagnostics Team
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/845-intelligent-video-compression-protocols-for-streaming-multi-)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/855-temperature-sensor-calibration-lifecycle-management-for-regu)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/867-encrypted-telematics-data-protocols-for-high-security-cargo-)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Miami](/miami)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Miami, United States. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[DIAN Secure Exchange by Atlanta Systems Supporting Protection on Colombian Mountain Freight](/blog/dian-secure-exchange-by-atlanta-systems-supporting-protection-on-colombian-mountain-freight)**: In-depth telematics analysis and technical implementation guide.
+* **[FMCSA ELD Part 395 Hardware and Software by Atlanta Systems for Dallas I-20/I-35 Cross-State Fleets](/blog/fmcsa-eld-part-395-hardware-and-software-by-atlanta-systems-for-dallas-i-20-i-35-cross-state-fleets)**: Engineering hardware specifications and fleet performance benchmark.
+* **[BLE 5.0 Beacons by Atlanta Systems Enabling Multi-Zone Temperature Mapping on Warsaw Pharma Routes](/blog/ble-5-0-beacons-by-atlanta-systems-enabling-multi-zone-temperature-mapping-on-warsaw-pharma-routes)**: Enterprise compliance protocols and field deployment architecture.

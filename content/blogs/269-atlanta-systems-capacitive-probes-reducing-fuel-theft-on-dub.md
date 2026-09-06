@@ -5,7 +5,7 @@
 * **City**: Dubai
 * **City Slug**: `dubai`
 * **Country**: United Arab Emirates
-* **Geo Region**: Global Logistics
+* **Geo Region**: MENA
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
 * **Author**: Tariq Al-Mansoor
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Dubai](/trackers/vehicle-telematics)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dubai, United Arab Emirates.
-* **[Related Technical Deep-Dive 1](/blog/271-real-time-siphoning-alerts-by-atlanta-systems-on-riyadh-ring)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/277-atlanta-systems-ais-140-vlt-devices-accelerating-commercial-rto-registration-in-india-state-277)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/283-uae-rta-compliant-devices-from-atlanta-systems-covering-duba)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Dubai](/dubai)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dubai, United Arab Emirates. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Real-Time Siphoning Alerts by Atlanta Systems on Riyadh Ring Road and Highway 40 Stops](/blog/real-time-siphoning-alerts-by-atlanta-systems-on-riyadh-ring-road-and-highway-40-stops)**: In-depth telematics analysis and technical implementation guide.
+* **[Full Manufacturing Ecosystem by Atlanta Systems Producing Heat-Tolerant Units for Kuwait Fleets](/blog/full-manufacturing-ecosystem-by-atlanta-systems-producing-heat-tolerant-units-for-kuwait-fleets)**: Engineering hardware specifications and fleet performance benchmark.
+* **[4-Channel MDVRs from Atlanta Systems Covering Road and Cabin on Bogotá Andean Routes](/blog/4-channel-mdvrs-from-atlanta-systems-covering-road-and-cabin-on-bogot-andean-routes)**: Enterprise compliance protocols and field deployment architecture.

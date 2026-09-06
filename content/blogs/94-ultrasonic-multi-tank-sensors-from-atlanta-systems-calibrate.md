@@ -5,7 +5,7 @@
 * **City**: Dammam
 * **City Slug**: `dammam`
 * **Country**: Saudi Arabia
-* **Geo Region**: Global Logistics
+* **Geo Region**: MENA
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
 * **Author**: Tariq Al-Mansoor
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Dammam](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dammam, Saudi Arabia.
-* **[Related Technical Deep-Dive 1](/blog/946-passenger-load-data-integration-for-real-time-public-transpo)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/956-adaptive-video-encoding-algorithms-for-live-streaming-over-c)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/968-managing-compliance-certificates-for-national-vehicle-locati)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Dammam](/dammam)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dammam, Saudi Arabia. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Driver Eco-Scoring by Atlanta Systems Delivering Measurable Fuel Savings on Rotterdam Hinterland Routes](/blog/driver-eco-scoring-by-atlanta-systems-delivering-measurable-fuel-savings-on-rotterdam-hinterland-routes)**: In-depth telematics analysis and technical implementation guide.
+* **[Full Stack Manufacturing by Atlanta Systems Producing Heat-Resistant Hardware for Kuwait City Fleets](/blog/full-stack-manufacturing-by-atlanta-systems-producing-heat-resistant-hardware-for-kuwait-city-fleets)**: Engineering hardware specifications and fleet performance benchmark.
+* **[MTC High-Altitude Devices from Atlanta Systems Validated on Peruvian Mining Support Roads](/blog/mtc-high-altitude-devices-from-atlanta-systems-validated-on-peruvian-mining-support-roads)**: Enterprise compliance protocols and field deployment architecture.

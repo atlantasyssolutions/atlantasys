@@ -5,7 +5,7 @@
 * **City**: Riyadh
 * **City Slug**: `riyadh`
 * **Country**: Saudi Arabia
-* **Geo Region**: Global Logistics
+* **Geo Region**: MENA
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
 * **Author**: Tariq Al-Mansoor
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Riyadh](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Riyadh, Saudi Arabia.
-* **[Related Technical Deep-Dive 1](/blog/206-in-cabin-audio-safety-alarms-la-port-drayage)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/211-ifta-automation-tools-from-atlanta-systems-generating-report)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/218-mtc-high-altitude-devices-from-atlanta-systems-validated-on-)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Riyadh](/riyadh)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Riyadh, Saudi Arabia. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Real-Time Anti-Siphoning Alerts by Atlanta Systems on Casablanca Port Access Roads](/blog/real-time-anti-siphoning-alerts-by-atlanta-systems-on-casablanca-port-access-roads)**: In-depth telematics analysis and technical implementation guide.
+* **[UAE RTA Compliant Streaming from Atlanta Systems Covering E11 and E20 Corridor Operations](/blog/uae-rta-compliant-streaming-from-atlanta-systems-covering-e11-and-e20-corridor-operations)**: Engineering hardware specifications and fleet performance benchmark.
+* **[NOM-012 Compliance Tools by Atlanta Systems Supporting Data Capture on Monterrey Routes](/blog/nom-012-compliance-tools-by-atlanta-systems-supporting-data-capture-on-monterrey-routes)**: Enterprise compliance protocols and field deployment architecture.

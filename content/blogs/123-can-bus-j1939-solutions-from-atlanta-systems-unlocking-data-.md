@@ -2,10 +2,10 @@
 
 * **Slug**: `can-bus-j1939-solutions-from-atlanta-systems-unlocking-data-on-freightliner-cascadias-in-houston`
 * **Category**: Heavy Assets & Diagnostics
-* **City**: Milan
-* **City Slug**: `milan`
-* **Country**: Italy
-* **Geo Region**: Global Logistics
+* **City**: Houston
+* **City Slug**: `houston`
+* **Country**: United States
+* **Geo Region**: North America
 * **Hardware Model**: EC-400 OBD2 / CAN J1939 Reader
 * **Author**: Atlanta Diagnostics Team
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/126-road-adas-driver-dms-cameras-la-i-710)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/131-dms-fatigue-monitoring-from-atlanta-systems-protecting-drive)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/138-who-gdp-ble-5-beacons-warsaw-reefers)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Houston](/houston)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Houston, United States. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[DIAN-Integrated Security Platforms by Atlanta Systems Protecting Cargo on Colombian Mountain Corridors](/blog/dian-integrated-security-platforms-by-atlanta-systems-protecting-cargo-on-colombian-mountain-corridors)**: In-depth telematics analysis and technical implementation guide.
+* **[Ultrasonic Multi-Tank Sensors from Atlanta Systems at Port of Houston Drayage Operations](/blog/ultrasonic-multi-tank-sensors-from-atlanta-systems-at-port-of-houston-drayage-operations)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Anti-Siphoning Alerts from Atlanta Systems Operating in Real Time on Jeddah Port Access](/blog/anti-siphoning-alerts-from-atlanta-systems-operating-in-real-time-on-jeddah-port-access)**: Enterprise compliance protocols and field deployment architecture.

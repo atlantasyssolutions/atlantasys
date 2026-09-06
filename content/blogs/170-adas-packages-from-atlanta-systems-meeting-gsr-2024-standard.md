@@ -5,7 +5,7 @@
 * **City**: Paris
 * **City Slug**: `paris`
 * **Country**: France
-* **Geo Region**: Global Logistics
+* **Geo Region**: Europe
 * **Hardware Model**: VTC-500 BSD Radar System
 * **Author**: Atlanta Safety Engineering
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Paris](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Paris, France.
-* **[Related Technical Deep-Dive 1](/blog/173-sub-liter-capacitive-fuel-probes-riyadh-ring)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/179-temp-relative-humidity-probes-frankfurt-air)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/185-temp-compensated-capacitive-fuel-sensors-saudi)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Paris](/paris)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Paris, France. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[8-Channel DVRs by Atlanta Systems Supporting Full Visibility Requirements at LA/Long Beach](/blog/8-channel-dvrs-by-atlanta-systems-supporting-full-visibility-requirements-at-la-long-beach)**: In-depth telematics analysis and technical implementation guide.
+* **[Wireless Probes by Atlanta Systems Enabling Food Logistics Compliance Through Hamburg Port](/blog/wireless-probes-by-atlanta-systems-enabling-food-logistics-compliance-through-hamburg-port)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Multi-Tank Calibration Platforms by Atlanta Systems for São Paulo Complex Fuel Configurations](/blog/multi-tank-calibration-platforms-by-atlanta-systems-for-s-o-paulo-complex-fuel-configurations)**: Enterprise compliance protocols and field deployment architecture.

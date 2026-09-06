@@ -1,16 +1,22 @@
 import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { getAllLocations } from '@/lib/locations';
+export const metadata = {
+  title: 'GPS Tracking Devices & Fleet Management Software | Atlanta Systems',
+  description: 'Atlanta Systems delivers enterprise GPS tracking devices, AIS 140 compliant hardware, AI dash cams, fuel level monitoring, and video telematics across 27+ countries.',
+  alternates: {
+    canonical: 'https://www.atlantasys.com/',
+  },
+  openGraph: {
+    title: 'GPS Tracking Devices & Fleet Management Software | Atlanta Systems',
+    description: 'Atlanta Systems delivers enterprise GPS tracking devices, AIS 140 compliant hardware, AI dash cams, fuel level monitoring, and video telematics.',
+    url: 'https://www.atlantasys.com/',
+    siteName: 'Atlanta Systems',
+    type: 'website',
+  },
+};
 
 export default function HomePage() {
-  const locations = getAllLocations();
-
-  const menaLocations = locations.filter((l) => l.region === 'MENA');
-  const europeLocations = locations.filter((l) => l.region === 'Europe');
-  const usLocations = locations.filter((l) => l.region === 'US');
-  const latamLocations = locations.filter((l) => l.region === 'Latin America');
-
   return (
     <>
       <Header />
@@ -49,7 +55,7 @@ export default function HomePage() {
               <h2>Asset Management</h2>
               <p>Secure your assets, streamline operations, and ensure accuracy</p>
               <div className="banner-btn">
-                <Link href="/trackers/assets-telematics" className="default-btn btn-bg-two border-radius-50">Learn More <i className="far fa-chevron-right"></i></Link>
+                <Link href="/trackers/assets-&-personal-telematics" className="default-btn btn-bg-two border-radius-50">Learn More <i className="far fa-chevron-right"></i></Link>
               </div>
             </div>
           </div>
@@ -311,78 +317,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-
-      {/* Regional City Hubs Section */}
-      <section style={{ padding: '60px 0', background: '#f8fafc', borderTop: '1px solid #eee' }}>
-        <div className="container">
-          <div className="heading-title text-center mb-5">
-            <h2 style={{ fontSize: '32px', fontFamily: "'Oswald', sans-serif", color: '#1d2250' }}>Global Telematics &amp; Regional Compliance Hubs</h2>
-            <p style={{ color: '#666' }}>Providing city-localized fleet telemetry across MENA, Europe, US, and Latin America.</p>
-          </div>
-
-          <div className="row">
-            <div className="col-lg-3 col-md-6 mb-4">
-              <div style={{ background: '#fff', padding: '20px', borderRadius: '10px', border: '1px solid #e2e8f0', height: '100%' }}>
-                <h3 style={{ fontSize: '18px', color: '#0052cc', fontWeight: '700', marginBottom: '15px' }}>🇦🇪 MENA Region</h3>
-                <ul style={{ listStyle: 'none', padding: 0 }}>
-                  {menaLocations.map((loc) => (
-                    <li key={loc.slug} style={{ marginBottom: '8px' }}>
-                      <Link href={`/${loc.slug}`} style={{ color: '#1e293b', textDecoration: 'none', fontSize: '14px', fontWeight: '500' }}>
-                        📍 {loc.city}, {loc.country}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6 mb-4">
-              <div style={{ background: '#fff', padding: '20px', borderRadius: '10px', border: '1px solid #e2e8f0', height: '100%' }}>
-                <h3 style={{ fontSize: '18px', color: '#0052cc', fontWeight: '700', marginBottom: '15px' }}>🇪🇺 Europe &amp; UK</h3>
-                <ul style={{ listStyle: 'none', padding: 0 }}>
-                  {europeLocations.map((loc) => (
-                    <li key={loc.slug} style={{ marginBottom: '8px' }}>
-                      <Link href={`/${loc.slug}`} style={{ color: '#1e293b', textDecoration: 'none', fontSize: '14px', fontWeight: '500' }}>
-                        📍 {loc.city}, {loc.country}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6 mb-4">
-              <div style={{ background: '#fff', padding: '20px', borderRadius: '10px', border: '1px solid #e2e8f0', height: '100%' }}>
-                <h3 style={{ fontSize: '18px', color: '#0052cc', fontWeight: '700', marginBottom: '15px' }}>🇺🇸 United States</h3>
-                <ul style={{ listStyle: 'none', padding: 0 }}>
-                  {usLocations.map((loc) => (
-                    <li key={loc.slug} style={{ marginBottom: '8px' }}>
-                      <Link href={`/${loc.slug}`} style={{ color: '#1e293b', textDecoration: 'none', fontSize: '14px', fontWeight: '500' }}>
-                        📍 {loc.city}, {loc.country}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6 mb-4">
-              <div style={{ background: '#fff', padding: '20px', borderRadius: '10px', border: '1px solid #e2e8f0', height: '100%' }}>
-                <h3 style={{ fontSize: '18px', color: '#0052cc', fontWeight: '700', marginBottom: '15px' }}>🇲🇽 Latin America</h3>
-                <ul style={{ listStyle: 'none', padding: 0 }}>
-                  {latamLocations.map((loc) => (
-                    <li key={loc.slug} style={{ marginBottom: '8px' }}>
-                      <Link href={`/${loc.slug}`} style={{ color: '#1e293b', textDecoration: 'none', fontSize: '14px', fontWeight: '500' }}>
-                        📍 {loc.city}, {loc.country}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ Accordion Section */}
       <section className="faq-section pt-50 pb-50">

@@ -2,9 +2,9 @@
 
 * **Slug**: `ai-dual-lens-cameras-from-atlanta-systems-capturing-evidence-on-high-risk-bogot-corridors`
 * **Category**: Vehicle Telematics
-* **City**: Milan
-* **City Slug**: `milan`
-* **Country**: Italy
+* **City**: Bogotá
+* **City Slug**: `bogota`
+* **Country**: Colombia
 * **Geo Region**: Latin America
 * **Hardware Model**: VLT-100
 * **Author**: Atlanta Engineering Team
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/130-adas-systems-by-atlanta-systems-achieving-full-gsr-2024-comp)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/136-equalized-dual-tank-calibration-sao-paulo)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/142-dual-sim-multi-carrier-failover-gateways-dubai)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Bogotá](/bogota)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Bogotá, Colombia. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Indigenous Design and Manufacturing by Atlanta Systems Creating Desert-Optimized Hardware for Doha](/blog/indigenous-design-and-manufacturing-by-atlanta-systems-creating-desert-optimized-hardware-for-doha)**: In-depth telematics analysis and technical implementation guide.
+* **[DIAN Integration by Atlanta Systems Enhancing Security Visibility on Bogotá Freight Corridors](/blog/dian-integration-by-atlanta-systems-enhancing-security-visibility-on-bogot-freight-corridors)**: Engineering hardware specifications and fleet performance benchmark.
+* **[GPS Taxi Meters from Atlanta Systems Meeting Regulatory Standards in Dubai and Riyadh](/blog/gps-taxi-meters-from-atlanta-systems-meeting-regulatory-standards-in-dubai-and-riyadh)**: Enterprise compliance protocols and field deployment architecture.

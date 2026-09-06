@@ -9,6 +9,13 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.atlantasys.com/career',
   },
+  openGraph: {
+    title: 'Career Opportunities & Hardware R&D Jobs | Atlanta Systems',
+    description: 'Explore hardware engineering, embedded systems, and software developer roles at Atlanta Systems.',
+    url: 'https://www.atlantasys.com/career',
+    siteName: 'Atlanta Systems',
+    type: 'website',
+  },
 };
 
 export default function CareerPage() {

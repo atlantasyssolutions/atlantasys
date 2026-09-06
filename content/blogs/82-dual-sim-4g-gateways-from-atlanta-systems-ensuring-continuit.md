@@ -5,7 +5,7 @@
 * **City**: Muscat
 * **City Slug**: `muscat`
 * **Country**: Oman
-* **Geo Region**: Global Logistics
+* **Geo Region**: MENA
 * **Hardware Model**: VLT-100
 * **Author**: Atlanta Engineering Team
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Muscat](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Muscat, Oman.
-* **[Related Technical Deep-Dive 1](/blog/826-system-latency-optimization-for-sub-second-regional-transpor)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/836-prognostic-fault-code-pattern-recognition-for-commercial-eng)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/848-driver-fatigue-and-distraction-detection-under-varying-cabin)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Muscat](/muscat)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Muscat, Oman. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Industrial Gateways from Atlanta Systems Collecting Sensor Streams Across Chilean Port Corridors](/blog/industrial-gateways-from-atlanta-systems-collecting-sensor-streams-across-chilean-port-corridors)**: In-depth telematics analysis and technical implementation guide.
+* **[WASAL and TAMEEM Integration by Atlanta Systems for Real-Time Reporting Across Dammam Petrochemical Routes](/blog/wasal-and-tameem-integration-by-atlanta-systems-for-real-time-reporting-across-dammam-petrochemical-routes)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Predictive DTC Diagnostics by Atlanta Systems Reducing Unplanned Stops on Los Angeles Corridors](/blog/predictive-dtc-diagnostics-by-atlanta-systems-reducing-unplanned-stops-on-los-angeles-corridors)**: Enterprise compliance protocols and field deployment architecture.

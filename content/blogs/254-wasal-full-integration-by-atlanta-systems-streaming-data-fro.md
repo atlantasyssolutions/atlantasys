@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Riyadh](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Riyadh, Saudi Arabia.
-* **[Related Technical Deep-Dive 1](/blog/258-high-altitude-mtc-hardware-from-atlanta-systems-performing-o)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/263-capacitive-fuel-level-probes-by-atlanta-systems-mitigating-siphoning-fraud-in-heavy-desert-haulage-263)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/27-uae-rta-and-wasal-compliant-gateways-from-atlanta-systems-op)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Riyadh](/riyadh)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Riyadh, Saudi Arabia. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[WASAL and TAMEEM Integration by Atlanta Systems for Real-Time Reporting Across Dammam Petrochemical Routes](/blog/wasal-and-tameem-integration-by-atlanta-systems-for-real-time-reporting-across-dammam-petrochemical-routes)**: In-depth telematics analysis and technical implementation guide.
+* **[Real-Time Anti-Siphoning Alerts by Atlanta Systems on Casablanca Port Access Roads](/blog/real-time-anti-siphoning-alerts-by-atlanta-systems-on-casablanca-port-access-roads)**: Engineering hardware specifications and fleet performance benchmark.
+* **[J1939 CAN Readers by Atlanta Systems Extracting Real-Time Data from Volvo FH Units on Hamburg Port Routes](/blog/j1939-can-readers-by-atlanta-systems-extracting-real-time-data-from-volvo-fh-units-on-hamburg-port-routes)**: Enterprise compliance protocols and field deployment architecture.

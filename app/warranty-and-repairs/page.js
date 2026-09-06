@@ -4,6 +4,16 @@ import Footer from '@/components/layout/Footer';
 export const metadata = {
   title: 'Warranty & Repairs Policy | Atlanta Systems',
   description: 'Atlanta Systems hardware warranty coverage, RMA process, and repair guidelines for GPS devices and telematics hardware.',
+  alternates: {
+    canonical: 'https://www.atlantasys.com/warranty-and-repairs',
+  },
+  openGraph: {
+    title: 'Warranty & Repairs Policy | Atlanta Systems',
+    description: 'Atlanta Systems hardware warranty coverage, RMA process, and repair guidelines.',
+    url: 'https://www.atlantasys.com/warranty-and-repairs',
+    siteName: 'Atlanta Systems',
+    type: 'website',
+  },
 };
 
 export default function WarrantyPage() {

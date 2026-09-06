@@ -2,10 +2,10 @@
 
 * **Slug**: `fmcsa-eld-part-395-end-to-end-by-atlanta-systems-for-chicago-intermodal-compliance`
 * **Category**: Vehicle Telematics
-* **City**: Milan
-* **City Slug**: `milan`
-* **Country**: Italy
-* **Geo Region**: United States
+* **City**: Chicago
+* **City Slug**: `chicago`
+* **Country**: United States
+* **Geo Region**: North America
 * **Hardware Model**: VLT-100
 * **Author**: Atlanta Engineering Team
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/213-tachograph-2-0-interfaces-from-atlanta-systems-supporting-se)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/219-dian-integration-by-atlanta-systems-enhancing-security-visib)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/225-predictive-fault-code-analysis-by-atlanta-systems-reducing-d)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Chicago](/chicago)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Chicago, United States. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[ANTT Tracking Solutions from Atlanta Systems Delivering Continuous Visibility to Santos Port](/blog/antt-tracking-solutions-from-atlanta-systems-delivering-continuous-visibility-to-santos-port)**: In-depth telematics analysis and technical implementation guide.
+* **[Generator and Reefer Fuel Tracking by Atlanta Systems at Houston Container Terminals](/blog/generator-and-reefer-fuel-tracking-by-atlanta-systems-at-houston-container-terminals)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Anti-Siphoning Alerts from Atlanta Systems Triggered in Real Time on Kuwait City Sixth Ring Road](/blog/anti-siphoning-alerts-from-atlanta-systems-triggered-in-real-time-on-kuwait-city-sixth-ring-road)**: Enterprise compliance protocols and field deployment architecture.

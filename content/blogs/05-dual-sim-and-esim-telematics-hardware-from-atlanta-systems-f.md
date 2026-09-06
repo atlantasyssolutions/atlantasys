@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Riyadh](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Riyadh, Saudi Arabia.
-* **[Related Technical Deep-Dive 1](/blog/09-8-channel-mdvr-solutions-from-atlanta-systems-for-complex-mu)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/103-spn-fmi-fault-code-parsing-houston-energy)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/11-dms-fatigue-monitoring-madrid-a2-a3)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Riyadh](/riyadh)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Riyadh, Saudi Arabia. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Digital Taxi Meters from Atlanta Systems Serving Regulated Markets in Dubai and Abu Dhabi](/blog/digital-taxi-meters-from-atlanta-systems-serving-regulated-markets-in-dubai-and-abu-dhabi)**: In-depth telematics analysis and technical implementation guide.
+* **[Capacitive Fuel Probes from Atlanta Systems Stopping Theft on Riyadh Ring Road Lay-bys](/blog/capacitive-fuel-probes-from-atlanta-systems-stopping-theft-on-riyadh-ring-road-lay-bys)**: Engineering hardware specifications and fleet performance benchmark.
+* **[4-Channel Mobile DVRs by Atlanta Systems for Complete Cabin and Road Coverage in Warsaw A2 Corridor Fleets](/blog/4-channel-mobile-dvrs-by-atlanta-systems-for-complete-cabin-and-road-coverage-in-warsaw-a2-corridor-fleets)**: Enterprise compliance protocols and field deployment architecture.

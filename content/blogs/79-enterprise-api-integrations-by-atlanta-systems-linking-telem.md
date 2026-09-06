@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Rotterdam](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Rotterdam, Netherlands.
-* **[Related Technical Deep-Dive 1](/blog/795-eliminating-fare-processing-errors-using-gps-correlated-fare)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/805-hazardous-area-sensor-approvals-for-flammable-fluid-and-chem)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/817-radio-frequency-signal-propagation-characteristics-inside-en)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Rotterdam](/rotterdam)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Rotterdam, Netherlands. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Dual-SIM Gateways by Atlanta Systems Maintaining Connectivity on Muscat Coastal Corridors](/blog/dual-sim-gateways-by-atlanta-systems-maintaining-connectivity-on-muscat-coastal-corridors)**: In-depth telematics analysis and technical implementation guide.
+* **[ADAS Packages from Atlanta Systems Meeting GSR 2024 Standards on Paris Motorway Networks](/blog/adas-packages-from-atlanta-systems-meeting-gsr-2024-standards-on-paris-motorway-networks)**: Engineering hardware specifications and fleet performance benchmark.
+* **[DMS Distraction Monitoring by Atlanta Systems for Drivers on Long Jeddah–Riyadh Highway 40 Hauls](/blog/dms-distraction-monitoring-by-atlanta-systems-for-drivers-on-long-jeddah-riyadh-highway-40-hauls)**: Enterprise compliance protocols and field deployment architecture.

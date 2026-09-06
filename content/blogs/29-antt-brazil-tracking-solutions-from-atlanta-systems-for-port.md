@@ -2,9 +2,9 @@
 
 * **Slug**: `antt-brazil-tracking-solutions-from-atlanta-systems-for-port-of-santos-and-s-o-paulo-interstate-fleets`
 * **Category**: Vehicle Telematics
-* **City**: Milan
-* **City Slug**: `milan`
-* **Country**: Italy
+* **City**: São Paulo
+* **City Slug**: `sao-paulo`
+* **Country**: Brazil
 * **Geo Region**: Latin America
 * **Hardware Model**: VLT-100
 * **Author**: Atlanta Engineering Team
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/293-capacitive-fuel-level-probes-by-atlanta-systems-mitigating-siphoning-fraud-in-heavy-desert-haulage-293)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/299-capacitive-fuel-level-probes-by-atlanta-systems-mitigating-siphoning-fraud-in-heavy-desert-haulage-299)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/309-capacitive-probes-from-atlanta-systems-cutting-losses-at-rem)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in São Paulo](/sao-paulo)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in São Paulo, Brazil. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Eco-Scoring Dashboards from Atlanta Systems Coaching Drivers on Antwerp E17/E34 Chemical Corridors](/blog/eco-scoring-dashboards-from-atlanta-systems-coaching-drivers-on-antwerp-e17-e34-chemical-corridors)**: In-depth telematics analysis and technical implementation guide.
+* **[BSD Blind Spot Detection Hardware by Atlanta Systems Protecting Urban Fleets in Mexico City’s Periférico](/blog/bsd-blind-spot-detection-hardware-by-atlanta-systems-protecting-urban-fleets-in-mexico-citys-perif-rico)**: Engineering hardware specifications and fleet performance benchmark.
+* **[BLE 5.0 Beacons by Atlanta Systems Enabling Multi-Zone Temperature Mapping on Warsaw Pharma Routes](/blog/ble-5-0-beacons-by-atlanta-systems-enabling-multi-zone-temperature-mapping-on-warsaw-pharma-routes)**: Enterprise compliance protocols and field deployment architecture.

@@ -2,10 +2,10 @@
 
 * **Slug**: `nom-012-tools-by-atlanta-systems-capturing-required-data-on-monterrey-border-corridors`
 * **Category**: Vehicle Telematics
-* **City**: Milan
-* **City Slug**: `milan`
-* **Country**: Italy
-* **Geo Region**: Global Logistics
+* **City**: Mexico City
+* **City Slug**: `mexico-city`
+* **Country**: Mexico
+* **Geo Region**: Latin America
 * **Hardware Model**: VLT-100
 * **Author**: Atlanta Engineering Team
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/191-ais-140-gps-trackers-india-nh-44)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/197-ai-dual-lens-dash-cams-la-i-10)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/203-real-time-anti-siphoning-alerts-from-atlanta-systems-on-riya)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Mexico City](/mexico-city)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Mexico City, Mexico. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Eco-Scoring Dashboards from Atlanta Systems Coaching Drivers on Antwerp E17/E34 Chemical Corridors](/blog/eco-scoring-dashboards-from-atlanta-systems-coaching-drivers-on-antwerp-e17-e34-chemical-corridors)**: In-depth telematics analysis and technical implementation guide.
+* **[4-Channel MDVRs from Atlanta Systems Covering Road and Cabin on Bogotá Andean Routes](/blog/4-channel-mdvrs-from-atlanta-systems-covering-road-and-cabin-on-bogot-andean-routes)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Atlanta Systems Capacitive Probes Reducing Fuel Theft on Dubai E11 Checkpoint Idling](/blog/atlanta-systems-capacitive-probes-reducing-fuel-theft-on-dubai-e11-checkpoint-idling)**: Enterprise compliance protocols and field deployment architecture.

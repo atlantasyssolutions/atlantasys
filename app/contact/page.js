@@ -3,14 +3,49 @@ import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Contact Us & Career Opportunities | Atlanta Systems',
-  description: 'Get in touch with Atlanta Systems for GPS tracking, IoT telematics hardware, enterprise solutions, and career opportunities.',
+  title: 'Contact Us & Wholesale Telematics Inquiry | Atlanta Systems',
+  description: 'Get in touch with Atlanta Systems for GPS tracking, IoT telematics hardware, direct manufacturer wholesale pricing, and career opportunities.',
+  alternates: {
+    canonical: 'https://www.atlantasys.com/contact',
+  },
+  openGraph: {
+    title: 'Contact Us & Wholesale Telematics Inquiry | Atlanta Systems',
+    description: 'Get in touch with Atlanta Systems for GPS tracking, IoT telematics hardware, and wholesale enterprise fleet solutions.',
+    url: 'https://www.atlantasys.com/contact',
+    siteName: 'Atlanta Systems',
+    type: 'website',
+  },
+};
+
+const contactSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Contact Atlanta Systems',
+  url: 'https://www.atlantasys.com/contact',
+  description: 'Contact Atlanta Systems executive headquarters for telematics hardware and enterprise fleet deployments.',
+  mainEntity: {
+    '@type': 'Organization',
+    name: 'Atlanta Systems Pvt. Ltd.',
+    telephone: '+91-11-40131433',
+    email: 'info@atlantasys.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'M-135, 2nd Floor, Outer Circle, Connaught Place',
+      addressLocality: 'New Delhi',
+      postalCode: '110001',
+      addressCountry: 'IN',
+    },
+  },
 };
 
 export default function ContactPage() {
   return (
     <>
       <Header />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
 
       <div className="inner-banner" style={{ background: '#FFFFFF', padding: '40px 0 20px', borderBottom: '1px solid #E2E8F0' }}>
         <div className="container">

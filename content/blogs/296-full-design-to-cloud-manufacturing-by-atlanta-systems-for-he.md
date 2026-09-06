@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Kuwait City](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Kuwait City, Kuwait.
-* **[Related Technical Deep-Dive 1](/blog/299-j1939-readers-from-atlanta-systems-streaming-data-for-housto)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/308-bsd-hardware-by-atlanta-systems-boosting-safety-in-dense-s-o)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/32-gps-digital-taxi-meters-from-atlanta-systems-serving-regulat)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Kuwait City](/kuwait-city)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Kuwait City, Kuwait. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Dual-SIM and eSIM Telematics Hardware from Atlanta Systems for Cross-Border Reliability on the Riyadh–Dammam Highway 40](/blog/dual-sim-and-esim-telematics-hardware-from-atlanta-systems-for-cross-border-reliability-on-the-riyadh-dammam-highway-40)**: In-depth telematics analysis and technical implementation guide.
+* **[Android POS Terminals by Atlanta Systems Powering Fare Collection on Cairo and Casablanca Transit](/blog/android-pos-terminals-by-atlanta-systems-powering-fare-collection-on-cairo-and-casablanca-transit)**: Engineering hardware specifications and fleet performance benchmark.
+* **[AI Dual-Lens Dash Cams from Atlanta Systems Reducing Accidents on Los Angeles I-710 Port Drayage Routes](/blog/ai-dual-lens-dash-cams-from-atlanta-systems-reducing-accidents-on-los-angeles-i-710-port-drayage-routes)**: Enterprise compliance protocols and field deployment architecture.

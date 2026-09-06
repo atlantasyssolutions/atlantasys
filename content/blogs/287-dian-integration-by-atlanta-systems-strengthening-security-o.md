@@ -2,10 +2,10 @@
 
 * **Slug**: `dian-integration-by-atlanta-systems-strengthening-security-on-bogot-freight-movements`
 * **Category**: Heavy Assets & Diagnostics
-* **City**: Milan
-* **City Slug**: `milan`
-* **Country**: Italy
-* **Geo Region**: Global Logistics
+* **City**: Bogotá
+* **City Slug**: `bogota`
+* **Country**: Colombia
+* **Geo Region**: Latin America
 * **Hardware Model**: EC-400 OBD2 / CAN J1939 Reader
 * **Author**: Atlanta Diagnostics Team
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/290-industrial-4g-lte-m-telematics-gateways-by-atlanta-systems-operating-in-mena-freight-hub-290)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/296-full-design-to-cloud-manufacturing-by-atlanta-systems-for-he)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/303-ai-dual-lens-cameras-from-atlanta-systems-delivering-evidenc)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Bogotá](/bogota)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Bogotá, Colombia. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[OBD-II Solutions by Atlanta Systems Supporting Diagnostics Across Phoenix Extreme Climate Fleets](/blog/obd-ii-solutions-by-atlanta-systems-supporting-diagnostics-across-phoenix-extreme-climate-fleets)**: In-depth telematics analysis and technical implementation guide.
+* **[High-Altitude MTC Hardware from Atlanta Systems Performing on Peruvian Andean Corridors](/blog/high-altitude-mtc-hardware-from-atlanta-systems-performing-on-peruvian-andean-corridors)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Multi-Tank Calibration Platforms from Atlanta Systems Serving Brazilian Interstate Operators](/blog/multi-tank-calibration-platforms-from-atlanta-systems-serving-brazilian-interstate-operators)**: Enterprise compliance protocols and field deployment architecture.

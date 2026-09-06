@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Warsaw](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Warsaw, Poland.
-* **[Related Technical Deep-Dive 1](/blog/856-edge-processing-protocols-for-instantaneous-alarm-generation)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/866-satellite-positioning-accuracy-evaluation-in-high-elevation-)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/878-inertial-sensor-integration-for-position-continuation-in-sat)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Warsaw](/warsaw)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Warsaw, Poland. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[IFTA Reporting Engines from Atlanta Systems Automating Filings for Memphis Hub Fleets](/blog/ifta-reporting-engines-from-atlanta-systems-automating-filings-for-memphis-hub-fleets)**: In-depth telematics analysis and technical implementation guide.
+* **[BLE 5.0 Beacons by Atlanta Systems Enabling GDP-Compliant Mapping into Warsaw Pharma Hubs](/blog/ble-5-0-beacons-by-atlanta-systems-enabling-gdp-compliant-mapping-into-warsaw-pharma-hubs)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Generator and Reefer Fuel Tracking by Atlanta Systems at Houston Container Terminals](/blog/generator-and-reefer-fuel-tracking-by-atlanta-systems-at-houston-container-terminals)**: Enterprise compliance protocols and field deployment architecture.

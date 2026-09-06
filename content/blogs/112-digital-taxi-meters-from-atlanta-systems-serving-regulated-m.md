@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Dubai](/trackers/vehicle-telematics)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dubai, United Arab Emirates.
-* **[Related Technical Deep-Dive 1](/blog/116-20-point-tank-calibration-sao-paulo-rigs)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/121-arai-certified-ais-140-gps-trackers-india-transit)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/128-4-channel-mdvrs-by-atlanta-systems-delivering-full-cabin-vis)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Dubai](/dubai)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dubai, United Arab Emirates. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[UAE RTA Compliant Devices from Atlanta Systems Covering Dubai and Abu Dhabi Port Corridors](/blog/uae-rta-compliant-devices-from-atlanta-systems-covering-dubai-and-abu-dhabi-port-corridors)**: In-depth telematics analysis and technical implementation guide.
+* **[Capacitive Probes from Atlanta Systems Mitigating Losses at Remote Abu Dhabi Parking Areas](/blog/capacitive-probes-from-atlanta-systems-mitigating-losses-at-remote-abu-dhabi-parking-areas)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Custom Webhooks and APIs from Atlanta Systems Integrating with ERP Systems at Port of Long Beach](/blog/custom-webhooks-and-apis-from-atlanta-systems-integrating-with-erp-systems-at-port-of-long-beach)**: Enterprise compliance protocols and field deployment architecture.

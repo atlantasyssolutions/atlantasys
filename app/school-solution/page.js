@@ -9,6 +9,13 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.atlantasys.com/school-solution',
   },
+  openGraph: {
+    title: 'School Bus Student Safety & GPS Fleet Tracking Solution | Atlanta Systems',
+    description: 'Real-time school bus tracking, parent notification app, RFID student attendance logging, and emergency SOS alerts.',
+    url: 'https://www.atlantasys.com/school-solution',
+    siteName: 'Atlanta Systems',
+    type: 'website',
+  },
 };
 
 export default function SchoolSolutionPage() {

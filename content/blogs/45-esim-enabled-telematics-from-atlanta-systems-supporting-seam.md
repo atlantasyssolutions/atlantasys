@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/455-gsr-2024-adas-from-atlanta-systems-validated-on-milan-alpine)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/465-school-bus-platforms-with-apps-from-atlanta-systems-in-houst)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/477-ble-beacons-from-atlanta-systems-supporting-gdp-mapping-for-)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Milan](/milan)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[BLE Beacons from Atlanta Systems Enabling Accurate Zone Mapping for Warsaw Pharma Loads](/blog/ble-beacons-from-atlanta-systems-enabling-accurate-zone-mapping-for-warsaw-pharma-loads)**: In-depth telematics analysis and technical implementation guide.
+* **[Multi-Tank Tools by Atlanta Systems Supporting Complex Fuel Systems in Brazilian Fleets](/blog/multi-tank-tools-by-atlanta-systems-supporting-complex-fuel-systems-in-brazilian-fleets)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Smart Parking Geofencing by Atlanta Systems Optimizing Space for Fleets in Seattle and Phoenix](/blog/smart-parking-geofencing-by-atlanta-systems-optimizing-space-for-fleets-in-seattle-and-phoenix)**: Enterprise compliance protocols and field deployment architecture.

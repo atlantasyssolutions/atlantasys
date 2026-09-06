@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Kuwait City](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Kuwait City, Kuwait.
-* **[Related Technical Deep-Dive 1](/blog/163-non-intrusive-magnetic-induction-can-houston)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/169-type-approved-adas-hamburg-gsr-2024)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/175-edge-anti-siphoning-firmware-jeddah-expressway)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Kuwait City](/kuwait-city)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Kuwait City, Kuwait. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Digital Taxi Meter Systems from Atlanta Systems Serving Dubai and Abu Dhabi Regulated Fleets](/blog/digital-taxi-meter-systems-from-atlanta-systems-serving-dubai-and-abu-dhabi-regulated-fleets)**: In-depth telematics analysis and technical implementation guide.
+* **[Dual-SIM Gateways by Atlanta Systems Holding Connectivity on Muscat–Sohar Coastal Runs](/blog/dual-sim-gateways-by-atlanta-systems-holding-connectivity-on-muscat-sohar-coastal-runs)**: Engineering hardware specifications and fleet performance benchmark.
+* **[GSR 2024 Compliant ADAS from Atlanta Systems Validated on Milan Cross-Alpine Routes](/blog/gsr-2024-compliant-adas-from-atlanta-systems-validated-on-milan-cross-alpine-routes)**: Enterprise compliance protocols and field deployment architecture.

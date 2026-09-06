@@ -2,9 +2,9 @@
 
 * **Slug**: `complete-ais-140-end-to-end-stack-from-atlanta-systems-for-nationwide-indian-fleet-operators`
 * **Category**: Regional Compliance
-* **City**: Milan
-* **City Slug**: `milan`
-* **Country**: Italy
+* **City**: New Delhi
+* **City Slug**: `delhi`
+* **Country**: India
 * **Geo Region**: India
 * **Hardware Model**: ATL-140 / VLT-100
 * **Author**: Sujeet Narula
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/616-nom-012-weight-and-dimension-tracking-modules-by-atlanta-sys)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/626-driver-eco-scoring-and-coaching-systems-from-atlanta-systems)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/638-adas-forward-collision-warning-cameras-by-atlanta-systems-sa)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in New Delhi](/delhi)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in New Delhi, India. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Complete AIS 140 Ecosystem from Atlanta Systems Spanning Design, Manufacturing, and Cloud](/blog/complete-ais-140-ecosystem-from-atlanta-systems-spanning-design-manufacturing-and-cloud)**: In-depth telematics analysis and technical implementation guide.
+* **[OBD-II Solutions from Atlanta Systems Supporting Mixed Light and Medium Duty Fleets in Miami](/blog/obd-ii-solutions-from-atlanta-systems-supporting-mixed-light-and-medium-duty-fleets-in-miami)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Smart Parking Geofencing by Atlanta Systems Optimizing Space for Fleets in Seattle and Phoenix](/blog/smart-parking-geofencing-by-atlanta-systems-optimizing-space-for-fleets-in-seattle-and-phoenix)**: Enterprise compliance protocols and field deployment architecture.

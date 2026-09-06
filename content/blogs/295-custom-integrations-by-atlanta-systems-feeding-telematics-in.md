@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Rotterdam](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Rotterdam, Netherlands.
-* **[Related Technical Deep-Dive 1](/blog/299-capacitive-fuel-level-probes-by-atlanta-systems-mitigating-siphoning-fraud-in-heavy-desert-haulage-299)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/307-dms-monitoring-from-atlanta-systems-identifying-fatigue-risk)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/319-ifta-engines-from-atlanta-systems-automating-complete-filing)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Rotterdam](/rotterdam)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Rotterdam, Netherlands. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[AI Dual-Lens Dash Cams from Atlanta Systems Reducing Accidents on Los Angeles I-710 Port Drayage Routes](/blog/ai-dual-lens-dash-cams-from-atlanta-systems-reducing-accidents-on-los-angeles-i-710-port-drayage-routes)**: In-depth telematics analysis and technical implementation guide.
+* **[DMS Driver Fatigue Monitoring from Atlanta Systems for Long-Haul Drivers on Madrid’s A-2 and A-3 Corridors](/blog/dms-driver-fatigue-monitoring-from-atlanta-systems-for-long-haul-drivers-on-madrids-a-2-and-a-3-corridors)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Anti-Siphoning Alerts from Atlanta Systems Firing Instantly on Casablanca Access Roads](/blog/anti-siphoning-alerts-from-atlanta-systems-firing-instantly-on-casablanca-access-roads)**: Enterprise compliance protocols and field deployment architecture.

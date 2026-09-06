@@ -5,7 +5,7 @@
 * **City**: Dammam
 * **City Slug**: `dammam`
 * **Country**: Saudi Arabia
-* **Geo Region**: Global Logistics
+* **Geo Region**: MENA
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
 * **Author**: Tariq Al-Mansoor
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Dammam](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dammam, Saudi Arabia.
-* **[Related Technical Deep-Dive 1](/blog/178-ble-beacons-from-atlanta-systems-enabling-precise-mapping-fo)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/183-ifta-reporting-automation-by-atlanta-systems-for-multi-juris)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/19-wireless-temperature-and-humidity-probes-from-atlanta-system)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Dammam](/dammam)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Dammam, Saudi Arabia. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[Ultrasonic Fuel Sensors by Atlanta Systems for Multi-Tank Accuracy in Abu Dhabi’s Khalifa Port Operations](/blog/ultrasonic-fuel-sensors-by-atlanta-systems-for-multi-tank-accuracy-in-abu-dhabis-khalifa-port-operations)**: In-depth telematics analysis and technical implementation guide.
+* **[End-to-End Manufacturing by Atlanta Systems Creating Optimized Hardware for Doha Heat Conditions](/blog/end-to-end-manufacturing-by-atlanta-systems-creating-optimized-hardware-for-doha-heat-conditions)**: Engineering hardware specifications and fleet performance benchmark.
+* **[NOM-012 Modules by Atlanta Systems Capturing Weight Data on Mexico City Distribution Routes](/blog/nom-012-modules-by-atlanta-systems-capturing-weight-data-on-mexico-city-distribution-routes)**: Enterprise compliance protocols and field deployment architecture.

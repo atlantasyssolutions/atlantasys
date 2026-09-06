@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/113-tanker-siphoning-alert-riyadh-ring-roads)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/119-multi-zone-temp-humidity-frankfurt-hub)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/125-esim-enabled-devices-from-atlanta-systems-supporting-roaming)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Milan](/milan)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[School Bus Tracking and Parent Apps from Atlanta Systems Deployed Across Atlanta Metro Districts](/blog/school-bus-tracking-and-parent-apps-from-atlanta-systems-deployed-across-atlanta-metro-districts)**: In-depth telematics analysis and technical implementation guide.
+* **[4-Channel MDVRs by Atlanta Systems Providing Full Visibility for School Buses in Santiago](/blog/4-channel-mdvrs-by-atlanta-systems-providing-full-visibility-for-school-buses-in-santiago)**: Engineering hardware specifications and fleet performance benchmark.
+* **[Remote Immobilizers by Atlanta Systems Securing Assets During Overnight Stops Near Port of Hamburg](/blog/remote-immobilizers-by-atlanta-systems-securing-assets-during-overnight-stops-near-port-of-hamburg)**: Enterprise compliance protocols and field deployment architecture.

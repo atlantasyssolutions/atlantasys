@@ -2,10 +2,10 @@
 
 * **Slug**: `4-channel-mdvrs-by-atlanta-systems-delivering-full-cabin-visibility-for-santiago-school-fleets`
 * **Category**: AI Video Telematics
-* **City**: Milan
-* **City Slug**: `milan`
-* **Country**: Italy
-* **Geo Region**: Global Logistics
+* **City**: Santiago
+* **City Slug**: `santiago`
+* **Country**: Chile
+* **Geo Region**: Latin America
 * **Hardware Model**: VTC-300 / VTC-500 Mobile DVR
 * **Author**: Piotr Kowalski
 * **Published Date**: 2026-08-29
@@ -123,11 +123,11 @@ To learn more about deploying advanced B2B telematics hardware and software acro
 ### 🚀 Recommended Hardware & Sensors:
 * **[Atlanta AIS-140 VLT-100 Commercial Vehicle Tracker](/trackers/vehicle-telematics)**: ARAI & MoRTH certified GPS tracking unit with panic buttons and dual SIM failover.
 * **[Atlanta VTC-100 & VTC-500 AI Video Dash Cams](/trackers/video-telematics)**: Dual-lens ADAS & DMS video telematics with 77GHz side blind spot radar fusion.
-* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/fuel-telematics)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
-* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/cold-chain-telematics)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
+* **[Atlanta FL-400 & FL-700 High-Precision Fuel Sensors](/trackers/iot-sensors)**: Capacitive & non-invasive ultrasonic fuel probes for real-time anti-siphoning alerts.
+* **[Atlanta SenseEV BLE 5.0 Cold Chain Temperature Loggers](/trackers/iot-sensors)**: WHO GDP certified wireless temperature and relative humidity beacons for reefer fleets.
 
 ### 🏙️ Regional Hub & Knowledge Links:
-* **[Explore All Commercial Fleet Telematics Solutions for Milan](/locations)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Milan, Italy.
-* **[Related Technical Deep-Dive 1](/blog/130-senseev-ble-5-wireless-temp-sensors-warsaw)**: Engineering analysis and hardware setup protocol.
-* **[Related Technical Deep-Dive 2](/blog/136-multi-tank-calibration-by-atlanta-systems-serving-complex-co)**: Diagnostic algorithm analysis and enterprise portal integration.
-* **[Related Technical Deep-Dive 3](/blog/142-fmcsa-eld-part-395-end-to-end-solution-by-atlanta-systems-fo)**: Regulatory compliance framework and field deployment guidelines.
+* **[Explore Commercial Fleet Telematics Solutions in Santiago](/santiago)**: Hardware stacks, local compliance guides, and field case studies for fleets operating in Santiago, Chile. Browse our [Global Telematics Locations Directory](/locations) for regional engineering hubs.
+* **[GSR 2024 Ready ADAS Packages from Atlanta Systems for Milan Alpine Crossing Fleets](/blog/gsr-2024-ready-adas-packages-from-atlanta-systems-for-milan-alpine-crossing-fleets)**: In-depth telematics analysis and technical implementation guide.
+* **[ANTT Continuous Tracking by Atlanta Systems for São Paulo to Santos Container Movements](/blog/antt-continuous-tracking-by-atlanta-systems-for-s-o-paulo-to-santos-container-movements)**: Engineering hardware specifications and fleet performance benchmark.
+* **[WASAL Real-Time Integration by Atlanta Systems for Continuous Reporting from Dammam Industrial Zones](/blog/wasal-real-time-integration-by-atlanta-systems-for-continuous-reporting-from-dammam-industrial-zones)**: Enterprise compliance protocols and field deployment architecture.
