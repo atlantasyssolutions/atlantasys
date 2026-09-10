@@ -61,6 +61,51 @@ export default function ProductCatalog({ initialCategory = 'all' }) {
     }
   ];
 
+  const availableFilterOptions = useMemo(() => {
+    const available = {};
+    filterGroups.forEach(g => available[g.id] = new Set());
+    
+    // Compute available filters based on products in the current category
+    const categoryProducts = productsData.filter(product => 
+      activeCategory === 'all' || product.category === activeCategory
+    );
+
+    categoryProducts.forEach(product => {
+      const allSpecs = product.specsGrouped?.flatMap(g => g.items) || [];
+      const flatSpecs = Object.values(product.specs || {}).map(v => String(v));
+
+      filterGroups.forEach(group => {
+        const nameBasedGroups = ['hardwareconnectors', 'connectivity', 'antennas'];
+        const valueBasedGroups = ['powersupply', 'bluetooth', 'sim', 'ingressprotection', 'battery', 'memory'];
+
+        group.options.forEach(opt => {
+          const lowerOpt = opt.toLowerCase();
+          let matchInGrouped = false;
+          
+          if (nameBasedGroups.includes(group.id)) {
+            matchInGrouped = allSpecs.some(spec => spec.name && spec.name.toLowerCase().includes(lowerOpt));
+          } else if (valueBasedGroups.includes(group.id)) {
+            matchInGrouped = allSpecs.some(spec => spec.value && spec.value.toLowerCase().includes(lowerOpt));
+          } else {
+            matchInGrouped = allSpecs.some(spec => 
+              (spec.name && spec.name.toLowerCase().includes(lowerOpt)) || 
+              (spec.value && spec.value.toLowerCase().includes(lowerOpt))
+            );
+          }
+          
+          const matchInFlat = !matchInGrouped && flatSpecs.some(specVal => 
+            specVal.toLowerCase().includes(lowerOpt)
+          );
+
+          if (matchInGrouped || matchInFlat) {
+            available[group.id].add(opt);
+          }
+        });
+      });
+    });
+    return available;
+  }, [activeCategory]);
+
   const handleCheckboxChange = (group, value) => {
     setCurrentPage(1); // Reset page on filter change
     setSelectedFilters(prev => {
@@ -77,12 +122,18 @@ export default function ProductCatalog({ initialCategory = 'all' }) {
   };
 
   const toggleAccordion = (id) => {
-    setOpenAccordions(prev => ({ ...prev, [id]: !prev[id] }));
+    setOpenAccordions(prev => ({ ...prev, [id] : !prev[id] }));
   };
 
   const expandAllFilters = () => {
     const allOpen = {};
-    filterGroups.forEach(g => allOpen[g.id] = true);
+    filterGroups.forEach(g => {
+      // Only expand if there are actual options available
+      const validOptions = g.options.filter(opt => availableFilterOptions[g.id].has(opt));
+      if (validOptions.length > 0) {
+        allOpen[g.id] = true;
+      }
+    });
     setOpenAccordions(allOpen);
   };
 
@@ -93,18 +144,15 @@ export default function ProductCatalog({ initialCategory = 'all' }) {
         return false;
       }
 
-      // Check each filter group
+      // Check each filter group (AND between groups, OR within a group)
       for (const [group, selectedValues] of Object.entries(selectedFilters)) {
         if (selectedValues && selectedValues.length > 0) {
           const allSpecs = product.specsGrouped?.flatMap(g => g.items) || [];
           
-          // In legacy PHP, multiple selections within the same filter group use AND logic (HAVING SUM(x=?)>0 AND SUM(x=?)>0)
-          const match = selectedValues.every(val => {
+          // Use 'some' so that selecting multiple options in the same group acts as an OR condition
+          const match = selectedValues.some(val => {
             const lowerVal = val.toLowerCase();
             
-            // Legacy mapped groups:
-            // name-based: interface (hardwareconnectors), connectivity, antennas
-            // value-based: power, bluetooth, sim, ingress, battery, memory
             const nameBasedGroups = ['hardwareconnectors', 'connectivity', 'antennas'];
             const valueBasedGroups = ['powersupply', 'bluetooth', 'sim', 'ingressprotection', 'battery', 'memory'];
             
@@ -115,14 +163,12 @@ export default function ProductCatalog({ initialCategory = 'all' }) {
             } else if (valueBasedGroups.includes(group)) {
               matchInGrouped = allSpecs.some(spec => spec.value && spec.value.toLowerCase().includes(lowerVal));
             } else {
-              // Fallback
               matchInGrouped = allSpecs.some(spec => 
                 (spec.name && spec.name.toLowerCase().includes(lowerVal)) || 
                 (spec.value && spec.value.toLowerCase().includes(lowerVal))
               );
             }
 
-            // Fallback check in flat specs object if not found in grouped specs
             const matchInFlat = !matchInGrouped && Object.values(product.specs || {}).some(specVal => 
               String(specVal).toLowerCase().includes(lowerVal)
             );
@@ -159,11 +205,35 @@ export default function ProductCatalog({ initialCategory = 'all' }) {
         </div>
 
         <style dangerouslySetInnerHTML={{__html: `
-          .active-cat button {
-            color: #FFFFFF !important;
-            background: #1d2250 !important;
-            padding: 5px 20px;
-            border-radius: 5px;
+          .tabs--scrollable::-webkit-scrollbar {
+            height: 6px;
+          }
+          .tabs--scrollable::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 4px;
+          }
+          .product-cards {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #fff;
+            position: relative;
+          }
+          .product-cards:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+          }
+          .pro-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #1d2250;
+            color: #fff;
+            padding: 4px 10px;
+            font-size: 12px;
+            border-radius: 4px;
+            z-index: 10;
           }
           .accordion-button::after {
             display: none;
@@ -213,20 +283,97 @@ export default function ProductCatalog({ initialCategory = 'all' }) {
             font-weight: 600;
             background-color: rgba(13, 110, 253, 0.1);
           }
+          .tabs__toggle {
+            transition: all 0.25s ease;
+            border-radius: 12px;
+            padding: 16px 12px 14px;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            min-height: 145px;
+            background: #ffffff;
+            border: 1px solid #eef0f4;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            flex-shrink: 0;
+            cursor: pointer;
+            text-align: center;
+          }
+          .tabs__toggle:hover {
+            background: #fbfbfd;
+            border-color: #cbd5e1;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+          }
+          .tabs__toggle--active {
+            background: #ffffff !important;
+            border-color: #1d2250 !important;
+            box-shadow: 0 6px 18px rgba(29, 34, 80, 0.15) !important;
+          }
+          .tabs__toggle .content {
+            padding: 7px 18px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.25s ease;
+            margin-top: 14px;
+            white-space: nowrap;
+            background: #f1f3f7;
+            border: 1px solid #e2e8f0;
+          }
+          .tabs__toggle:hover .content {
+            background: #e5e9f0;
+            border-color: #cbd5e1;
+          }
+          .tabs__toggle .content h3 {
+            margin: 0;
+            font-size: 12px;
+            font-weight: 600;
+            color: #1d2250;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.25s ease;
+          }
+          .tabs__toggle--active .content {
+            background: #1d2250 !important;
+            border-color: #1d2250 !important;
+            box-shadow: 0 4px 10px rgba(29, 34, 80, 0.3) !important;
+          }
+          .tabs__toggle--active .content h3 {
+            color: #ffffff !important;
+          }
         `}} />
         <br />
-        <div className="list-design">
-          <div className="cata-sub-nav" align="center">
-            <ul>
-              <li className={activeCategory === 'all' ? 'active-cat' : ''}>
-                <button onClick={() => setActiveCategory('all')} style={{background: 'none', border: 'none', cursor: 'pointer', padding: '5px 20px', color: '#1d2250'}}>All Trackers</button>
-              </li>
-              {categories.map(cat => (
-                <li key={cat.id} className={activeCategory === cat.id ? 'active-cat' : ''}>
-                  <button onClick={() => setActiveCategory(cat.id)} style={{background: 'none', border: 'none', cursor: 'pointer', padding: '5px 20px', color: '#1d2250'}}>{cat.name}</button>
-                </li>
-              ))}
-            </ul>
+        <div className="tabs--container pt-4 pb-4">
+          <div className="container">
+            <div className="tabs js-tabs">
+              <div className="tabs--scrollable" style={{ display: 'flex', overflowX: 'auto', gap: '18px', padding: '10px 6px 20px 6px' }}>
+                <div 
+                  className={`tabs__toggle ${activeCategory === 'all' ? 'tabs__toggle--active' : ''}`} 
+                  onClick={() => setActiveCategory('all')} 
+                  style={{ minWidth: '155px' }}
+                >
+                  <img src="/assets/product_category/advanced.webp" alt="All Trackers" style={{ height: '70px', maxWidth: '100px', objectFit: 'contain' }} />
+                  <div className="content">
+                    <h3>All Trackers</h3>
+                  </div>
+                </div>
+                {categories.map(cat => (
+                  <div 
+                    className={`tabs__toggle ${activeCategory === cat.id ? 'tabs__toggle--active' : ''}`} 
+                    key={cat.id} 
+                    onClick={() => setActiveCategory(cat.id)} 
+                    style={{ minWidth: '155px' }}
+                  >
+                    <img src={cat.featuresImg.replace('essential.webp', 'essential.png')} alt={cat.name} style={{ height: '70px', maxWidth: '100px', objectFit: 'contain' }} />
+                    <div className="content">
+                      <h3>{cat.name}</h3>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -270,30 +417,33 @@ export default function ProductCatalog({ initialCategory = 'all' }) {
                   <h3>No Product Found!!!</h3>
                 ) : (
                   currentItems.map((product, idx) => (
-                    <div className={activeCategory === 'iot-sensors' || activeCategory === 'universal-find-devices' ? "col-md-4 d-flex" : "col-md-6 d-flex"} key={`${product.id}-${idx}`}>
-                      <Link href={`/product/${product.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'block', width: '100%' }}>
-                        <div className="row align-items-center justify-content-center pro-bx h-100">
-                          <div className="col-md-5">
-                            <img src={product.image} className="pro-imgs" alt={product.name} style={{ maxHeight: '150px', objectFit: 'contain' }} />
-                          </div>
-                          <div className="col-md-7">
-                            <div className="product-details">
-                              <h4>{product.name}</h4>
-                              <span>{product.tag || 'GPS Tracker'}</span>
-                              <ul>
+                    <div className="col-md-4 mb-4" key={`${product.id}-${idx}`}>
+                      <div className="inner-box h-100">
+                        <Link href={`/product/${product.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'block', height: '100%' }}>
+                          <div className="product-cards h-100 d-flex flex-column">
+                            <div className="pro-badge">{product.categoryName}</div>
+                            <div className="product-tumb d-flex align-items-center justify-content-center p-3" style={{ background: '#f8f9fa', minHeight: '200px' }}>
+                              <img src={product.image} alt={product.name} style={{ maxHeight: '180px', maxWidth: '100%', objectFit: 'contain' }} />
+                            </div>
+                            <div className="product-details flex-grow-1 d-flex flex-column p-3">
+                              <h4 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '15px' }}>{product.name}</h4>
+                              <ul className="list-unstyled mb-3 flex-grow-1">
                                 {product.features?.slice(0, 3).map((feat, fidx) => (
-                                  <li key={fidx}>{typeof feat === 'string' ? feat : (feat.name || feat.description || '')}</li>
+                                  <li key={fidx} style={{ fontSize: '13px', marginBottom: '8px', color: '#555' }}>
+                                    <i className="fas fa-check text-primary me-2"></i>
+                                    {typeof feat === 'string' ? feat : (feat.name || feat.description || '')}
+                                  </li>
                                 ))}
                               </ul>
-                              <div className="product-bottom-details">
+                              <div className="product-bottom-details mt-auto">
                                 <div className="product-price">
-                                  <span>View Details <i className="fas fa-angle-double-right"></i></span>
+                                  <span className="text-primary font-weight-bold" style={{ fontSize: '14px' }}>View Details <i className="fas fa-angle-double-right"></i></span>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                      </Link>
+                        </Link>
+                      </div>
                     </div>
                   ))
                 )}
@@ -327,6 +477,11 @@ export default function ProductCatalog({ initialCategory = 'all' }) {
               
               <div className="accordion" id="accordionStayOpen">
                 {filterGroups.map((group) => {
+                  const validOptions = group.options.filter(opt => availableFilterOptions[group.id].has(opt));
+                  
+                  // Hide filter group completely if there are no valid options for current products
+                  if (validOptions.length === 0) return null;
+
                   const isOpen = openAccordions[group.id];
                   return (
                     <div className="accordion-item" key={group.id}>
@@ -342,7 +497,7 @@ export default function ProductCatalog({ initialCategory = 'all' }) {
                       {isOpen && (
                         <div id={`collapse_${group.id}`} className="accordion-collapse collapse show">
                           <div className="accordion-body">
-                            {group.options.map(opt => (
+                            {validOptions.map(opt => (
                               <div className="list-group-item checkbox" key={opt}>
                                 <label>
                                   <input 

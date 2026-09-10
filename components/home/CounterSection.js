@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import GlobalPresenceMap from './GlobalPresenceMap';
 
 // Match exact values from the legacy PHP/CSS source
 const STATS = [
@@ -95,25 +96,12 @@ export default function CounterSection({ showMap = true }) {
       <div className="container">
         {showMap && (
           <>
-            <div className="heading-title">
+            <div className="heading-title mb-20">
               <h2>Global Presence</h2>
             </div>
-            <div className="row align-items-center justify-content-center">
-              <div className="col-lg-8 col-md-8">
-                <div className="map-container">
-                  <img
-                    src="/assets/img/map-back.webp"
-                    alt="Global presence map"
-                    loading="lazy"
-                  />
-                  <div className="point india tippy" title="India"></div>
-                  <div className="point qatar tippy" title="Qatar"></div>
-                  <div className="point bahrain tippy" title="Bahrain"></div>
-                  <div className="point kuwait tippy" title="Kuwait"></div>
-                  <div className="point malaysia tippy" title="Malaysia"></div>
-                  <div className="point singapore tippy" title="Singapore"></div>
-                  <div className="point philippines tippy" title="Philippines"></div>
-                </div>
+            <div className="row align-items-center justify-content-center mb-50">
+              <div className="col-12">
+                <GlobalPresenceMap />
               </div>
             </div>
           </>

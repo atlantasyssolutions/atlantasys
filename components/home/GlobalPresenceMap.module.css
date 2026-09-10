@@ -1,0 +1,450 @@
+.presenceWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  user-select: none;
+}
+
+/* Header Subtitle */
+.sectionSubtitle {
+  text-align: center;
+  max-width: 720px;
+  margin: -10px auto 28px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+/* Filter Controls */
+.filterBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.filterBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.filterBtn:hover {
+  border-color: #0284c7;
+  color: #0284c7;
+  background: #f0f9ff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.12);
+}
+
+.filterBtnActive {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  border-color: #0284c7;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+  transform: translateY(-1px);
+}
+
+.filterBadge {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.filterBtnActive .filterBadge {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* Map Canvas Container */
+.mapCard {
+  position: relative;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 24px 20px 20px;
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+  overflow: visible;
+}
+
+.mapViewport {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: visible;
+}
+
+.mapImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.92;
+  pointer-events: none;
+}
+
+/* SVG Overlay */
+.svgOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  overflow: visible;
+}
+
+/* Connection Arcs */
+.arcBase {
+  fill: none;
+  stroke: rgba(2, 132, 199, 0.22);
+  stroke-width: 1.5px;
+  stroke-linecap: round;
+  transition: all 0.3s ease;
+}
+
+.arcActive {
+  stroke: #0284c7;
+  stroke-width: 2.5px;
+  filter: drop-shadow(0 0 6px rgba(2, 132, 199, 0.6));
+}
+
+.arcDimmed {
+  opacity: 0.15;
+}
+
+.arcPulse {
+  fill: none;
+  stroke: url(#arcBeamGrad);
+  stroke-width: 2.2px;
+  stroke-linecap: round;
+  stroke-dasharray: 24 160;
+  animation: streamFlow 2.8s linear infinite;
+}
+
+@keyframes streamFlow {
+  from {
+    stroke-dashoffset: 184;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Node Beacons */
+.nodeGroup {
+  cursor: pointer;
+  outline: none;
+}
+
+.beaconWave {
+  transform-origin: center;
+  animation: radarPulse 2.8s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+}
+
+.beaconWave2 {
+  transform-origin: center;
+  animation: radarPulse 2.8s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+  animation-delay: 1.4s;
+}
+
+@keyframes radarPulse {
+  0% {
+    r: 5px;
+    opacity: 0.8;
+  }
+  100% {
+    r: 22px;
+    opacity: 0;
+  }
+}
+
+.nodeCore {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 2px 5px rgba(2, 132, 199, 0.4));
+}
+
+.nodeGroup:hover .nodeCore,
+.nodeActive .nodeCore {
+  r: 7px;
+  fill: #00d2ff !important;
+  stroke: #ffffff;
+  stroke-width: 2.5px;
+  filter: drop-shadow(0 0 10px rgba(0, 210, 255, 0.85));
+}
+
+/* HQ Beacon Specific */
+.hqCore {
+  fill: #0284c7;
+  stroke: #ffffff;
+  stroke-width: 2.5px;
+  filter: drop-shadow(0 0 8px rgba(2, 132, 199, 0.7));
+}
+
+.hqBadgeTag {
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 800;
+  fill: #0f172a;
+  text-anchor: middle;
+  letter-spacing: 0.5px;
+}
+
+.hqBadgeRect {
+  fill: #ffffff;
+  stroke: #0284c7;
+  stroke-width: 1.2px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Floating HTML Tooltip on the Map */
+.tooltipCard {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  margin-top: -18px;
+  z-index: 50;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 12px 16px;
+  min-width: 240px;
+  max-width: 290px;
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(2, 132, 199, 0.3);
+  pointer-events: none;
+  animation: tooltipFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tooltipCard::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 12px;
+  height: 12px;
+  background: rgba(15, 23, 42, 0.95);
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -90%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -100%) scale(1);
+  }
+}
+
+.tooltipHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.tooltipTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tooltipFlag {
+  font-size: 15px;
+}
+
+.liveBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.12);
+  padding: 2px 6px;
+  border-radius: 9999px;
+  border: 1px solid rgba(52, 211, 153, 0.25);
+}
+
+.liveDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #34d399;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.tooltipRole {
+  font-size: 11px;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 4px;
+}
+
+.tooltipDesc {
+  font-size: 11px;
+  line-height: 1.45;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+}
+
+.tooltipFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.tooltipMetric {
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+/* Bottom Interactive City Pills */
+.cityGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.cityChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cityChip:hover {
+  background: #f0f9ff;
+  border-color: #38bdf8;
+  color: #0284c7;
+  transform: translateY(-1px);
+}
+
+.cityChipActive {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+}
+
+.cityChipHq {
+  border-color: #cbd5e1;
+  font-weight: 700;
+}
+
+.cityChipHq:hover,
+.cityChipHqActive {
+  background: #0f172a !important;
+  border-color: #0f172a !important;
+  color: #ffffff !important;
+}
+
+/* Live Telematics Telemetry Bar */
+.telemetryBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 10px 18px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.telemetryLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.telemetryRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 11px;
+}
+
+.telemetryItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.telemetryVal {
+  font-weight: 700;
+  color: #0284c7;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .mapCard {
+    padding: 16px 8px 14px;
+    border-radius: 14px;
+  }
+  .filterBar {
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .filterBtn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  .telemetryBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .tooltipCard {
+    min-width: 210px;
+    max-width: 250px;
+    padding: 10px 12px;
+  }
+}
