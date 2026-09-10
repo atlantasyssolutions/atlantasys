@@ -46,11 +46,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Livvic:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
         <link href="/assets/css/meanmenu.css" rel="stylesheet" type="text/css" />
         <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
         <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/map-1.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
         <link rel="icon" href="/assets/img/favicon-32x32.png" sizes="32x32" />
         <script

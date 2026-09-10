@@ -1,0 +1,76 @@
+/* industries slider */
+.industries_01 .owl-stage-outer, .whyusSlider .owl-stage-outer {
+  overflow: visible !important;
+  padding-bottom: 95px !important;
+}
+
+.whyusSlider .owl-stage-outer  { padding-bottom: 0px !important;}
+
+
+.Industriesslidercontent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translateY(56%);
+  padding: 30px;
+  background: #ffffff05;
+  border-top: solid 1px #000;
+  backdrop-filter: blur(10px);
+  /* Adjust the blur amount as needed */
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari support */
+
+
+}
+
+.item {
+  overflow: hidden !important;
+  position: relative;
+}
+
+.item:hover .Industriesslidercontent {
+  transform: translateY(0%);
+}
+
+.industrie-slider-title {
+
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  font-size: 40px;
+  color: white;
+
+}
+
+.industrie-slider-description {
+
+  color: white;
+  min-height: 102px;
+
+}
+
+.industries_01_title h2, .industries_01_title p {
+  position: relative;
+  z-index: 2001;
+}
+
+.industries_01_outer {
+  padding-top: 100px !important;
+  position: relative;
+}
+
+.industries_01_outer::before {
+  background: #fff;
+  width: 120%;
+  height: 150px;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: -10%;
+  right: 0;
+  top: 154px;
+  z-index: 2000;
+}
+
+

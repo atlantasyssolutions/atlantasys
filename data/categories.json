@@ -1,0 +1,123 @@
+[
+  {
+    "id": "1",
+    "title": "Essential Trackers",
+    "meta_description": "Streamline tracking and elevate productivity with our intuitive vehicle tracker. Designed for simplicity and effectiveness, it offers effortless route monitoring, optimized logistics, and heightened security for seamless operations.",
+    "name": "Essential",
+    "short_description": "Streamline tracking and elevate productivity with our intuitive vehicle tracker. Designed for simplicity and effectiveness, it offers effortless route monitoring, optimized logistics, and heightened security for seamless operations.",
+    "features_img": "essential.webp",
+    "status": "0",
+    "row_created": "28/05/2024 04:06:08pm",
+    "slug": "essential"
+  },
+  {
+    "id": "2",
+    "title": "Vehicle Tracker",
+    "meta_description": "Stay ahead of the curve and maintain a competitive edge with our advanced tracking system. From enhancing productivity to reducing costs, our solution enables informed decision-making that offers unparalleled precision.",
+    "name": "Vehicle Telematics",
+    "short_description": "Stay ahead of the curve and maintain a competitive edge with our advanced tracking system. From enhancing productivity to reducing costs, our solution enables informed decision-making that offers unparalleled precision.",
+    "features_img": "advanced.webp",
+    "status": "1",
+    "row_created": "28/05/2024 04:07:49pm",
+    "slug": "vehicle-telematics"
+  },
+  {
+    "id": "3",
+    "title": "Electric Vehicle Tracker",
+    "meta_description": "Step into the electrifying future of mobility with our Electric Vehicle Tracker. It's the ultimate tool for optimizing battery health & charging efficiency.",
+    "name": "Electric Vehicle Telematics",
+    "short_description": "Step into the electrifying future of mobility with our Electric Vehicle Tracker. Offering real-time insights for eco-conscious journeys, it's the ultimate tool for optimizing battery health, range, and charging efficiency.",
+    "features_img": "ev-trackers.webp",
+    "status": "0",
+    "row_created": "28/05/2024 04:31:22pm",
+    "slug": "electric-vehicle-telematics"
+  },
+  {
+    "id": "4",
+    "title": "Indoor Tracker",
+    "meta_description": "Indoor telematics solutions provide real-time asset tracking, improved space utilization, and enhanced operational efficiency.",
+    "name": "Indoor Telematics",
+    "short_description": "Indoor telematics solutions provide real-time asset tracking, improved space utilization, and enhanced operational efficiency.",
+    "features_img": "indoorr.webp",
+    "status": "1",
+    "row_created": "28/05/2024 04:33:26pm",
+    "slug": "indoor-telematics"
+  },
+  {
+    "id": "5",
+    "title": "Video Telematics",
+    "meta_description": "Video Telematics",
+    "name": "Video Telematics",
+    "short_description": "Atlanta's Video Telematic offers state-of-the-art safety features for vehicles, including advanced driver assistance systems and driver monitoring technology. Elevate your driving experience with enhanced safety and peace of mind.",
+    "features_img": "video-telematics.webp",
+    "status": "1",
+    "row_created": "28/05/2024 04:47:53pm",
+    "slug": "video-telematics"
+  },
+  {
+    "id": "6",
+    "title": "Assets & Personal",
+    "meta_description": "Secure valuable assets and individuals with our state-of-the-art Asset and Personal Tracker. Our solution guarantees efficiency and tranquility by facilitating geo-fencing, SOS alerts, and tamper detection.",
+    "name": "Assets & Personal Telematics",
+    "short_description": "Secure valuable assets and individuals with our state-of-the-art Asset and Personal Tracker. Our solution guarantees efficiency and tranquility by facilitating geo-fencing, SOS alerts, and tamper detection.",
+    "features_img": "asset-telematics.webp",
+    "status": "1",
+    "row_created": "28/05/2024 04:51:06pm",
+    "slug": "assets-personal-telematics"
+  },
+  {
+    "id": "7",
+    "title": "OBD Trackers",
+    "meta_description": "Atlanta's OBD trackers provide seamless vehicle monitoring and diagnostics. With real-time data insights and easy installation, optimize fleet performance and ensure operational efficiency with confidence and ease.",
+    "name": "OBD Telematics",
+    "short_description": "Atlanta's OBD trackers provide seamless vehicle monitoring and diagnostics. With real-time data insights and easy installation, optimize fleet performance and ensure operational efficiency with confidence and ease.",
+    "features_img": "obd.webp",
+    "status": "1",
+    "row_created": "28/05/2024 04:52:56pm",
+    "slug": "obd-telematics"
+  },
+  {
+    "id": "8",
+    "title": "Electronic Logging Device",
+    "meta_description": "Our ELD device ensures compliance with electronic logging regulations, simplifying hours-of-service tracking for drivers. With user-friendly features and accurate data recording, streamline operations and enhance fleet management effortlessly.",
+    "name": "Electronic Logging Device",
+    "short_description": "Accelerate your fleet efficiency with our ELD solution. With continuous surveillance and automated logging, it simplifies record-keeping, reduces administrative burdens, and ensures precise data collection for fleets across diverse industries.",
+    "features_img": "ELD.webp",
+    "status": "0",
+    "row_created": "28/05/2024 04:55:08pm",
+    "slug": "electronic-logging-device"
+  },
+  {
+    "id": "9",
+    "title": "IOT Sensors",
+    "meta_description": "Our IOT sensors offer comprehensive monitoring solutions for various industries. With real-time data collection and analysis, optimize efficiency, safety, and decision-making processes across your operations seamlessly.",
+    "name": "IOT Sensors",
+    "short_description": "Our IOT sensors offer comprehensive monitoring solutions for various industries. With real-time data collection and analysis, optimize efficiency, safety, and decision-making processes across your operations seamlessly.",
+    "features_img": "iot-sensors.webp",
+    "status": "1",
+    "row_created": "28/05/2024 04:59:28pm",
+    "slug": "iot-sensors"
+  },
+  {
+    "id": "10",
+    "title": "Taxi GPS Meter",
+    "meta_description": "Taxi GPS Meter revolutionizes the industry with precise fare calculation and real-time navigation. Enhance passenger experience and driver efficiency while ensuring accurate billing and compliance with regulatory standards.",
+    "name": "Taxi GPS Meter",
+    "short_description": "Taxi GPS Meter revolutionizes the industry with precise fare calculation and real-time navigation. Enhance passenger experience and driver efficiency while ensuring accurate billing and compliance with regulatory standards.",
+    "features_img": "taxi-meter.webp",
+    "status": "1",
+    "row_created": "28/05/2024 05:05:12pm",
+    "slug": "taxi-gps-meter"
+  },
+  {
+    "id": "18",
+    "title": "Universal Find Devices",
+    "meta_description": "Universal Find Trackers compatible with Apple Find My and Android Find Hub. Track keys, wallets, bags, and valuables with reliable Bluetooth locating.",
+    "name": "Universal Find Devices",
+    "short_description": "Universal Find Trackers are smart Bluetooth tracking devices that help you locate keys, wallets, bags, luggage, and other valuables. Compatible with Apple Find My and Android Find Hub for seamless everyday tracking and peace of mind.",
+    "features_img": "5b747f0f4ab017ea24599204282d2635.webp",
+    "status": "1",
+    "row_created": "2026-07-02 12:36:41",
+    "slug": "universal-find-devices"
+  }
+]

@@ -17,38 +17,32 @@ export default function BlogClientIndex({ blogs = [], location = null }) {
 
   const cities = [
     'All',
-    'Dubai', 'Abu Dhabi', 'Riyadh', 'Jeddah', 'Dammam', 'Kuwait City', 'Doha', 'Muscat', 'Cairo', 'Casablanca',
-    'Warsaw', 'Hamburg', 'Rotterdam', 'Madrid', 'Paris', 'Milan', 'Frankfurt', 'London', 'Bucharest', 'Antwerp',
-    'Houston', 'Chicago', 'Los Angeles', 'Dallas', 'Memphis', 'Miami', 'Phoenix', 'New York', 'Atlanta', 'Seattle',
-    'Mexico City', 'São Paulo', 'Lima', 'Bogotá', 'Santiago', 'Buenaventura', 'Manzanillo', 'Santos', 'Querétaro', 'Guadalajara',
-    'Mumbai', 'Delhi', 'Bengaluru', 'Chennai', 'Kolkata', 'Hyderabad', 'Pune', 'Ahmedabad', 'Jaipur', 'Surat'
+    'Abu Dhabi', 'Antwerp', 'Bogotá', 'Bucharest', 'Cairo', 'Casablanca', 'Chicago',
+    'Dallas', 'Dammam', 'Doha', 'Dubai', 'Frankfurt', 'Hamburg', 'Houston',
+    'Jeddah', 'Kuwait City', 'Lima', 'London', 'Los Angeles', 'Madrid', 'Memphis',
+    'Mexico City', 'Miami', 'Milan', 'Muscat', 'New Delhi', 'New York', 'Paris',
+    'Phoenix', 'Riyadh', 'Rotterdam', 'Santiago', 'Seattle', 'São Paulo', 'Warsaw'
   ];
 
   const regions = [
     'All',
-    'West Africa',
-    'East Africa',
-    'Southern Africa',
-    'GCC & Middle East',
-    'Latin America (LATAM)',
-    'Eastern Europe',
-    'Western Europe',
-    'APAC & ASEAN',
-    'Global Trade Corridors'
+    'India',
+    'MENA',
+    'North America',
+    'Europe',
+    'Latin America',
+    'Global Logistics'
   ];
 
   const categories = [
     'All',
-    'Fuel Theft & Loss Prevention',
-    'Security & Cargo Protection',
-    'Cold Chain & Healthcare',
-    'Video Telematics & Driver Safety',
-    'EV & Battery Analytics',
-    'Heavy Equipment & Mining Telemetry',
-    'Cross-Border Logistics & Multi-SIM',
-    'Intermodal & Asset Tracking',
-    'ATEX & Hazardous Materials Safety',
-    'Telematics ROI & Enterprise Compliance'
+    'Regional Compliance',
+    'Cross-Border Telematics',
+    'Heavy Assets & Diagnostics',
+    'Vehicle Telematics',
+    'AI Video Telematics',
+    'Cold Chain',
+    'Fuel Fraud'
   ];
 
   const filteredBlogs = blogs.filter((blog) => {
@@ -109,7 +103,7 @@ export default function BlogClientIndex({ blogs = [], location = null }) {
             Telematics & IoT Insights {location ? `for ${location.city} Fleets` : 'Knowledge Hub'}
           </h1>
           <p style={{ color: 'var(--text-muted)', fontSize: '1.15rem', lineHeight: '1.6' }}>
-            Comprehensive engineering solutions, compliance frameworks, fuel theft algorithms, and regional logistics reports for Fleet Directors{location ? ` in ${location.city} and across ${location.region}` : ' across West Africa, East Africa, GCC, LATAM, EU & APAC'}.
+            Comprehensive engineering solutions, compliance frameworks, fuel theft algorithms, and regional logistics reports for Fleet Directors{location ? ` in ${location.city} and across ${location.region}` : ' across India, MENA, North America, Europe, Latin America & Global Logistics Corridors'}.
           </p>
         </div>
 
@@ -132,12 +126,12 @@ export default function BlogClientIndex({ blogs = [], location = null }) {
             <MapPin size={24} style={{ color: '#38BDF8' }} />
             <div>
               <strong style={{ display: 'block', fontSize: '1.05rem' }}>Looking for City-Specific Telematics Hubs?</strong>
-              <span style={{ fontSize: '0.85rem', color: '#CBD5E1' }}>Explore tailored hardware & sensor stacks for 20 cities in Africa, Europe, GCC & APAC.</span>
+              <span style={{ fontSize: '0.85rem', color: '#CBD5E1' }}>Explore tailored hardware & sensor stacks for 35 regional fleet hubs worldwide.</span>
             </div>
           </div>
 
           <Link href="/locations" className="btn" style={{ background: '#FFFFFF', color: '#0F2D4E', fontWeight: '800', padding: '10px 22px', fontSize: '0.875rem' }}>
-            View 20 City Hubs <ArrowRight size={14} />
+            View City Hubs <ArrowRight size={14} />
           </Link>
         </div>
 
@@ -192,54 +186,62 @@ export default function BlogClientIndex({ blogs = [], location = null }) {
 
           {/* Region Tabs */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-            <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: '700', marginRight: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <span style={{ fontSize: '0.85rem', color: '#64748B', fontWeight: '700', marginRight: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
               <Filter size={14} /> Region:
             </span>
-            {regions.map((reg) => (
-              <button
-                key={reg}
-                onClick={() => handleRegionChange(reg)}
-                style={{
-                  padding: '6px 14px',
-                  borderRadius: '99px',
-                  background: selectedRegion === reg ? 'var(--primary-blue)' : '#F1F5F9',
-                  border: '1px solid ' + (selectedRegion === reg ? 'var(--primary-blue)' : 'var(--border-color)'),
-                  color: selectedRegion === reg ? '#FFFFFF' : 'var(--text-main)',
-                  fontSize: '0.825rem',
-                  fontWeight: '600',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s ease'
-                }}
-              >
-                {reg}
-              </button>
-            ))}
+            {regions.map((reg) => {
+              const isActive = selectedRegion === reg;
+              return (
+                <button
+                  key={reg}
+                  onClick={() => handleRegionChange(reg)}
+                  style={{
+                    padding: '6px 14px',
+                    borderRadius: '99px',
+                    background: isActive ? '#0169A9' : '#F1F5F9',
+                    border: isActive ? '1px solid #0169A9' : '1px solid #CBD5E1',
+                    color: isActive ? '#FFFFFF' : '#334155',
+                    fontSize: '0.825rem',
+                    fontWeight: '700',
+                    cursor: 'pointer',
+                    boxShadow: isActive ? '0 2px 8px rgba(1, 105, 169, 0.35)' : 'none',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  {reg}
+                </button>
+              );
+            })}
           </div>
 
           {/* Category Tabs */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', borderTop: '1px solid #E2E8F0', paddingTop: '16px' }}>
-            <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: '700', marginRight: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <span style={{ fontSize: '0.85rem', color: '#64748B', fontWeight: '700', marginRight: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
               <Layers size={14} /> Vertical:
             </span>
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => handleCategoryChange(cat)}
-                style={{
-                  padding: '6px 14px',
-                  borderRadius: '99px',
-                  background: selectedCategory === cat ? 'var(--accent-emerald)' : '#F1F5F9',
-                  border: '1px solid ' + (selectedCategory === cat ? 'var(--accent-emerald)' : 'var(--border-color)'),
-                  color: selectedCategory === cat ? '#FFFFFF' : 'var(--text-main)',
-                  fontSize: '0.825rem',
-                  fontWeight: '600',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s ease'
-                }}
-              >
-                {cat}
-              </button>
-            ))}
+            {categories.map((cat) => {
+              const isActive = selectedCategory === cat;
+              return (
+                <button
+                  key={cat}
+                  onClick={() => handleCategoryChange(cat)}
+                  style={{
+                    padding: '6px 14px',
+                    borderRadius: '99px',
+                    background: isActive ? '#0169A9' : '#F1F5F9',
+                    border: isActive ? '1px solid #0169A9' : '1px solid #CBD5E1',
+                    color: isActive ? '#FFFFFF' : '#334155',
+                    fontSize: '0.825rem',
+                    fontWeight: '700',
+                    cursor: 'pointer',
+                    boxShadow: isActive ? '0 2px 8px rgba(1, 105, 169, 0.35)' : 'none',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  {cat}
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -251,7 +253,16 @@ export default function BlogClientIndex({ blogs = [], location = null }) {
           </div>
         ) : (
           <>
-            <div className="grid-3">
+            <div
+              className="blog-grid"
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
+                gap: '28px',
+                alignItems: 'stretch',
+                marginBottom: '40px'
+              }}
+            >
               {paginatedBlogs.map((blog) => (
                 <BlogCard key={blog.id || blog.slug} blog={blog} />
               ))}

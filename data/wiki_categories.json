@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1",
+    "name": "Setup",
+    "status": "1",
+    "created_on": "04 July 2024",
+    "sort_order": "1",
+    "slug": "setup"
+  },
+  {
+    "id": "2",
+    "name": "Technical Manual",
+    "status": "1",
+    "created_on": "04 July 2024",
+    "sort_order": "2",
+    "slug": "technical-manual"
+  },
+  {
+    "id": "3",
+    "name": "Configuration Tool",
+    "status": "1",
+    "created_on": "06 July 2024",
+    "sort_order": "3",
+    "slug": "configuration-tool"
+  },
+  {
+    "id": "4",
+    "name": "Certifications",
+    "status": "1",
+    "created_on": "16 September 2024",
+    "sort_order": "4",
+    "slug": "certifications"
+  },
+  {
+    "id": "5",
+    "name": "Nomenclature",
+    "status": "1",
+    "created_on": "16 September 2024",
+    "sort_order": "5",
+    "slug": "nomenclature"
+  },
+  {
+    "id": "6",
+    "name": "Product Upgrade Notice",
+    "status": "1",
+    "created_on": "16 September 2024",
+    "sort_order": "6",
+    "slug": "product-upgrade-notice"
+  },
+  {
+    "id": "7",
+    "name": "Firmware Troubleshooting Guide",
+    "status": "1",
+    "created_on": "16 September 2024",
+    "sort_order": "7",
+    "slug": "firmware-troubleshooting-guide"
+  },
+  {
+    "id": "8",
+    "name": "Parameters ID",
+    "status": "1",
+    "created_on": "16 September 2024",
+    "sort_order": "8",
+    "slug": "parameters-id"
+  },
+  {
+    "id": "9",
+    "name": "Troubleshooting",
+    "status": "1",
+    "created_on": "03 October 2024",
+    "sort_order": "9",
+    "slug": "troubleshooting"
+  },
+  {
+    "id": "10",
+    "name": "FAQ",
+    "status": "1",
+    "created_on": "03 October 2024",
+    "sort_order": "10",
+    "slug": "faq"
+  },
+  {
+    "id": "12",
+    "name": "Advertising Packet Format",
+    "status": "1",
+    "created_on": "31 August 2026",
+    "sort_order": "11",
+    "slug": "advertising-packet-format"
+  },
+  {
+    "id": "13",
+    "name": "Advertising Data Fields",
+    "status": "1",
+    "created_on": "31 August 2026",
+    "sort_order": "12",
+    "slug": "advertising-data-fields"
+  },
+  {
+    "id": "14",
+    "name": "Applications",
+    "status": "1",
+    "created_on": "31 August 2026",
+    "sort_order": "13",
+    "slug": "applications"
+  }
+]

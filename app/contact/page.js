@@ -1,16 +1,13 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import Link from 'next/link';
 
 export const metadata = {
-  title: 'Contact Us & Wholesale Telematics Inquiry | Atlanta Systems',
-  description: 'Get in touch with Atlanta Systems for GPS tracking, IoT telematics hardware, direct manufacturer wholesale pricing, and career opportunities.',
-  alternates: {
-    canonical: 'https://www.atlantasys.com/contact',
-  },
+  title: 'Contact Us | Atlanta Systems — GPS Tracking & Fleet Telematics',
+  description: 'Get in touch with Atlanta Systems for GPS tracking, IoT telematics hardware, fleet management software, AIS 140 devices, and enterprise fleet deployments.',
+  alternates: { canonical: 'https://www.atlantasys.com/contact' },
   openGraph: {
-    title: 'Contact Us & Wholesale Telematics Inquiry | Atlanta Systems',
-    description: 'Get in touch with Atlanta Systems for GPS tracking, IoT telematics hardware, and wholesale enterprise fleet solutions.',
+    title: 'Contact Us | Atlanta Systems',
+    description: 'Contact Atlanta Systems for GPS tracking, IoT telematics hardware, and enterprise fleet solutions.',
     url: 'https://www.atlantasys.com/contact',
     siteName: 'Atlanta Systems',
     type: 'website',
@@ -22,15 +19,14 @@ const contactSchema = {
   '@type': 'ContactPage',
   name: 'Contact Atlanta Systems',
   url: 'https://www.atlantasys.com/contact',
-  description: 'Contact Atlanta Systems executive headquarters for telematics hardware and enterprise fleet deployments.',
   mainEntity: {
     '@type': 'Organization',
     name: 'Atlanta Systems Pvt. Ltd.',
-    telephone: '+91-11-40131433',
-    email: 'info@atlantasys.com',
+    telephone: '+91-9990333888',
+    email: 'enquiry@atlantasys.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'M-135, 2nd Floor, Outer Circle, Connaught Place',
+      streetAddress: 'M-135, 2nd Floor, Connaught Place',
       addressLocality: 'New Delhi',
       postalCode: '110001',
       addressCountry: 'IN',
@@ -47,131 +43,115 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
       />
 
-      <div className="inner-banner" style={{ background: '#FFFFFF', padding: '40px 0 20px', borderBottom: '1px solid #E2E8F0' }}>
+      {/* Page Heading */}
+      <div className="about-area about-top-area pb-50 pt-50">
         <div className="container">
-          <div className="inner-title">
-            <h1 style={{ color: '#0F2D4E', fontWeight: '800' }}>Contact Us</h1>
-            <ul style={{ listStyle: 'none', padding: 0, display: 'flex', gap: '8px' }}>
-              <li><Link href="/" style={{ color: '#0169A9', fontWeight: '600' }}>Home</Link> / </li>
-              <li style={{ color: '#64748B' }}>Contact Us</li>
-            </ul>
+          <div className="heading-title">
+            <h2>Reach Us</h2>
+          </div>
+          <div className="row about-top pt-20">
+            <div className="col-md-12">
+              <p align="center">
+                Revolutionize your fleet management with our Telematics solutions. Enhance efficiency, monitor vehicle health, and optimize routes with cutting-edge technology. Reach us for tailored solutions that drive productivity and fuel your business success.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="contact-section pt-100 pb-70" style={{ background: '#FFFFFF' }}>
+      {/* Head Office + Enquiry Form */}
+      <div className="container-fluid" style={{ paddingTop: '0px', paddingBottom: '100px' }}>
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <div className="contact-info-box" style={{ background: '#F8FAFC', padding: '30px', borderRadius: '12px', marginBottom: '30px', border: '1px solid #E2E8F0' }}>
-                <div className="icon" style={{ fontSize: '30px', color: '#0169A9', marginBottom: '15px' }}>
-                  <i className="fas fa-map-marker-alt"></i>
-                </div>
-                <h3 style={{ color: '#0F2D4E', fontWeight: '700' }}>Corporate Office</h3>
-                <p style={{ color: '#475569' }}>M-135, 2nd Floor, Outer Circle, Connaught Place, New Delhi - 110001, India</p>
-              </div>
+            {/* Head Office Info */}
+            <div className="col-md-6">
+              <h2 className="self-h2">HEAD OFFICE</h2>
+              <h3>Atlanta Systems Pvt. Ltd.</h3>
+              <p>
+                <a href="https://g.page/atlanta-systems-pvt-ltd-?share" target="_blank" rel="noopener noreferrer" style={{ color: '#222', fontSize: '18px' }}>
+                  <i className="fas fa-map-marker-alt"></i> M-135, 2nd Floor, Connaught Place, New Delhi – 110001
+                </a>
+              </p>
+              <p style={{ fontSize: '20px', color: '#000' }} id="support">
+                For Sales Enquiry<br />
+                <a href="tel:919990333888" style={{ color: '#222', fontSize: '18px' }}>
+                  <i className="fas fa-phone-alt"></i> +91 9990 333 888
+                </a><br />
+                <a href="tel:04903970" style={{ color: '#222', fontSize: '18px' }}>
+                  <i className="fas fa-phone"></i> +91-11-49039700 (100 Lines)
+                </a><br />
+                <a href="mailto:enquiry@atlantasys.com" style={{ color: '#222', fontSize: '18px' }}>
+                  <i className="fas fa-envelope"></i> enquiry@atlantasys.com
+                </a>
+              </p>
+              <br />
+              <p style={{ fontSize: '20px', color: '#000' }}>
+                In case of any complaint please write to us or contact our customer support center at<br />
+                <a href="tel:01149039798" style={{ color: '#222', fontSize: '18px' }}>
+                  <i className="fas fa-phone-alt"></i> +91 1149039798 / 799
+                </a><br />
+                <a href="mailto:support@atlantasys.com" style={{ color: '#222', fontSize: '18px' }}>
+                  <i className="fas fa-envelope"></i> support@atlantasys.com
+                </a>
+              </p>
             </div>
 
-            <div className="col-lg-4 col-md-6">
-              <div className="contact-info-box" style={{ background: '#F8FAFC', padding: '30px', borderRadius: '12px', marginBottom: '30px', border: '1px solid #E2E8F0' }}>
-                <div className="icon" style={{ fontSize: '30px', color: '#0169A9', marginBottom: '15px' }}>
-                  <i className="fas fa-phone-alt"></i>
-                </div>
-                <h3 style={{ color: '#0F2D4E', fontWeight: '700' }}>Phone & Support</h3>
-                <p style={{ color: '#475569' }}><strong>Enquiry:</strong> +91 9990333888</p>
-                <p style={{ color: '#475569' }}><strong>Board:</strong> +91 11 49039700 (100 Lines)</p>
-                <p style={{ color: '#475569' }}><strong>Support:</strong> +91 11 49039798 / 799</p>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-              <div className="contact-info-box" style={{ background: '#F8FAFC', padding: '30px', borderRadius: '12px', marginBottom: '30px', border: '1px solid #E2E8F0' }}>
-                <div className="icon" style={{ fontSize: '30px', color: '#0169A9', marginBottom: '15px' }}>
-                  <i className="fas fa-envelope"></i>
-                </div>
-                <h3 style={{ color: '#0F2D4E', fontWeight: '700' }}>Email Us</h3>
-                <p style={{ color: '#475569' }}><strong>General:</strong> enquiry@atlantasys.com</p>
-                <p style={{ color: '#475569' }}><strong>Support:</strong> support@atlantasys.com</p>
-                <p style={{ color: '#475569' }}><strong>Careers:</strong> hr@atlantasys.com</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="row pt-40">
-            <div className="col-lg-7">
-              <div className="contact-form" style={{ background: '#F8FAFC', padding: '40px', borderRadius: '12px', border: '1px solid #E2E8F0' }}>
-                <div className="section-title mb-4">
-                  <h2 style={{ fontSize: '28px', color: '#0F2D4E', fontWeight: '800' }}>Send Us a Message</h2>
-                  <p style={{ color: '#64748B' }}>Fill out the form below and our team will get back to you within 24 hours.</p>
-                </div>
-
-                <form>
-                  <div className="row">
-                    <div className="col-lg-6 col-md-6">
-                      <div className="form-group mb-3">
-                        <label style={{ fontWeight: '600', marginBottom: '5px', color: '#0F2D4E' }}>Full Name *</label>
-                        <input type="text" className="form-control" placeholder="Enter your full name" required style={{ padding: '12px', borderRadius: '6px', border: '1px solid #CBD5E1' }} />
-                      </div>
-                    </div>
-
-                    <div className="col-lg-6 col-md-6">
-                      <div className="form-group mb-3">
-                        <label style={{ fontWeight: '600', marginBottom: '5px', color: '#0F2D4E' }}>Phone Number *</label>
-                        <input type="tel" className="form-control" placeholder="Enter your phone number" required style={{ padding: '12px', borderRadius: '6px', border: '1px solid #CBD5E1' }} />
-                      </div>
-                    </div>
-
-                    <div className="col-lg-12">
-                      <div className="form-group mb-3">
-                        <label style={{ fontWeight: '600', marginBottom: '5px', color: '#0F2D4E' }}>Email Address *</label>
-                        <input type="email" className="form-control" placeholder="Enter your email address" required style={{ padding: '12px', borderRadius: '6px', border: '1px solid #CBD5E1' }} />
-                      </div>
-                    </div>
-
-                    <div className="col-lg-12">
-                      <div className="form-group mb-3">
-                        <label style={{ fontWeight: '600', marginBottom: '5px', color: '#0F2D4E' }}>Subject</label>
-                        <select className="form-select" style={{ padding: '12px', borderRadius: '6px', border: '1px solid #CBD5E1' }}>
-                          <option value="sales">Product Inquiry / Sales</option>
-                          <option value="partnership">Partner With Us</option>
-                          <option value="support">Technical Support</option>
-                          <option value="careers">Careers &amp; Jobs</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div className="col-lg-12">
-                      <div className="form-group mb-3">
-                        <label style={{ fontWeight: '600', marginBottom: '5px', color: '#0F2D4E' }}>Message *</label>
-                        <textarea className="form-control" rows="5" placeholder="How can we help you?" required style={{ padding: '12px', borderRadius: '6px', border: '1px solid #CBD5E1' }}></textarea>
-                      </div>
-                    </div>
-
-                    <div className="col-lg-12">
-                      <button type="submit" className="btn btn-primary" style={{ background: '#0169A9', color: '#FFFFFF', padding: '12px 30px', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: '700' }}>
-                        Submit Message <i className="fas fa-paper-plane ms-2"></i>
-                      </button>
-                    </div>
+            {/* Enquiry Form */}
+            <div className="col-md-6">
+              <h2 className="self-h2">Enquiry Form</h2>
+              <p>Note: <span style={{ color: 'red' }}>*</span> fields are mandatory</p>
+              <form id="contact_form2" action="/api/contact" method="POST">
+                <div className="row">
+                  <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <label><strong>Full Name<span style={{ color: 'red' }}>*</span></strong></label>
+                    <input type="text" className="form-control" name="name" placeholder="Full Name" />
                   </div>
-                </form>
-              </div>
-            </div>
-
-            <div className="col-lg-5">
-              <div className="map-area" style={{ height: '100%', minHeight: '400px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #E2E8F0' }}>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.997232230232!2d77.2173167!3d28.6328224!2m3!1f0!0!f0!0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd36c1e55555%3A0x7d67b7e5f1d4f20!2sAtlanta%20Systems%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0, minHeight: '400px' }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Atlanta Systems Office Location"
-                ></iframe>
-              </div>
+                  <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <label><strong>Phone<span style={{ color: 'red' }}>*</span></strong></label>
+                    <input type="text" className="form-control" name="contact" placeholder="Contact No." />
+                  </div>
+                </div>
+                <br />
+                <div className="row">
+                  <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <label><strong>Email Address<span style={{ color: 'red' }}>*</span></strong></label>
+                    <input type="text" className="form-control" name="email" placeholder="Email Address" />
+                  </div>
+                </div>
+                <br />
+                <div className="row">
+                  <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <label><strong>Leave us a message</strong><span style={{ color: 'red' }}>*</span></label>
+                    <textarea className="form-control" name="message" rows={4}></textarea>
+                  </div>
+                </div>
+                <br />
+                <div className="row">
+                  <div className="col-md-12 col-lg-12" align="right">
+                    <button type="submit" id="submitBtnn2" className="btn btn-success">
+                      <i className="fas fa-paper-plane"></i> Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Full Width Google Map */}
+      <div className="container-fluid">
+        <div className="row">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.874944575708!2d77.2225933!3d28.6335099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2d6c1143121%3A0x4010a3b8bb14e624!2sAtlanta%20Systems%20Private%20Limited!5e0!3m2!1sen!2sin!4v1710137559131!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Atlanta Systems Head Office - Connaught Place, New Delhi"
+          ></iframe>
         </div>
       </div>
 

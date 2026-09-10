@@ -1,0 +1,1739 @@
+[
+  {
+    "id": "1",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "1",
+    "image": "59bbed077e77957d5b21315a5891b677.webp",
+    "status": "1",
+    "row_created": "29/05/2024 12:33:45pm"
+  },
+  {
+    "id": "2",
+    "feature_name": "Integrated SOS",
+    "feature_description": "The SOS button instantly alerts emergency contacts, providing your real-time location for quick assistance.",
+    "pro_id": "2",
+    "image": "16bd71fd6c061a52908ee2ee4168ad0d.webp",
+    "status": "1",
+    "row_created": "29/05/2024 01:55:01pm"
+  },
+  {
+    "id": "3",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "3",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "29/05/2024 02:23:41pm"
+  },
+  {
+    "id": "4",
+    "feature_name": "Rugged IP54 casing",
+    "feature_description": "The IP54-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "4",
+    "image": "30765acf56986fa297b9437f3616cd4e.webp",
+    "status": "1",
+    "row_created": "29/05/2024 02:40:30pm"
+  },
+  {
+    "id": "5",
+    "feature_name": "Integrated SOS",
+    "feature_description": "The SOS button instantly alerts emergency contacts, providing your real-time location for quick assistance.",
+    "pro_id": "5",
+    "image": "16bd71fd6c061a52908ee2ee4168ad0d.webp",
+    "status": "1",
+    "row_created": "29/05/2024 04:14:55pm"
+  },
+  {
+    "id": "6",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "6",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "29/05/2024 04:30:16pm"
+  },
+  {
+    "id": "7",
+    "feature_name": "Rugged IP54 Casing",
+    "feature_description": "The IP54-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "7",
+    "image": "30765acf56986fa297b9437f3616cd4e.webp",
+    "status": "1",
+    "row_created": "29/05/2024 04:43:30pm"
+  },
+  {
+    "id": "8",
+    "feature_name": "Rugged IP54 Casing",
+    "feature_description": "The IP54-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "8",
+    "image": "30765acf56986fa297b9437f3616cd4e.webp",
+    "status": "1",
+    "row_created": "29/05/2024 05:53:21pm"
+  },
+  {
+    "id": "9",
+    "feature_name": "Rugged IP54 casing",
+    "feature_description": "The IP54-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "9",
+    "image": "30765acf56986fa297b9437f3616cd4e.webp",
+    "status": "1",
+    "row_created": "29/05/2024 06:12:49pm"
+  },
+  {
+    "id": "10",
+    "feature_name": "Rugged IP54 casing",
+    "feature_description": "The IP54-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "10",
+    "image": "30765acf56986fa297b9437f3616cd4e.webp",
+    "status": "1",
+    "row_created": "30/05/2024 11:55:10am"
+  },
+  {
+    "id": "11",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "11",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "30/05/2024 11:59:18am"
+  },
+  {
+    "id": "12",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "12",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "30/05/2024 12:38:33pm"
+  },
+  {
+    "id": "13",
+    "feature_name": "Rugged IP65 casing",
+    "feature_description": "The IP65-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "13",
+    "image": "ef001da2c543968407ea20463263c62c.webp",
+    "status": "1",
+    "row_created": "30/05/2024 01:12:31pm"
+  },
+  {
+    "id": "14",
+    "feature_name": "Rugged IP65 casing",
+    "feature_description": "The IP65-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "14",
+    "image": "ef001da2c543968407ea20463263c62c.webp",
+    "status": "1",
+    "row_created": "30/05/2024 02:43:29pm"
+  },
+  {
+    "id": "15",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "The IP67-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "15",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "30/05/2024 03:38:45pm"
+  },
+  {
+    "id": "16",
+    "feature_name": "High Voltage Range",
+    "feature_description": "High voltage range enables extended operation and enhanced performance efficiency",
+    "pro_id": "16",
+    "image": "8973f7cd334eda99bde654508f9511eb.webp",
+    "status": "1",
+    "row_created": "31/05/2024 12:13:32pm"
+  },
+  {
+    "id": "41",
+    "feature_name": "Integrated CAN Port",
+    "feature_description": "Seamlessly connect for real-time vehicle data monitoring and diagnostics with built-in CAN port.",
+    "pro_id": "18",
+    "image": "b9cb9dc30fa62602502f8bd67b521886.webp",
+    "status": "1",
+    "row_created": "01/07/2024 11:31:27am"
+  },
+  {
+    "id": "19",
+    "feature_name": "Advanced Network Support",
+    "feature_description": "Advanced CAT 1 tracking device with 4G LTE and dependable 2G backup for reliable connectivity.",
+    "pro_id": "19",
+    "image": "6e3b619f91270d170732dd00845da16b.webp",
+    "status": "1",
+    "row_created": "31/05/2024 12:25:09pm"
+  },
+  {
+    "id": "20",
+    "feature_name": "Advanced Network Support",
+    "feature_description": "Advanced CAT-1, CAT-M1, NB-2 connectivity with 2G fallback ensures uninterrupted operations.",
+    "pro_id": "20",
+    "image": "6e3b619f91270d170732dd00845da16b.webp",
+    "status": "1",
+    "row_created": "31/05/2024 12:28:15pm"
+  },
+  {
+    "id": "21",
+    "feature_name": "India Transport Certified",
+    "feature_description": "AIS140-compliant tracker for all public and commercial transportation in India.",
+    "pro_id": "21",
+    "image": "e5514b7fa4023dad533a8cccaef8361f.webp",
+    "status": "1",
+    "row_created": "31/05/2024 12:32:15pm"
+  },
+  {
+    "id": "22",
+    "feature_name": "India Transport Certified",
+    "feature_description": "AIS140-compliant tracker for all public and commercial transportation in India.",
+    "pro_id": "22",
+    "image": "e5514b7fa4023dad533a8cccaef8361f.webp",
+    "status": "1",
+    "row_created": "31/05/2024 12:34:48pm"
+  },
+  {
+    "id": "23",
+    "feature_name": "India Transport Certified",
+    "feature_description": "AIS140-compliant tracker for all public and commercial transportation in India.",
+    "pro_id": "23",
+    "image": "e5514b7fa4023dad533a8cccaef8361f.webp",
+    "status": "1",
+    "row_created": "31/05/2024 12:36:36pm"
+  },
+  {
+    "id": "24",
+    "feature_name": "Higher GNSS Accuracy",
+    "feature_description": "Higher GNSS accuracy ensures precise location tracking and navigation capabilities.",
+    "pro_id": "24",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "31/05/2024 12:39:17pm"
+  },
+  {
+    "id": "25",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "The IP67-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "25",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "31/05/2024 12:40:55pm"
+  },
+  {
+    "id": "26",
+    "feature_name": "Magnetic Mounting",
+    "feature_description": "Securely attach and relocate with ease using strong magnetic mounting capabilities.",
+    "pro_id": "26",
+    "image": "987750869e8605a529a2fdad6adb68f1.webp",
+    "status": "1",
+    "row_created": "31/05/2024 12:42:30pm"
+  },
+  {
+    "id": "27",
+    "feature_name": "Calling Button",
+    "feature_description": "Instantly alerts pre-defined contacts in critical situations for swift assistance and safety.",
+    "pro_id": "27",
+    "image": "524eeee25ef880e237d5604401562834.webp",
+    "status": "1",
+    "row_created": "31/05/2024 12:44:13pm"
+  },
+  {
+    "id": "28",
+    "feature_name": "WiFi Support",
+    "feature_description": "Seamless WiFi connectivity for real-time data access and remote control",
+    "pro_id": "28",
+    "image": "1410928c48c7ebe671b6bf01e680221c.webp",
+    "status": "1",
+    "row_created": "31/05/2024 12:45:37pm"
+  },
+  {
+    "id": "29",
+    "feature_name": "H.265 Standard",
+    "feature_description": "The ATL-DSM-V1 camera uses H.265 High-Efficiency Video Coding to transmit high-quality files quickly and efficiently.",
+    "pro_id": "29",
+    "image": "9c8c083bafeb1abbcda8abbd3acf741f.webp",
+    "status": "1",
+    "row_created": "31/05/2024 12:47:57pm"
+  },
+  {
+    "id": "31",
+    "feature_name": "Video Live View",
+    "feature_description": "Enables remote access to live video feeds for immediate monitoring.",
+    "pro_id": "31",
+    "image": "868e6b7cf78a9add54ae724a34b76e24.webp",
+    "status": "1",
+    "row_created": "31/05/2024 12:55:37pm"
+  },
+  {
+    "id": "34",
+    "feature_name": "",
+    "feature_description": "",
+    "pro_id": "34",
+    "image": "1717140503",
+    "status": "1",
+    "row_created": "31/05/2024 12:58:23pm"
+  },
+  {
+    "id": "35",
+    "feature_name": "",
+    "feature_description": "",
+    "pro_id": "35",
+    "image": "1717140653",
+    "status": "1",
+    "row_created": "31/05/2024 01:00:53pm"
+  },
+  {
+    "id": "36",
+    "feature_name": "Plug & Play Installation",
+    "feature_description": "Simply plug in the device to start effortless and reliable tracking.",
+    "pro_id": "36",
+    "image": "f3423aac3e4b3a0a22cb0d8958c5ad8e.webp",
+    "status": "1",
+    "row_created": "31/05/2024 01:02:02pm"
+  },
+  {
+    "id": "37",
+    "feature_name": "Compact Casing",
+    "feature_description": "Robust casing ensures device reliability, protection, and extended operational longevity.",
+    "pro_id": "37",
+    "image": "4df12b1c6ee008263700689c17ffdfaa.webp",
+    "status": "1",
+    "row_created": "31/05/2024 01:03:17pm"
+  },
+  {
+    "id": "38",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "Waterproof, dustproof, and impact-resistant for reliable performance in extreme outdoor environments.",
+    "pro_id": "38",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "31/05/2024 01:04:52pm"
+  },
+  {
+    "id": "144",
+    "feature_name": "Emergency Button",
+    "feature_description": "Emergency button facilitates quick assistance and passenger safety in critical situations.",
+    "pro_id": "52",
+    "image": "16bd71fd6c061a52908ee2ee4168ad0d.webp",
+    "status": "1",
+    "row_created": "14/10/2024 01:33:32pm"
+  },
+  {
+    "id": "42",
+    "feature_name": "High Voltage Range",
+    "feature_description": "High voltage range enables extended operation and enhanced performance efficiency.",
+    "pro_id": "18",
+    "image": "8973f7cd334eda99bde654508f9511eb.webp",
+    "status": "1",
+    "row_created": "01/07/2024 11:31:27am"
+  },
+  {
+    "id": "43",
+    "feature_name": "Bluetooth",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "18",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "01/07/2024 11:46:41am"
+  },
+  {
+    "id": "44",
+    "feature_name": "High Voltage Range",
+    "feature_description": "High voltage range enables extended operation and enhanced performance efficiency.",
+    "pro_id": "19",
+    "image": "8973f7cd334eda99bde654508f9511eb.webp",
+    "status": "1",
+    "row_created": "01/07/2024 12:45:49pm"
+  },
+  {
+    "id": "45",
+    "feature_name": "Integrated CAN Port",
+    "feature_description": "Seamlessly connect for real-time vehicle data monitoring and diagnostics with built-in CAN port.",
+    "pro_id": "19",
+    "image": "b9cb9dc30fa62602502f8bd67b521886.webp",
+    "status": "1",
+    "row_created": "01/07/2024 12:45:49pm"
+  },
+  {
+    "id": "46",
+    "feature_name": "Integrated CAN Port",
+    "feature_description": "Efficiently monitor vehicle data and performance through seamless connectivity with with built-in CAN port.",
+    "pro_id": "20",
+    "image": "b9cb9dc30fa62602502f8bd67b521886.webp",
+    "status": "1",
+    "row_created": "01/07/2024 12:57:06pm"
+  },
+  {
+    "id": "47",
+    "feature_name": "High Voltage Range",
+    "feature_description": "High voltage range enables extended operation and enhanced performance efficiency.",
+    "pro_id": "20",
+    "image": "6179bdd5866cdee54ddf4af9cdb60a6b.webp",
+    "status": "1",
+    "row_created": "01/07/2024 12:57:06pm"
+  },
+  {
+    "id": "50",
+    "feature_name": "Higher GNSS Accuracy",
+    "feature_description": "Higher GNSS accuracy ensures precise location tracking and navigation capabilities.",
+    "pro_id": "16",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "01/07/2024 01:03:59pm"
+  },
+  {
+    "id": "51",
+    "feature_name": "Battery Data Analytics",
+    "feature_description": "Monitor battery health and optimize performance through advanced analytics for efficient electric vehicle operation.",
+    "pro_id": "16",
+    "image": "31266f488c66839b841e75a6b19248e8.webp",
+    "status": "1",
+    "row_created": "01/07/2024 01:03:59pm"
+  },
+  {
+    "id": "52",
+    "feature_name": "Rugged IP65 Casing",
+    "feature_description": "The IP65-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "21",
+    "image": "ef001da2c543968407ea20463263c62c.webp",
+    "status": "1",
+    "row_created": "01/07/2024 02:47:03pm"
+  },
+  {
+    "id": "53",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Extended uptime, minimizing interruptions, enhancing operational reliability and efficiency",
+    "pro_id": "21",
+    "image": "0d1e5ae2bd2369fa2079815eb58efdc8.webp",
+    "status": "1",
+    "row_created": "01/07/2024 02:47:03pm"
+  },
+  {
+    "id": "54",
+    "feature_name": "Integrated CAN Port",
+    "feature_description": "Seamlessly connect for real-time vehicle data monitoring and diagnostics with built-in CAN port.",
+    "pro_id": "22",
+    "image": "b9cb9dc30fa62602502f8bd67b521886.webp",
+    "status": "1",
+    "row_created": "01/07/2024 02:51:13pm"
+  },
+  {
+    "id": "55",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "The IP67-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "22",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "01/07/2024 02:51:13pm"
+  },
+  {
+    "id": "56",
+    "feature_name": "Integrated CAN Port",
+    "feature_description": "Seamlessly connect for real-time vehicle data monitoring and diagnostics with built-in CAN port.",
+    "pro_id": "23",
+    "image": "b9cb9dc30fa62602502f8bd67b521886.webp",
+    "status": "1",
+    "row_created": "01/07/2024 02:53:54pm"
+  },
+  {
+    "id": "57",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "The IP67-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "23",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "01/07/2024 02:53:54pm"
+  },
+  {
+    "id": "58",
+    "feature_name": "Compact Casing",
+    "feature_description": "Robust casing ensures device reliability, protection, and extended operational longevity.",
+    "pro_id": "24",
+    "image": "1719826998small-in-size2.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:13:18pm"
+  },
+  {
+    "id": "59",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "24",
+    "image": "59bbed077e77957d5b21315a5891b677.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:13:18pm"
+  },
+  {
+    "id": "60",
+    "feature_name": "Tamper Alert",
+    "feature_description": "Receive instant notifications of unauthorized access or tampering attempts for enhanced security.",
+    "pro_id": "25",
+    "image": "06fc91c7adc4c0e3b03ed21bd809ea14.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:17:10pm"
+  },
+  {
+    "id": "61",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "25",
+    "image": "edc431299a13f5b18966877999073696.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:17:10pm"
+  },
+  {
+    "id": "62",
+    "feature_name": "Tamper Button",
+    "feature_description": "Receive instant notifications of unauthorized access or tampering attempts for enhanced security.",
+    "pro_id": "26",
+    "image": "8de3ca29802f881bad8e0f862293f547.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:20:34pm"
+  },
+  {
+    "id": "63",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "The IP67-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "26",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:20:34pm"
+  },
+  {
+    "id": "64",
+    "feature_name": "SOS Button",
+    "feature_description": "The SOS button instantly alerts emergency contacts, providing your real-time location for quick assistance.",
+    "pro_id": "27",
+    "image": "16bd71fd6c061a52908ee2ee4168ad0d.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:23:56pm"
+  },
+  {
+    "id": "65",
+    "feature_name": "Compact Casing",
+    "feature_description": "Robust casing ensures device reliability, protection, and extended operational longevity.",
+    "pro_id": "27",
+    "image": "a6ee5504906a93cd6282742c0b614db3.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:23:56pm"
+  },
+  {
+    "id": "66",
+    "feature_name": "Sturdy Casing",
+    "feature_description": "Robust and compact casing ensures device reliability, protection, and extended operational longevity.",
+    "pro_id": "36",
+    "image": "4183694a521062871ead2689104dffec.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:27:45pm"
+  },
+  {
+    "id": "142",
+    "feature_name": "Quad Band",
+    "feature_description": "Quad-band taxi meter ensures accurate fare calculation and reliable service for passengers.",
+    "pro_id": "51",
+    "image": "c368eb9000745e084445d7fc367b3cec.webp",
+    "status": "1",
+    "row_created": "14/10/2024 12:38:34pm"
+  },
+  {
+    "id": "143",
+    "feature_name": "Thermal Printer",
+    "feature_description": "Compact thermal printer for instant, reliable fare receipts and records.",
+    "pro_id": "52",
+    "image": "865a5ca6b75252c5877b3674ee08f2f0.webp",
+    "status": "1",
+    "row_created": "14/10/2024 01:33:32pm"
+  },
+  {
+    "id": "141",
+    "feature_name": "LCD Display",
+    "feature_description": "LCD display ensures clear fare calculation and enhanced user experience.",
+    "pro_id": "51",
+    "image": "4ca8c00a11aa10caae742d56159b807e.webp",
+    "status": "1",
+    "row_created": "14/10/2024 12:38:34pm"
+  },
+  {
+    "id": "140",
+    "feature_name": "Thermal Printer",
+    "feature_description": "Compact thermal printer for instant, reliable fare receipts and records.Compact thermal printer for instant, reliable fare receipts and records.",
+    "pro_id": "51",
+    "image": "865a5ca6b75252c5877b3674ee08f2f0.webp",
+    "status": "1",
+    "row_created": "14/10/2024 12:38:34pm"
+  },
+  {
+    "id": "71",
+    "feature_name": "RODS & HOS Integration/ Functionality",
+    "feature_description": "Maintains record of duty status and calculates hours of service for efficient operations.",
+    "pro_id": "37",
+    "image": "6a0892ad73056d75910a5e9686921883.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:53:31pm"
+  },
+  {
+    "id": "72",
+    "feature_name": "Integrated CAN Protocol",
+    "feature_description": "Integrated CAN protocol for efficient data communication and system integration.",
+    "pro_id": "37",
+    "image": "b9cb9dc30fa62602502f8bd67b521886.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:53:31pm"
+  },
+  {
+    "id": "73",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "9",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:57:27pm"
+  },
+  {
+    "id": "74",
+    "feature_name": "i-Button",
+    "feature_description": "i-Button enhances vehicle security with advanced identification and tracking capabilities.",
+    "pro_id": "9",
+    "image": "9cc6810205b13598dac884185c7412fa.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:57:27pm"
+  },
+  {
+    "id": "75",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "10",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:58:26pm"
+  },
+  {
+    "id": "76",
+    "feature_name": "Temperature Sensor",
+    "feature_description": "Temperature sensor monitors vehicle temperature for real-time tracking and  optimal operation",
+    "pro_id": "10",
+    "image": "bfff2ecaa236512c8b11837feffc3c09.webp",
+    "status": "1",
+    "row_created": "01/07/2024 03:58:26pm"
+  },
+  {
+    "id": "77",
+    "feature_name": "Temperature Sensor",
+    "feature_description": "Temperature sensor monitors vehicle temperature for real-time tracking and  optimal operation",
+    "pro_id": "8",
+    "image": "bfff2ecaa236512c8b11837feffc3c09.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:01:17pm"
+  },
+  {
+    "id": "78",
+    "feature_name": "i-Button",
+    "feature_description": "i-Button enhances vehicle security with advanced identification and tracking capabilities.",
+    "pro_id": "8",
+    "image": "9cc6810205b13598dac884185c7412fa.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:01:17pm"
+  },
+  {
+    "id": "79",
+    "feature_name": "High Voltage Range",
+    "feature_description": "High voltage range enables extended operation and enhanced performance efficiency.",
+    "pro_id": "12",
+    "image": "8973f7cd334eda99bde654508f9511eb.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:04:28pm"
+  },
+  {
+    "id": "80",
+    "feature_name": "Higher GNSS Accuracy",
+    "feature_description": "Higher GNSS accuracy ensures precise location tracking and navigation capabilities.",
+    "pro_id": "12",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:04:28pm"
+  },
+  {
+    "id": "81",
+    "feature_name": "High Voltage Range",
+    "feature_description": "High voltage range enables extended operation and enhanced performance efficiency.",
+    "pro_id": "11",
+    "image": "8973f7cd334eda99bde654508f9511eb.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:04:31pm"
+  },
+  {
+    "id": "82",
+    "feature_name": "Higher GNSS Accuracy",
+    "feature_description": "Higher GNSS accuracy ensures precise location tracking and navigation capabilities.",
+    "pro_id": "11",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:04:31pm"
+  },
+  {
+    "id": "83",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "15",
+    "image": "0d1e5ae2bd2369fa2079815eb58efdc8.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:09:23pm"
+  },
+  {
+    "id": "84",
+    "feature_name": "Higher GNSS Accuracy",
+    "feature_description": "Higher GNSS accuracy ensures precise location tracking and navigation capabilities.",
+    "pro_id": "15",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:09:23pm"
+  },
+  {
+    "id": "85",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "14",
+    "image": "0d1e5ae2bd2369fa2079815eb58efdc8.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:09:25pm"
+  },
+  {
+    "id": "86",
+    "feature_name": "Higher GNSS Accuracy",
+    "feature_description": "Higher GNSS accuracy ensures precise location tracking and navigation capabilities.",
+    "pro_id": "14",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:09:25pm"
+  },
+  {
+    "id": "87",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "13",
+    "image": "0d1e5ae2bd2369fa2079815eb58efdc8.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:09:28pm"
+  },
+  {
+    "id": "88",
+    "feature_name": "Higher GNSS Accuracy",
+    "feature_description": "Higher GNSS accuracy ensures precise location tracking and navigation capabilities.",
+    "pro_id": "13",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:09:28pm"
+  },
+  {
+    "id": "89",
+    "feature_name": "Higher GNSS Accuracy",
+    "feature_description": "Higher GNSS accuracy ensures precise location tracking and navigation capabilities.",
+    "pro_id": "1",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:15:53pm"
+  },
+  {
+    "id": "90",
+    "feature_name": "Compact Casing",
+    "feature_description": "Robust casing ensures device reliability, protection, and extended operational longevity.",
+    "pro_id": "1",
+    "image": "b4ca494504a974751e7bc4bb66ca65b6.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:15:53pm"
+  },
+  {
+    "id": "91",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "2",
+    "image": "59bbed077e77957d5b21315a5891b677.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:17:37pm"
+  },
+  {
+    "id": "92",
+    "feature_name": "Higher GNSS Accuracy",
+    "feature_description": "Higher GNSS accuracy ensures precise location tracking and navigation capabilities.",
+    "pro_id": "2",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:17:37pm"
+  },
+  {
+    "id": "93",
+    "feature_name": "High Voltage Range",
+    "feature_description": "High voltage range enables extended operation and enhanced performance efficiency.",
+    "pro_id": "6",
+    "image": "8973f7cd334eda99bde654508f9511eb.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:20:14pm"
+  },
+  {
+    "id": "94",
+    "feature_name": "Temperature Sensor",
+    "feature_description": "Monitor vehicle temperature for optimal operation and maintenance, ensuring efficiency and safety.",
+    "pro_id": "6",
+    "image": "bfff2ecaa236512c8b11837feffc3c09.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:20:14pm"
+  },
+  {
+    "id": "95",
+    "feature_name": "High Voltage Range",
+    "feature_description": "High voltage range enables extended operation and enhanced performance efficiency.",
+    "pro_id": "3",
+    "image": "8973f7cd334eda99bde654508f9511eb.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:20:21pm"
+  },
+  {
+    "id": "96",
+    "feature_name": "Temperature Sensor",
+    "feature_description": "Monitor vehicle temperature for optimal operation and maintenance, ensuring efficiency and safety.",
+    "pro_id": "3",
+    "image": "bfff2ecaa236512c8b11837feffc3c09.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:20:21pm"
+  },
+  {
+    "id": "97",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "4",
+    "image": "59bbed077e77957d5b21315a5891b677.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:23:04pm"
+  },
+  {
+    "id": "98",
+    "feature_name": "Higher GNSS Accuracy",
+    "feature_description": "Higher GNSS accuracy ensures precise location tracking and navigation capabilities",
+    "pro_id": "4",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:23:04pm"
+  },
+  {
+    "id": "99",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "7",
+    "image": "59bbed077e77957d5b21315a5891b677.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:23:27pm"
+  },
+  {
+    "id": "100",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "7",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:23:27pm"
+  },
+  {
+    "id": "101",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "5",
+    "image": "59bbed077e77957d5b21315a5891b677.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:37:24pm"
+  },
+  {
+    "id": "102",
+    "feature_name": "Higher GNSS Accuracy",
+    "feature_description": "Higher GNSS accuracy ensures precise location tracking and navigation capabilities.",
+    "pro_id": "5",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "01/07/2024 04:37:24pm"
+  },
+  {
+    "id": "107",
+    "feature_name": "Rugged IP54 casing",
+    "feature_description": "The IP54-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "42",
+    "image": "30765acf56986fa297b9437f3616cd4e.webp",
+    "status": "1",
+    "row_created": "30/09/2024 01:12:52pm"
+  },
+  {
+    "id": "108",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "42",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "30/09/2024 01:12:52pm"
+  },
+  {
+    "id": "109",
+    "feature_name": "i-Button",
+    "feature_description": "i-Button enhances vehicle security with advanced identification and tracking capabilities.",
+    "pro_id": "42",
+    "image": "9cc6810205b13598dac884185c7412fa.webp",
+    "status": "1",
+    "row_created": "30/09/2024 01:12:52pm"
+  },
+  {
+    "id": "110",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "43",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:03:00pm"
+  },
+  {
+    "id": "111",
+    "feature_name": "High Voltage Range",
+    "feature_description": "High voltage range enables extended operation and enhanced performance efficiency.",
+    "pro_id": "43",
+    "image": "8973f7cd334eda99bde654508f9511eb.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:03:00pm"
+  },
+  {
+    "id": "112",
+    "feature_name": "Temperature Sensor",
+    "feature_description": "Monitor vehicle temperature for optimal operation and maintenance, ensuring efficiency and safety.",
+    "pro_id": "43",
+    "image": "bfff2ecaa236512c8b11837feffc3c09.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:03:00pm"
+  },
+  {
+    "id": "113",
+    "feature_name": "Advanced Network Support",
+    "feature_description": "Advanced CAT 1 tracking device with 4G LTE and dependable 2G backup for reliable connectivity.",
+    "pro_id": "44",
+    "image": "6e3b619f91270d170732dd00845da16b.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:03:00pm"
+  },
+  {
+    "id": "114",
+    "feature_name": "High Voltage Range",
+    "feature_description": "High voltage range enables extended operation and enhanced performance efficiency.",
+    "pro_id": "44",
+    "image": "8973f7cd334eda99bde654508f9511eb.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:03:00pm"
+  },
+  {
+    "id": "115",
+    "feature_name": "Integrated CAN Port",
+    "feature_description": "Seamlessly connect for real-time vehicle data monitoring and diagnostics with built-in CAN port.",
+    "pro_id": "44",
+    "image": "b9cb9dc30fa62602502f8bd67b521886.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:03:00pm"
+  },
+  {
+    "id": "121",
+    "feature_name": "Magnetic Mounting",
+    "feature_description": "Securely attach and relocate with ease using strong magnetic mounting capabilities.",
+    "pro_id": "46",
+    "image": "987750869e8605a529a2fdad6adb68f1.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:04:00pm"
+  },
+  {
+    "id": "117",
+    "feature_name": "Advanced Network Support",
+    "feature_description": "Advanced CAT-1, CAT-M1, NB-2 connectivity with 2G fallback ensures uninterrupted operations.",
+    "pro_id": "45",
+    "image": "6e3b619f91270d170732dd00845da16b.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:03:00pm"
+  },
+  {
+    "id": "118",
+    "feature_name": "Integrated CAN Port",
+    "feature_description": "Efficiently monitor vehicle data and performance through seamless connectivity with with built-in CAN port.",
+    "pro_id": "45",
+    "image": "b9cb9dc30fa62602502f8bd67b521886.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:03:00pm"
+  },
+  {
+    "id": "119",
+    "feature_name": "High Voltage Range",
+    "feature_description": "High voltage range enables extended operation and enhanced performance efficiency.",
+    "pro_id": "45",
+    "image": "6179bdd5866cdee54ddf4af9cdb60a6b.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:03:00pm"
+  },
+  {
+    "id": "122",
+    "feature_name": "Tamper Button",
+    "feature_description": "Receive instant notifications of unauthorized access or tampering attempts for enhanced security.",
+    "pro_id": "46",
+    "image": "8de3ca29802f881bad8e0f862293f547.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:04:00pm"
+  },
+  {
+    "id": "123",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "The IP67-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "46",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:04:00pm"
+  },
+  {
+    "id": "125",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "The IP67-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "47",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:40:21pm"
+  },
+  {
+    "id": "126",
+    "feature_name": "Tamper Alert",
+    "feature_description": "Receive instant notifications of unauthorized access or tampering attempts for enhanced security.",
+    "pro_id": "47",
+    "image": "1719910432aw-tamper.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:40:21pm"
+  },
+  {
+    "id": "127",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "47",
+    "image": "edc431299a13f5b18966877999073696.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:40:21pm"
+  },
+  {
+    "id": "132",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "The IP67-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "49",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:51:25pm"
+  },
+  {
+    "id": "129",
+    "feature_name": "Magnetic Mounting",
+    "feature_description": "Securely attach and relocate with ease using strong magnetic mounting capabilities.",
+    "pro_id": "48",
+    "image": "987750869e8605a529a2fdad6adb68f1.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:49:35pm"
+  },
+  {
+    "id": "130",
+    "feature_name": "Tamper Button",
+    "feature_description": "Receive instant notifications of unauthorized access or tampering attempts for enhanced security.",
+    "pro_id": "48",
+    "image": "8de3ca29802f881bad8e0f862293f547.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:49:35pm"
+  },
+  {
+    "id": "131",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "The IP67-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "48",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:49:35pm"
+  },
+  {
+    "id": "133",
+    "feature_name": "Tamper Alert",
+    "feature_description": "Receive instant notifications of unauthorized access or tampering attempts for enhanced security.",
+    "pro_id": "49",
+    "image": "1719910432aw-tamper.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:51:25pm"
+  },
+  {
+    "id": "134",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "49",
+    "image": "edc431299a13f5b18966877999073696.webp",
+    "status": "1",
+    "row_created": "30/09/2024 03:51:25pm"
+  },
+  {
+    "id": "137",
+    "feature_name": "SOS/Panic Button",
+    "feature_description": "The SOS button instantly alerts emergency contacts, providing your real-time location for quick assistance.",
+    "pro_id": "50",
+    "image": "adc604c5531fdd6bd7565e6aaa6c9507.webp",
+    "status": "1",
+    "row_created": "30/09/2024 05:56:25pm"
+  },
+  {
+    "id": "138",
+    "feature_name": "Bluetooth",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "50",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "30/09/2024 05:56:25pm"
+  },
+  {
+    "id": "139",
+    "feature_name": "Rugged IP54 casing",
+    "feature_description": "The IP54-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "50",
+    "image": "30765acf56986fa297b9437f3616cd4e.webp",
+    "status": "1",
+    "row_created": "30/09/2024 05:56:25pm"
+  },
+  {
+    "id": "145",
+    "feature_name": "LCD Display",
+    "feature_description": "LCD display ensures clear fare calculation and enhanced user experience.",
+    "pro_id": "52",
+    "image": "4ca8c00a11aa10caae742d56159b807e.webp",
+    "status": "1",
+    "row_created": "14/10/2024 01:33:32pm"
+  },
+  {
+    "id": "148",
+    "feature_name": "GPS Tracking",
+    "feature_description": "Provides accurate real-time location data for efficient vehicle tracking and management.",
+    "pro_id": "31",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "15/10/2024 01:11:51pm"
+  },
+  {
+    "id": "149",
+    "feature_name": "GSM Connectivity",
+    "feature_description": "Ensures reliable data transmission and communication via GSM networks for remote access and control.",
+    "pro_id": "31",
+    "image": "d4b866a63204264d4ac781c447ab3728.webp",
+    "status": "1",
+    "row_created": "15/10/2024 01:11:51pm"
+  },
+  {
+    "id": "150",
+    "feature_name": "GPS Tracking",
+    "feature_description": "Provides accurate real-time location data for efficient vehicle tracking and management.",
+    "pro_id": "32",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "15/10/2024 02:28:47pm"
+  },
+  {
+    "id": "151",
+    "feature_name": "GSM Connectivity",
+    "feature_description": "Ensures reliable data transmission and communication via GSM networks for remote access and control.",
+    "pro_id": "32",
+    "image": "d4b866a63204264d4ac781c447ab3728.webp",
+    "status": "1",
+    "row_created": "15/10/2024 02:28:47pm"
+  },
+  {
+    "id": "152",
+    "feature_name": "Audio Recording",
+    "feature_description": "Captures clear audio alongside video for comprehensive monitoring and incident review.",
+    "pro_id": "32",
+    "image": "647c2a1e6c24e70eb03d907dcbb6974b.webp",
+    "status": "1",
+    "row_created": "15/10/2024 02:28:47pm"
+  },
+  {
+    "id": "155",
+    "feature_name": "Built-in High Sensitivity Microphone",
+    "feature_description": "Equipped with a built-in high sensitivity microphone for clear audio capture in any environment.",
+    "pro_id": "28",
+    "image": "647c2a1e6c24e70eb03d907dcbb6974b.webp",
+    "status": "1",
+    "row_created": "15/10/2024 02:49:35pm"
+  },
+  {
+    "id": "156",
+    "feature_name": "Built-in Single Chip Design",
+    "feature_description": "Features a built-in single chip design for efficient processing and compact performance.",
+    "pro_id": "28",
+    "image": "9bbeb6058e5f6e5f5f97dcbcf38905f6.webp",
+    "status": "1",
+    "row_created": "15/10/2024 02:49:35pm"
+  },
+  {
+    "id": "157",
+    "feature_name": "Video Recording",
+    "feature_description": "Request video for a comprehensive view of events, capturing details before, during, and after incidents.",
+    "pro_id": "29",
+    "image": "868e6b7cf78a9add54ae724a34b76e24.webp",
+    "status": "1",
+    "row_created": "15/10/2024 03:17:34pm"
+  },
+  {
+    "id": "158",
+    "feature_name": "Essential visual insights",
+    "feature_description": "Essential visual insights provide clear, actionable data, offering a comprehensive understanding of key events and details.",
+    "pro_id": "29",
+    "image": "20d8be9b429f552f0cf73e320cebd847.webp",
+    "status": "1",
+    "row_created": "15/10/2024 03:17:34pm"
+  },
+  {
+    "id": "159",
+    "feature_name": "Bluetooth",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "53",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "15/10/2024 03:36:34pm"
+  },
+  {
+    "id": "160",
+    "feature_name": "Integrated CAN Port",
+    "feature_description": "Seamlessly connect for real-time vehicle data monitoring and diagnostics with built-in CAN port.",
+    "pro_id": "53",
+    "image": "b9cb9dc30fa62602502f8bd67b521886.webp",
+    "status": "1",
+    "row_created": "15/10/2024 03:36:34pm"
+  },
+  {
+    "id": "161",
+    "feature_name": "Advanced Network Support",
+    "feature_description": "Advanced CAT 1 tracking device with 4G LTE and dependable 2G backup for reliable connectivity.",
+    "pro_id": "53",
+    "image": "6e3b619f91270d170732dd00845da16b.webp",
+    "status": "1",
+    "row_created": "15/10/2024 03:36:34pm"
+  },
+  {
+    "id": "193",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "63",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "06/12/2024 12:02:50pm"
+  },
+  {
+    "id": "192",
+    "feature_name": "High Voltage Range",
+    "feature_description": "High voltage range enables extended operation and enhanced performance efficiency.",
+    "pro_id": "63",
+    "image": "8973f7cd334eda99bde654508f9511eb.webp",
+    "status": "1",
+    "row_created": "06/12/2024 12:02:50pm"
+  },
+  {
+    "id": "191",
+    "feature_name": "Wheel Lock/Unlock",
+    "feature_description": "Secure your wheels with instant lock/unlock control, ensuring enhanced vehicle safety and convenience.",
+    "pro_id": "63",
+    "image": "9478e547c62706a0afa0be5b6f5840ca.webp",
+    "status": "1",
+    "row_created": "06/12/2024 12:02:50pm"
+  },
+  {
+    "id": "165",
+    "feature_name": "Reliable & Wide Range",
+    "feature_description": "Measures temperatures from -55°C to +125°C with an accuracy of ±0.5°C, ideal for precise monitoring in critical applications.",
+    "pro_id": "55",
+    "image": "1272497931515a386b457a4dd37ded2a.webp",
+    "status": "1",
+    "row_created": "09/11/2024 03:20:36pm"
+  },
+  {
+    "id": "166",
+    "feature_name": "Real-Time Alerts",
+    "feature_description": "Provides instant notifications when temperatures exceed set limits, ensuring timely action to maintain optimal conditions.",
+    "pro_id": "55",
+    "image": "aaf94d5a6d6b00f13dc3231b9f65ff69.webp",
+    "status": "1",
+    "row_created": "09/11/2024 03:20:36pm"
+  },
+  {
+    "id": "167",
+    "feature_name": "Resilient Efficiency",
+    "feature_description": "Built for rugged environments with low power consumption, the TSI-10 is designed for long-lasting, reliable performance.",
+    "pro_id": "55",
+    "image": "a129a719e20398e9725dcd537499d2b0.webp",
+    "status": "1",
+    "row_created": "09/11/2024 03:20:36pm"
+  },
+  {
+    "id": "168",
+    "feature_name": "Dual-Sensor Precision",
+    "feature_description": "Accurately measures both temperature and humidity in one compact device, providing reliable data for comprehensive environmental control.",
+    "pro_id": "56",
+    "image": "eda350d1be8e323337f3e3a5788783cf.webp",
+    "status": "1",
+    "row_created": "09/11/2024 03:55:36pm"
+  },
+  {
+    "id": "169",
+    "feature_name": "Real-Time Alerts",
+    "feature_description": "Continuously monitors conditions and sends instant alerts when levels exceed set thresholds, ensuring timely response to maintain safe and optimal conditions.",
+    "pro_id": "56",
+    "image": "aaf94d5a6d6b00f13dc3231b9f65ff69.webp",
+    "status": "1",
+    "row_created": "09/11/2024 03:55:36pm"
+  },
+  {
+    "id": "170",
+    "feature_name": "Seamless IoT Integration",
+    "feature_description": "Easily connects with IoT platforms and telematics systems, making it versatile for applications across industries such as healthcare, agriculture, and logistics.",
+    "pro_id": "56",
+    "image": "6a0892ad73056d75910a5e9686921883.webp",
+    "status": "1",
+    "row_created": "09/11/2024 03:55:36pm"
+  },
+  {
+    "id": "171",
+    "feature_name": "Seamless Integration",
+    "feature_description": "Connects with mobile and web applications for remote monitoring, booking, and payment options, enhancing user convenience.",
+    "pro_id": "38",
+    "image": "6a0892ad73056d75910a5e9686921883.webp",
+    "status": "1",
+    "row_created": "09/11/2024 04:10:26pm"
+  },
+  {
+    "id": "172",
+    "feature_name": "Real-Time Insights",
+    "feature_description": "Detects available and occupied parking spaces instantly, providing live updates to drivers and management systems.",
+    "pro_id": "38",
+    "image": "20d8be9b429f552f0cf73e320cebd847.webp",
+    "status": "1",
+    "row_created": "09/11/2024 04:10:26pm"
+  },
+  {
+    "id": "173",
+    "feature_name": "Low Power Consumption",
+    "feature_description": "Built for rugged environments with low power consumption, the TSI-200 is designed for long-lasting, reliable performance.",
+    "pro_id": "57",
+    "image": "c01dbdf92ec3f721397955dd31ab0125.webp",
+    "status": "1",
+    "row_created": "09/11/2024 04:49:09pm"
+  },
+  {
+    "id": "174",
+    "feature_name": "Extended Range",
+    "feature_description": "Reliably transmits data over extended distances, making it ideal for large facilities, warehouses, and agricultural fields.",
+    "pro_id": "57",
+    "image": "1272497931515a386b457a4dd37ded2a.webp",
+    "status": "1",
+    "row_created": "09/11/2024 04:49:09pm"
+  },
+  {
+    "id": "175",
+    "feature_name": "Humidity Tracking",
+    "feature_description": "Delivers precise readings with ±0.5°C accuracy for temperature and ±2% RH accuracy for humidity, ensuring optimal control of sensitive environments.",
+    "pro_id": "57",
+    "image": "c9738a24f2f512606fba9e1ef251360b.webp",
+    "status": "1",
+    "row_created": "09/11/2024 04:49:09pm"
+  },
+  {
+    "id": "176",
+    "feature_name": "Non-Invasive Installation",
+    "feature_description": "No drilling required; non-invasive ultrasonic sensor for accurate fuel level monitoring.",
+    "pro_id": "58",
+    "image": "eecde5ed3a362d710af025fd49af2667.webp",
+    "status": "1",
+    "row_created": "09/11/2024 06:27:47pm"
+  },
+  {
+    "id": "177",
+    "feature_name": "Liquid Versatility",
+    "feature_description": "Supports diesel, gasoline, water, and other liquids for versatile monitoring.",
+    "pro_id": "58",
+    "image": "c9738a24f2f512606fba9e1ef251360b.webp",
+    "status": "1",
+    "row_created": "09/11/2024 06:27:47pm"
+  },
+  {
+    "id": "178",
+    "feature_name": "IP68 Protection Rating",
+    "feature_description": "IP68 waterproof design ensures durability in harsh, water-immersed environments.",
+    "pro_id": "58",
+    "image": "5d3453be9d0980a18dfa331b890e7025.webp",
+    "status": "1",
+    "row_created": "09/11/2024 06:27:47pm"
+  },
+  {
+    "id": "179",
+    "feature_name": "RS-485 (CAN) Interface",
+    "feature_description": "With RS-485 (CAN) output, the ASH-100 easily integrates into vehicle management systems, allowing seamless data transfer for real-time tracking and enhanced fleet control.",
+    "pro_id": "59",
+    "image": "9ed40fed0af7e1983e8740857d81addc.webp",
+    "status": "1",
+    "row_created": "11/11/2024 11:35:06am"
+  },
+  {
+    "id": "180",
+    "feature_name": "Safety Enhancement",
+    "feature_description": "Avoid overloading penalties and ensure compliance with load regulations. ASH-100 provides accurate load data that enhances driver and vehicle safety, protecting assets and reducing maintenance costs.",
+    "pro_id": "59",
+    "image": "2f2d9e3e4d051547715ee64f67bbe2b5.webp",
+    "status": "1",
+    "row_created": "11/11/2024 11:35:06am"
+  },
+  {
+    "id": "181",
+    "feature_name": "Reliable Durability",
+    "feature_description": "Built to withstand rugged environments, the ASH-100 performs reliably under various conditions, delivering consistent, high-quality data for continuous fleet operations.",
+    "pro_id": "59",
+    "image": "6671ee9c6903416cf70af61b42d97d97.webp",
+    "status": "1",
+    "row_created": "11/11/2024 11:35:06am"
+  },
+  {
+    "id": "182",
+    "feature_name": "Diverse Interface",
+    "feature_description": "Atlanta FSH-10 supports a range of output interfaces—pulses, RS232, RS485, K-Line, and CAN—allowing easy integration with different monitoring systems. Choose the ideal interface for your setup and ensure seamless data flow across platforms.",
+    "pro_id": "60",
+    "image": "9ed40fed0af7e1983e8740857d81addc.webp",
+    "status": "1",
+    "row_created": "11/11/2024 12:17:08pm"
+  },
+  {
+    "id": "183",
+    "feature_name": "IP67-Rated Protection",
+    "feature_description": "The IP67 casing safeguards the FSH-10 against dust and water, making it ideal for rugged applications in construction, agriculture, mining, and transportation, where durability is a must.",
+    "pro_id": "60",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "11/11/2024 12:17:08pm"
+  },
+  {
+    "id": "184",
+    "feature_name": "Fuel Analytics",
+    "feature_description": "Equipped with high-precision sensors, FSH-10 delivers precise fuel flow measurements, empowering operators to monitor consumption trends, reduce waste, and enhance operational efficiency.",
+    "pro_id": "60",
+    "image": "72edd2b5dda06eef3022fed0f9aba721.webp",
+    "status": "1",
+    "row_created": "11/11/2024 12:17:08pm"
+  },
+  {
+    "id": "185",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "The FSK-1000 leverages Bluetooth 4.2 technology, enabling seamless, secure wireless data transmission. Easily access real-time fuel level data from your smartphone or tablet for quick, data-driven decisions.",
+    "pro_id": "61",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "11/11/2024 12:39:47pm"
+  },
+  {
+    "id": "186",
+    "feature_name": "Long Battery Life",
+    "feature_description": "Powered to last, the FSK-1000 provides up to 5 years of battery life, ensuring reliable performance without frequent maintenance. This extended battery life reduces operational downtime and enhances monitoring consistency.",
+    "pro_id": "61",
+    "image": "31266f488c66839b841e75a6b19248e8.webp",
+    "status": "1",
+    "row_created": "11/11/2024 12:39:47pm"
+  },
+  {
+    "id": "187",
+    "feature_name": "Hassle-Free Setup",
+    "feature_description": "The FSK-1000 is designed for straightforward installation and hassle-free maintenance. Ideal for remote locations and challenging environments, it’s built to operate reliably without constant servicing.",
+    "pro_id": "61",
+    "image": "2f2d9e3e4d051547715ee64f67bbe2b5.webp",
+    "status": "1",
+    "row_created": "11/11/2024 12:39:47pm"
+  },
+  {
+    "id": "188",
+    "feature_name": "Wireless Connectivity",
+    "feature_description": "The LSK-1000 utilizes a 2.4 GHz radio frequency for secure, interference-resistant communication, enabling real-time tilt data transmission over a stable connection. Perfect for remote monitoring without wiring hassles.",
+    "pro_id": "62",
+    "image": "1410928c48c7ebe671b6bf01e680221c.webp",
+    "status": "1",
+    "row_created": "11/11/2024 01:08:14pm"
+  },
+  {
+    "id": "189",
+    "feature_name": "IP67 Protection Rating",
+    "feature_description": "Designed for rugged use, the LSK-1000’s IP67-rated casing ensures complete protection against dust and water, making it suitable for outdoor and industrial environments that demand high durability.",
+    "pro_id": "62",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "11/11/2024 01:08:14pm"
+  },
+  {
+    "id": "190",
+    "feature_name": "Angle Detection",
+    "feature_description": "Engineered with advanced sensing technology, the LSK-1000 provides precise tilt and angle readings to help improve machine stability, safety, and positioning accuracy in complex setups.",
+    "pro_id": "62",
+    "image": "7ce0c03a7f2d5b414cda33e54096a316.webp",
+    "status": "1",
+    "row_created": "11/11/2024 01:08:14pm"
+  },
+  {
+    "id": "205",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "67",
+    "image": "0d1e5ae2bd2369fa2079815eb58efdc8.webp",
+    "status": "1",
+    "row_created": "09/01/2025 01:11:06pm"
+  },
+  {
+    "id": "204",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "The IP67-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "67",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "09/01/2025 01:11:06pm"
+  },
+  {
+    "id": "200",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "66",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "07/01/2025 01:15:21pm"
+  },
+  {
+    "id": "201",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "66",
+    "image": "0d1e5ae2bd2369fa2079815eb58efdc8.webp",
+    "status": "1",
+    "row_created": "07/01/2025 01:15:21pm"
+  },
+  {
+    "id": "202",
+    "feature_name": "Rugged IP65 casing",
+    "feature_description": "The IP65-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "66",
+    "image": "ef001da2c543968407ea20463263c62c.webp",
+    "status": "1",
+    "row_created": "07/01/2025 01:15:21pm"
+  },
+  {
+    "id": "203",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "67",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "09/01/2025 01:11:06pm"
+  },
+  {
+    "id": "206",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "68",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "09/01/2025 04:17:27pm"
+  },
+  {
+    "id": "207",
+    "feature_name": "WiFi Support",
+    "feature_description": "Seamless WiFi connectivity for real-time data access and remote control.",
+    "pro_id": "68",
+    "image": "1410928c48c7ebe671b6bf01e680221c.webp",
+    "status": "1",
+    "row_created": "09/01/2025 04:17:27pm"
+  },
+  {
+    "id": "208",
+    "feature_name": "High Voltage Range",
+    "feature_description": "High voltage range enables extended operation and enhanced performance efficiency.",
+    "pro_id": "68",
+    "image": "e2b83c539d361e3d4cb02d95d9e1a63f.webp",
+    "status": "1",
+    "row_created": "09/01/2025 04:17:27pm"
+  },
+  {
+    "id": "209",
+    "feature_name": "Bluetooth Connectivity",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "69",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "10/01/2025 11:58:42am"
+  },
+  {
+    "id": "210",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "The IP67-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "69",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "10/01/2025 11:58:42am"
+  },
+  {
+    "id": "211",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Sustained power for prolonged operational efficiency, minimizing downtime and enhancing reliability.",
+    "pro_id": "69",
+    "image": "0d1e5ae2bd2369fa2079815eb58efdc8.webp",
+    "status": "1",
+    "row_created": "10/01/2025 11:58:42am"
+  },
+  {
+    "id": "212",
+    "feature_name": "Compact Casing",
+    "feature_description": "Robust casing ensures device reliability, protection, and extended operational longevity.",
+    "pro_id": "70",
+    "image": "de1df6fc3abb86c291b7dd9b2ad50921.webp",
+    "status": "1",
+    "row_created": "05/11/2025 05:32:53pm"
+  },
+  {
+    "id": "213",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Extended uptime, minimizing interruptions, enhancing operational reliability and efficiency",
+    "pro_id": "70",
+    "image": "0d1e5ae2bd2369fa2079815eb58efdc8.webp",
+    "status": "1",
+    "row_created": "05/11/2025 05:32:53pm"
+  },
+  {
+    "id": "214",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "The IP67-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "70",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "05/11/2025 05:32:53pm"
+  },
+  {
+    "id": "215",
+    "feature_name": "Bluetooth",
+    "feature_description": "Bluetooth connectivity expands usage scenarios with beacons, humidity, and temperature sensors.",
+    "pro_id": "71",
+    "image": "c5b4b23d6b6ded81e7de09e23742e3f9.webp",
+    "status": "1",
+    "row_created": "03/02/2026 11:37:01am"
+  },
+  {
+    "id": "216",
+    "feature_name": "Integrated CAN Port",
+    "feature_description": "Seamlessly connect for real-time vehicle data monitoring and diagnostics with built-in CAN port.",
+    "pro_id": "71",
+    "image": "b9cb9dc30fa62602502f8bd67b521886.webp",
+    "status": "1",
+    "row_created": "03/02/2026 11:37:01am"
+  },
+  {
+    "id": "217",
+    "feature_name": "Advanced Network Support",
+    "feature_description": "Advanced CAT 1 tracking device with 4G LTE and dependable 2G backup for reliable connectivity.",
+    "pro_id": "71",
+    "image": "6e3b619f91270d170732dd00845da16b.webp",
+    "status": "1",
+    "row_created": "03/02/2026 11:37:01am"
+  },
+  {
+    "id": "223",
+    "feature_name": "H.265/H.264 Video Compression",
+    "feature_description": "High-efficiency video compression for clear streaming with reduced bandwidth usage",
+    "pro_id": "73",
+    "image": "9c8c083bafeb1abbcda8abbd3acf741f.webp",
+    "status": "1",
+    "row_created": "03/02/2026 04:04:44pm"
+  },
+  {
+    "id": "221",
+    "feature_name": "Wi-Fi Support",
+    "feature_description": "Seamless WiFi connectivity for real-time data access and remote control",
+    "pro_id": "73",
+    "image": "1410928c48c7ebe671b6bf01e680221c.webp",
+    "status": "1",
+    "row_created": "03/02/2026 04:04:44pm"
+  },
+  {
+    "id": "222",
+    "feature_name": "Built-in High Sensitivity Microphone",
+    "feature_description": "Equipped with a built-in high sensitivity microphone for clear audio capture in any environment.",
+    "pro_id": "73",
+    "image": "647c2a1e6c24e70eb03d907dcbb6974b.webp",
+    "status": "1",
+    "row_created": "03/02/2026 04:04:44pm"
+  },
+  {
+    "id": "229",
+    "feature_name": "Rugged IP67 casing",
+    "feature_description": "The IP67-rated casing ensures robust protection against dust and water immersion.",
+    "pro_id": "75",
+    "image": "df58bdb0c3e1330f0d1fc2b103679b86.webp",
+    "status": "1",
+    "row_created": "03/02/2026 05:11:37pm"
+  },
+  {
+    "id": "228",
+    "feature_name": "Built-in Battery Backup",
+    "feature_description": "Extended uptime, minimizing interruptions, enhancing operational reliability and efficiency",
+    "pro_id": "75",
+    "image": "0d1e5ae2bd2369fa2079815eb58efdc8.webp",
+    "status": "1",
+    "row_created": "03/02/2026 05:11:37pm"
+  },
+  {
+    "id": "227",
+    "feature_name": "SOS/Panic Button",
+    "feature_description": "Instant emergency alert button for quick assistance and immediate response",
+    "pro_id": "75",
+    "image": "16bd71fd6c061a52908ee2ee4168ad0d.webp",
+    "status": "1",
+    "row_created": "03/02/2026 05:11:37pm"
+  },
+  {
+    "id": "230",
+    "feature_name": "Wi-Fi Support",
+    "feature_description": "Seamless WiFi connectivity for real-time data access and remote control",
+    "pro_id": "76",
+    "image": "1410928c48c7ebe671b6bf01e680221c.webp",
+    "status": "1",
+    "row_created": "03/02/2026 05:35:15pm"
+  },
+  {
+    "id": "231",
+    "feature_name": "GPS Technology",
+    "feature_description": "Provides accurate real-time location data for efficient vehicle tracking and management.",
+    "pro_id": "76",
+    "image": "d77f58f5b477617b25d3a1737764b8d6.webp",
+    "status": "1",
+    "row_created": "03/02/2026 05:35:15pm"
+  },
+  {
+    "id": "232",
+    "feature_name": "Recording Resolution Up to 1080p",
+    "feature_description": "Captures clear audio alongside video for comprehensive monitoring and incident review.",
+    "pro_id": "76",
+    "image": "868e6b7cf78a9add54ae724a34b76e24.webp",
+    "status": "1",
+    "row_created": "03/02/2026 05:35:15pm"
+  },
+  {
+    "id": "234",
+    "feature_name": "Universal Compatibility",
+    "feature_description": "Works seamlessly with Apple Find My and Android Find Hub.",
+    "pro_id": "83",
+    "image": "3a8a323d2231cfcd834b08d6a64b8c14.webp",
+    "status": "1",
+    "row_created": "2026-07-02 16:29:51"
+  },
+  {
+    "id": "235",
+    "feature_name": "Lost Item Alerts",
+    "feature_description": "Receive notifications when important belongings are left behind.",
+    "pro_id": "83",
+    "image": "99a7c25c66094f218ba09f1b41cb8394.webp",
+    "status": "1",
+    "row_created": "2026-07-02 16:29:51"
+  },
+  {
+    "id": "236",
+    "feature_name": "Long Battery Life",
+    "feature_description": "Efficient power consumption with long-lasting battery backup.",
+    "pro_id": "83",
+    "image": "a770abfef936191fd1d8f2dbfe3bd872.webp",
+    "status": "1",
+    "row_created": "2026-07-02 16:29:51"
+  }
+]

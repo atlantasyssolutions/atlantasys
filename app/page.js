@@ -1,112 +1,145 @@
 import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import FloatingContact from '@/components/layout/FloatingContact';
+import HeroSlider from '@/components/home/HeroSlider';
+import ProductRangeSlider from '@/components/home/ProductRangeSlider';
+import HomeFaq from '@/components/home/HomeFaq';
+import CounterSection from '@/components/home/CounterSection';
+import { ORIGINAL_HOMEPAGE_FAQS } from '@/data/homepageFaqs';
+
 export const metadata = {
   title: 'GPS Tracking Devices & Fleet Management Software | Atlanta Systems',
-  description: 'Atlanta Systems delivers enterprise GPS tracking devices, AIS 140 compliant hardware, AI dash cams, fuel level monitoring, and video telematics across 27+ countries.',
+  description:
+    'Atlanta Systems delivers enterprise-grade GPS Tracking Devices and Fleet Management Software with Dash Cam video telematics, Video Surveillance, AIS 140 compliant hardware, and Mobile Video Recording for global fleets.',
   alternates: {
     canonical: 'https://www.atlantasys.com/',
   },
   openGraph: {
-    title: 'GPS Tracking Devices & Fleet Management Software | Atlanta Systems',
-    description: 'Atlanta Systems delivers enterprise GPS tracking devices, AIS 140 compliant hardware, AI dash cams, fuel level monitoring, and video telematics.',
-    url: 'https://www.atlantasys.com/',
-    siteName: 'Atlanta Systems',
+    siteName: 'Atlanta Systems Pvt. Ltd.',
     type: 'website',
+    title: 'GPS Tracking Devices & Fleet Management Software | Atlanta Systems',
+    description:
+      'Enterprise GPS tracking, fleet software, Dash Cams, Video Surveillance, AIS 140 compliant devices and Mobile Video Recording for global operations.',
+    url: 'https://www.atlantasys.com/',
+    images: ['/assets/img/logo.svg'],
   },
+};
+
+const homeFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: ORIGINAL_HOMEPAGE_FAQS.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: f.answer,
+    },
+  })),
 };
 
 export default function HomePage() {
   return (
     <>
+      <FloatingContact />
       <Header />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}
+      />
 
-      {/* Classic Carousel Banner */}
-      <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel" data-interval="2000" aria-label="Atlanta Systems Highlights">
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item img-overlay active">
-            <img src="/assets/img/banner/adas-and-dms.webp" className="d-block w-100" alt="Dash Cam and Video Surveillance for fleets" loading="eager" />
-            <div className="banner-item-content carousel-caption d-flex flex-column h-100 bottom-0">
-              <h2>ADAS &amp; DMS</h2>
-              <p>Elevating your safety with every drive and every mile</p>
-              <div className="banner-btn">
-                <Link href="/trackers/video-telematics" className="default-btn btn-bg-two border-radius-50">Learn More <i className="far fa-chevron-right"></i></Link>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item img-overlay">
-            <img src="/assets/img/banner/vehicle-telematics.webp" className="d-block w-100" alt="Fleet Management Software with real-time GPS tracking" loading="lazy" />
-            <div className="banner-item-content carousel-caption d-flex flex-column h-100 bottom-0">
-              <h2>Vehicle Telematics</h2>
-              <p>Track, analyze, and optimize your fleet with real-time insights</p>
-              <div className="banner-btn">
-                <Link href="/trackers/vehicle-telematics" className="default-btn btn-bg-two border-radius-50">Learn More <i className="far fa-chevron-right"></i></Link>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item img-overlay">
-            <img src="/assets/img/banner/asset-management.webp" className="d-block w-100" alt="Asset tracking devices and software" loading="lazy" />
-            <div className="banner-item-content carousel-caption d-flex flex-column h-100 bottom-0">
-              <h2>Asset Management</h2>
-              <p>Secure your assets, streamline operations, and ensure accuracy</p>
-              <div className="banner-btn">
-                <Link href="/trackers/assets-&-personal-telematics" className="default-btn btn-bg-two border-radius-50">Learn More <i className="far fa-chevron-right"></i></Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* 1. Hero Carousel Banner */}
+      <HeroSlider />
 
-      {/* Main Title Heading Section (H1 for SEO Audit Fix) */}
+      {/* 2. Concept Section: Enterprise Telematics for Global Fleets & Design, Create, Assist */}
       <div className="container pt-50">
         <div className="row justify-content-center">
           <div className="col-md-10">
             <div className="heading-title" style={{ position: 'relative', zIndex: 101 }}>
-              <h1 style={{ fontSize: '48px', textAlign: 'center', fontFamily: "'Oswald', sans-serif", color: '#1d2250', fontWeight: '800' }}>
-                GPS Tracking Devices &amp; Fleet Management Software | Atlanta Systems
+              <h1
+                style={{
+                  fontSize: 'clamp(2rem, 3.5vw, 50px)',
+                  textAlign: 'center',
+                  fontFamily: "'Oswald', sans-serif",
+                  color: '#1d2250',
+                  fontWeight: '700',
+                  marginBottom: '15px',
+                }}
+              >
+                Enterprise Telematics for Global Fleets
               </h1>
-              <br />
-              <p align="center" style={{ fontSize: '16px', color: '#444', lineHeight: '1.7' }}>
-                We combine GPS Tracking Devices, Fleet Management Software, and integrated video—Dash Cam, Video Surveillance, and Mobile Video Recording—to deliver measurable safety, productivity, and compliance outcomes.
+              <p
+                style={{
+                  fontSize: '16px',
+                  color: '#475569',
+                  maxWidth: '850px',
+                  margin: '0 auto 35px',
+                  lineHeight: '1.7',
+                  textAlign: 'center',
+                }}
+              >
+                We combine GPS Tracking Devices, Fleet Management Software, and integrated video—Dash Cam, Video
+                Surveillance, and Mobile Video Recording—to deliver measurable safety, productivity, and compliance outcomes.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Design / Create / Assist */}
         <div className="row">
           <div className="col-md-12">
             <div className="design">
               <div className="row">
-                <div className="col-md-4">
+                {/* Design Card */}
+                <div className="col-md-4 mb-4">
                   <div className="bxx">
-                    <img src="/assets/img/design.webp" loading="lazy" alt="Hardware and enclosure design for GPS tracking devices" />
+                    <img
+                      decoding="async"
+                      src="/assets/img/design.webp"
+                      loading="lazy"
+                      alt="Hardware and enclosure design for GPS tracking devices"
+                    />
                     <div className="bxx_content">
                       <div className="bxx_title">Design</div>
-                      <div className="bxx_description">Concept-to-production design across PCB, enclosure and firmware for robust GPS Tracking Devices and AIS 140 compliant hardware.</div>
+                      <div className="bxx_description">
+                        Concept-to-production design across PCB, enclosure and firmware for robust GPS Tracking Devices and AIS 140 compliant hardware.
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4">
+
+                {/* Create Card */}
+                <div className="col-md-4 mb-4">
                   <div className="bxx">
-                    <img src="/assets/img/create.webp" loading="lazy" alt="Manufacturing and software integration for fleet solutions" />
+                    <img
+                      decoding="async"
+                      src="/assets/img/create.webp"
+                      loading="lazy"
+                      alt="Manufacturing and software integration for fleet solutions"
+                    />
                     <div className="bxx_content">
                       <div className="bxx_title">Create</div>
-                      <div className="bxx_description">Integrated hardware + cloud platform for Fleet Management Software, video telematics, and IoT sensors at scale.</div>
+                      <div className="bxx_description">
+                        Integrated hardware + cloud platform for Fleet Management Software, video telematics, and IoT sensors at scale.
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4">
+
+                {/* Assist Card */}
+                <div className="col-md-4 mb-4">
                   <div className="bxx">
-                    <img src="/assets/img/assist.webp" loading="lazy" alt="Deployment and after-sales support" />
+                    <img
+                      decoding="async"
+                      src="/assets/img/assist.webp"
+                      loading="lazy"
+                      alt="Deployment and after-sales support"
+                    />
                     <div className="bxx_content">
                       <div className="bxx_title">Assist</div>
-                      <div className="bxx_description">Global deployment, onboarding, and lifecycle support with enterprise SLAs and compliance guidance.</div>
+                      <div className="bxx_description">
+                        Global deployment, onboarding, and lifecycle support with enterprise SLAs and compliance guidance.
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -116,92 +149,152 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Discover Range Of Products */}
-      <div className="case-study-area pt-50">
-        <div className="container-fluid p-0">
-          <div className="heading-title">
-            <h2>Discover Our Range Of Products</h2>
-          </div>
-          <div className="container mt-4 mb-4">
-            <div className="row justify-content-center">
-              <div className="col-md-3 col-6 text-center mb-4">
-                <Link href="/trackers/vehicle-telematics">
-                  <img src="/assets/product_category/advanced.webp" alt="Vehicle Telematics" style={{ borderRadius: '8px', maxWidth: '100%' }} />
-                </Link>
-                <div className="content mt-2">
-                  <h3><Link href="/trackers/vehicle-telematics" style={{ color: '#1d2250', fontWeight: '700', textDecoration: 'none' }}>Vehicle Telematics</Link></h3>
-                </div>
-              </div>
-              <div className="col-md-3 col-6 text-center mb-4">
-                <Link href="/trackers/indoor-telematics">
-                  <img src="/assets/product_category/indoorr.webp" alt="Indoor Telematics" style={{ borderRadius: '8px', maxWidth: '100%' }} />
-                </Link>
-                <div className="content mt-2">
-                  <h3><Link href="/trackers/indoor-telematics" style={{ color: '#1d2250', fontWeight: '700', textDecoration: 'none' }}>Indoor Telematics</Link></h3>
-                </div>
-              </div>
-              <div className="col-md-3 col-6 text-center mb-4">
-                <Link href="/trackers/video-telematics">
-                  <img src="/assets/product_category/video-telematics.webp" alt="Video Telematics" style={{ borderRadius: '8px', maxWidth: '100%' }} />
-                </Link>
-                <div className="content mt-2">
-                  <h3><Link href="/trackers/video-telematics" style={{ color: '#1d2250', fontWeight: '700', textDecoration: 'none' }}>Video Telematics</Link></h3>
-                </div>
-              </div>
-              <div className="col-md-3 col-6 text-center mb-4">
-                <Link href="/trackers/iot-sensors">
-                  <img src="/assets/product_category/iot-sensors.webp" alt="IOT Sensors" style={{ borderRadius: '8px', maxWidth: '100%' }} />
-                </Link>
-                <div className="content mt-2">
-                  <h3><Link href="/trackers/iot-sensors" style={{ color: '#1d2250', fontWeight: '700', textDecoration: 'none' }}>IOT Sensors</Link></h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* 3. Range of Products Slider */}
+      <ProductRangeSlider />
 
-      {/* Services Grid Section */}
-      <section className="services-area pt-30 pb-50">
+      {/* 4. Services Area / Product Showcase Boxes */}
+      <section className="services-area">
         <div className="container">
           <div className="row align-items-center justify-content-center">
-            <div className="col-md-6 mb-4">
-              <Link href="/trackers/vehicle-telematics" className="pr" style={{ textDecoration: 'none' }}>
+            {/* Box 1: Vehicle Telematics */}
+            <div className="col-md-6">
+              <br />
+              <Link href="/trackers/vehicle-telematics" className="pr">
                 <div className="product_box">
                   <h3>Vehicle Telematics</h3>
-                  <p>Stay ahead of the curve and maintain a competitive edge with our advanced tracking system. From enhancing productivity to reducing costs, our solution enables informed decision-making that offers unparalleled precision.</p>
+                  <p>
+                    Stay ahead of the curve and maintain a competitive edge with our advanced tracking system. From enhancing
+                    productivity to reducing costs, our solution enables informed decision-making that offers unparalleled precision.
+                  </p>
                   <span>Show devices</span>
-                  <p className="image"><img src="/assets/product_category/advanced.webp" loading="lazy" alt="Vehicle Telematics" /></p>
+                  <p className="image">
+                    <img src="/assets/product_category/advanced.webp" loading="lazy" alt="Vehicle Telematics" />
+                  </p>
                 </div>
               </Link>
             </div>
-            <div className="col-md-6 mb-4">
-              <Link href="/trackers/indoor-telematics" className="pr" style={{ textDecoration: 'none' }}>
+
+            {/* Box 2: Indoor Telematics */}
+            <div className="col-md-6">
+              <br />
+              <Link href="/trackers/indoor-telematics" className="pr">
                 <div className="product_box">
                   <h3>Indoor Telematics</h3>
-                  <p>Indoor telematics solutions provide real-time asset tracking, improved space utilization, and enhanced operational efficiency.</p>
+                  <p>
+                    Indoor telematics solutions provide real-time asset tracking, improved space utilization, and enhanced
+                    operational efficiency.
+                  </p>
                   <span>Show devices</span>
-                  <p className="image"><img src="/assets/product_category/indoorr.webp" loading="lazy" alt="Indoor Telematics" /></p>
+                  <p className="image">
+                    <img src="/assets/product_category/indoorr.webp" loading="lazy" alt="Indoor Telematics" />
+                  </p>
                 </div>
               </Link>
             </div>
-            <div className="col-md-6 mb-4">
-              <Link href="/trackers/video-telematics" className="pr" style={{ textDecoration: 'none' }}>
+
+            {/* Box 3: Video Telematics */}
+            <div className="col-md-6">
+              <br />
+              <Link href="/trackers/video-telematics" className="pr">
                 <div className="product_box">
                   <h3>Video Telematics</h3>
-                  <p>Atlanta's Video Telematics offers state-of-the-art safety features for vehicles, including advanced driver assistance systems and driver monitoring technology.</p>
+                  <p>
+                    Atlanta&apos;s Video Telematic offers state-of-the-art safety features for vehicles, including advanced driver assistance
+                    systems and driver monitoring technology. Elevate your driving experience with enhanced safety and peace of mind.
+                  </p>
                   <span>Show devices</span>
-                  <p className="image"><img src="/assets/product_category/video-telematics.webp" loading="lazy" alt="Video Telematics" /></p>
+                  <p className="image">
+                    <img src="/assets/product_category/video-telematics.webp" loading="lazy" alt="Video Telematics" />
+                  </p>
                 </div>
               </Link>
             </div>
-            <div className="col-md-6 mb-4">
-              <Link href="/trackers/iot-sensors" className="pr" style={{ textDecoration: 'none' }}>
+
+            {/* Box 4: Assets & Personal Telematics */}
+            <div className="col-md-6">
+              <br />
+              <Link href="/trackers/assets-&-personal-telematics" className="pr">
+                <div className="product_box">
+                  <h3>Assets &amp; Personal Telematics</h3>
+                  <p>
+                    Secure valuable assets and individuals with our state-of-the-art Asset and Personal Tracker. Our solution
+                    guarantees efficiency and tranquility by facilitating geo-fencing, SOS alerts, and tamper detection.
+                  </p>
+                  <span>Show devices</span>
+                  <p className="image">
+                    <img src="/assets/product_category/asset-telematics.webp" loading="lazy" alt="Assets & Personal Telematics" />
+                  </p>
+                </div>
+              </Link>
+            </div>
+
+            {/* Box 5: OBD Telematics */}
+            <div className="col-md-6">
+              <br />
+              <Link href="/trackers/obd-telematics" className="pr">
+                <div className="product_box">
+                  <h3>OBD Telematics</h3>
+                  <p>
+                    Atlanta&apos;s OBD trackers provide seamless vehicle monitoring and diagnostics. With real-time data insights and
+                    easy installation, optimize fleet performance and ensure operational efficiency with confidence and ease.
+                  </p>
+                  <span>Show devices</span>
+                  <p className="image">
+                    <img src="/assets/product_category/obd.webp" loading="lazy" alt="OBD Telematics" />
+                  </p>
+                </div>
+              </Link>
+            </div>
+
+            {/* Box 6: IOT Sensors */}
+            <div className="col-md-6">
+              <br />
+              <Link href="/trackers/iot-sensors" className="pr">
                 <div className="product_box">
                   <h3>IOT Sensors</h3>
-                  <p>Our IOT sensors offer comprehensive monitoring solutions for various industries. With real-time data collection and analysis, optimize efficiency, safety, and decision-making processes.</p>
+                  <p>
+                    Our IOT sensors offer comprehensive monitoring solutions for various industries. With real-time data collection
+                    and analysis, optimize efficiency, safety, and decision-making processes across your operations seamlessly.
+                  </p>
                   <span>Show devices</span>
-                  <p className="image"><img src="/assets/product_category/iot-sensors.webp" loading="lazy" alt="IOT Sensors" /></p>
+                  <p className="image">
+                    <img src="/assets/product_category/iot-sensors.webp" loading="lazy" alt="IOT Sensors" />
+                  </p>
+                </div>
+              </Link>
+            </div>
+
+            {/* Box 7: Taxi GPS Meter */}
+            <div className="col-md-6">
+              <br />
+              <Link href="/trackers/taxi-gps-meter" className="pr">
+                <div className="product_box">
+                  <h3>Taxi GPS Meter</h3>
+                  <p>
+                    GPS taxi meters provide accurate fare calculations, real-time tracking, and enhanced passenger safety features.
+                  </p>
+                  <span>Show devices</span>
+                  <p className="image">
+                    <img src="/assets/product_category/taxi-meter.webp" loading="lazy" alt="Taxi GPS Meter" />
+                  </p>
+                </div>
+              </Link>
+            </div>
+
+            {/* Box 8: Universal Find Devices */}
+            <div className="col-md-6">
+              <br />
+              <Link href="/trackers/universal-find-devices" className="pr">
+                <div className="product_box">
+                  <h3>Universal Find Devices</h3>
+                  <p>
+                    Universal Find Trackers are smart Bluetooth tracking devices that help you locate keys, wallets, bags, luggage, and
+                    other valuables.
+                  </p>
+                  <span>Show devices</span>
+                  <p className="image">
+                    <img src="/assets/product_category/5b747f0f4ab017ea24599204282d2635.webp" loading="lazy" alt="Universal Find Devices" />
+                  </p>
                 </div>
               </Link>
             </div>
@@ -209,34 +302,34 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Our Strength Section */}
+      {/* 5. Our Strength Section */}
       <section className="work-process-area pt-50 pb-70">
         <div className="container">
           <div className="heading-title">
             <h2>Our Strength</h2>
           </div>
           <div className="row align-items-center justify-content-center">
-            <div className="col-md-4 pt-30">
+            <div className="col-md-4 pt-50">
               <div className="half-box">
-                <h2><i className="far fa-dollar-sign"></i> Enterprise-grade</h2>
+                <h2><i className="fas fa-dollar-sign me-2"></i> Enterprise-grade</h2>
                 <div className="content-main">
                   <p>Reliable hardware and cloud platform engineered for uptime, security and scale.</p>
                 </div>
               </div>
             </div>
 
-            <div className="col-md-4 pt-30">
+            <div className="col-md-4 pt-50">
               <div className="half-box">
-                <h2><i className="far fa-user-tie"></i> Compliance</h2>
+                <h2><i className="fas fa-user-tie me-2"></i> Compliance</h2>
                 <div className="content-main">
                   <p>AIS 140 compliant GPS devices, audit-ready reporting and configurable data retention.</p>
                 </div>
               </div>
             </div>
 
-            <div className="col-md-4 pt-30">
+            <div className="col-md-4 pt-50">
               <div className="half-box">
-                <h2><i className="fal fa-award"></i> Global Support</h2>
+                <h2><i className="fas fa-award me-2"></i> Global Support</h2>
                 <div className="content-main">
                   <p>Consultative deployment and lifecycle support with clear SLAs.</p>
                 </div>
@@ -246,134 +339,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Global Presence Counter Area */}
-      <div className="counter-area pt-50 pb-50">
-        <div className="container">
-          <div className="heading-title">
-            <h2>Global Presence</h2>
-          </div>
-          <div className="row align-items-center justify-content-center">
-            <div className="col-lg-8 col-md-8 text-center">
-              <div className="map-container" style={{ position: 'relative' }}>
-                <img src="/assets/img/map-back.webp" alt="Global presence map" loading="lazy" style={{ maxWidth: '100%' }} />
-              </div>
-            </div>
-          </div>
-          <div className="row align-items-center justify-content-center mt-4" id="counter">
-            <div className="col-md-2 col-4 text-center">
-              <div className="counter-another-content">
-                <i className="fal fa-microchip" style={{ fontSize: '28px', color: '#0052cc' }}></i>
-                <div className="milestone-counter mt-2">
-                  <h3 className="highlight" style={{ fontSize: '24px', fontWeight: '800' }}>2</h3>
-                  <span style={{ fontSize: '12px' }}>State-of-the-art manufacturing plants</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-2 col-4 text-center">
-              <div className="counter-another-content">
-                <i className="fal fa-award" style={{ fontSize: '28px', color: '#0052cc' }}></i>
-                <div className="milestone-counter mt-2">
-                  <h3 className="highlight" style={{ fontSize: '24px', fontWeight: '800' }}>32+</h3>
-                  <span style={{ fontSize: '12px' }}>Years of expertise</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-2 col-4 text-center">
-              <div className="counter-another-content">
-                <i className="fal fa-globe-americas" style={{ fontSize: '28px', color: '#0052cc' }}></i>
-                <div className="milestone-counter mt-2">
-                  <h3 className="highlight" style={{ fontSize: '24px', fontWeight: '800' }}>27+</h3>
-                  <span style={{ fontSize: '12px' }}>Countries served</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-2 col-4 text-center">
-              <div className="counter-another-content">
-                <i className="fal fa-trophy-alt" style={{ fontSize: '28px', color: '#0052cc' }}></i>
-                <div className="milestone-counter mt-2">
-                  <h3 className="highlight" style={{ fontSize: '24px', fontWeight: '800' }}>20+</h3>
-                  <span style={{ fontSize: '12px' }}>Awards won</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-2 col-4 text-center">
-              <div className="counter-another-content">
-                <i className="fal fa-globe-asia" style={{ fontSize: '28px', color: '#0052cc' }}></i>
-                <div className="milestone-counter mt-2">
-                  <h3 className="highlight" style={{ fontSize: '24px', fontWeight: '800' }}>2M+</h3>
-                  <span style={{ fontSize: '12px' }}>Devices delivered</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-2 col-4 text-center">
-              <div className="counter-another-content">
-                <i className="fal fa-chart-network" style={{ fontSize: '28px', color: '#0052cc' }}></i>
-                <div className="milestone-counter mt-2">
-                  <h3 className="highlight" style={{ fontSize: '24px', fontWeight: '800' }}>25+</h3>
-                  <span style={{ fontSize: '12px' }}>States &amp; UTs empanelled</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* 6. Global Presence Map & Animated Running Milestone Counters */}
+      <CounterSection showMap={true} />
 
-      {/* FAQ Accordion Section */}
-      <section className="faq-section pt-50 pb-50">
-        <div className="container">
-          <div className="heading-title text-center">
-            <h2>Frequently Asked Questions</h2>
-          </div>
-          <br />
-          <div className="accordion faq-accordion" id="faqAccordion">
-            <div className="accordion-item mb-3" style={{ border: '1px solid #e2e8f0', borderRadius: '8px', overflow: 'hidden' }}>
-              <h3 className="accordion-header" id="headingOne">
-                <button className="accordion-button" type="button" style={{ fontSize: '17px', fontWeight: '700', color: '#1d2250' }}>
-                  What’s the difference between a GPS Tracking Device and Fleet Management Software?
-                </button>
-              </h3>
-              <div className="accordion-body" style={{ padding: '15px 20px', color: '#555', fontSize: '15px' }}>
-                A GPS Tracking Device captures real-time data; Fleet Management Software converts it into dashboards, alerts and reports for routes, driver behavior, fuel, maintenance and compliance.
-              </div>
-            </div>
+      {/* 7. Frequently Asked Questions Accordion */}
+      <HomeFaq />
 
-            <div className="accordion-item mb-3" style={{ border: '1px solid #e2e8f0', borderRadius: '8px', overflow: 'hidden' }}>
-              <h3 className="accordion-header" id="headingTwo">
-                <button className="accordion-button" type="button" style={{ fontSize: '17px', fontWeight: '700', color: '#1d2250' }}>
-                  Do you support Dash Cam and Video Surveillance?
-                </button>
-              </h3>
-              <div className="accordion-body" style={{ padding: '15px 20px', color: '#555', fontSize: '15px' }}>
-                Yes, including AI Dash Cam (forward/cabin), ADAS/DMS driver monitoring and Mobile Video Recording with event-based uploads.
-              </div>
-            </div>
-
-            <div className="accordion-item mb-3" style={{ border: '1px solid #e2e8f0', borderRadius: '8px', overflow: 'hidden' }}>
-              <h3 className="accordion-header" id="headingThree">
-                <button className="accordion-button" type="button" style={{ fontSize: '17px', fontWeight: '700', color: '#1d2250' }}>
-                  Are your devices AIS 140 compliant?
-                </button>
-              </h3>
-              <div className="accordion-body" style={{ padding: '15px 20px', color: '#555', fontSize: '15px' }}>
-                Yes. We supply AIS 140 compliant GPS devices and provide the documentation and configuration required for rollouts.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Download Catalogue Banner */}
-      <div className="product_catalog pt-50 pb-50">
+      {/* 8. Product Catalogue Download CTA Banner */}
+      <div className="product_catalog pt-20 pb-20">
         <div className="container">
           <div className="row align-items-center justify-content-center">
-            <div className="col-md-5 text-center">
-              <img src="/assets/img/pro-catalog.webp" alt="Download product catalogue" loading="lazy" style={{ maxWidth: '100%' }} />
+            <div className="col-md-5">
+              <img src="/assets/img/pro-catalog.webp" alt="Download product catalogue" loading="lazy" />
             </div>
             <div className="col-md-7 catalog_row">
               <h2 className="catalog_heading">Ready to explore our products?</h2>
               <p>Explore GPS Tracking Devices, Fleet Management Software, Dash Cam video, Video Surveillance and AIS 140 compliant hardware.</p>
               <Link href="/contact" className="catalog_margin default-btn btn-bg-two border-radius-50">
-                Contact Sales
+                Download
               </Link>
             </div>
           </div>

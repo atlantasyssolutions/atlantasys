@@ -1,0 +1,212 @@
+[
+  {
+    "id": "1",
+    "name": "Interface",
+    "status": "1",
+    "row_created": "29/05/2024 11:06:43am",
+    "slug": "interface"
+  },
+  {
+    "id": "2",
+    "name": "Navigation",
+    "status": "1",
+    "row_created": "29/05/2024 11:06:57am",
+    "slug": "navigation"
+  },
+  {
+    "id": "3",
+    "name": "Cellular Network",
+    "status": "1",
+    "row_created": "29/05/2024 11:07:09am",
+    "slug": "cellular-network"
+  },
+  {
+    "id": "4",
+    "name": "Power",
+    "status": "1",
+    "row_created": "29/05/2024 11:07:39am",
+    "slug": "power"
+  },
+  {
+    "id": "5",
+    "name": "Bluetooth",
+    "status": "1",
+    "row_created": "29/05/2024 11:07:50am",
+    "slug": "bluetooth"
+  },
+  {
+    "id": "6",
+    "name": "Operating Environment",
+    "status": "1",
+    "row_created": "29/05/2024 11:08:03am",
+    "slug": "operating-environment"
+  },
+  {
+    "id": "7",
+    "name": "Physical Specification",
+    "status": "1",
+    "row_created": "29/05/2024 11:08:18am",
+    "slug": "physical-specification"
+  },
+  {
+    "id": "8",
+    "name": "Features",
+    "status": "1",
+    "row_created": "29/05/2024 11:08:25am",
+    "slug": "features"
+  },
+  {
+    "id": "9",
+    "name": "Item",
+    "status": "1",
+    "row_created": "30/05/2024 06:09:52pm",
+    "slug": "item"
+  },
+  {
+    "id": "10",
+    "name": "Audio & Video",
+    "status": "1",
+    "row_created": "30/05/2024 06:10:10pm",
+    "slug": "audio-video"
+  },
+  {
+    "id": "11",
+    "name": "Recording & Playback",
+    "status": "1",
+    "row_created": "30/05/2024 06:11:04pm",
+    "slug": "recording-playback"
+  },
+  {
+    "id": "12",
+    "name": "Field Of View",
+    "status": "1",
+    "row_created": "30/05/2024 06:20:25pm",
+    "slug": "field-of-view"
+  },
+  {
+    "id": "13",
+    "name": "Technical Data",
+    "status": "1",
+    "row_created": "09/11/2024 02:42:15pm",
+    "slug": "technical-data"
+  },
+  {
+    "id": "14",
+    "name": "Relative Humidity",
+    "status": "1",
+    "row_created": "09/11/2024 03:27:56pm",
+    "slug": "relative-humidity"
+  },
+  {
+    "id": "15",
+    "name": "Temperature",
+    "status": "1",
+    "row_created": "09/11/2024 03:55:57pm",
+    "slug": "temperature"
+  },
+  {
+    "id": "16",
+    "name": "Certifications",
+    "status": "1",
+    "row_created": "07/01/2025 01:15:32pm",
+    "slug": "certifications"
+  },
+  {
+    "id": "17",
+    "name": "Operating Mode",
+    "status": "1",
+    "row_created": "07/01/2025 01:15:43pm",
+    "slug": "operating-mode"
+  },
+  {
+    "id": "18",
+    "name": "Electronic",
+    "status": "1",
+    "row_created": "07/01/2025 04:10:15pm",
+    "slug": "electronic"
+  },
+  {
+    "id": "19",
+    "name": "Protocols Compatibility",
+    "status": "1",
+    "row_created": "07/01/2025 04:11:17pm",
+    "slug": "protocols-compatibility"
+  },
+  {
+    "id": "20",
+    "name": "Modular SoM Core",
+    "status": "1",
+    "row_created": "09/01/2025 03:48:25pm",
+    "slug": "modular-som-core"
+  },
+  {
+    "id": "21",
+    "name": "External Interfaces",
+    "status": "1",
+    "row_created": "09/01/2025 03:48:40pm",
+    "slug": "external-interfaces"
+  },
+  {
+    "id": "22",
+    "name": "Wireless Interfaces",
+    "status": "1",
+    "row_created": "09/01/2025 03:48:53pm",
+    "slug": "wireless-interfaces"
+  },
+  {
+    "id": "23",
+    "name": "Security",
+    "status": "1",
+    "row_created": "09/01/2025 03:49:37pm",
+    "slug": "security"
+  },
+  {
+    "id": "24",
+    "name": "Software",
+    "status": "1",
+    "row_created": "09/01/2025 03:49:51pm",
+    "slug": "software"
+  },
+  {
+    "id": "25",
+    "name": "Physical Interfaces",
+    "status": "1",
+    "row_created": "09/01/2025 03:51:25pm",
+    "slug": "physical-interfaces"
+  },
+  {
+    "id": "26",
+    "name": "Interface Connector",
+    "status": "1",
+    "row_created": "09/01/2025 03:51:47pm",
+    "slug": "interface-connector"
+  },
+  {
+    "id": "27",
+    "name": "CAN",
+    "status": "1",
+    "row_created": "09/01/2025 03:51:58pm",
+    "slug": "can"
+  },
+  {
+    "id": "28",
+    "name": "Ethernet",
+    "status": "1",
+    "row_created": "09/01/2025 03:52:15pm",
+    "slug": "ethernet"
+  },
+  {
+    "id": "29",
+    "name": "LoRa",
+    "status": "1",
+    "row_created": "10/01/2025 12:22:31pm",
+    "slug": "lora"
+  },
+  {
+    "id": "30",
+    "name": "Certification",
+    "status": "1",
+    "row_created": "25/11/2025 03:20:46pm",
+    "slug": "certification"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "question": "Do you have BLE Trackers?",
+    "answer": "Yes we have BLE integrated in our various trackers",
+    "status": "1"
+  },
+  {
+    "id": "2",
+    "question": "Do you have Asset tracker with large battery?",
+    "answer": "Yes, we have asset trackers with huge battery backup that can last upto an year.",
+    "status": "1"
+  },
+  {
+    "id": "3",
+    "question": "Do you customize the specifications as per the requirement?",
+    "answer": "Yes, we customize products depending upon the requirement of our clients.",
+    "status": "1"
+  },
+  {
+    "id": "4",
+    "question": "Do you have AIS 140 Device?",
+    "answer": "Yes, we have iCAT approved AIS140 device which is emapanelled in all of the desired states.",
+    "status": "1"
+  },
+  {
+    "id": "5",
+    "question": "Do you have any device for electric vehicles?",
+    "answer": "Yes, our device library is designed as such keeping in mind the requirements of Electric Vehicle industry.",
+    "status": "1"
+  },
+  {
+    "id": "6",
+    "question": "Are charges for White Label one-time?",
+    "answer": "Yes, There is a one time fee to White label our products.",
+    "status": "1"
+  },
+  {
+    "id": "7",
+    "question": "What are the charges for customization?",
+    "answer": "We have a dedicated team of analysts to help with your custom requirements. Therncustomization charges can be given once we prepare the complete scope of work.",
+    "status": "1"
+  },
+  {
+    "id": "10",
+    "question": "What is the warranty period for battery life?",
+    "answer": "The warranty lasts upto 6 months for battery.",
+    "status": "1"
+  },
+  {
+    "id": "11",
+    "question": "What is the warranty period for the products you sell?",
+    "answer": "Warranty period depends entirely upon the projects and 1 Year in general.",
+    "status": "1"
+  },
+  {
+    "id": "12",
+    "question": "Do you export your products?",
+    "answer": "Yes we have been exporting our products to various International markets like Gulf, USA, Canada, Entire Africa.",
+    "status": "1"
+  }
+]

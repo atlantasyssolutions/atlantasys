@@ -1,5 +1,6 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import CounterSection from '@/components/home/CounterSection';
 import Link from 'next/link';
 
 export const metadata = {
@@ -39,63 +40,8 @@ export default function AboutPage() {
               </p>
               <br />
 
-              {/* Counter Stats */}
-              <div className="row justify-content-center" id="counter">
-                <div className="col-md-2" style={{ textAlign: 'center' }}>
-                  <div className="counter-another-content">
-                    <i className="fas fa-microchip"></i>
-                    <div className="milestone-counter">
-                      <h3 className="highlight"><span></span><b>2</b></h3>
-                      <span>State-of-the-art manufacturing plants</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-2" style={{ textAlign: 'center' }}>
-                  <div className="counter-another-content">
-                    <i className="fas fa-award"></i>
-                    <div className="milestone-counter">
-                      <h3 className="highlight"><span></span><b>32</b>+</h3>
-                      <span>Years of<br />expertise</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-2" style={{ textAlign: 'center' }}>
-                  <div className="counter-another-content">
-                    <i className="fas fa-globe-americas"></i>
-                    <div className="milestone-counter">
-                      <h3 className="highlight"><span></span><b>27</b>+</h3>
-                      <span>Countries<br />served</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-2" style={{ textAlign: 'center' }}>
-                  <div className="counter-another-content">
-                    <i className="fas fa-trophy"></i>
-                    <div className="milestone-counter">
-                      <h3 className="highlight"><span></span><b>20</b>+</h3>
-                      <span>Awards<br />won</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-2" style={{ textAlign: 'center' }}>
-                  <div className="counter-another-content">
-                    <i className="fas fa-globe-asia"></i>
-                    <div className="milestone-counter">
-                      <h3 className="highlight"><span></span><b>1</b>M+</h3>
-                      <span>Devices<br />delivered</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-2" style={{ textAlign: 'center' }}>
-                  <div className="counter-another-content">
-                    <i className="fas fa-project-diagram"></i>
-                    <div className="milestone-counter">
-                      <h3 className="highlight"><span></span><b>25</b>+</h3>
-                      <span>States &amp; UTs empanelled across India</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {/* Animated Running Orange Milestone Counters */}
+              <CounterSection showMap={false} />
             </div>
           </div>
         </div>
