@@ -648,21 +648,118 @@ export default async function BlogPostPage({ params }) {
             {renderRichMarkdown(blog.content)}
           </div>
 
-          {/* B2B Procurement CTA Card */}
-          <div style={{ textAlign: 'center', margin: '4rem 0 2rem 0', padding: '3.5rem 2rem', background: 'linear-gradient(135deg, #0F2D4E 0%, #0169A9 100%)', borderRadius: '16px', color: '#FFFFFF' }}>
-            <h3 style={{ fontSize: '1.75rem', marginBottom: '12px', color: '#FFFFFF', fontWeight: '800' }}>
-              Deploy Atlanta Telematics Hardware for Your Fleet
-            </h3>
-            <p style={{ color: '#E2E8F0', maxWidth: '600px', margin: '0 auto 24px auto', fontSize: '1rem', lineHeight: '1.6' }}>
-              Direct SMT factory pricing, white-label distributor margins, private APN compilation, and certified REST API webhooks for system integrators and fleet operators.
-            </p>
-            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="/contact" className="btn" style={{ background: '#0169A9', color: '#FFFFFF', border: '1px solid #38BDF8', padding: '12px 28px', borderRadius: '8px', fontWeight: '700', textDecoration: 'none' }}>
-                Request Wholesale Quotation
-              </Link>
-              <Link href="/blog" className="btn" style={{ background: 'transparent', color: '#FFFFFF', border: '1px solid rgba(255,255,255,0.4)', padding: '12px 28px', borderRadius: '8px', fontWeight: '600', textDecoration: 'none' }}>
-                Back to Knowledge Hub
-              </Link>
+          {/* Dual-Track High-Intent B2B Lead Generation Engine */}
+          <div style={{ margin: '4rem 0 2rem 0', borderRadius: '18px', overflow: 'hidden', border: '1px solid #CBD5E1', boxShadow: '0 12px 35px -5px rgba(15, 45, 78, 0.12)' }}>
+            <div style={{ background: '#0F2D4E', padding: '2.5rem 2rem 2rem 2rem', color: '#FFFFFF', textAlign: 'center' }}>
+              <span style={{ background: 'rgba(56, 189, 248, 0.15)', color: '#38BDF8', fontSize: '0.78rem', fontWeight: '800', letterSpacing: '1px', textTransform: 'uppercase', padding: '6px 14px', borderRadius: '999px', display: 'inline-block', marginBottom: '12px', border: '1px solid rgba(56, 189, 248, 0.3)' }}>
+                B2B Telematics OEM &amp; Manufacturing
+              </span>
+              <h3 style={{ fontSize: '1.9rem', fontWeight: '800', color: '#FFFFFF', marginBottom: '10px' }}>
+                Accelerate Your Fleet Operations or Reseller Business
+              </h3>
+              <p style={{ color: '#E2E8F0', maxWidth: '640px', margin: '0 auto', fontSize: '1rem', lineHeight: '1.6' }}>
+                32+ years of indigenous SMT manufacturing. Choose your partnership path below for priority dispatch and factory-direct access:
+              </p>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', background: '#F8FAFC' }}>
+              {/* Channel 1: High-Intent End-to-End Fleets */}
+              <div style={{ padding: '2.5rem 2rem', borderRight: '1px solid #E2E8F0', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
+                  <span style={{ background: '#0169A9', color: '#FFFFFF', padding: '3px 10px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase' }}>
+                    Enterprise Fleets
+                  </span>
+                  <span style={{ color: '#64748B', fontSize: '0.85rem', fontWeight: '600' }}>Direct Deployment</span>
+                </div>
+                <h4 style={{ fontSize: '1.35rem', fontWeight: '800', color: '#0F2D4E', marginBottom: '10px' }}>
+                  Request a Fleet Pilot &amp; Trial Units
+                </h4>
+                <p style={{ color: '#475569', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '18px', flex: 1 }}>
+                  Test Atlanta VTC 110, VTC 500, or AIS-140 trackers on your own trucks. Non-invasive installation, warranty-safe magnetic CAN clamps, and live dashboard demonstration.
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  <Link 
+                    href="/contact" 
+                    style={{
+                      background: '#0169A9',
+                      color: '#FFFFFF',
+                      textAlign: 'center',
+                      padding: '13px 20px',
+                      borderRadius: '8px',
+                      fontWeight: '700',
+                      fontSize: '0.95rem',
+                      textDecoration: 'none',
+                      transition: 'background 0.2s',
+                      boxShadow: '0 4px 12px rgba(1, 105, 169, 0.25)'
+                    }}
+                  >
+                    Request Fleet Pilot / Quote &rarr;
+                  </Link>
+                  <a 
+                    href="tel:+919990333888" 
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: '6px',
+                      color: '#0F2D4E',
+                      fontWeight: '700',
+                      fontSize: '0.9rem',
+                      textDecoration: 'none',
+                      padding: '8px'
+                    }}
+                  >
+                    📞 Direct Fleet Desk: +91 9990333888
+                  </a>
+                </div>
+              </div>
+
+              {/* Channel 2: Distributors & Resellers */}
+              <div style={{ padding: '2.5rem 2rem', background: '#FFFFFF', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
+                  <span style={{ background: '#0F2D4E', color: '#38BDF8', padding: '3px 10px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase' }}>
+                    Dealers &amp; Integrators
+                  </span>
+                  <span style={{ color: '#64748B', fontSize: '0.85rem', fontWeight: '600' }}>Wholesale OEM</span>
+                </div>
+                <h4 style={{ fontSize: '1.35rem', fontWeight: '800', color: '#0F2D4E', marginBottom: '10px' }}>
+                  Become an Atlanta Authorized Reseller
+                </h4>
+                <p style={{ color: '#475569', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '18px', flex: 1 }}>
+                  Unlock 30%+ reseller profit margins, bulk OEM hardware pricing, custom firmware compilation, and white-label cloud telematics for your regional market.
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  <Link 
+                    href="/reseller" 
+                    style={{
+                      background: '#0F2D4E',
+                      color: '#FFFFFF',
+                      textAlign: 'center',
+                      padding: '13px 20px',
+                      borderRadius: '8px',
+                      fontWeight: '700',
+                      fontSize: '0.95rem',
+                      textDecoration: 'none',
+                      border: '1px solid #38BDF8',
+                      transition: 'background 0.2s',
+                      boxShadow: '0 4px 12px rgba(15, 45, 78, 0.2)'
+                    }}
+                  >
+                    Join Reseller Program &rarr;
+                  </Link>
+                  <span style={{ textAlign: 'center', color: '#64748B', fontSize: '0.85rem', padding: '8px' }}>
+                    ⚡ Instant Tier Evaluation &bull; Zero Application Fee
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Trust Guarantee Strip */}
+            <div style={{ background: '#F1F5F9', borderTop: '1px solid #E2E8F0', padding: '12px 20px', display: 'flex', justifyContent: 'center', gap: '24px', flexWrap: 'wrap', fontSize: '0.825rem', color: '#475569', fontWeight: '600' }}>
+              <span>🛡️ 32+ Years Indigenous SMT OEM</span>
+              <span>📡 1,000,000+ Assets Powered</span>
+              <span>🌍 27+ Countries Deployed</span>
+              <span>✅ ISO 9001, CE, AIS-140 Certified</span>
             </div>
           </div>
 
