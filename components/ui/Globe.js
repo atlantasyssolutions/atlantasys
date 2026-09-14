@@ -24,16 +24,16 @@ export function Globe({
   const [isInitialized, setIsInitialized] = useState(false);
 
   const defaultProps = {
-    pointSize: 1,
-    atmosphereColor: "#ffffff",
+    pointSize: 4,
+    atmosphereColor: "#FFFFFF",
     showAtmosphere: true,
     atmosphereAltitude: 0.1,
     polygonColor: "rgba(255,255,255,0.7)",
-    globeColor: "#1d072e",
-    emissive: "#000000",
+    globeColor: "#062056",
+    emissive: "#062056",
     emissiveIntensity: 0.1,
     shininess: 0.9,
-    arcTime: 2000,
+    arcTime: 1000,
     arcLength: 0.9,
     rings: 1,
     maxRings: 3,
@@ -124,7 +124,7 @@ export function Globe({
       .pointColor((e) => (e).color)
       .pointsMerge(true)
       .pointAltitude(0.0)
-      .pointRadius(1.2);
+      .pointRadius(2);
 
     globeRef.current
       .ringsData([])
@@ -181,7 +181,9 @@ export function WebGLRendererConfig() {
     gl.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     gl.setSize(size.width, size.height);
     gl.setClearColor(0xffaaff, 0);
-    // Crucial: adjust camera aspect ratio to exact canvas dimensions so globe is a flawless circle, never an oval!
+
+    // CRITICAL FIX: Ensure camera aspect ratio strictly equals canvas aspect ratio
+    // This completely eliminates oval/egg distortion and produces a 100% round sphere
     if (camera && size.height > 0) {
       camera.aspect = size.width / size.height;
       camera.updateProjectionMatrix();
@@ -198,11 +200,11 @@ export function World(props) {
   return (
     <Canvas 
       scene={scene} 
-      camera={{ fov: 50, near: 180, far: 1800, position: [0, 0, cameraZ] }}
+      camera={new PerspectiveCamera(50, aspect, 180, 1800)}
       style={{ width: '100%', height: '100%' }}
     >
       <WebGLRendererConfig />
-      <ambientLight color={globeConfig.ambientLight || "#ffffff"} intensity={0.6} />
+      <ambientLight color={globeConfig.ambientLight || "#38bdf8"} intensity={0.6} />
       <directionalLight
         color={globeConfig.directionalLeftLight || "#ffffff"}
         position={new Vector3(-400, 100, 400)} />
@@ -219,8 +221,8 @@ export function World(props) {
         enableZoom={false}
         minDistance={cameraZ}
         maxDistance={cameraZ}
-        autoRotateSpeed={1}
-        autoRotate={true}
+        autoRotateSpeed={globeConfig.autoRotateSpeed !== undefined ? globeConfig.autoRotateSpeed : 0.5}
+        autoRotate={globeConfig.autoRotate !== undefined ? globeConfig.autoRotate : true}
         minPolarAngle={Math.PI / 3.5}
         maxPolarAngle={Math.PI - Math.PI / 3} />
     </Canvas>
