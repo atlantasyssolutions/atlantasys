@@ -12,110 +12,6 @@ const World = dynamic(() => import('@/components/ui/Globe').then((m) => m.World)
   ),
 });
 
-const INDIA_HQ = { lat: 28.6139, lng: 77.2090, label: "Atlanta Systems HQ & SMT Plant (New Delhi, India)" };
-
-const TARGETED_DESTINATIONS = [
-  // Wave 1: Middle East, SE Asia, Europe
-  { lat: 25.2048, lng: 55.2708, label: "Dubai, UAE" },
-  { lat: 1.3521, lng: 103.8198, label: "Singapore (SE Asia Gateway)" },
-  { lat: 51.5074, lng: -0.1278, label: "London, United Kingdom" },
-
-  // Wave 2: Middle East, SE Asia, Europe
-  { lat: 24.7136, lng: 46.6753, label: "Riyadh, Saudi Arabia" },
-  { lat: 3.1390, lng: 101.6869, label: "Kuala Lumpur, Malaysia" },
-  { lat: 50.1109, lng: 8.6821, label: "Frankfurt, Germany" },
-
-  // Wave 3: Middle East, SE Asia, Europe
-  { lat: 25.2854, lng: 51.5310, label: "Doha, Qatar" },
-  { lat: -6.2088, lng: 106.8456, label: "Jakarta, Indonesia" },
-  { lat: 48.8566, lng: 2.3522, label: "Paris, France" },
-
-  // Wave 4: SE Asia, Europe, Africa
-  { lat: 13.7563, lng: 100.5018, label: "Bangkok, Thailand" },
-  { lat: 51.9244, lng: 4.4777, label: "Rotterdam, Netherlands" },
-  { lat: -1.2921, lng: 36.8219, label: "Nairobi, Kenya" },
-
-  // Wave 5: East Asia, Europe, Africa
-  { lat: 35.6762, lng: 139.6503, label: "Tokyo, Japan" },
-  { lat: 52.2297, lng: 21.0122, label: "Warsaw, Poland" },
-  { lat: -26.2041, lng: 28.0473, label: "Johannesburg, South Africa" },
-
-  // Wave 6: SE Asia, Europe, Africa
-  { lat: 14.5995, lng: 120.9842, label: "Manila, Philippines" },
-  { lat: 40.4168, lng: -3.7038, label: "Madrid, Spain" },
-  { lat: 30.0444, lng: 31.2357, label: "Cairo, Egypt" },
-
-  // Wave 7: Middle East, Eurasia, North America
-  { lat: 23.5880, lng: 58.3829, label: "Muscat, Oman" },
-  { lat: 41.0082, lng: 28.9784, label: "Istanbul, Turkey" },
-  { lat: 40.7128, lng: -74.0060, label: "New York, USA" },
-
-  // Wave 8: SE Asia, Africa, North America
-  { lat: 10.8231, lng: 106.6297, label: "Ho Chi Minh City, Vietnam" },
-  { lat: 33.5731, lng: -7.5898, label: "Casablanca, Morocco" },
-  { lat: 29.7604, lng: -95.3698, label: "Houston, USA" },
-
-  // Wave 9: Oceania, Africa, North America
-  { lat: -33.8688, lng: 151.2093, label: "Sydney, Australia" },
-  { lat: 6.5244, lng: 3.3792, label: "Lagos, Nigeria" },
-  { lat: 41.8781, lng: -87.6298, label: "Chicago, USA" },
-
-  // Wave 10: East Asia, Africa, North America
-  { lat: 37.5665, lng: 126.9780, label: "Seoul, South Korea" },
-  { lat: -4.0435, lng: 39.6682, label: "Mombasa, Kenya" },
-  { lat: 34.0522, lng: -118.2437, label: "Los Angeles, USA" },
-
-  // Wave 11: Middle East, North America, Latin America
-  { lat: 29.3759, lng: 47.9774, label: "Kuwait City, Kuwait" },
-  { lat: 43.6532, lng: -79.3832, label: "Toronto, Canada" },
-  { lat: 19.4326, lng: -99.1332, label: "Mexico City, Mexico" },
-
-  // Wave 12: Middle East, Latin America, Oceania
-  { lat: 24.4539, lng: 54.3773, label: "Abu Dhabi, UAE" },
-  { lat: -23.5505, lng: -46.6333, label: "Sao Paulo, Brazil" },
-  { lat: -37.8136, lng: 144.9631, label: "Melbourne, Australia" },
-
-  // Wave 13: Middle East, Latin America
-  { lat: 26.4207, lng: 50.0888, label: "Dammam, Saudi Arabia" },
-  { lat: 4.7110, lng: -74.0721, label: "Bogota, Colombia" },
-  { lat: -33.4489, lng: -70.6693, label: "Santiago, Chile" },
-];
-
-const WORLD_MAP_DOTS = TARGETED_DESTINATIONS.map((dest, idx) => ({
-  order: idx,
-  start: INDIA_HQ,
-  end: dest,
-}));
-
-const globeColors = ["#06b6d4", "#3b82f6", "#6366f1"];
-
-// Generate arcs originating 100% from India HQ and travelling outward to target global markets
-const sampleArcs = TARGETED_DESTINATIONS.map((dest, idx) => {
-  const dLat = (dest.lat - INDIA_HQ.lat) * (Math.PI / 180);
-  const dLon = (dest.lng - INDIA_HQ.lng) * (Math.PI / 180);
-  const a =
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos((INDIA_HQ.lat * Math.PI) / 180) *
-      Math.cos((dest.lat * Math.PI) / 180) *
-      Math.sin(dLon / 2) *
-      Math.sin(dLon / 2);
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  const arcAlt = +(0.15 + (c / Math.PI) * 0.35).toFixed(2);
-
-  // Group in waves of 3 simultaneous arcs per order
-  const order = Math.floor(idx / 3) + 1;
-
-  return {
-    order,
-    startLat: INDIA_HQ.lat,
-    startLng: INDIA_HQ.lng,
-    endLat: dest.lat,
-    endLng: dest.lng,
-    arcAlt,
-    color: globeColors[idx % globeColors.length],
-  };
-});
-
 const globeConfig = {
   pointSize: 4,
   globeColor: "#062056",
@@ -130,14 +26,397 @@ const globeConfig = {
   directionalLeftLight: "#ffffff",
   directionalTopLight: "#ffffff",
   pointLight: "#ffffff",
-  arcTime: 2600, // Smooth, cinematic 2.6s trajectory speed (replaces rushed 1s)
-  arcLength: 0.45, // Sleek luminous pulse length
+  arcTime: 1000,
+  arcLength: 0.9,
   rings: 1,
   maxRings: 3,
-  initialPosition: { lat: 20.5937, lng: 78.9629 }, // Centered on India on load
+  initialPosition: { lat: 22.3193, lng: 114.1694 },
   autoRotate: true,
-  autoRotateSpeed: 0.4,
+  autoRotateSpeed: 0.5,
 };
+
+const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
+
+const sampleArcs = [
+  {
+    order: 1,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 19.076,
+    endLng: 72.8777,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 1,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 25.2048,
+    endLng: 55.2708,
+    arcAlt: 0.2,
+    color: colors[1],
+  },
+  {
+    order: 1,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 1.3521,
+    endLng: 103.8198,
+    arcAlt: 0.2,
+    color: colors[2],
+  },
+  {
+    order: 2,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 12.9716,
+    endLng: 77.5946,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 2,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 51.5074,
+    endLng: -0.1278,
+    arcAlt: 0.3,
+    color: colors[1],
+  },
+  {
+    order: 2,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 24.7136,
+    endLng: 46.6753,
+    arcAlt: 0.2,
+    color: colors[2],
+  },
+  {
+    order: 3,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 13.0827,
+    endLng: 80.2707,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 3,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 3.139,
+    endLng: 101.6869,
+    arcAlt: 0.2,
+    color: colors[1],
+  },
+  {
+    order: 3,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 50.1109,
+    endLng: 8.6821,
+    arcAlt: 0.3,
+    color: colors[2],
+  },
+  {
+    order: 4,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 22.5726,
+    endLng: 88.3639,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 4,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 25.2854,
+    endLng: 51.531,
+    arcAlt: 0.2,
+    color: colors[1],
+  },
+  {
+    order: 4,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: -6.2088,
+    endLng: 106.8456,
+    arcAlt: 0.3,
+    color: colors[2],
+  },
+  {
+    order: 5,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 23.0225,
+    endLng: 72.5714,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 5,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 13.7563,
+    endLng: 100.5018,
+    arcAlt: 0.2,
+    color: colors[1],
+  },
+  {
+    order: 5,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 48.8566,
+    endLng: 2.3522,
+    arcAlt: 0.3,
+    color: colors[2],
+  },
+  {
+    order: 6,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 17.385,
+    endLng: 78.4867,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 6,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 52.2297,
+    endLng: 21.0122,
+    arcAlt: 0.3,
+    color: colors[1],
+  },
+  {
+    order: 6,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: -1.2921,
+    endLng: 36.8219,
+    arcAlt: 0.3,
+    color: colors[2],
+  },
+  {
+    order: 7,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 26.9124,
+    endLng: 75.7873,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 7,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 35.6762,
+    endLng: 139.6503,
+    arcAlt: 0.3,
+    color: colors[1],
+  },
+  {
+    order: 7,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 40.7128,
+    endLng: -74.006,
+    arcAlt: 0.4,
+    color: colors[2],
+  },
+  {
+    order: 8,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 30.901,
+    endLng: 75.8573,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 8,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 23.588,
+    endLng: 58.3829,
+    arcAlt: 0.2,
+    color: colors[1],
+  },
+  {
+    order: 8,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 51.9244,
+    endLng: 4.4777,
+    arcAlt: 0.3,
+    color: colors[2],
+  },
+  {
+    order: 9,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 22.7196,
+    endLng: 75.8577,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 9,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 14.5995,
+    endLng: 120.9842,
+    arcAlt: 0.2,
+    color: colors[1],
+  },
+  {
+    order: 9,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 29.7604,
+    endLng: -95.3698,
+    arcAlt: 0.4,
+    color: colors[2],
+  },
+  {
+    order: 10,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 9.9312,
+    endLng: 76.2673,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 10,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 40.4168,
+    endLng: -3.7038,
+    arcAlt: 0.3,
+    color: colors[1],
+  },
+  {
+    order: 10,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: -26.2041,
+    endLng: 28.0473,
+    arcAlt: 0.3,
+    color: colors[2],
+  },
+  {
+    order: 11,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 26.8467,
+    endLng: 80.9462,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 11,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 29.3759,
+    endLng: 47.9774,
+    arcAlt: 0.2,
+    color: colors[1],
+  },
+  {
+    order: 11,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: -33.8688,
+    endLng: 151.2093,
+    arcAlt: 0.4,
+    color: colors[2],
+  },
+  {
+    order: 12,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 20.2961,
+    endLng: 85.8245,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 12,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 41.0082,
+    endLng: 28.9784,
+    arcAlt: 0.3,
+    color: colors[1],
+  },
+  {
+    order: 12,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 34.0522,
+    endLng: -118.2437,
+    arcAlt: 0.4,
+    color: colors[2],
+  },
+  {
+    order: 13,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 17.6868,
+    endLng: 83.2185,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 13,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 30.0444,
+    endLng: 31.2357,
+    arcAlt: 0.2,
+    color: colors[1],
+  },
+  {
+    order: 13,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: -23.5505,
+    endLng: -46.6333,
+    arcAlt: 0.5,
+    color: colors[2],
+  },
+  {
+    order: 14,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 26.1445,
+    endLng: 91.7362,
+    arcAlt: 0.1,
+    color: colors[0],
+  },
+  {
+    order: 14,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 10.8231,
+    endLng: 106.6297,
+    arcAlt: 0.2,
+    color: colors[1],
+  },
+  {
+    order: 14,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 19.4326,
+    endLng: -99.1332,
+    arcAlt: 0.5,
+    color: colors[2],
+  },
+];
 
 // Match exact values from the legacy PHP/CSS source
 const STATS = [
