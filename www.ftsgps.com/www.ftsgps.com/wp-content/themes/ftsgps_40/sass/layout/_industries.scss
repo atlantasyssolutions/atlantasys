@@ -1,0 +1,104 @@
+.img-bg {
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  min-height: 25vh;
+  background-position: 50% 50%;
+
+  &.truck {
+    background-image: url(https://www.ftsgps.com/wp-content/uploads/2019/09/retain-drivers-in-face-of-driver-shortage-1.jpg);
+  }
+
+  &.highway {
+    background-image: url(https://www.ftsgps.com/wp-content/uploads/2019/09/highway-traffic-1.jpg);
+  }
+}
+
+.waste--solutions__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 80px 20px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 40px 0;
+  }
+
+  &__item {
+    width: calc(33% - 20px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 26px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    &__square {
+      width: 56px;
+      height: 56px;
+      min-width: 56px;
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.square__ {
+        &green {
+          background-color: #25a7bf;
+        }
+        &blue {
+          background-color: #2179be;
+        }
+        &purple {
+          background-color: #635391;
+        }
+        &red {
+          background-color: #d50050;
+        }
+        &orange {
+          background-color: #ff9364;
+        }
+        &blue2 {
+          background-color: #248CCC;
+        }
+        &black {
+          background-color: #1D1D1D;
+        }
+      }
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      strong {
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "Manrope", sans-serif;
+      }
+
+      span {
+        font-size: 16px;
+        line-height: 28px;
+        font-family: "Manrope", sans-serif;
+      }
+    }
+  }
+}
+
+.hero-new-industries {
+  background-image: url(../img/waste-managment-banner.webp);
+  background-position: center top;
+  background-size: cover;
+}
+
+.hero-ufs-industries {
+  background-image: url(../img/industries/ufs/utility-field-services-baner.webp);
+  background-position: center top;
+  background-size: cover;
+}

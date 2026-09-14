@@ -1,0 +1,138 @@
+.FAQ-accordion {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.FAQ-accordion__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 24px;
+  width: 100%;
+  background-color: #ffffff;
+  color: $gray-dark;
+  cursor: pointer;
+  text-align: left;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+
+.FAQ-accordion__main:focus {
+  border: 1px solid $main-blue;
+  outline: $main-blue;
+}
+
+.FAQ-accordion__main:hover {
+  background-color: #f8f8f8;
+}
+
+.FAQ-accordion__main:after {
+  width: 20px;
+  height: 20px;
+  content: "+";
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  float: right;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.active-FAQ:after {
+  content: "-";
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+}
+
+.FAQ-accordion__panel {
+  padding: 0 24px;
+  max-height: 0;
+  background-color: #ffffff;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+
+  & > p:first-child {
+    padding-top: 30px;
+  }
+
+  ul {
+    padding-left: 40px;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    li {
+    }
+
+    ul {
+      list-style-type: circle;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+
+      ul {
+        list-style-type: square;
+      }
+    }
+  }
+
+  ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+    li {
+      display: list-item;
+    }
+  }
+
+  img {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  em {
+    font-style: italic;
+    font-weight: 600;
+  }
+}
+
+.FAQ-accordion__panel p {
+  // margin: 0;
+}
+
+.FAQ-accordion__panel a {
+  display: inline-block;
+  // margin: 24px 0;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-decoration: none;
+  color: #2d90de;
+
+  &:hover {
+    color: #d50051;
+  }
+}
+
+.active-FAQ {
+  background-color: #f8f8f8;
+}

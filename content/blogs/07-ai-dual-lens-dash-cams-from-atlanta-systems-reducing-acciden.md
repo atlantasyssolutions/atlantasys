@@ -1,4 +1,4 @@
-# AI Dual-Lens Dash Cams from Atlanta Systems Reducing Accidents on Los Angeles I-710 Port Drayage Routes
+# AI Dual-Lens Dash Cams from Atlanta Systems Reducing Accidents Across California, USA
 
 * **Slug**: `ai-dual-lens-dash-cams-from-atlanta-systems-reducing-accidents-on-los-angeles-i-710-port-drayage-routes`
 * **Category**: Vehicle Telematics
@@ -7,7 +7,7 @@
 * **Country**: United States
 * **Geo Region**: North America
 * **Hardware Model**: VLT-100
-* **Author**: Sandeep Narula, Co-Founder
+* **Author**: Atlanta Systems Marketing Team
 * **Published Date**: 2026-08-29
 * **Estimated Read Time**: 12 min read
 * **SEO Keywords**: Dual, Los Angeles Telematics, Vehicle Telematics, Atlanta Systems, Fleet IoT
@@ -16,7 +16,7 @@
 
 ## The Word-Against-Word Dispute Costing Fleets Millions in Los Angeles
 
-Every fleet maintenance manager in Los Angeles understands the operational friction that occurs on Interstate 710 (Long Beach Freeway) and California State Route 60 when dealing with AI Dual-Lens Dash Cams from Atlanta Systems Reducing Accidents on Los Angeles I-710 Port Drayage Routes.
+Every fleet maintenance manager in Los Angeles understands the operational friction that occurs on Interstate 710 (Long Beach Freeway) and California State Route 60 when dealing with AI Dual-Lens Dash Cams from Atlanta Systems Reducing Accidents Across California, USA Across California, USA.
 
 When a commercial tractor-trailer is involved in a collision along Interstate 710 (Long Beach Freeway) and California State Route 60, highway patrol and insurance adjusters default to blaming the heavy vehicle. Without continuous, multi-angle video evidence in Los Angeles, commercial operators end up paying five-figure settlements for crashes they never caused. Opportunistic crash-for-cash fraudsters intentionally target long-haul trucks, knowing that transport companies struggle to disprove false injury claims.
 
@@ -31,12 +31,9 @@ All video streams are encoded in high-efficiency H.265 compression and stamped w
 +-----------------------------------------------------------------------------------+
 |             ATLANTA SYSTEMS INDUSTRIAL TELEMATICS HARDWARE ARCHITECTURE          |
 +-----------------------------------------------------------------------------------+
-|  [Core Processing] -> 32-Bit ARM Cortex-M4 Industrial Microcontroller             |
 |  [Satellite Engine] -> Quad-Constellation Multi-Frequency GNSS (Sub-2.5m CEP)     |
 |  [Motion Analytics] -> Internal 3-Axis MEMS Accelerometer (100Hz Event Sampling)  |
-|  [Power Conditioning] -> 9V-36V DC Input with 60V Transient Voltage Suppressor    |
 |  [Cellular Uplink] -> Industrial 4G Cat-1 / Cat-M1 with Embedded Multi-IMSI eSIM   |
-|  [Enclosure Rating] -> IP67 / IP68 / IP69K Die-Cast Aluminum Heat Sink Housing    |
 +-----------------------------------------------------------------------------------+
 
 ---
@@ -72,7 +69,7 @@ Critical event clips are uploaded to the cloud instantly via high-speed 4G withi
 
 If you are running commercial transport operations across Los Angeles or throughout North America, you do not have to accept unmonitored fuel loss, preventable accidents, or regulatory fines as normal business costs.
 
-Our co-founders, Sujeet Narula and Sandeep Narula, alongside our dedicated engineering team, have spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
+The Atlanta Systems Marketing Team, alongside our dedicated engineering team, has spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
 
 * **Explore Commercial Trackers**: Review our [Atlanta Systems Vehicle Telematics](/trackers/vehicle-telematics) and [Asset & Personal Trackers](/trackers/assets-&-personal-telematics).
 * **Deploy AI Video Telematics**: Equip your fleet with [AI Video Dashcams and MDVR](/trackers/video-telematics) or [ADAS Collision Warning Systems](/adas).

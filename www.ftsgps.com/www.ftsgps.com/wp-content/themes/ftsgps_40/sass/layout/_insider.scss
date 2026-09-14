@@ -1,0 +1,293 @@
+.insider {
+  &__breadcrumbs {
+    background-color: #f9f9f9;
+    padding: 13px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    a {
+      font-size: 1.3rem;
+      font-family: "Manrope";
+      font-weight: 500;
+      line-height: 24px;
+      color: #217bc0;
+      white-space: nowrap;
+      line-height: 28px;
+
+      &:hover {
+        color: #d50051;
+      }
+    }
+
+    span {
+      display: inline-block;
+      font-size: 1.3rem;
+      line-height: 28px;
+      color: $gray-dark;
+      white-space: nowrap;
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:before {
+        content: " > ";
+        display: inline-block;
+      }
+    }
+  }
+
+  &__header {
+    margin: 70px 0 100px;
+    display: inline-flex;
+    align-items: center;
+
+    @include respond(phone) {
+      margin: 30px 0;
+    }
+
+    svg {
+      margin-right: 50px;
+
+      @include respond(phone) {
+        margin-right: 12px;
+        width: 40px;
+      }
+    }
+
+    p {
+      color: #3b3b3b;
+      font-family: "Poppins";
+      font-size: 60px;
+      font-weight: 200;
+      line-height: 80px;
+      letter-spacing: -3px;
+
+      @include respond(phone) {
+        font-size: 30px;
+        letter-spacing: -1.5px;
+        line-height: 48px;
+      }
+
+      strong {
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__tags {
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    a:not(:last-child) {
+      margin-right: 12px;
+    }
+
+    a {
+      margin-bottom: 12px;
+      padding: 14px 18px;
+      background-color: #f2f2f2;
+      color: #072d53;
+      border-radius: 8px;
+
+      &:hover {
+        background-color: #072d53;
+        color: #fff;
+      }
+
+      span {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__card {
+    a {
+      cursor: pointer;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 70px;
+
+      @include respond(tab-port) {
+        margin-bottom: 0;
+      }
+    }
+
+    &:hover .share__widget {
+      display: flex;
+    }
+
+    &--heading {
+      display: flex;
+      align-items: center;
+      line-height: 25px;
+
+      p {
+        font-size: 1.2rem;
+        font-family: "Manrope";
+        font-weight: 500;
+        color: $gray-dark;
+      }
+
+      a {
+        font-size: 1.2rem;
+        font-family: "Manrope";
+        font-weight: 500;
+        color: $gray-dark;
+
+        &:hover {
+          color: #217bc0;
+        }
+      }
+
+      > div {
+        @include respond(tab-land) {
+          flex-wrap: wrap;
+          align-items: flex-start;
+        }
+      }
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
+
+      span {
+        color: #000;
+
+        &:hover {
+          color: #217bc0;
+        }
+      }
+
+      &--img {
+        max-width: 160px;
+
+        @include respond(tab-port) {
+          margin: 0 0 20px 0 !important;
+          max-width: 100%;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 4px;
+        }
+      }
+
+      &:hover span {
+        color: #217bc0;
+      }
+    }
+
+    &--line {
+      flex-wrap: wrap;
+      width: 93%;
+
+      > svg {
+        margin: 0 12px;
+      }
+    }
+  }
+
+  &__outer {
+    display: flex;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    & .col-8 {
+      @include respond(tab-port) {
+        width: 100%;
+      }
+    }
+
+    & .col-4 {
+      @include respond(tab-port) {
+        width: 100%;
+      }
+    }
+
+    &--card {
+      padding-right: 80px;
+
+      @include respond(tab-port) {
+        padding-right: 0;
+      }
+    }
+  }
+
+  &--divider {
+    display: none;
+
+    @include respond(tab-port) {
+      display: block;
+      margin: 40px 0;
+      border-top: 1px solid #d9d9d9;
+    }
+
+    @include respond(phone) {
+      margin: 30px 0;
+    }
+  }
+
+  &--navigation {
+    @include respond(tab-port) {
+      margin: 50px 0;
+    }
+  }
+}
+
+// Copy share
+
+.copied .insider__widget--copied {
+  display: inline-block;
+}
+
+.copied span:nth-child(2) {
+  display: none;
+}
+
+//Backlight of category
+
+.post-type-archive-resource_center .insider__tags a:nth-child(1) {
+  background-color: $main-blue !important;
+  color: #fff;
+}
+
+.term-fleet-and-worker-safety .insider__tags a:nth-child(2) {
+  background-color: $main-blue !important;
+  color: #fff;
+}
+
+.term-tools-of-the-trade .insider__tags a:nth-child(3) {
+  background-color: $main-blue !important;
+  color: #fff;
+}
+
+.term-tips .insider__tags a:nth-child(4) {
+  background-color: $main-blue !important;
+  color: #fff;
+}
+
+.term-fts-news .insider__tags a:nth-child(5) {
+  background-color: $main-blue !important;
+  color: #fff;
+}
+
+.term-eld-aobrd-information .insider__tags a:nth-child(6) {
+  background-color: $main-blue !important;
+  color: #fff;
+}

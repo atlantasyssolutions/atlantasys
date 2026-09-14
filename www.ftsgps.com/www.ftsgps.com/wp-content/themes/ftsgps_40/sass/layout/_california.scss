@@ -1,0 +1,45 @@
+.california--link {
+  color: $gray-dark;
+
+  svg {
+    fill: #313e49;
+  }
+
+  &:hover {
+    color: #2ca6de;
+
+    svg {
+      fill: #2ca6de;
+    }
+
+    svg g {
+      fill: #2ca6de;
+    }
+
+    path {
+      fill: #2ca6de;
+    }
+  }
+}
+
+.california-ctp {
+  &--img {
+    background-image: url(../img/los-angeles-skyline-with-highway.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 25vh;
+    background-position: 100% 50%;
+    height: 100%;
+  }
+}
+
+.oregon-ctp {
+  &--img {
+    background-image: url(../img/iStock-132117510s6-1-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 25vh;
+    background-position: center;
+    height: 100%;
+  }
+}

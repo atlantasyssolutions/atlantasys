@@ -1,4 +1,4 @@
-# 4G LTE-M Dual-SIM Gateways from Atlanta Systems Maintaining Uptime Between Muscat and Sohar Port
+# 4G LTE-M Dual-SIM Gateways from Atlanta Systems Maintaining Uptime Across Oman
 
 * **Slug**: `4g-lte-m-dual-sim-gateways-from-atlanta-systems-maintaining-uptime-between-muscat-and-sohar-port`
 * **Category**: Vehicle Telematics
@@ -7,7 +7,7 @@
 * **Country**: Oman
 * **Geo Region**: MENA
 * **Hardware Model**: VLT-100
-* **Author**: Sujeet Narula, Founder
+* **Author**: Atlanta Systems Marketing Team
 * **Published Date**: 2026-08-29
 * **Estimated Read Time**: 12 min read
 * **SEO Keywords**: , Muscat Telematics, Vehicle Telematics, Atlanta Systems, Fleet IoT
@@ -16,7 +16,7 @@
 
 ## The Cross-Border Telematics Blackout at Customs Checkpoints near Muscat
 
-Over three decades on the production floor since co-founders Sujeet Narula and Sandeep Narula established Atlanta Systems in 1994, we have seen transport operators in Muscat struggle with the exact operational bottleneck discussed in this article: 4G LTE-M Dual-SIM Gateways from Atlanta Systems Maintaining Uptime Between Muscat and Sohar Port.
+Over three decades since Atlanta Systems was established in 1994, our engineering and marketing teams have seen transport operators in Muscat struggle with the exact operational bottleneck discussed in this article: 4G LTE-M Dual-SIM Gateways from Atlanta Systems Maintaining Uptime Across Oman.
 
 At cross-border freight checkpoints and regional logistics transit hubs near Muscat, standard single-SIM telematics units drop into complete radio silence the instant national carrier networks fade. While commercial drivers wait in line along Batinah Expressway and Sultan Qaboos Highway transit corridor, single-SIM trackers stall during roaming handshakes, leaving dispatchers blind for hours. Stolen cargo, unscheduled stops, and compromised cold chain temperatures go completely unnoticed during these extended connectivity dead zones.
 
@@ -31,12 +31,9 @@ Our cellular baseband firmware monitors network quality metrics continuously: RS
 +-----------------------------------------------------------------------------------+
 |             ATLANTA SYSTEMS INDUSTRIAL TELEMATICS HARDWARE ARCHITECTURE          |
 +-----------------------------------------------------------------------------------+
-|  [Core Processing] -> 32-Bit ARM Cortex-M4 Industrial Microcontroller             |
 |  [Satellite Engine] -> Quad-Constellation Multi-Frequency GNSS (Sub-2.5m CEP)     |
 |  [Motion Analytics] -> Internal 3-Axis MEMS Accelerometer (100Hz Event Sampling)  |
-|  [Power Conditioning] -> 9V-36V DC Input with 60V Transient Voltage Suppressor    |
 |  [Cellular Uplink] -> Industrial 4G Cat-1 / Cat-M1 with Embedded Multi-IMSI eSIM   |
-|  [Enclosure Rating] -> IP67 / IP68 / IP69K Die-Cast Aluminum Heat Sink Housing    |
 +-----------------------------------------------------------------------------------+
 
 ---
@@ -72,7 +69,7 @@ Yes. With GSMA-compliant eUICC profile switching, operators can push new carrier
 
 If you are running commercial transport operations across Muscat or throughout MENA, you do not have to accept unmonitored fuel loss, preventable accidents, or regulatory fines as normal business costs.
 
-Our co-founders, Sujeet Narula and Sandeep Narula, alongside our dedicated engineering team, have spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
+The Atlanta Systems Marketing Team, alongside our dedicated engineering team, has spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
 
 * **Explore Commercial Trackers**: Review our [Atlanta Systems Vehicle Telematics](/trackers/vehicle-telematics) and [Asset & Personal Trackers](/trackers/assets-&-personal-telematics).
 * **Deploy AI Video Telematics**: Equip your fleet with [AI Video Dashcams and MDVR](/trackers/video-telematics) or [ADAS Collision Warning Systems](/adas).

@@ -1,4 +1,4 @@
-# Capacitive Fuel Probes from Atlanta Systems Mitigating Theft at Informal Stops Near Jeddah Port
+# Capacitive Fuel Probes from Atlanta Systems Mitigating Theft at Informal Stops Across Makkah Province, Saudi Arabia
 
 * **Slug**: `capacitive-fuel-probes-from-atlanta-systems-mitigating-theft-at-informal-stops-near-jeddah-port`
 * **Category**: Fuel Fraud
@@ -7,7 +7,7 @@
 * **Country**: Saudi Arabia
 * **Geo Region**: MENA
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
-* **Author**: Sandeep Narula, Co-Founder
+* **Author**: Atlanta Systems Marketing Team
 * **Published Date**: 2026-08-29
 * **Estimated Read Time**: 12 min read
 * **SEO Keywords**: Capacitive, Fuel, Probes, from, Atlanta, Jeddah Telematics, Fuel Fraud, Atlanta Systems, Fleet IoT
@@ -16,9 +16,9 @@
 
 ## The Midnight Fuel Shrinkage Draining Fleet Margins in Jeddah
 
-When transport directors in Jeddah review their quarterly operating statements, the hidden costs tied directly to Capacitive Fuel Probes from Atlanta Systems Mitigating Theft at Informal Stops Near Jeddah Port consistently stand out as an urgent priority on Al-Haramain Expressway and Jeddah Islamic Port cargo access corridor.
+When transport directors in Jeddah review their quarterly operating statements, the hidden costs tied directly to Capacitive Fuel Probes from Atlanta Systems Mitigating Theft at Informal Stops Across Makkah Province, Saudi Arabia Across Makkah Province, Saudi Arabia consistently stand out as an urgent priority on Al-Haramain Expressway and Jeddah Islamic Port cargo access corridor.
 
-Fuel remains the single largest operating expense for commercial transport across Al-Haramain Expressway and Jeddah Islamic Port cargo access corridor, yet it continues to be the most vulnerable asset in Jeddah. Across our 32 years designing and manufacturing industrial electronics, my co-founder Sandeep Narula and I have walked through hundreds of commercial workshops where fleet managers were baffled by unexplained discrepancies between fuel purchase receipts and distance traveled. Factory dashboard float gauges stay completely silent because mechanical float arms have blind zones at the top and bottom of the tank. In reality, fuel shrinkage along Red Sea Gateway and Jeddah Port Industrial Corridor quietly drains between 8% and 15% of net operating margins every month.
+Fuel remains the single largest operating expense for commercial transport across Al-Haramain Expressway and Jeddah Islamic Port cargo access corridor, yet it continues to be the most vulnerable asset in Jeddah. Across our three decades designing and manufacturing industrial electronics, our solutions engineering and marketing team has walked through hundreds of commercial workshops where fleet managers were baffled by unexplained discrepancies between fuel purchase receipts and distance traveled. Factory dashboard float gauges stay completely silent because mechanical float arms have blind zones at the top and bottom of the tank. In reality, fuel shrinkage along Red Sea Gateway and Jeddah Port Industrial Corridor quietly drains between 8% and 15% of net operating margins every month.
 
 ---
 
@@ -33,12 +33,9 @@ Paired with a 12-bit internal ADC, an isolated RS-485 Modbus bus, and an active 
 +-----------------------------------------------------------------------------------+
 |             ATLANTA SYSTEMS INDUSTRIAL TELEMATICS HARDWARE ARCHITECTURE          |
 +-----------------------------------------------------------------------------------+
-|  [Core Processing] -> 32-Bit ARM Cortex-M4 Industrial Microcontroller             |
 |  [Satellite Engine] -> Quad-Constellation Multi-Frequency GNSS (Sub-2.5m CEP)     |
 |  [Motion Analytics] -> Internal 3-Axis MEMS Accelerometer (100Hz Event Sampling)  |
-|  [Power Conditioning] -> 9V-36V DC Input with 60V Transient Voltage Suppressor    |
 |  [Cellular Uplink] -> Industrial 4G Cat-1 / Cat-M1 with Embedded Multi-IMSI eSIM   |
-|  [Enclosure Rating] -> IP67 / IP68 / IP69K Die-Cast Aluminum Heat Sink Housing    |
 +-----------------------------------------------------------------------------------+
 
 ---
@@ -74,7 +71,7 @@ Yes. Our software supports stepped calibration tables with up to 30 non-linear p
 
 If you are running commercial transport operations across Jeddah or throughout MENA, you do not have to accept unmonitored fuel loss, preventable accidents, or regulatory fines as normal business costs.
 
-Our co-founders, Sujeet Narula and Sandeep Narula, alongside our dedicated engineering team, have spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
+The Atlanta Systems Marketing Team, alongside our dedicated engineering team, has spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
 
 * **Explore Commercial Trackers**: Review our [Atlanta Systems Vehicle Telematics](/trackers/vehicle-telematics) and [Asset & Personal Trackers](/trackers/assets-&-personal-telematics).
 * **Deploy AI Video Telematics**: Equip your fleet with [AI Video Dashcams and MDVR](/trackers/video-telematics) or [ADAS Collision Warning Systems](/adas).

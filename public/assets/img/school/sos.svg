@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#7F8183;stroke-width:0.5;stroke-miterlimit:10;}
+	.st1{opacity:0.28;fill:#7F8183;}
+	.st2{opacity:0.69;fill:#7F8183;}
+	.st3{fill:#7F8183;}
+	.st4{fill:#F4F2F3;}
+	.st5{font-family:'Oswald-SemiBold';}
+	.st6{font-size:12px;}
+</style>
+<g>
+	<circle class="st0" cx="22.5" cy="22.5" r="21.3"/>
+	<g>
+		<ellipse class="st1" cx="22.5" cy="22.5" rx="17.48" ry="17.84"/>
+		<circle class="st2" cx="22.5" cy="22.5" r="14.82"/>
+		<circle class="st3" cx="22.5" cy="22.5" r="14.19"/>
+	</g>
+	<text transform="matrix(1 0 0 1 12.8641 26.9999)" class="st4 st5 st6">SOS</text>
+</g>
+</svg>

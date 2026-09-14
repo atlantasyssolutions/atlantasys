@@ -1,0 +1,75 @@
+.trust {
+
+    &__baner {
+        margin: 100px 0;
+    }
+
+    &__options {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid  #d9d9d9;
+
+        @include respond (tab-port) {
+            flex-direction: column;
+        }
+
+        &::before {
+            content: "";
+            border-left: 1px solid  #d9d9d9;
+            align-self: stretch;
+
+            @include respond (tab-port) {
+                border-left: 0;
+                border-bottom: 1px solid  #d9d9d9;
+            }
+        }
+
+        &--box {
+            flex: 1;
+            padding: 35px;
+
+            &--1 {
+                order: -1;
+            }
+        }
+
+        &--text {
+            min-height: 68px;
+        }
+
+        &--link {
+            font-size: 14px;
+            font-weight: 600;
+            font-family: "Manrope";
+            line-height: 26px;
+            color: #0072CB;
+
+            &:hover {
+                color: #D50051;
+            }
+        }
+    }
+
+    
+}
+
+.container-trust-ceneter {
+    .navigation {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+
+            a {
+                color: #0072CB;
+            }
+        }
+    }
+}

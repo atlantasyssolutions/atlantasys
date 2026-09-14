@@ -1,0 +1,588 @@
+#myVideoTmobile {
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-wrapper--tmobile {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.tmobile-baner {
+  // background-image: url(../img/tmobile-baner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__content {
+    padding: 70px 0 70px 0;
+
+    @include respond(tab-land) {
+      padding-left: 10px;
+    }
+
+    &--btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #248ccc;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: "Manrope";
+      font-weight: 600;
+      line-height: 26px;
+      color: #fff;
+
+      &:hover {
+        background-color: #d50051;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__partner {
+    position: absolute;
+    bottom: 70px;
+    right: 30px;
+    max-width: 175px;
+    height: auto;
+
+    @include respond(tab-land) {
+      right: 10px;
+    }
+  }
+}
+
+.tmobile-system {
+  // margin-bottom: 125px;
+
+  &__inner {
+    padding: 97px 0 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+
+    @include respond(tab-land) {
+      gap: 70px;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    &__content {
+      h2 {
+        margin-bottom: 90px;
+      }
+
+      @include respond(phone) {
+        margin: 0 10px;
+      }
+    }
+
+    &--image {
+      width: 550px;
+
+      @include respond(tab-land) {
+        width: unset;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+
+        @include respond(tab-land) {
+          width: 85%;
+          padding-left: 10px;
+        }
+
+        @include respond(phone) {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    @include respond(tab-land) {
+      padding: 0 10px;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__box {
+      width: 372px;
+      text-align: center;
+      border: 1px solid #d9d9d9;
+      border-radius: 20px;
+      background-color: #fcfcfc;
+      transition: 0.3s all ease-in;
+
+      @include respond(tab-land) {
+        width: 274px;
+      }
+
+      @include respond(tab-port) {
+        width: 380px;
+        margin-bottom: 20px;
+      }
+
+      @include respond(s-phone) {
+        width: 280px;
+      }
+
+      &--image {
+        margin: 40px 0 22px;
+      }
+
+      &:nth-child(1) {
+        & .tmobile-system__cards__box--top {
+          background-image: url(../img/tmobile-card-1.png);
+        }
+      }
+
+      &:nth-child(2) {
+        & .tmobile-system__cards__box--top {
+          background-image: url(../img/tmobile-card-2.png);
+        }
+      }
+
+      &:nth-child(3) {
+        & .tmobile-system__cards__box--top {
+          background-image: url(../img/tmobile-card-3.png);
+        }
+      }
+
+      &--top {
+        margin-bottom: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px 20px 0 0;
+
+        svg {
+          margin-top: 45px;
+        }
+      }
+
+      &--mid {
+        margin: 0 12px 30px 12px;
+        padding: 24px 37px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+
+        a {
+          color: #217bc0;
+          background-color: transparent !important;
+
+          &:hover {
+            color: #d50051;
+          }
+        }
+      }
+
+      &--btn {
+        display: inline-block;
+        background-color: #34b6ff;
+        padding: 6px 46px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 40px;
+        color: #ffffff;
+        margin-bottom: 24px;
+        transition: 0.4s all ease-in;
+        letter-spacing: -0.8px;
+      }
+
+      &--arrow {
+        margin-left: 5px;
+        border: solid #ffffff;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0px 10px 20px #4e4e4e21;
+
+        a {
+          background-color: #d50051;
+        }
+      }
+    }
+  }
+}
+
+.tmobile-options {
+  &__box {
+    &:nth-child(odd) {
+      & .container .tmobile-options__box__inner {
+        @include respond(tab-port) {
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      & .container .tmobile-options__box__inner {
+        @include respond(tab-port) {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+
+    &__inner {
+      padding: 125px 0;
+      display: flex;
+      // align-items: center;
+      justify-content: space-between;
+
+      @include respond(tab-port) {
+        padding: 60px 0;
+      }
+
+      &__content {
+        max-width: 488px;
+
+        @include respond(tab-land) {
+          padding: 0 10px;
+        }
+
+        &__top {
+          margin-bottom: 24px;
+          display: flex;
+          align-items: center;
+
+          svg {
+            margin-right: 12px;
+          }
+
+          &--text {
+            font-size: 20px;
+            color: #313e49;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -0.8px;
+
+            @include respond(s-phone) {
+              line-height: 30px;
+            }
+          }
+        }
+
+        &--header {
+          margin-bottom: 30px;
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 42px;
+          color: $gray-dark;
+          letter-spacing: -0.56px;
+        }
+
+        &--list {
+          margin-bottom: 30px;
+
+          &--li {
+            margin-bottom: 10px;
+            margin-left: 20px;
+            position: relative;
+            font-size: 15px;
+            font-family: "Manrope";
+            font-weight: 600;
+            line-height: 26px;
+            color: #313e49;
+
+            &::before {
+              content: "";
+              display: inline-block;
+              vertical-align: top;
+              position: absolute;
+              width: 6px;
+              height: 6px;
+              left: -18px;
+              top: 10px;
+              background-color: #2079be;
+              border-radius: 3px;
+            }
+          }
+        }
+
+        &--btn {
+          display: inline-block;
+          background-color: #248ccc;
+          padding: 6px 24px;
+          border-radius: 5px;
+          font-size: 16px;
+          font-family: "Manrope";
+          font-weight: 600;
+          line-height: 26px;
+          color: #ffffff;
+
+          &:hover {
+            background-color: #d50051;
+            color: #ffffff;
+          }
+        }
+      }
+
+      &--image {
+        @include respond(tab-land) {
+          padding: 0 10px;
+        }
+
+        @include respond(tab-port) {
+          margin-bottom: 20px;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        &--padding {
+          padding-left: 60px;
+
+          @include respond(tab-land) {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tmobile-cta {
+  width: 100%;
+  background-image: linear-gradient(102deg, #105aa5 11.82%, #000b16 118.32%);
+  text-align: center;
+  align-items: center;
+  border-radius: 40px;
+
+  &--img {
+    margin: 60px 0 30px;
+  }
+
+  &--btn {
+    display: inline-block;
+    background-color: #fff;
+    padding: 12px 40px;
+    border-radius: 10px;
+    font-size: 22px;
+    color: #000;
+    font-weight: 500;
+    line-height: 32px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    &:hover {
+      background-color: #d50051;
+      color: #ffffff;
+    }
+  }
+}
+
+.tmobile-products {
+  background-color: #fcfcfc;
+  padding-bottom: 100px;
+  overflow: hidden;
+
+  &--header {
+    margin: 50px 0 24px 0;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 46px;
+    color: $gray-dark;
+
+    @include respond(tab-land) {
+      padding-left: 10px;
+    }
+  }
+
+  &__box {
+    margin: 0 24px 30px 0;
+    width: 560px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 20px #8d8d8d21;
+    text-align: center;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      width: 440px;
+    }
+
+    @include respond(s-phone) {
+      width: 100%;
+    }
+
+    &--icon {
+      img {
+        margin: 30px 0 30px;
+      }
+    }
+
+    &--image {
+      margin-bottom: 30px;
+      // height: 260px;
+
+      @include respond(s-phone) {
+        // height: 200px;
+      }
+
+      img {
+        @include respond(tab-land) {
+          width: 56%;
+        }
+
+        @include respond(tab-port) {
+          width: unset;
+        }
+
+        @include respond(phone) {
+          width: 56% !important;
+        }
+      }
+    }
+
+    &--text {
+      max-width: 460px;
+      margin: 0 auto;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "Manrope";
+      line-height: 30px;
+      color: $gray-dark;
+      min-height: 150px;
+
+      @include respond(tab-land) {
+        padding: 0 10px;
+        padding-bottom: 20px;
+        min-height: 170px;
+      }
+
+      @include respond(s-phone) {
+        min-height: 210px;
+      }
+    }
+
+    &--btn {
+      margin-bottom: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #2079be;
+      height: 43px;
+      padding: 0 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      color: #ffffff;
+
+      &:hover {
+        background-color: #d50051;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+// .owl--tmobile .owl-item img {
+//     display: unset !important;
+//     width: unset !important;
+// }
+
+// .owl--tmobile .owl-item:nth-child(1) .tmobile-products__box--image img {
+//     height: 220px;
+
+//     @include respond (phone) {
+//         height: 204px;
+//     }
+
+//     @include respond (s-phone) {
+//         height: 148px;
+//     }
+// }
+
+// .owl--tmobile .owl-item:not(:nth-child(1)) .tmobile-products__box--image img {
+//     height: 220px;
+
+//     @include respond (phone) {
+//         height: 204px;
+//     }
+
+//     @include respond (s-phone) {
+//         height: 148px;
+//     }
+// }
+
+// .owl--tmobile .owl-stage-outer {
+//     overflow: visible !important;
+// }
+
+// .owl--tmobile .owl-prev, .owl--tmobile .owl-next {
+//     width: 40px;
+//     height: 40px;
+//     position: absolute;
+//     top: 45%;
+//     transform: translateY(-50%);
+//     display: block !important;
+//     border-radius: 50% !important;
+//     background: #248CCC !important;
+//     box-shadow: 0 3px 6px #00000029;
+// }
+
+// .owl--tmobile .owl-prev img, .owl--tmobile .owl-next img {
+//     padding-top: 3px;
+// }
+
+// .prev-slide {
+//     background: url(../img/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg) no-repeat scroll 0 0;
+//     height: 100%;
+//     background-position: center;
+// }
+
+// .next-slide {
+//     background: url(../img/arrow_right_alt_FILL0_wght400_GRAD0_opsz48-1.svg) no-repeat scroll 0 0;
+//     height: 100%;
+//     background-position: center;
+// }
+
+// .owl--tmobile .owl-nav .disabled {
+//     display: none !important;
+// }
+
+// .owl--tmobile .owl-prev { left: -67px; }
+// .owl--tmobile .owl-next { right: 25px; }
+
+// .owl--tmobile .owl-dots .owl-dot span {
+//     background: #E1E1E1 !important;
+// }
+
+// .owl--tmobile .owl-dots .owl-dot.active span {
+//     background: #248CCC !important;
+// }

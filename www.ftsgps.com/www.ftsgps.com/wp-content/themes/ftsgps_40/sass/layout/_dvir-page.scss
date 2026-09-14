@@ -1,0 +1,98 @@
+.video-overlay--dvir {
+  background-color: rgba(0, 94, 112, 0.49);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#dvirVideo {
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dvir {
+  &__baner {
+    height: 100%;
+
+    &--content {
+      padding: 170px 0 !important;
+      color: $white-color;
+      z-index: 2;
+      text-align: left;
+      width: 100%;
+
+      p {
+        &:last-child {
+          letter-spacing: -0.35px;
+        }
+      }
+    }
+  }
+
+  &--spacing {
+    letter-spacing: -3.6px;
+  }
+
+  &--list {
+    font-family: "Poppins";
+    color: #000000;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 38px;
+    text-align: left;
+    margin-bottom: 60px;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+      padding-left: 10px;
+
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
+
+      li {
+        margin-bottom: 33px;
+        padding-left: 10px;
+        width: 50%;
+        position: relative;
+        display: list-item;
+      }
+
+      li:before {
+        content: "";
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        left: -10px;
+        top: 15px;
+        background-color: #25a7bf;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  &--bg {
+    background-image: url(../img/dvir-bg.webp);
+    background-size: cover;
+    height: 521px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--color {
+    color: $gray-dark;
+  }
+}

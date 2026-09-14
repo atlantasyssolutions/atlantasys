@@ -1,0 +1,60 @@
+.social-media {
+    background-color: #001D2D;
+    padding: 120px 0 40px;
+
+    h1 {
+        max-width: 390px;
+    }
+
+    &__wrapper {
+        width: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        &:last-child {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.social-btn {
+    padding: 16px 0 16px 70px;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #F2F2F2;
+
+    svg {
+        margin-right: 27px;
+    }
+
+    &:hover {
+        color: $white-color !important;
+    }
+
+    &:hover svg g path {
+        fill: $white-color;
+    }
+
+    &:hover svg g #shapes rect {
+        fill: $white-color;
+    }
+
+    &--linkedin:hover {
+        background-color: #2867B2;
+    }
+    
+    &--facebook:hover {
+        background-color: #1777F2;
+    }
+    
+    &--twitter:hover {
+        background-color: #1DA1F2;
+    }
+    
+    &--instagram:hover {
+        background-color: #CB2685;
+    }
+    
+    
+}

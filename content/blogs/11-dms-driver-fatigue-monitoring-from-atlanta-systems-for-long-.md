@@ -1,4 +1,4 @@
-# DMS Driver Fatigue Monitoring from Atlanta Systems for Long-Haul Drivers on Madrid’s A-2 and A-3 Corridors
+# DMS Driver Fatigue Monitoring from Atlanta Systems for Long-Haul Drivers Across Spain
 
 * **Slug**: `dms-driver-fatigue-monitoring-from-atlanta-systems-for-long-haul-drivers-on-madrids-a-2-and-a-3-corridors`
 * **Category**: AI Video Telematics
@@ -7,7 +7,7 @@
 * **Country**: Spain
 * **Geo Region**: Europe
 * **Hardware Model**: VTC-100 DMS Camera
-* **Author**: Sandeep Narula, Co-Founder
+* **Author**: Atlanta Systems Marketing Team
 * **Published Date**: 2026-08-29
 * **Estimated Read Time**: 12 min read
 * **SEO Keywords**: Driver, Fatigue, Monitoring, from, Atlanta, Madrid Telematics, AI Video Telematics, Atlanta Systems, Fleet IoT
@@ -16,7 +16,7 @@
 
 ## The Silent Onset of Driver Fatigue and Distraction in Madrid
 
-Nothing exposes the flaws in commercial telematics hardware faster than sustained duty cycles on Autovía A-2 Madrid-Barcelona freight corridor and M-50 orbital bypass, a reality our co-founders Sujeet Narula and Sandeep Narula have engineered our systems to solve when tackling DMS Driver Fatigue Monitoring from Atlanta Systems for Long-Haul Drivers on Madrid’s A-2 and A-3 Corridors.
+Nothing exposes the flaws in commercial telematics hardware faster than sustained duty cycles on Autovía A-2 Madrid-Barcelona freight corridor and M-50 orbital bypass, a reality our product engineering and marketing team has engineered our systems to solve when tackling DMS Driver Fatigue Monitoring from Atlanta Systems for Long-Haul Drivers Across Spain.
 
 Between 2:00 AM and 5:00 AM on Autovía A-2 Madrid-Barcelona freight corridor and M-50 orbital bypass, driver alertness drops to its biological nadir. A long-haul driver does not intend to fall asleep at the wheel; microsleep happens silently while the vehicle cruises at highway speeds. Similarly, looking down at a smartphone screen to read a text message in Madrid blinds the driver for forty meters. In heavy commercial transport, that brief lapse is all it takes to trigger a fatal rollover or rear-end impact.
 
@@ -31,12 +31,9 @@ Our edge neural processing unit (NPU) samples 68 facial landmark coordinates at 
 +-----------------------------------------------------------------------------------+
 |             ATLANTA SYSTEMS INDUSTRIAL TELEMATICS HARDWARE ARCHITECTURE          |
 +-----------------------------------------------------------------------------------+
-|  [Core Processing] -> 32-Bit ARM Cortex-M4 Industrial Microcontroller             |
 |  [Satellite Engine] -> Quad-Constellation Multi-Frequency GNSS (Sub-2.5m CEP)     |
 |  [Motion Analytics] -> Internal 3-Axis MEMS Accelerometer (100Hz Event Sampling)  |
-|  [Power Conditioning] -> 9V-36V DC Input with 60V Transient Voltage Suppressor    |
 |  [Cellular Uplink] -> Industrial 4G Cat-1 / Cat-M1 with Embedded Multi-IMSI eSIM   |
-|  [Enclosure Rating] -> IP67 / IP68 / IP69K Die-Cast Aluminum Heat Sink Housing    |
 +-----------------------------------------------------------------------------------+
 
 ---
@@ -72,7 +69,7 @@ Our algorithm incorporates dynamic 3D head pose estimation, distinguishing norma
 
 If you are running commercial transport operations across Madrid or throughout Europe, you do not have to accept unmonitored fuel loss, preventable accidents, or regulatory fines as normal business costs.
 
-Our co-founders, Sujeet Narula and Sandeep Narula, alongside our dedicated engineering team, have spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
+The Atlanta Systems Marketing Team, alongside our dedicated engineering team, has spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
 
 * **Explore Commercial Trackers**: Review our [Atlanta Systems Vehicle Telematics](/trackers/vehicle-telematics) and [Asset & Personal Trackers](/trackers/assets-&-personal-telematics).
 * **Deploy AI Video Telematics**: Equip your fleet with [AI Video Dashcams and MDVR](/trackers/video-telematics) or [ADAS Collision Warning Systems](/adas).

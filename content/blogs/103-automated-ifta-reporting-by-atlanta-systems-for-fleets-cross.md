@@ -1,4 +1,4 @@
-# Automated IFTA Reporting by Atlanta Systems for Fleets Crossing Multiple US State Lines from Memphis
+# Automated IFTA Reporting by Atlanta Systems for Fleets Crossing Multiple US State Lines Across Tennessee, USA
 
 * **Slug**: `automated-ifta-reporting-by-atlanta-systems-for-fleets-crossing-multiple-us-state-lines-from-memphis`
 * **Category**: Vehicle Telematics
@@ -7,7 +7,7 @@
 * **Country**: United States
 * **Geo Region**: North America
 * **Hardware Model**: VLT-100
-* **Author**: Sandeep Narula, Co-Founder
+* **Author**: Atlanta Systems Marketing Team
 * **Published Date**: 2026-08-29
 * **Estimated Read Time**: 12 min read
 * **SEO Keywords**: Automated, IFTA, Reporting, Atlanta, Systems, Memphis Telematics, Vehicle Telematics, Atlanta Systems, Fleet IoT
@@ -16,7 +16,7 @@
 
 ## The Regulatory Trap Grounding Commercial Fleets in Memphis
 
-Every fleet maintenance manager in Memphis understands the operational friction that occurs on Interstate 40 and I-55 freight corridors when dealing with Automated IFTA Reporting by Atlanta Systems for Fleets Crossing Multiple US State Lines from Memphis.
+Every fleet maintenance manager in Memphis understands the operational friction that occurs on Interstate 40 and I-55 freight corridors when dealing with Automated IFTA Reporting by Atlanta Systems for Fleets Crossing Multiple US State Lines Across Tennessee, USA Across Tennessee, USA.
 
 Commercial fleets operating across Interstate 40 and I-55 freight corridors face an unforgiving regulatory environment in Memphis. Whether dealing with MoRTH AIS-140 mandates in India, FMCSA ELD regulations in the United States, European Smart Tachograph rules, or Saudi Arabia's TGA WASAL requirements, transport authorities have zero patience for non-compliant hardware. Missing digital certificates, unassigned driving miles, or broken emergency panic loops result in immediate vehicle impoundment, massive fines, and canceled operating permits.
 
@@ -35,12 +35,9 @@ Our compliance hardware features:
 +-----------------------------------------------------------------------------------+
 |             ATLANTA SYSTEMS INDUSTRIAL TELEMATICS HARDWARE ARCHITECTURE          |
 +-----------------------------------------------------------------------------------+
-|  [Core Processing] -> 32-Bit ARM Cortex-M4 Industrial Microcontroller             |
 |  [Satellite Engine] -> Quad-Constellation Multi-Frequency GNSS (Sub-2.5m CEP)     |
 |  [Motion Analytics] -> Internal 3-Axis MEMS Accelerometer (100Hz Event Sampling)  |
-|  [Power Conditioning] -> 9V-36V DC Input with 60V Transient Voltage Suppressor    |
 |  [Cellular Uplink] -> Industrial 4G Cat-1 / Cat-M1 with Embedded Multi-IMSI eSIM   |
-|  [Enclosure Rating] -> IP67 / IP68 / IP69K Die-Cast Aluminum Heat Sink Housing    |
 +-----------------------------------------------------------------------------------+
 
 ---
@@ -76,7 +73,7 @@ Yes. Beyond statutory tracking, our hardware features RS-485 Modbus, RS-232, and
 
 If you are running commercial transport operations across Memphis or throughout North America, you do not have to accept unmonitored fuel loss, preventable accidents, or regulatory fines as normal business costs.
 
-Our co-founders, Sujeet Narula and Sandeep Narula, alongside our dedicated engineering team, have spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
+The Atlanta Systems Marketing Team, alongside our dedicated engineering team, has spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
 
 * **Explore Commercial Trackers**: Review our [Atlanta Systems Vehicle Telematics](/trackers/vehicle-telematics) and [Asset & Personal Trackers](/trackers/assets-&-personal-telematics).
 * **Deploy AI Video Telematics**: Equip your fleet with [AI Video Dashcams and MDVR](/trackers/video-telematics) or [ADAS Collision Warning Systems](/adas).

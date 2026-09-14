@@ -1,0 +1,178 @@
+.post-list-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    background: #fff;
+    border: 1px solid #D5D5D5;
+    box-shadow: 0 3px 10px #0000000d;
+    overflow: hidden;
+    transition: all 0.2s;
+    border-radius: 10px;
+    text-align: left;
+
+    @include respond (tab-port) {
+        flex-direction: column;
+        // width: 300px;
+        height: 400px;
+    }
+}
+
+.post-list-main:hover {
+    box-shadow: none;
+    transition: all 0.2s;
+    background-color: #f6f6f6;
+}
+
+.image-wrapper-post {
+    margin: 0 !important;
+    max-width: 283px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include respond (tab-port) {
+        max-width: unset;
+    }
+}
+
+.image-wrapper-post a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.image-wrapper-post img {
+    max-width: none !important;
+    height: 100% !important;
+}
+
+.image-wrapper-post picture img {
+    max-width: none !important;
+    height: 100% !important;
+}
+
+
+.image-wrapper-post picture {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.post-list-main-content {
+    width: 100%;
+    padding: 25px 20px 28px 35px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.post-list-main-content-title {
+    display: block;
+    margin: 0 0 6px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #000;
+
+    &:hover {
+        color: #d50051;
+    }
+}
+
+.post-list-main-content-title span {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.post-list-main-authors {
+    display: block;
+    width: 100%;
+}
+
+.authors-link {
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Manrope";
+    line-height: 25px;
+    color: #757575;
+}
+
+.authors-link span {
+    font-family: "Manrope";
+}
+
+.authors-link:nth-child(1) a {
+    color: #2ca6de;
+
+    &:hover {
+        color: #d50051;
+    }
+}
+
+.content-tags {
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    font-family: "Manrope";
+}
+
+.content-tags span {
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+.content-tags span a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-family: "Manrope";
+    color: #fff;
+    line-height: 14px;
+    border-radius: 4px;
+    
+    &:hover {
+        color: #d50051;
+    }
+
+    @include respond (phone) {
+        margin-bottom: 5px;
+    }
+}
+
+.content-tags a[rel="tag"] {
+    background-color: #F5A300;
+}
+
+.content-tags a[href*="fts-news"] {
+    background-color: #D50051;
+}
+
+.content-tags a[href*="fleet-and-worker-safety"] {
+    background-color: #3FAC00;
+}
+
+.content-tags  a[href*="tools-of-the-trade"] {
+    background-color: #8B00F5;
+}

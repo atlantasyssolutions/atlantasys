@@ -1,0 +1,230 @@
+.rc-related {
+  padding: 32px 0 80px;
+  background-color: #f9f9f9;
+
+  @include respond(phone) {
+    padding: 40px 0 50px;
+  }
+
+  &__heading {
+    font-family: "Poppins";
+    font-size: 28px;
+    font-weight: 300;
+    color: $gray-dark;
+    margin-bottom: 40px;
+    letter-spacing: -0.5px;
+
+    @include respond(phone) {
+      font-size: 22px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    position: relative;
+
+    @include respond(tab-port) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+
+    &.owl-carousel {
+      display: block;
+      padding-bottom: 48px;
+
+      .owl-stage {
+        display: flex;
+      }
+
+      .owl-item {
+        display: flex;
+        padding: 0 12px;
+      }
+
+      .rc-related__card {
+        height: 100%;
+        width: 100%;
+
+        &--img {
+          flex-shrink: 0;
+
+          img {
+            height: 100%;
+          }
+        }
+      }
+
+      .owl-dots {
+        text-align: center;
+        margin-top: 24px;
+
+        .owl-dot {
+          display: inline-block;
+          margin: 0 4px;
+
+          span {
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #d0d0d0;
+            transition: background 0.2s ease, transform 0.2s ease;
+          }
+
+          &.active span,
+          &:hover span {
+            background: $main-blue;
+            transform: scale(1.25);
+          }
+        }
+      }
+
+      .owl-nav {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        pointer-events: none;
+
+        .owl-prev,
+        .owl-next {
+          position: absolute;
+          pointer-events: all;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background: #fff;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: background 0.2s ease, box-shadow 0.2s ease;
+
+          &:hover {
+            background: $main-blue;
+            box-shadow: 0 4px 12px rgba(33, 123, 192, 0.3);
+
+            span {
+              border-color: #fff;
+            }
+          }
+
+          span {
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid $main-blue;
+            border-right: 2px solid $main-blue;
+            transition: border-color 0.2s ease;
+          }
+        }
+
+        .owl-prev {
+          left: -18px;
+
+          span {
+            transform: rotate(-135deg) translate(-1px, 1px);
+          }
+        }
+
+        .owl-next {
+          right: -18px;
+
+          span {
+            transform: rotate(45deg) translate(-1px, 1px);
+          }
+        }
+
+        .owl-prev.disabled,
+        .owl-next.disabled {
+          opacity: 0.3;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+
+    &--img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background-color: #efefef;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.35s ease;
+      }
+    }
+
+    &:hover &--img img {
+      transform: scale(1.04);
+    }
+
+    &--content {
+      padding: 20px 22px 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    &--cat {
+      display: inline-block;
+      font-family: "Manrope";
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: $main-blue;
+      margin-bottom: 8px;
+    }
+
+    &--title {
+      font-family: "Poppins";
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.55;
+      color: $gray-dark;
+      flex: 1;
+      margin: 0 0 16px;
+      transition: color 0.15s ease;
+    }
+
+    &:hover &--title {
+      color: $main-blue;
+    }
+
+    &--meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: "Manrope";
+      font-size: 12px;
+      color: $second-gray;
+
+      span + span::before {
+        content: "·";
+        margin-right: 8px;
+        color: #c4c4c4;
+      }
+    }
+  }
+}

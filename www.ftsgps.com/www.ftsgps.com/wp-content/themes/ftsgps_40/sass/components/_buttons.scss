@@ -1,0 +1,752 @@
+.btn--schedule {
+  padding: 14px 24px;
+  display: inline-block;
+  font-family: Manrope;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  @include transitions(0.2s all ease-in);
+  line-height: 1.4;
+  &.solutions {
+    border: 2px solid $main-blue;
+    color: $main-blue;
+
+    &:hover {
+      color: $white-color;
+      background-color: $main-blue;
+      border: 2px solid $main-blue;
+    }
+  }
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0);
+
+    &::after {
+      content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d='M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'  stroke='white' fill='white' stroke-width='20'/></svg>");
+      margin-left: 12px;
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    // font-family: 'Font Awesome 5 Free';
+    content: "";
+    transition-duration: 0.2s;
+    opacity: 0;
+  }
+}
+
+// .btn__schedule--angel {
+//     padding: 14px 24px;
+//     display: inline-block;
+//     font-family: Manrope;
+//     font-size: 1.6rem;
+//     font-weight: 600;
+//     border-radius: 3px;
+//     text-transform: uppercase;
+//     color: #268ecc;
+//     transition: 0.2s all ease-in;
+//     line-height: 1.2;
+//     border: 2px solid #268ecc;
+
+//     &:hover {
+//         background-color: #268ecc;
+//         border: 2px solid #268ecc;
+//         color: #ffffff;
+
+//         &::after {
+//             content: "\f105";
+//             margin-left: 12px;
+//             opacity: 1;
+//         }
+//     }
+
+//     &::after {
+//         font-family: 'Font Awesome 5 Free';
+//         content: "";
+//         transition-duration: .2s;
+//         opacity: 0;
+//     }
+// }
+
+.btn--demo {
+  padding: 12px 32px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  display: inline-block;
+  transition: 0.2s all ease-in;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #ffffff;
+
+  &:hover {
+    color: #006980;
+    background-color: #ffffff;
+  }
+}
+
+.btn--intelli {
+  padding: 14px 24px;
+  border: 2px solid #268ecc;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: $main-blue;
+  @include transitions(0.2s color);
+
+  &:hover {
+    background-color: #2179be;
+    border-color: #2179be;
+  }
+}
+
+.btn--fleetcam {
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: "Poppins";
+  line-height: 2.7rem;
+  border-radius: 10px;
+  padding: 16px 26px;
+  box-shadow: 0px 10px 10px #00000029;
+  background-color: #ffd574;
+  // border: 1px solid #ffd574;
+  color: #000000;
+
+  &:hover {
+    background-color: #d50051;
+    color: #ffffff;
+  }
+}
+
+.btn--fleetdemo {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Poppins";
+  line-height: 1.7rem;
+  border-radius: 3px;
+  padding: 11px 17px;
+  // border: 1px solid #ffd574;
+  color: #ffffff;
+  background-color: #268ecc;
+
+  &:hover {
+    background-color: #d50051;
+  }
+}
+
+.btn--header {
+  display: inline-block;
+  // min-width: 124px;
+  background-color: #d50051;
+  padding: 9px 13px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 5px 0;
+  border-radius: 3px;
+  color: #ffffff;
+  transition-duration: 0.1s;
+  white-space: nowrap;
+  // width: 100%;
+
+  &:hover {
+    background-color: #c1004a;
+  }
+
+  @include respond(s-phone) {
+    display: none;
+  }
+
+  &--new {
+    // display: inline-block;
+    // min-width: 124px;
+    padding: 9px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Manrope";
+    line-height: 26px;
+    margin: 5px 0;
+    border-radius: 6px;
+    color: #fff;
+    transition-duration: 0.2s;
+    border: 1px solid $main-blue;
+    background-color: $main-blue;
+    white-space: nowrap;
+    // width: 100%;
+    min-width: 122px;
+
+    @include respond(tab-port) {
+      color: #fff;
+      border: 1px solid $main-blue;
+      background-color: $main-blue;
+    }
+
+    // @include respond (s-phone) {
+    //     display: none;
+    // }
+
+    &:hover {
+      background-color: #072d53;
+      border-color: #072d53;
+      color: #ffffff;
+      transition: all 0.2s;
+
+      @include respond(tab-port) {
+        color: #ffffff;
+        border: 1px solid #072d53;
+        background-color: #072d53;
+      }
+    }
+  }
+
+  &--mobile {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Manrope";
+    line-height: 26px;
+    margin: 5px 0;
+    border-radius: 6px;
+    color: #ffffff;
+    transition-duration: 0.2s;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    white-space: nowrap;
+    display: none;
+
+    @include respond(tab-port) {
+      display: inline-block;
+    }
+
+    &:hover {
+      color: #082c50;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.btn--login {
+  display: inline-block;
+  padding: 7px 13px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 5px 0 5px;
+  border-radius: 3px;
+  border: 2px solid #268ecc;
+  color: #268ecc;
+  background-color: transparent;
+  transition-duration: 0.1s;
+  // min-width: 72px;
+  // width: 100%;
+
+  &:hover {
+    background-color: #268ecc;
+    color: $white-color;
+  }
+
+  @include respond(tab-port) {
+    display: none;
+  }
+
+  &--new {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Manrope";
+    line-height: 26px;
+    color: $main-blue;
+    background-color: transparent;
+    transition-duration: 0.2s;
+    text-align: center;
+    border: 1px solid $main-blue;
+    border-radius: 6px;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    svg {
+      margin-right: 12px;
+      transition-duration: 0.2s;
+      fill: $main-blue;
+    }
+
+    svg path {
+      fill: $main-blue;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: #072d53;
+      border-color: #072d53;
+    }
+
+    &:hover svg {
+      fill: #fff;
+      transition-duration: 0.2s;
+    }
+
+    &:hover svg path {
+      fill: #fff;
+      transition-duration: 0.2s;
+    }
+  }
+}
+
+.btn--ctp {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Poppins";
+  line-height: 1.6;
+  border-radius: 3px;
+  padding: 10px 16px;
+  background-color: #403e3f;
+  border: 1px solid #403e3f;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #666264;
+    border: 1px solid #666264;
+  }
+}
+
+.btn--main-baner {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: normal;
+  color: #ffffff;
+  background-color: #2a880a;
+
+  &:hover {
+    background-color: #2a880a;
+  }
+
+  &-blue {
+    &:hover {
+      background-color: #2a6193;
+    }
+  }
+}
+
+.btn--main-learn {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 10px 15px;
+  background-color: rgba($color: $white, $alpha: 1);
+  color: $gray-dark;
+  transition-duration: 0.1s;
+
+  &:hover {
+    background-color: rgba($color: $white, $alpha: 0.1);
+    color: $white;
+    transition-duration: 0.1s;
+  }
+}
+
+.btn--network-sales {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Manrope";
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 8px 12px;
+  line-height: 1.2;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #0c1423;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    color: #ffffff;
+    background-color: #248ccc;
+    border: 1px solid #248ccc;
+  }
+}
+
+.btn--network-demo {
+  display: inline-block;
+  font-size: 22px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 12px 38px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #0088ff;
+    border: 1px solid #0088ff;
+  }
+}
+
+.btn--reseller {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  font-weight: 600;
+  background-color: #1e73be;
+  border: 1px solid #1e73be;
+  color: #ffffff;
+  padding: 15px 30px;
+
+  &:hover {
+    background-color: #d50051;
+    border: 1px solid #d50051;
+  }
+}
+
+.btn--sprint {
+  background-color: #98aeb6;
+  border: 1px solid #98aeb6;
+}
+
+.btn--rc-eld {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-family: "Poppins";
+  border-radius: 3px;
+  font-weight: 400;
+  background-color: #d50051;
+  border: 1px solid #d50051;
+  color: #ffffff;
+  padding: 11px 18px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #c1004a;
+    border: 1px solid #c1004a;
+  }
+}
+
+.btn--rc-network {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-family: "Poppins";
+  border-radius: 3px;
+  font-weight: 400;
+  background-color: #0088ff;
+  border: 1px solid #0088ff;
+  color: #ffffff;
+  padding: 11px 18px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #0072cb;
+    border: 1px solid #0072cb;
+  }
+}
+
+.btn--dvir {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-family: "Poppins";
+  border-radius: 4px;
+  font-weight: 500;
+  background-color: #0088ff;
+  border: 1px solid #0088ff;
+  color: #ffffff;
+  padding: 15px 30px;
+
+  &:hover {
+    background-color: #d50051;
+    border: 1px solid #d50051;
+  }
+}
+
+.btn--stories {
+  display: inline-block;
+  font-size: 2.2rem;
+  font-family: "Poppins";
+  border-radius: 6px;
+  font-weight: 500;
+  line-height: 1.4;
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  padding: 11px 24px;
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+/* FIXME */
+
+.button {
+  display: inline-block;
+  margin-right: 0;
+  font-family: "Manrope";
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 12px 21px;
+  color: $input-black-color;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  @include transitions(0.2s, all, ease-in-out);
+  & > svg {
+    @include transitions(0.2s, fill, ease-in-out);
+  }
+
+  * {
+    @include transitions(0.2s, fill, ease-in-out);
+  }
+  &__hide {
+    display: none;
+  }
+
+  &.button-small {
+    padding: 7px 12px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  &.button-nowrap {
+    white-space: nowrap;
+  }
+
+  &.button-hover-2 {
+    &:hover {
+      background-color: $main-blue-hover2;
+      border-color: $main-blue-hover2;
+    }
+  }
+
+  &.button-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &.button-link {
+    padding-left: 0;
+    padding-right: 0;
+    color: $main-blue;
+
+    &:hover {
+      color: $main-red;
+    }
+  }
+
+  &.button-yellow {
+    background-color: $new-yellow;
+    
+  }
+
+  &.button-big {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+.button-secondary {
+  background-color: transparent;
+  border: 2px solid $main-blue;
+  color: $main-blue;
+
+  &:hover {
+    background-color: $main-blue;
+    color: $white-color;
+
+    svg {
+        fill: $white-color;
+    }
+  }
+
+  svg {
+    fill: $main-blue
+  }
+}
+
+.button-primary {
+  background-color: $main-blue;
+  border: 1px solid $main-blue;
+  color: $white-color;
+
+  &:hover {
+    background-color: $red-color;
+    border-color: $red-color;
+  }
+
+  &.button-outline {
+    background-color: transparent;
+    color: $main-blue;
+
+    &:hover {
+      color: $white;
+
+      * {
+        color: $white;
+        fill: $white;
+      }
+    }
+
+    * {
+      color: $main-blue;
+      fill: $main-blue;
+    }
+  }
+}
+
+.button-success {
+  background-color: $green-color;
+  color: $white-color;
+
+  &:hover {
+    background-color: $red-color;
+  }
+}
+
+.button-white {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  color: #565656;
+
+  &:hover {
+    color: $white;
+  }
+
+  &.button-outline {
+    background-color: transparent;
+    color: white;
+    & > svg {
+      fill: white;
+    }
+    &:hover {
+      background-color: #ffffff;
+      color: $red-color;
+      & > svg {
+        fill: $red-color;
+      }
+    }
+  }
+
+  &.button-text-black {
+    color: $black;
+  }
+}
+
+.button-black {
+  background-color: $black;
+  border: 2px solid $black;
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    border-color: $white;
+    color: $black;
+  }
+
+  &.button-outline {
+    background-color: transparent;
+    color: $black;
+
+    &:hover {
+      border-color: $main-blue;
+      color: $main-blue;
+    }
+  }
+}
+
+.button-white-secondary {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  color: $main-blue;
+
+  &:hover {
+    background-color: transparent;
+    color: $red-color;
+  }
+}
+
+.button-white-third {
+  background-color: $white;
+  border: 2px solid $white;
+  color: $black;
+
+  &:hover {
+    background-color: $red-color;
+    color: $white;
+    border-color: $red-color;
+
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+  }
+}
+
+.button-danger {
+  background-color: $red-color;
+  color: $white-color;
+}
+
+.width-unset {
+  width: auto;
+}
+
+body.resource_center-template-default {
+  div#rc__article {
+    a {
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+    .hs-cta-node {
+      a.cta_button {
+        background: #ffffff !important;
+        border: 2px solid #072d53 !important;
+        border-radius: 6px !important;
+        color: #072d53 !important;
+        padding: 13px 24px !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        display: inline-block;
+        font-size: 14px !important;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: auto !important;
+        box-shadow: none !important;
+
+        &:hover {
+          background-color: #072d53 !important;
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.garmin {
+    background-image: url(../img/garmin-fleet-790-frame.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        max-width: 100%;
+
+    &--carousel {
+        
+        max-width: 700px;
+        max-height: 441px;
+        padding-top: 16px;
+        padding-left: 92px;
+        padding-right: 103px;
+        padding-bottom: 40px;
+        height: 441px;
+        background-position: 50% 50%;
+
+        @include respond (phone) {
+            padding-left: 59px;
+            padding-right: 65px;
+        }
+
+        @include respond (s-phone) {
+            padding-left: 46px;
+            padding-right: 52px;
+        }
+    }
+
+    &--pic {
+       margin-top: 40px;
+    //    max-width: 510px;
+    //    max-height: 300px;
+
+    @include respond (phone) {
+        margin-top: 17px;
+    }
+
+    @include respond (phone) {
+        margin-top: 10px;
+    }
+
+       img {
+           max-width: 100%;
+       }
+    }
+}
+
+.garmin--pic .owl-dots {
+    margin-top: 70px !important;
+}

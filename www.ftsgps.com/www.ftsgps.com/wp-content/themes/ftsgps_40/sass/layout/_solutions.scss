@@ -1,0 +1,351 @@
+.hero-gps {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: url(https://www.ftsgps.com/wp-content/uploads/2019/08/pattern-green-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-goverment {
+  background-image: url(https://www.ftsgps.com/wp-content/uploads/2021/06/Mask-Group-1.png);
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-ifta {
+  background-image: linear-gradient(rgba(2, 22, 3, 0.88), rgba(2, 22, 3, 0.88)),
+    url(https://www.ftsgps.com/wp-content/uploads/2019/08/ifta-fuel-hero-bg.jpg);
+  overflow: hidden;
+  color: $white-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-eld {
+  background-image: url(https://www.ftsgps.com/wp-content/uploads/2019/08/field-warrior-pattern.png);
+}
+
+.hero-driver-behavior {
+  background-image: linear-gradient(
+      rgba(11, 65, 95, 0.8),
+      rgba(11, 65, 95, 0.8)
+    ),
+    url(https://www.ftsgps.com/wp-content/uploads/2019/08/driver-scorecard-lights-speed-road-hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  overflow: hidden;
+}
+
+.hero-driver-behavior {
+  background-image: linear-gradient(rgba(2, 22, 35, 0.8), rgba(2, 22, 35, 0.8)),
+    url(https://www.ftsgps.com/wp-content/uploads/2019/08/digital-city-hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  overflow: hidden;
+}
+
+.section-divider-img {
+  background-image: url(https://www.ftsgps.com/wp-content/uploads/2019/08/driver-scorecards-green-driving-divider-1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-position: 50% 50%;
+
+  @include respond(tab-land) {
+    height: 400px;
+  }
+
+  @include respond(tab-port) {
+    height: 300px;
+  }
+
+  @include respond(phone) {
+    height: 200px;
+  }
+}
+
+.section-dvir-img {
+  background-image: url(https://www.ftsgps.com/wp-content/uploads/2019/08/dvir-check-seamless-workflow.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: 50% 50%;
+  min-height: 40vh;
+
+  @include respond(tab-land) {
+    height: 400px;
+  }
+
+  @include respond(tab-port) {
+    height: 300px;
+  }
+
+  @include respond(phone) {
+    height: 200px;
+  }
+}
+
+.bg-green {
+  background-color: #71a833;
+}
+
+.bg-blue {
+  background-color: #003441;
+}
+
+.bg-gray {
+  background-color: $background-light-color;
+}
+
+.solution-ico-200 {
+  width: 200px;
+}
+
+.solution-ico-28 {
+  width: 28px;
+  height: auto;
+}
+
+.eld-image {
+  top: -550px;
+
+  @include respond(tab-land) {
+    top: -450px;
+  }
+
+  @include respond(tab-port) {
+    top: -300px;
+  }
+
+  @include respond(phone) {
+    top: -180px;
+  }
+}
+
+.eld-section {
+  height: calc(100vw * 0.2);
+}
+
+.solution-img {
+  border: 7px solid $black-color;
+  box-shadow: 0px 0px 10px 0px $black-alpha01-color;
+}
+
+.solution-heading::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 14px;
+  width: 50px;
+  height: 3px;
+  background-color: #268ecc;
+}
+
+.link {
+  color: $main-blue;
+  font-weight: 500 !important;
+  @include transitions(0.2s color ease-in-out);
+
+  &.link-arrow::after {
+    content: "\00bb";
+    margin-left: 5px;
+    font-weight: 500 !important;
+  }
+
+  &:hover {
+    color: $main-red;
+  }
+}
+
+.eld-link {
+  color: $primary-color;
+}
+
+.hero-dispatch {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: url(../img/monarch-pattern-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-navigation {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: linear-gradient(
+      rgba(0, 105, 128, 0.8),
+      rgba(0, 105, 128, 0.8)
+    ),
+    url("../img/commercial-navigation-oil-tanker-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-DVIR {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: url(../img/pattern-dark-green.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-maintenance {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: linear-gradient(rgba(43, 4, 4, 0.9), rgba(43, 4, 4, 0.9)),
+    url(../img/maintenance-management-hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-angel {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: url(../img/road-angel-hero-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-digital {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: url(../img/field-warrior-pattern-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-alerts {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: linear-gradient(
+      rgba(14, 10, 40, 0.8),
+      rgba(14, 10, 40, 0.8)
+    ),
+    url(../img/activity-alerts-hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-iot {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: linear-gradient(rgba(1, 35, 51, 0.8), rgba(1, 35, 51, 0.8)),
+    url(../img/advanced-data-iot-hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-california {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/golden-gate-bridge-in-california.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-cradlepoint {
+  overflow: hidden;
+  color: $gray-dark !important;
+  background-color: #fcfcfc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-garmin {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: url(../img/pattern-dark-green.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-eld-rc {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: url(../img/pattern-11-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-nevada {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../img/semi-truck-driving-on-i-11-in-boulder-city-nevada-with-ufo-and-alien.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+.hero-downloads {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: url(../img/pattern-20.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  div {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.hero-sourcewell {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: url(../img/baner-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-oregon {
+  overflow: hidden;
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../img/iStock-132117510s6-1-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

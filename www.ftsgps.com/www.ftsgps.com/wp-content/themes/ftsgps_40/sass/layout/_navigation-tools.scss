@@ -1,0 +1,26 @@
+.navigation-tools {
+
+    &__img {
+        background-image: url(../img/field-warrior-consolidate-tools.jpg);
+        background-size: cover;
+        max-width: 100%;
+        background-repeat: no-repeat;
+        min-height: 400px;
+        background-position: 100% 50%;
+    }
+
+    &__content {
+        background-image: url(../img/pattern-100.png);
+        background-size: cover;
+        width: 50%;
+        background-repeat: no-repeat;
+        min-height: 55vh;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+
+        div {
+            max-width: 660px;
+        }
+    }
+}

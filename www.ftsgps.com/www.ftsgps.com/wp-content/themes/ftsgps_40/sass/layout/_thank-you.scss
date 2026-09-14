@@ -1,0 +1,23 @@
+.thank-you {
+
+    .padding-right-xl,
+    .padding-left-xl {
+        @include respond (phone) {
+            padding: 0 !important;
+        }
+    }
+    
+
+    p {
+        color: #757575;
+    }
+
+    &__articles {
+        border-right: 1px solid #e0e0db;
+
+        @include respond (phone) {
+            border-right: 0;
+            margin-bottom: 40px;
+        }
+    }
+}

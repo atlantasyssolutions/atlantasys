@@ -1,0 +1,116 @@
+.share {
+  &__widget {
+    display: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.36px;
+    font-family: "Manrope";
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    @include respond(tab-port) {
+      display: flex;
+    }
+
+    &:hover .share__widget--outer,
+    &:active .share__widget--outer {
+      display: block;
+    }
+
+    &:hover > svg path {
+      stroke: #217bc0;
+    }
+
+    &:hover > span {
+      color: #217bc0;
+    }
+
+    span {
+      font-family: "Manrope";
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 26px;
+    }
+
+    &--inner {
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      z-index: 10;
+      border: 1px solid #d0d0d0;
+      background-color: #fff;
+      border-radius: 4px;
+
+      a:not(:last-child) {
+        margin-right: 19px;
+      }
+
+      // hovers
+
+      a:nth-child(1):hover svg path:nth-child(1) {
+        fill: #0866ff;
+      }
+
+      a:nth-child(2):hover svg path {
+        fill: #0a66c2;
+      }
+
+      a:nth-child(3):hover svg path {
+        fill: #000;
+      }
+
+      a:hover svg g {
+        opacity: 1;
+      }
+    }
+
+    &--link {
+      border: 1px solid #d0d0d0;
+      border-radius: 6px;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+
+      > svg {
+        margin-right: 7px !important;
+      }
+
+      span {
+        color: rgba(0, 0, 0, 1);
+        font-family: "Manrope";
+        font-size: 12px;
+        font-weight: 600;
+        white-space: nowrap;
+        line-height: normal;
+      }
+
+      &:hover span {
+        color: #000;
+      }
+    }
+
+    &--outer {
+      display: none;
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+      padding-bottom: 15px;
+    }
+
+    &--copied {
+      display: none;
+    }
+  }
+}
+
+// Copy share
+
+.copied .share__widget--copied {
+  display: inline-block;
+}
+
+.copied span:nth-child(2) {
+  display: none;
+}

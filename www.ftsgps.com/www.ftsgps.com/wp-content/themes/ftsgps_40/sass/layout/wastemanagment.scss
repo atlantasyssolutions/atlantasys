@@ -1,0 +1,61 @@
+.page-template-industries-waste-management2 {
+    .three-column {
+        .col-3 {
+            img {
+                width: 36px;
+                height: 38px;
+            }
+        }
+    }
+
+    .asterix-wrapper {
+        gap: 10px;
+        color: $gray-dark;
+    }
+
+    .waste-main-image {
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    svg {
+        g {
+            pointer-events: bounding-box;
+        }
+        g {
+            display: block;
+            .small-circle {
+                fill: #1C274C;
+            }
+            .big-circle {
+                stroke: #1C274C;
+            }
+            &:hover {
+                .big-text {
+                    fill: #2865C2;
+                    transition: all .4s;
+                }
+                .small-dots {
+                    fill: #2575EE;
+                    transition: all .4s;
+                }
+                .line {
+                    stroke: #2575EE;
+                    stroke-dasharray: 0;
+                }
+                .small-circle {
+                    fill: #2575EE;
+                    transition: all .4s;
+                }
+                .big-circle {
+                    stroke: #2575EE;
+                    stroke-dasharray: 0;
+                    transition: all .4s;
+                }
+            }
+        }
+        
+    }
+}

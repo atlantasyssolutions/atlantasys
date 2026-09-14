@@ -1,4 +1,4 @@
-# CAN-Bus J1939 Readers by Atlanta Systems: Unlocking Engine Data on Houston’s I-10 Energy Corridor
+# CAN-Bus J1939 Readers by Atlanta Systems: Unlocking Engine Data Across Texas, USA
 
 * **Slug**: `can-bus-j1939-readers-by-atlanta-systems-unlocking-engine-data-on-houstons-i-10-energy-corridor`
 * **Category**: Heavy Assets & Diagnostics
@@ -7,7 +7,7 @@
 * **Country**: United States
 * **Geo Region**: North America
 * **Hardware Model**: EC-400 OBD2 / CAN J1939 Reader
-* **Author**: Sandeep Narula, Co-Founder
+* **Author**: Atlanta Systems Marketing Team
 * **Published Date**: 2026-08-29
 * **Estimated Read Time**: 12 min read
 * **SEO Keywords**: , Houston Telematics, Heavy Assets & Diagnostics, Atlanta Systems, Fleet IoT
@@ -16,7 +16,7 @@
 
 ## The Silent Engine Fault Leading to Highway Blowouts on Interstate 10 (I-10) and Texas State Highway 225 Petrochemical Strip
 
-Nothing exposes the flaws in commercial telematics hardware faster than sustained duty cycles on Interstate 10 (I-10) and Texas State Highway 225 Petrochemical Strip, a reality our co-founders Sujeet Narula and Sandeep Narula have engineered our systems to solve when tackling CAN-Bus J1939 Readers by Atlanta Systems: Unlocking Engine Data on Houston’s I-10 Energy Corridor.
+Nothing exposes the flaws in commercial telematics hardware faster than sustained duty cycles on Interstate 10 (I-10) and Texas State Highway 225 Petrochemical Strip, a reality our product engineering and marketing team has engineered our systems to solve when tackling CAN-Bus J1939 Readers by Atlanta Systems: Unlocking Engine Data Across Texas, USA Across Texas, USA.
 
 Every fleet maintenance director in Houston knows the dread of receiving an emergency call from a driver stranded on Interstate 10 (I-10) and Texas State Highway 225 Petrochemical Strip. A blown head gasket, burned turbocharger, or seized crankshaft stops a fully loaded tractor dead in its tracks. The towing bill alone is massive, missed delivery penalties pile up, and engine overhauls easily exceed five figures. The frustrating reality? The engine computer was broadcasting diagnostic trouble codes for seventy-two hours before the breakdown happened, but nobody was listening.
 
@@ -33,12 +33,9 @@ Our on-board 32-bit ARM Cortex processor decodes heavy commercial SAE J1939 prot
 +-----------------------------------------------------------------------------------+
 |             ATLANTA SYSTEMS INDUSTRIAL TELEMATICS HARDWARE ARCHITECTURE          |
 +-----------------------------------------------------------------------------------+
-|  [Core Processing] -> 32-Bit ARM Cortex-M4 Industrial Microcontroller             |
 |  [Satellite Engine] -> Quad-Constellation Multi-Frequency GNSS (Sub-2.5m CEP)     |
 |  [Motion Analytics] -> Internal 3-Axis MEMS Accelerometer (100Hz Event Sampling)  |
-|  [Power Conditioning] -> 9V-36V DC Input with 60V Transient Voltage Suppressor    |
 |  [Cellular Uplink] -> Industrial 4G Cat-1 / Cat-M1 with Embedded Multi-IMSI eSIM   |
-|  [Enclosure Rating] -> IP67 / IP68 / IP69K Die-Cast Aluminum Heat Sink Housing    |
 +-----------------------------------------------------------------------------------+
 
 ---
@@ -74,7 +71,7 @@ Yes. The system automatically auto-detects baud rates and decodes commercial SAE
 
 If you are running commercial transport operations across Houston or throughout North America, you do not have to accept unmonitored fuel loss, preventable accidents, or regulatory fines as normal business costs.
 
-Our co-founders, Sujeet Narula and Sandeep Narula, alongside our dedicated engineering team, have spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
+The Atlanta Systems Marketing Team, alongside our dedicated engineering team, has spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
 
 * **Explore Commercial Trackers**: Review our [Atlanta Systems Vehicle Telematics](/trackers/vehicle-telematics) and [Asset & Personal Trackers](/trackers/assets-&-personal-telematics).
 * **Deploy AI Video Telematics**: Equip your fleet with [AI Video Dashcams and MDVR](/trackers/video-telematics) or [ADAS Collision Warning Systems](/adas).

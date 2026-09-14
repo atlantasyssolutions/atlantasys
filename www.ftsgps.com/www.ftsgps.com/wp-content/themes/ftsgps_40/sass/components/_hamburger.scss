@@ -1,0 +1,86 @@
+.hamburger {
+    background-color: transparent;
+    color: #2079BE;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    border: none;
+    display: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    @include respond (tab-port) { 
+        display: block; 
+        // padding: 19px 40px;
+        height: 100%;
+    }
+
+    @include respond (phone) {
+        // padding: 19px 40px;
+    }
+ 
+    &__icon {
+        width: 40px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--btn {
+            border: 0;
+            background: transparent;
+            filter: brightness(0) invert(1);
+            justify-content: center;
+            width: 39px;
+            transform: rotate(45deg);
+        }
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        &--tmobile {
+            background-color: #0b415f;
+            border-radius: 2px;
+            transition: all .5s ease-in-out;
+
+
+            &,
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 6px;
+                background-color: #0b415f;
+                border-radius: 2px;
+                transition: all .5s ease-in-out;
+            }
+
+            &::before {
+                transform: translateY(-12px);
+            }
+
+            &::after {
+                transform: translateY(12px);
+            }
+        }
+    }
+
+    &.open .hamburger__icon {
+        transform: translateX(-33px);
+        background: transparent;
+
+        &::before {
+            transform: rotate(45deg) translate(25px, -25px);
+        }
+
+        &::after {
+            transform: rotate(-45deg) translate(25px, 25px);
+        }
+    }
+
+}   

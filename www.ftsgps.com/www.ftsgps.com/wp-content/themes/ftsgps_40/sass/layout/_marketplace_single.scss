@@ -1,0 +1,136 @@
+.product__main {
+    margin: 24px 0 95px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  @media only screen and (max-width: 42em) {
+    .product__main {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin: 24px 15px 80px;
+    }
+  }
+  
+  .product__main--img {
+    width: 50%;
+    text-align: center;
+    padding: 100px;
+  }
+  
+  .product__main--img picture img,
+  .product__main--img img {
+      width: 95%;
+      height: auto;
+  }
+  
+  @media only screen and (max-width: 76.25em) {
+    .product__main--img {
+      padding: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 56.25em) {
+    .product__main--img {
+      padding: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 42em) {
+    .product__main--img {
+      padding: 0;
+    }
+  }
+  
+  @media only screen and (max-width: 30em) {
+    .product__main--img {
+      width: unset;
+    }
+  }
+  
+  .product__main__content {
+    width: 50%;
+  }
+  
+  /*.product__main__content p {
+      margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Manrope";
+    line-height: 22px;
+    color: #000000;
+  }
+  */
+  
+  @media only screen and (max-width: 42em) {
+    .product__main__content {
+      margin-top: 30px;
+      width: 100%;
+    }
+  }
+  
+  .product__main__content--title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    line-height: 46px;
+    color: #000000;
+  }
+  
+  .product__main__content--description p {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Manrope";
+    line-height: 26px;
+    color: #707070;
+  }
+  
+  .product__main__content--description p strong {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins";
+    line-height: 26px;
+    color: #707070;
+  }
+  
+  .product__main__content--description ul {
+      list-style: none;
+      padding-left: 0;
+  }
+  
+  .product__main__content--description ul li {
+    margin: 0 0 12px 20px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: 'Manrope';
+    color: #707070;
+  }
+  
+  .product__main__content--description ul li:before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: -20px;
+    top: 10px;
+    border-radius: 3px;
+    background-color: #5D5D5D;
+  }

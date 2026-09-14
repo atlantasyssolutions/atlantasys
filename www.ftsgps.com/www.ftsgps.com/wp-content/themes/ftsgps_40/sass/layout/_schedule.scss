@@ -1,0 +1,30 @@
+.schedule {
+  // width: 100%;
+  padding: 60px 20px;
+  background-color: $gray-light-2;
+  color: $white;
+  text-align: center;
+
+  &--head {
+    margin-bottom: 30px;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 54px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: $black;
+  }
+
+  .container {
+    padding: 100px 20px;
+  }
+
+  &.solutions {
+    color: $main-blue;
+    background-image: url(https://www.ftsgps.com/wp-content/uploads/2019/08/pattern-light-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

@@ -1,0 +1,1 @@
+<!-- gf:json_start -->{"success":true,"data":{"common":{"form":{"pagination":{"5":{"type":"percentage","pages":["","",""],"style":"blue","backgroundColor":null,"color":null,"display_progressbar_on_confirmation":false,"progressbar_completion_text":null}}}}}}<!-- gf:json_end -->

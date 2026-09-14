@@ -1,0 +1,1201 @@
+// .navigation {
+//     width: 100%;
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     left: 0;
+//     z-index: 3000;
+//     background-color: #F4F4F4;
+
+//     &::before {
+//         height: 5px;
+//         width: 100%;
+//         position: absolute;
+//         top: 0px;
+//         left: 0px;
+//         content: "";
+//         background: linear-gradient(to right,#2179be 0%,#2179be 16%,#25a7bf 16%,#25a7bf 33%,#635391 33%,#635391 50%,#d50051 50%,#d50051 66%,#ffba1a 66%,#ffba1a 83%,#ffba1a 83%,#49c247 83%,#49c247 100%);
+//     }
+
+//     &__nav {
+//         display: flex;
+//         width: 100%;
+//         height: 72px;
+//         flex-wrap: wrap;
+//         align-items: center;
+
+//         @include respond (tab-port) {
+//             justify-content: space-between;
+//         }
+
+//         @include respond (s-phone) {
+//             justify-content: space-between;
+//         }
+
+//         &--1 {
+//             display: flex;
+//             align-items: center;
+//             height: 100%;
+
+//             @include respond (tab-land) {
+//                 padding-left: 20px;
+//             }
+
+//             // @include respond (s-phone) {
+//             //     width: 50%;
+//             // }
+
+//             &--logo {
+//                 margin-right: 100px;
+
+//                 a {
+//                     display: inline-block;
+//                     margin-top: 6px;
+//                 }
+
+//                 img {
+//                     width: 227px;
+//                 }
+
+//                 @include respond (s-phone) {
+//                    margin-right: 0;
+//                 }
+
+//                 // img {
+//                 //     @include respond (s-phone) {
+//                 //         width: 100%;
+//                 //     }
+//                 // }
+//             }
+//         }
+
+//         &--2 {
+//             display: flex;
+//             flex-wrap: wrap;
+
+//             @include respond (tab-port) {
+//                 width: 100%;
+//                 align-items: center;
+//                 justify-content: center;
+//                 background-color: #F4F4F4;
+//             }
+
+//         }
+//     }
+
+//     &__list {
+//         display: flex;
+//         list-style: none;
+//         justify-content: center;
+//         align-items: center;
+
+//         @include respond (tab-port) {
+//             max-height: 0;
+//             overflow: hidden;
+//             align-items: unset;
+//             flex-wrap: wrap;
+
+//         }
+
+//         &.show-nav {
+//             max-height: none;
+//             margin: 15px 0 15px;
+//             transition: all .6s;
+//         }
+//     }
+
+//     &__item {
+//         margin: 0 20px 0 20px;
+
+//         @include respond (tab-land) {
+//             margin: 0 10px 0 10px;
+//         }
+
+//         &:nth-child(1) {
+//             margin: 0 20px 0 10px;
+
+//             @include respond (tab-land) {
+//                 margin: 0 10px 0 10px;
+//             }
+//         }
+
+//     }
+
+//     &__link {
+//         text-decoration: none;
+//         font-size: 14px;
+//         line-height: 17px;
+//         color: #315565;
+//         font-weight: 400;
+
+//         @include respond (phone) {
+//             line-height: 30px;
+//         }
+//     }
+// }
+
+.navigation {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+
+  &__outer {
+    // background-image: url(../img/header-background.png);
+    background-color: #ffffff;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // padding-top: 5px;
+    border-bottom: 1px solid #e2e2e2;
+    box-shadow: 0px 4px 4px 0px #0000001f;
+
+    // &::before {
+    //     height: 5px;
+    //     width: 100%;
+    //     position: absolute;
+    //     top: 0px;
+    //     left: 0px;
+    //     content: "";
+    //     background: linear-gradient(to right,#2179be 0%,#2179be 16%,#25a7bf 16%,#25a7bf 33%,#635391 33%,#635391 50%,#d50051 50%,#d50051 66%,#ffba1a 66%,#ffba1a 83%,#ffba1a 83%,#49c247 83%,#49c247 100%);
+    // }
+
+    &__left {
+      width: 100%;
+      max-width: 210px;
+      // display: flex;
+      // justify-content: flex-start;
+      // align-items: center;
+
+      @include respond(tab-port) {
+        order: 2;
+        max-width: unset;
+        display: flex;
+        justify-content: center;
+      }
+
+      &--link {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        @include respond(phone) {
+          display: flex;
+        }
+
+        img:nth-child(1) {
+          margin: 5px 0;
+          height: 36px;
+          width: 100%;
+
+          @include respond(tab-land) {
+            height: 23px;
+          }
+
+          @include respond(tab-port) {
+            height: 32px;
+            width: 210px;
+            display: none;
+          }
+
+          @include respond(s-phone) {
+            width: 180px;
+          }
+        }
+
+        img:nth-child(2) {
+          display: none;
+
+          @include respond(tab-port) {
+            display: block;
+            padding: 16px 0;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    &__center {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: center;
+    }
+
+    &__right {
+      justify-content: flex-end;
+      display: flex;
+      align-items: center;
+      // flex-grow: 1;
+      // flex-basis: 100%;
+      width: 100%;
+
+      @include respond(tab-port) {
+        order: 1;
+        flex-direction: row-reverse;
+      }
+
+      @include respond(phone) {
+        justify-content: flex-start;
+      }
+
+      .nav-menu-book-a-demo {
+      }
+
+      .nav-menu-login {
+        @include respond(tab-port) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__container {
+    max-width: 1240px;
+    height: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
+.nav-menu {
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+
+  @include respond(tab-land) {
+    padding: 0;
+  }
+
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    &__li {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      flex-wrap: nowrap;
+      // align-items: center;
+      // justify-content: center;
+      // width: 100%;
+
+      &:nth-last-child(1) {
+        display: none;
+      }
+
+      &__parent {
+        > a {
+          // display: flex;
+          // align-items: center;
+
+          // &::after {
+          //     width: 0.35em;
+          //     height: 0.35em;
+          //     margin-left: 0.5em;
+          //     border-right: 0.1em solid;
+          //     border-top: 0.1em solid;
+          //     transform: rotate(135deg);
+          //     content: "";
+          //     line-height: 20px;
+          // }
+        }
+      }
+
+      > a {
+        padding: 25px 20px;
+        font-size: 14px;
+        color: $gray-dark;
+        font-family: "Manrope";
+        font-weight: 500;
+        cursor: pointer;
+        white-space: nowrap;
+        line-height: 26px;
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+
+        &:hover {
+          color: #217bc0;
+        }
+
+        svg {
+          margin-left: 8px;
+          fill: $gray-dark;
+        }
+
+        &:hover svg path {
+          fill: #217bc0;
+        }
+
+        @include respond(tab-land) {
+          padding: 25px 10px;
+        }
+      }
+    }
+  }
+}
+
+.sub-menu {
+  width: 800px;
+  margin: 0 auto;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 40px;
+  z-index: 1001;
+  max-width: 100%;
+
+  &--outer {
+    position: fixed;
+    transform: translateX(-50%);
+    top: 75px;
+    left: 50%;
+    max-width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.1s ease-in;
+    transition-delay: 0.1s;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 1000;
+    min-width: 100%;
+    background-color: #fff;
+    display: none;
+
+    &.loaded {
+      display: block;
+    }
+  }
+
+  &__li {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    width: 50%;
+    // font-size: 2.4rem;
+    // line-height: 3.2rem;
+    color: #000000;
+    padding: 25px 40px;
+    // position: relative;
+
+    svg {
+      margin-right: 24px;
+    }
+
+    &:hover svg path {
+      fill: #217bc0;
+    }
+
+    &:hover a {
+      color: #217bc0;
+    }
+
+    > a {
+      display: flex;
+      flex-direction: row;
+      font-size: 1.4rem;
+      font-family: "Poppins";
+      line-height: 1.4rem;
+      color: #000000;
+      font-weight: 400;
+
+      p {
+        span {
+          display: block;
+          margin-top: 10px;
+          display: block;
+          white-space: pre-line;
+          line-height: 2rem;
+          color: $gray-dark;
+          font-size: 1.2rem;
+          max-width: 205px;
+          font-family: "Manrope";
+          font-weight: 400;
+          letter-spacing: 0.36px;
+        }
+
+        /*&.intellihub {
+          &::after {
+            content: "Browser-based command center for your entire fleet.";
+          }
+        }
+
+        &.fleetcam {
+          &::after {
+            content: "The all-in-one fleet vehicle camera system.";
+          }
+        }
+
+        &.field-warrior {
+          &::after {
+            content: "Fully compliant and registered with the FMCSA - ELD.";
+          }
+        }
+
+        &.monarch {
+          &::after {
+            content: "Mobile fleet management built for fleet managers on the go.";
+          }
+        }
+
+        &.route-matrix {
+          &::after {
+            content: "Save hours of planning, travel time, and a lot of fuel.";
+          }
+        }
+
+        &.driveshield {
+          &::after {
+            content: "Safer Driving, Better Coaching, Easier Management.";
+          }
+        }*/
+      }
+    }
+  }
+}
+
+.sub-menu--solutions {
+  width: 1280px;
+  // max-width: 100%;
+  margin: 0 auto;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 40px;
+  // border-bottom: 1px solid #dbdbdb;
+  // visibility: hidden;
+  // opacity: 0;
+  // transition: all 0.1s ease-in;
+  // transition-delay: 0.1s;
+  z-index: 1001;
+  // border-radius: 15px;
+  max-width: 100%;
+
+  &--outer {
+    position: fixed;
+    transform: translateX(-50%);
+    top: 75px;
+    left: 50%;
+    max-width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.1s ease-in;
+    transition-delay: 0.1s;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 1000;
+    min-width: 100%;
+    background-color: #fff;
+    display: none;
+
+    &.loaded {
+      display: block;
+    }
+  }
+
+  &__li {
+    width: 25%;
+
+    svg {
+      margin-right: 16px;
+      // margin-top: 25px;
+    }
+
+    &:hover svg {
+      fill: #217bc0;
+    }
+
+    &:hover svg path {
+      fill: #217bc0;
+    }
+
+    &:hover a {
+      color: #217bc0;
+    }
+
+    // &:not(:nth-child(4n+1)) {
+    //     border-left: 1px solid #dbdbdb;
+    //     padding-left: 20px;
+    // }
+
+    // &::before {
+    //     margin: 4px 0;
+    //     background-position: center center;
+    //     background-size: 30px 30px;
+    //     background-repeat: no-repeat;
+    //     display: inline-flex;
+    //     height: 50px;
+    //     min-width: 62px;
+    //     content: '';
+    // }
+
+    > a {
+      display: flex;
+      flex-direction: row;
+      border: 0;
+      color: #000000;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      // display: block;
+      padding: 25px 20px 25px 0;
+      white-space: pre-line;
+      font-size: 1.4rem;
+      font-family: "Poppins";
+      font-weight: 400;
+
+      p > span {
+        margin-top: 9px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 2rem;
+        color: $gray-dark;
+        display: block;
+        white-space: pre-line;
+        font-family: "Manrope";
+        letter-spacing: 0.36px;
+        max-width: 205px;
+      }
+
+      /*p {
+        &.gps-tracking {
+          &::after {
+            content: "Real-time monitoring of vehicles, trailers, and assets.";
+          }
+        }
+
+        &.digital-dvir {
+          &::after {
+            content: "Streamlines FMCSA-compliant electronic inspections.";
+          }
+        }
+
+        &.eld {
+          &::after {
+            content: "FMCSA-approved electronic logging for compliance.";
+          }
+        }
+
+        &.driver-behavior {
+          &::after {
+            content: "Focus on incentivizing safety for maximum compliance.";
+          }
+        }
+
+        &.dispatching {
+          &::after {
+            content: "Efficiently connecting dispatchers and drivers.";
+          }
+        }
+
+        &.maintenance {
+          &::after {
+            content: "Maintenance tracking with DVIR automation, alerts, and more.";
+          }
+        }
+
+        &.government {
+          &::after {
+            content: "Advanced solutions for government agencies.";
+          }
+        }
+
+        &.activity-alerts {
+          &::after {
+            content: "Fleet activity monitoring with real-time notification.";
+          }
+        }
+
+        &.route-optimization {
+          &::after {
+            content: "Build efficient, cost-effective routes.";
+          }
+        }
+
+        &.ifta {
+          &::after {
+            content: "Mileage and fuel purchase data for easy IFTA fuel tax reports.";
+          }
+        }
+
+        &.fleetcam {
+          &::after {
+            content: "The all-in-one fleet vehicle camera system.";
+          }
+        }
+
+        &.fleet-reports {
+          &::after {
+            content: "Data to improve fleet performance.";
+          }
+        }
+
+        &.commercial-navigation {
+          &::after {
+            content: "Turn-by-turn GPS navigation system for commercial vehicles.";
+          }
+        }
+
+        &.fuel-card {
+          &::after {
+            content: "Quickly import fuel purchase data with fuel card integrations.";
+          }
+        }
+
+        &.digital-forms {
+          &::after {
+            content: "Collect signatures, proofs of delivery, and more.";
+          }
+        }
+
+        &.advanced-data-iot {
+          &::after {
+            content: "Advanced real-time usage information.";
+          }
+        }
+
+        &.asset-tracking {
+          &::after {
+            content: "Instant access to accurate GPS location data.";
+          }
+        }
+      }*/
+    }
+  }
+}
+
+.sub-menu--resources {
+  width: 1084px;
+  margin: 0 auto;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 40px;
+  z-index: 1001;
+  max-width: 100%;
+  justify-content: center;
+
+  &--outer {
+    position: fixed;
+    transform: translateX(-50%);
+    top: 75px;
+    left: 50%;
+    max-width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.1s ease-in;
+    transition-delay: 0.1s;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 1000;
+    min-width: 100%;
+    background-color: #fff;
+    display: none;
+
+    &.loaded {
+      display: block;
+    }
+  }
+
+  &__li {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    width: 33%;
+    color: #000000;
+    padding: 24px 31px;
+
+    svg {
+      margin-right: 24px;
+    }
+
+    //fix of weird bolding of heart
+    &:nth-child(5):hover svg path:nth-child(2) {
+      stroke: none;
+    }
+
+    &:hover svg path {
+      stroke: #217bc0;
+    }
+
+    &:hover svg rect {
+      stroke: #217bc0;
+    }
+
+    &:hover a {
+      color: #217bc0;
+    }
+
+    > a {
+      display: flex;
+      flex-direction: row;
+      font-size: 1.4rem;
+      font-family: "Poppins";
+      line-height: 1.4rem;
+      color: #000000;
+      font-weight: 400;
+
+      p {
+        span {
+          margin-top: 10px;
+          display: block;
+          white-space: pre-line;
+          line-height: 2rem;
+          font-family: "Manrope";
+          color: $gray-dark;
+          font-size: 1.2rem;
+          max-width: 219px;
+          letter-spacing: 0.36px;
+        }
+
+        /*&.blogs {
+          &::after {
+            content: "Fleet management tips, trends, and insights.";
+          }
+        }
+
+        &.newsroom {
+          &::after {
+            content: "Press releases, product updates, events, and company news.";
+          }
+        }
+
+        &.case-studies {
+          &::after {
+            content: "Real customer stories achieving real-world results.";
+          }
+        }
+
+        &.ELD {
+          &::after {
+            content: "Your complete guide to managing ELD compliance rules.";
+          }
+        }
+
+        &.support {
+          &::after {
+            content: "Get the help you need with your software and hardware.";
+          }
+        }
+
+        &.glossary {
+          &::after {
+            content: "A comprehensive reference of fleet management and telematics terms.";
+          }
+        }*/
+      }
+    }
+  }
+}
+
+.nav-menu__list__li__parent:hover > .sub-menu--outer {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.nav-menu__list__li__parent:hover > .sub-menu--solutions--outer {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.nav-menu__list__li__parent:hover > .sub-menu--resources--outer {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.mobile-menu {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #082c50;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  height: 100vh;
+  width: 320px;
+  width: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  z-index: 1;
+  width: 100vw;
+  display: none;
+  box-sizing: border-box;
+
+  &.show-nav {
+    display: block;
+  }
+
+  @include respond(tab-land) {
+    width: 100vw;
+  }
+
+  &--top {
+    padding: 0 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    div:nth-child(1) {
+      @include respond(tab-land) {
+        width: 100%;
+      }
+    }
+  }
+
+  img {
+    margin-left: 40px;
+    padding: 16px 0;
+    // width: 190px;
+
+    @include respond(tab-port) {
+      margin-left: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      display: flex;
+
+      &:hover {
+        color: #96d7ff;
+      }
+
+      &:hover svg path {
+        fill: #96d7ff;
+      }
+
+      svg {
+        margin-right: 24px;
+      }
+    }
+
+    span {
+      &:hover {
+        color: #96d7ff;
+      }
+    }
+
+    &--item {
+      &.active .dropdown-container {
+        max-height: 5000px;
+        visibility: visible;
+        transition: 0.5s all ease-in;
+      }
+
+      &.active .dropdown-btn::after {
+        transform: rotate(135deg);
+        transition: all 0.2s ease-in;
+      }
+
+      &.active span {
+        color: #96d7ff;
+      }
+
+      &.active {
+        background-color: #001d39;
+      }
+
+      &:hover {
+        background-color: #001d39;
+      }
+    }
+  }
+}
+
+.nav-menu__toogle {
+  // height: 100%;
+  order: 3;
+
+  @include respond(tab-port) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.dropdown-btn {
+  &::after {
+    display: inline-block;
+    width: 0.35em;
+    height: 0.35em;
+    margin-left: 0.5em;
+    border-right: 0.1em solid;
+    border-top: 0.1em solid;
+    transform: rotate(45deg);
+    content: "";
+  }
+}
+
+.dropdown-container {
+  max-height: 0;
+  visibility: hidden;
+  background-color: #001121;
+
+  a {
+    display: inline-block;
+    color: $white-color;
+
+    &:hover {
+      background-color: #011d2d;
+      color: #96d7ff;
+    }
+  }
+}
+
+#close {
+  @include respond(tab-port) {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  // &::after {
+  //     display: inline-block;
+  //     content: "\00d7";
+  //     width: 40px;
+  //     height: 40px;
+  //     color: #ffffff;
+  //     font-size: 40px;
+  // }
+
+  // &:hover::after {
+  //     color: #d50051;
+  // }
+}
+
+//T-mobile navigation
+
+.navigation__tmobile {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include respond(tab-port) {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    order: 3;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tab-port) {
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    &.show-nav {
+      max-height: none;
+      margin: 15px 0 15px;
+      transition: all 0.6s;
+    }
+  }
+
+  &__item {
+    margin: 0 20px 0 20px;
+    white-space: nowrap;
+
+    @include respond(tab-land) {
+      margin: 0 10px 0 10px;
+    }
+
+    &:nth-child(1) {
+      margin: 0 20px 0 10px;
+
+      @include respond(tab-land) {
+        margin: 0 10px 0 10px;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #315565;
+    font-weight: 400;
+    padding: 20px 10px;
+
+    @include respond(tab-port) {
+      padding: 20px 0;
+    }
+
+    @include respond(phone) {
+      line-height: 30px;
+    }
+
+    &:hover {
+      color: #217bc0;
+    }
+  }
+}
+//Old Tombile nav
+
+// .page-template-page-tmobile .navigation__container {
+//     @include respond (tab-port) {
+//         flex-wrap: wrap;
+//     }
+// }
+
+// .page-template-page-tmobile .navigation__outer__left {
+//     @include respond (tab-port) {
+//         width: unset;
+//     }
+// }
+
+#hamburger__tmobile {
+  @include respond(tab-port) {
+    order: 3;
+    width: 40px;
+    height: 40px;
+    padding-top: 29px;
+  }
+}
+
+//Darken rest of page when hover
+
+.hover-menu {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4000;
+    background-color: rgba(23, 23, 23, 0.4);
+    backdrop-filter: blur(25px);
+  }
+}
+
+
+.nav-lang-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &-active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 14px;
+
+    &:hover {
+      color: #248CCC;
+
+      .nav-lang-menu-more {
+        opacity: 1;
+        visibility: visible;
+        transition: .4s ease-in-out;
+      }
+    }
+  }
+
+  &-more {
+    width: 237px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    top: 0%;
+    left: 0%;
+    margin-top: 19px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.50);
+    box-sizing: border-box;
+
+    &-item {
+      display: flex;
+      padding: 10px 12px;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      border-radius: 5px;
+
+      &-dots {
+        display: block;
+        width: 10px !important;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        box-shadow: 0 0 0 2px #000;
+        box-sizing: border-box;
+      }
+
+      span {
+        width: 130px;
+        color: #000;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 175% */
+      }
+
+      &.active {
+        background-color: #D6F1FF;
+        span {
+          font-weight: 700;
+        }
+
+        .nav-lang-menu-more-item-dots {
+          box-shadow: 0 0 0 2px #248CCC;
+          background-color: #248CCC;
+        }
+      }
+
+      &:hover {
+        background-color: #D6F1FF;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.nav-lang-menu-mobile {
+  .nav-lang-menu-more {
+    margin-top: 40px;
+    left: auto;
+    right: 0;
+  }
+}

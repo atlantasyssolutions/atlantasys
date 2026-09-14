@@ -1,0 +1,11 @@
+
+.list {
+    list-style-position: inside; 
+
+ &__item {
+     color: $black-color;
+     list-style-type: disc; 
+        list-style-position: inside; 
+        margin-left: 15px; 
+ }
+}

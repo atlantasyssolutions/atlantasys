@@ -82,16 +82,16 @@ export default function Header() {
                         </div>
                         <div className="col-md-6">
                           <li>
-                            <Link href="/contact">
+                            <Link href="/reseller">
                               <div className="row">
                                 <div className="col-md-2">
-                                  <center><img src="/assets/img/icon/partner.png" alt="Partner With Us" style={{ width: '70%' }} /></center>
+                                  <center><img src="/assets/img/icon/partner.png" alt="Reseller Program" style={{ width: '70%' }} /></center>
                                 </div>
                                 <div className="col-md-10">
                                   <p className="product_menu_name">
-                                    Partner With Us<br />
+                                    Reseller Program<br />
                                     <span className="product_menu_description">
-                                      Discover the future of connectivity and operational excellence with Atlanta's premier GPS tracking and IoT solutions.
+                                      Join our global telematics network with wholesale margins, white-label options, and dedicated partner support.
                                     </span>
                                   </p>
                                 </div>
@@ -354,6 +354,11 @@ export default function Header() {
                     </ul>
                   </li>
 
+                  {/* Reseller Program Link */}
+                  <li className="nav-item">
+                    <Link href="/reseller" className="nav-link">Reseller</Link>
+                  </li>
+
                   {/* Blogs Link */}
                   <li className="nav-item">
                     <Link href="/blog" className="nav-link">Blogs</Link>
@@ -433,6 +438,7 @@ export default function Header() {
             <li><Link href="/about" onClick={() => setDrawerOpen(false)}>About Us</Link></li>
             <li><Link href="/trackers/vehicle-telematics" onClick={() => setDrawerOpen(false)}>Products</Link></li>
             <li><Link href="/vehicle-telematics" onClick={() => setDrawerOpen(false)}>Solutions</Link></li>
+            <li><Link href="/reseller" onClick={() => setDrawerOpen(false)}>Reseller Program</Link></li>
             <li><Link href="/blog" onClick={() => setDrawerOpen(false)}>Blogs</Link></li>
             <li><Link href="/contact" onClick={() => setDrawerOpen(false)}>Contact</Link></li>
           </ul>

@@ -1,0 +1,89 @@
+.driveshield-switch {
+    background-color: #fbfbfb;
+    padding-top: 130px;
+    
+    &__box {
+        // max-width: 1240px;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-between;
+        // align-items: center;
+
+        &__content {
+            max-width: 520px;
+
+            &__ul {
+                color: #2b2c28;
+                padding-left: 20px;
+                
+                margin-top: 0px;
+    
+                li {
+                    position: relative;
+
+                    &:not(:nth-last-child(1)) {
+                        margin-bottom: 14px;
+    
+                    }
+                   
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        vertical-align: top;
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        left: -20px;
+                        top: 9px;
+                        border-radius: 4px;
+                        background-color: #FF9364;
+                    }
+                }
+            }
+
+            &__icons {
+                padding-left: 20px;
+                margin-top: 18px;
+                display: flex;
+                flex-direction: row;
+
+                img {
+                    margin-right: 14px;
+                }
+
+                &--text {
+                    font-family: 'Poppins';
+                    color: #2b2c28;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+                
+            }
+        }
+
+        // &--img {
+        //     width: 50%;
+            
+        //    img {
+        //        display: block;
+        //        max-width: 100%;
+        //    } 
+        // }
+       
+    }
+
+   
+}
+
+.driveshield-switch:not(:nth-child(1)) {
+    padding-bottom: 0;
+}
+
+.driveshield-switch:nth-child(even) {
+    background-color: #ffffff;
+}
+
+// .fleetcam-switch .driveshield-switch__box {
+//     padding: 70px 0;
+// }

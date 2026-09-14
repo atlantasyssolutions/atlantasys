@@ -1,0 +1,747 @@
+.gform_wrapper form .gform_body ul.gform_fields {
+  flex-direction: column !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+}
+
+.gform_wrapper form .gform_body .gform_fields li.gfield {
+  width: 100% !important;
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+  padding-right: 0px !important;
+
+  &#field_6_35,
+  &#field_5_39 {
+    width: 100% !important;
+  }
+}
+
+.gform_page_footer {
+  display: flex !important;
+  justify-content: end !important;
+}
+
+.gfield_radio > li > input {
+  display: none !important;
+}
+
+.gform_legacy_markup_wrapper .gform_footer input.button,
+.gform_legacy_markup_wrapper .gform_footer input[type="submit"],
+.gform_legacy_markup_wrapper .gform_page_footer input.button,
+.gform_legacy_markup_wrapper .gform_page_footer input[type="submit"] {
+  width: auto !important;
+  margin-right: 0 !important;
+  font-family: "Poppins" !important;
+  font-size: 16px !important;
+  line-height: 25px !important;
+  font-weight: 600 !important;
+  background-color: #248ccc !important;
+  border-radius: 2px !important;
+  padding: 12px 21px !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  cursor: pointer !important;
+}
+
+li .ginput_container input::placeholder,
+li .ginput_container input::placeholder,
+li .ginput_container input::placeholder,
+li .ginput_container input::placeholder,
+.ginput_container > input {
+  font-size: 16px !important;
+  font-family: "Manrope" !important;
+  font-weight: 400 !important;
+  line-height: 25px !important;
+  color: rgb(117, 117, 117) !important;
+}
+
+li label,
+li label {
+  font-size: 14px !important;
+  font-family: "Manrope" !important;
+  font-weight: 500 !important;
+  line-height: 19px !important;
+  color: rgb(117, 117, 117) !important;
+}
+
+.textarea {
+  width: 100% !important;
+}
+
+.gf_progressbar_percentage > span {
+  display: none !important;
+}
+
+.ginput_container > input,
+.ginput_container > textarea,
+#input_4_22_3,
+#input_4_22_6,
+#input_4_32_3,
+#input_4_32_6 {
+  background-color: rgba(0, 0, 0, 0.02) !important;
+  padding-top: 10px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  color: black !important;
+  border-top-color: rgba(0, 0, 0, 0.1) !important;
+  border-right-color: rgba(0, 0, 0, 0.1) !important;
+  border-bottom-color: rgba(0, 0, 0, 0.1) !important;
+  border-left-color: rgba(0, 0, 0, 0.1) !important;
+  border-top-width: 1px !important;
+  border-right-width: 1px !important;
+  border-bottom-width: 1px !important;
+  border-left-width: 1px !important;
+  border-top-style: solid !important;
+  border-right-style: solid !important;
+  border-bottom-style: solid !important;
+  border-left-style: solid !important;
+  line-height: 1.6 !important;
+}
+
+#input_3_25,
+#input_6_25,
+#input_3_26,
+#input_6_26,
+#input_5_36,
+#input_5_37 {
+  display: flex !important;
+  justify-content: flex-start !important;
+  flex-wrap: wrap !important;
+  max-width: 100%;
+  gap: 39px;
+
+  @include respond(tab-land) {
+    gap: 34px;
+  }
+}
+
+#input_5_36,
+#input_5_37 {
+  gap: 12px;
+}
+
+#input_3_25 li,
+#input_3_26 li,
+#input_6_26 li {
+  width: 250px !important;
+}
+
+#input_6_25 li {
+  width: 346px !important;
+}
+
+#input_3_25 label,
+#input_6_25 label,
+#input_3_26 label,
+#input_6_26 label {
+  display: block !important;
+}
+
+#label_3_25_0::before,
+#label_6_25_0::before {
+  display: block !important;
+  content: "" !important;
+  background-image: url("../img/quickfix/gov_fix.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: -25px center !important;
+  margin-bottom: 12px !important;
+  background-color: #fafafa !important;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+  height: 120px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}
+
+#label_3_25_1::before,
+#label_6_25_1::before {
+  display: block !important;
+  content: "" !important;
+  background-image: url("../img/quickfix/commercial_fix.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: -25px center !important;
+  margin-bottom: 12px !important;
+  padding: 42px 0 !important;
+  background-color: #fafafa !important;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+  height: 120px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}
+
+// #label_3_25_2::before,
+// #label_6_25_2::before {
+//     display: block !important;
+//     content: '' !important;
+//     background-image: url('https://www.ftsgps.com/wp-content/uploads/2022/09/Group-26503-1.svg') !important;
+//     background-repeat: no-repeat !important;
+//     background-position: -81px center !important;
+//     margin-bottom: 12px !important;
+//     padding: 42px 0 !important;
+//     background-color: #FAFAFA !important;
+//     border: 1px solid #E1E1E1 !important;
+//     border-radius: 10px !important;
+//     width: 100% !important;
+//     height: 120px !important;
+//     display: flex !important;
+//     align-items: center !important;
+//     justify-content: center
+// }
+
+#label_3_25_2::before,
+#label_6_25_2::before {
+  display: block !important;
+  content: "" !important;
+  background-image: url("../img/quickfix/misc_fix.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: -25px center !important;
+  margin-bottom: 12px !important;
+  padding: 42px 0 !important;
+  background-color: #fafafa !important;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+  height: 120px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}
+
+#label_3_26_0::before,
+#label_6_26_0::before {
+  display: block !important;
+  content: "" !important;
+  background-image: url("https://www.ftsgps.com/wp-content/uploads/2022/09/Group-26485.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: -72px center !important;
+  margin-bottom: 12px !important;
+  background-color: #fafafa !important;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+  height: 120px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}
+
+#label_3_26_1::before,
+#label_6_26_1::before {
+  display: block !important;
+  content: "" !important;
+  background-image: url("https://www.ftsgps.com/wp-content/uploads/2022/09/Group-26486.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: -167px center !important;
+  margin-bottom: 12px !important;
+  background-color: #fafafa !important;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+  height: 120px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}
+
+#label_3_26_2::before,
+#label_6_26_2::before {
+  display: block !important;
+  content: "" !important;
+  background-image: url("https://www.ftsgps.com/wp-content/uploads/2022/09/Group-26487.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: -170px center !important;
+  margin-bottom: 12px !important;
+  background-color: #fafafa !important;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+  height: 120px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}
+
+#label_3_26_3::before,
+#label_6_26_3::before {
+  display: block !important;
+  content: "" !important;
+  background-image: url(../img/c4.svg) !important;
+  background-repeat: no-repeat !important;
+  background-position: 70px center !important;
+  margin-bottom: 12px !important;
+  background-color: #fafafa !important;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+  height: 120px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}
+
+#choice_3_25_0:checked + #label_3_25_0::before,
+#choice_3_25_1:checked + #label_3_25_1::before,
+#choice_3_25_3:checked + #label_3_25_3::before,
+#choice_6_25_0:checked + #label_6_25_0::before,
+#choice_6_25_1:checked + #label_6_25_1::before,
+#choice_6_25_3:checked + #label_6_25_3::before {
+  // background-position: 104px center !important;
+  background-color: #e2f4ff !important;
+  border: 1px solid #268ecc !important;
+  transition: all 0.3s ease-in;
+}
+
+#choice_3_25_2:checked + #label_3_25_2::before,
+#choice_6_25_2:checked + #label_6_25_2::before {
+  // background-position: 101px center !important;
+  background-color: #e2f4ff !important;
+  border: 1px solid #268ecc !important;
+  transition: all 0.3s ease-in;
+}
+
+#label_6_25_0:hover::before,
+#label_6_26_0:hover::before,
+#label_6_25_1:hover::before,
+#label_6_26_1:hover::before,
+#label_6_25_2:hover::before,
+#label_6_26_2:hover::before,
+#label_6_25_3:hover::before {
+  background-color: #f3f3f3;
+}
+
+#label_3_26_0::before,
+#label_6_26_0::before {
+  display: block !important;
+  content: "" !important;
+  background-image: url("https://www.ftsgps.com/wp-content/uploads/2022/09/1.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: -235px center !important;
+  margin-bottom: 12px !important;
+  background-color: #fafafa !important;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+  height: 120px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}
+
+#label_3_26_1::before,
+#label_6_26_1::before {
+  display: block !important;
+  content: "" !important;
+  background-image: url("https://www.ftsgps.com/wp-content/uploads/2022/09/2.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: -324px center !important;
+  margin-bottom: 12px !important;
+  background-color: #fafafa !important;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+  height: 120px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}
+
+#label_3_26_2::before,
+#label_6_26_2::before {
+  display: block !important;
+  content: "" !important;
+  background-image: url("https://www.ftsgps.com/wp-content/uploads/2022/09/3.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: -332px center !important;
+  margin-bottom: 12px !important;
+  background-color: #fafafa !important;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+  height: 120px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}
+
+#choice_3_26_0:checked + #label_3_26_0::before,
+#choice_6_26_0:checked + #label_6_26_0::before {
+  // background-position: 96px center !important;
+  background-color: #e2f4ff !important;
+  border: 1px solid #268ecc !important;
+  transition: all 0.3s ease-in;
+}
+
+#choice_3_26_1:checked + #label_3_26_1::before,
+#choice_6_26_1:checked + #label_6_26_1::before {
+  // background-position: 64px center !important;
+  background-color: #e2f4ff !important;
+  border: 1px solid #268ecc !important;
+  transition: all 0.3s ease-in;
+}
+
+#choice_3_26_2:checked + #label_3_26_2::before,
+#choice_6_26_2:checked + #label_6_26_2::before {
+  // background-position: 58px center !important;
+  background-color: #e2f4ff !important;
+  border: 1px solid #268ecc !important;
+  transition: all 0.3s ease-in;
+}
+
+#choice_3_26_3:checked + #label_3_26_3::before,
+#choice_6_26_3:checked + #label_6_26_3::before {
+  // background-position: 58px center !important;
+  background-color: #e2f4ff !important;
+  border: 1px solid #268ecc !important;
+  transition: all 0.3s ease-in;
+}
+
+#_rich_text-17-5485 strong {
+  color: #afff92 !important;
+  font-weight: 600;
+}
+
+#_rich_text-84-5508 ul {
+  list-style: none !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  padding-left: 10px;
+}
+
+#input_1_23 li label,
+#input_3_28 li label,
+#input_5_23 li label,
+#input_6_28 li label,
+#input_1_24 li label,
+#input_3_29 li label,
+#input_5_24 li label,
+#input_6_29 li label {
+  margin-bottom: 0 !important;
+  font-size: 14px !important;
+  line-height: 19px !important;
+  font-family: "Manrope" !important;
+  font-weight: 400 !important;
+  color: #707070 !important;
+  width: 100% !important;
+  padding: 16px 12px !important;
+  background-color: #fafafa !important;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 10px !important;
+  max-width: 95% !important;
+}
+
+#choice_1_23_1 + #label_1_23_1::before,
+#choice_1_23_2 + #label_1_23_2::before,
+#choice_1_23_3 + #label_1_23_3::before,
+#choice_1_23_4 + #label_1_23_4::before,
+#choice_1_23_5 + #label_1_23_5::before,
+#choice_3_28_1 + #label_3_28_1::before,
+#choice_3_28_2 + #label_3_28_2::before,
+#choice_3_28_3 + #label_3_28_3::before,
+#choice_3_28_4 + #label_3_28_4::before,
+#choice_3_28_5 + #label_3_28_5::before,
+#choice_5_23_1 + #label_5_23_1::before,
+#choice_5_23_2 + #label_5_23_2::before,
+#choice_5_23_3 + #label_5_23_3::before,
+#choice_5_23_4 + #label_5_23_4::before,
+#choice_5_23_5 + #label_5_23_5::before,
+#choice_6_28_1 + #label_6_28_1::before,
+#choice_6_28_2 + #label_6_28_2::before,
+#choice_6_28_3 + #label_6_28_3::before,
+#choice_6_28_4 + #label_6_28_4::before,
+#choice_6_28_5 + #label_6_28_5::before,
+#choice_1_24_1 + #label_1_24_1::before,
+#choice_1_24_2 + #label_1_24_2::before,
+#choice_1_24_3 + #label_1_24_3::before,
+#choice_1_24_4 + #label_1_24_4::before,
+#choice_1_24_5 + #label_1_24_5::before,
+#choice_3_29_1 + #label_3_29_1::before,
+#choice_3_29_2 + #label_3_29_2::before,
+#choice_3_29_3 + #label_3_29_3::before,
+#choice_3_29_4 + #label_3_29_4::before,
+#choice_3_29_5 + #label_3_29_5::before,
+#choice_5_24_1 + #label_5_24_1::before,
+#choice_5_24_2 + #label_5_24_2::before,
+#choice_5_24_3 + #label_5_24_3::before,
+#choice_5_24_4 + #label_5_24_4::before,
+#choice_5_24_5 + #label_5_24_5::before,
+#choice_6_29_1 + #label_6_29_1::before,
+#choice_6_29_2 + #label_6_29_2::before,
+#choice_6_29_3 + #label_6_29_3::before,
+#choice_6_29_4 + #label_6_29_4::before,
+#choice_6_29_5 + #label_6_29_5::before {
+  content: "" !important;
+  background: #f3f3f3 !important;
+  border-radius: 4px !important;
+  border: 1px solid #66758a !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  width: 18px !important;
+  height: 18px !important;
+  padding: 2px !important;
+  margin-right: 10px !important;
+  margin-bottom: 2px !important;
+}
+
+#input_1_36 label,
+#input_1_37 label,
+#input_3_25 label,
+#input_3_26 label,
+#input_5_36 label,
+#input_5_37 label,
+#input_6_25 label,
+#input_6_26 label {
+  font-size: 14px !important;
+  font-family: "Manrope" !important;
+  line-height: 19px !important;
+  font-weight: 400 !important;
+  color: #000000 !important;
+  text-align: center !important;
+}
+
+#field_1_36 .gfield_label,
+#field_1_37 .gfield_label,
+#field_3_25 .gfield_label,
+#field_3_26 .gfield_label,
+#field_5_36 .gfield_label,
+#field_5_37 .gfield_label,
+#field_6_25 .gfield_label,
+#field_6_26 .gfield_label {
+  font-size: 14px !important;
+  font-family: "Poppins" !important;
+  line-height: 21px !important;
+  font-weight: 600 !important;
+  color: #707070 !important;
+}
+
+#gform_page_1_2 .gform_page_footer,
+#gform_page_3_2 .gform_page_footer,
+#gform_page_5_2 .gform_page_footer,
+#gform_page_6_2 .gform_page_footer,
+#gform_page_1_3 .gform_page_footer,
+#gform_page_3_3 .gform_page_footer,
+#gform_page_5_3 .gform_page_footer,
+#gform_page_6_3 .gform_page_footer {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+#gform_previous_button_1_26,
+#gform_previous_button_1,
+#gform_previous_button_3_27,
+#gform_previous_button_3,
+#gform_previous_button_5_26,
+#gform_previous_button_5,
+#gform_previous_button_6_27,
+#gform_previous_button_6 {
+  width: 120px !important;
+  margin: 0 !important;
+  font-family: "Poppins" !important;
+  font-size: 16px !important;
+  line-height: 25px !important;
+  font-weight: 600 !important;
+  background-color: #f2f2f2 !important;
+  border-radius: 2px !important;
+  padding: 12px 21px !important;
+  color: #000000 !important;
+  border: 0 !important;
+  cursor: pointer !important;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none !important;
+}
+
+#input_4_26 > li > input[type="checkbox"],
+#input_4_21 > li > input[type="checkbox"] {
+  display: inline !important;
+}
+
+.gform_legacy_markup_wrapper li.gfield.gfield_error {
+  background-color: transparent !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+.gform_legacy_markup_wrapper .validation_message {
+  color: #c10000 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-family: "Manrope" !important;
+  letter-spacing: normal;
+}
+
+.gform_legacy_markup_wrapper div.validation_error {
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
+.gform_legacy_markup_wrapper .gform_validation_errors {
+  border: none !important;
+}
+
+.gform_legacy_markup_wrapper
+  li.gfield_error
+  input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not(
+    [type="button"]
+  ):not([type="image"]):not([type="file"]),
+.gform_legacy_markup_wrapper li.gfield_error textarea {
+  border: 1px solid #790000 !important;
+}
+
+.gform_validation_errors > h2 {
+  font-weight: 600 !important;
+  color: #c10000 !important;
+}
+
+#gform_wrapper_1 .gform_heading,
+#gform_wrapper_5 .gform_heading,
+#gform_wrapper_6 .gform_heading {
+  display: none !important;
+}
+
+#gform_fields_4 > li > label {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .gform_wrapper form .gform_body ul.gform_fields,
+  #input_6_28,
+  #input_6_29 {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+
+  .gform_wrapper form .gform_body .gform_fields li.gfield,
+  .gchoice_6_28_1,
+  .gchoice_6_28_2,
+  .gchoice_6_28_3,
+  .gchoice_6_28_4,
+  .gchoice_6_28_5 {
+    width: 48% !important;
+  }
+
+  #input_1_23 li,
+  #input_3_28 li,
+  #input_3_29 li,
+  #input_5_23 li,
+  #input_6_28 li,
+  #input_6_29 li {
+    width: 48% !important;
+    max-height: 70px !important;
+  }
+
+  #field_6_25,
+  #field_6_26,
+  #field_6_28,
+  #field_6_29,
+  #field_6_30,
+  #field_2_7,
+  #input_4_29,
+  #input_4_30,
+  #gform_fields_4 > li {
+    width: 100% !important;
+  }
+}
+
+
+.contact-data { 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 54px;
+
+  @media screen and (max-width: 768px) {
+    gap: 28px;
+    width: 100%;
+  }
+
+  .data-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+
+    a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 16px;
+
+      img {
+        width: 100%;
+        max-width: 20px;
+        height: auto;
+      }
+    }
+  }
+}
+
+.more-details-wrapper {
+  width: 100%;
+  max-width: 491px;
+  padding: 30px;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  strong {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+  }
+
+  ol {
+    li {
+      list-style-type: disc;
+      list-style-position: inside;
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+}
+.image-wrapper {
+  width: 173;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 94px;
+  }
+
+  .contact-image-thumbnail {
+    width: 173px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      max-width: 94px;
+    }
+  }
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+
+  @media screen and (max-width: 768px) {
+    gap: 24px;
+  }
+}

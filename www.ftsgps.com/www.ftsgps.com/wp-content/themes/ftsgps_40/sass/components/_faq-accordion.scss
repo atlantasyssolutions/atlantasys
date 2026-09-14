@@ -1,0 +1,191 @@
+// =============================================================================
+// FAQ Accordion Component
+// Usage: @import 'components/faq-accordion'; in main.scss
+// =============================================================================
+
+// Local variables (mirrors theme abstracts)
+$faq-blue:        #268ecc;
+$faq-dark:        #0a1723;
+$faq-gray-answer: #4a5568;
+$faq-border:      #e5e7eb;
+$faq-icon-bg:     #EFEFEF;
+$faq-icon-bg-active: #e8f4fb;
+$faq-transition:  0.3s ease;
+
+// -----------------------------------------------------------------------------
+// Section wrapper
+// -----------------------------------------------------------------------------
+
+.faq-accordion-section {
+    background-color: #ffffff;
+}
+
+// -----------------------------------------------------------------------------
+// Accordion container
+// -----------------------------------------------------------------------------
+
+.faq-accordion {
+    width: 100%;
+    max-width: 100%;
+}
+
+// -----------------------------------------------------------------------------
+// Single item
+// -----------------------------------------------------------------------------
+
+.faq-accordion__item {
+    border-top: 1px solid $faq-border;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Header / trigger button
+// -----------------------------------------------------------------------------
+
+.faq-accordion__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    padding: 24px 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    color: $faq-dark;
+    transition: color $faq-transition;
+
+    // Hover & focus-visible: blue text
+    &:hover,
+    &:focus-visible {
+        color: $faq-blue;
+        outline: none;
+
+        .faq-accordion__icon {
+            background-color: $faq-icon-bg-active;
+            color: $faq-blue;
+        }
+    }
+
+    &:focus-visible {
+        box-shadow: 0 0 0 2px $faq-blue;
+        border-radius: 4px;
+    }
+
+    // Open state: blue text + rotated icon
+    &[aria-expanded="true"] {
+        color: $faq-blue;
+
+        .faq-accordion__icon {
+            background-color: $faq-icon-bg-active;
+            color: $faq-blue;
+
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Question text
+// -----------------------------------------------------------------------------
+
+.faq-accordion__question {
+    font-family: "Manrope", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: inherit;
+
+    @include respond(tab-port) {
+        font-size: 15px;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Chevron icon wrapper
+// -----------------------------------------------------------------------------
+
+.faq-accordion__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background-color: $faq-icon-bg;
+    color: $faq-dark;
+    transition: background-color $faq-transition, color $faq-transition;
+
+    svg {
+        display: block;
+        transition: transform $faq-transition;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Collapsible panel
+// -----------------------------------------------------------------------------
+
+.faq-accordion__panel {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease-out, padding-bottom 0.35s ease-out;
+    box-sizing: content-box;
+
+    // Visible state (toggled by JS via removing [hidden] + setting max-height)
+    &:not([hidden]) {
+        padding-bottom: 24px;
+    }
+
+    // Override browser default for [hidden] so CSS transition works
+    // (JS removes [hidden] before setting max-height)
+    &[hidden] {
+        display: block;  // keep in flow so max-height transition works
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Answer text
+// -----------------------------------------------------------------------------
+
+.faq-accordion__answer {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $faq-gray-answer;
+    margin: 0;
+
+    a {
+        color: $faq-blue;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+            color: #d50051;
+        }
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Responsive
+// -----------------------------------------------------------------------------
+
+@include respond(tab-port) {
+    .faq-accordion__header {
+        padding: 20px 0;
+    }
+
+    .faq-accordion__icon {
+        width: 32px;
+        height: 32px;
+    }
+}

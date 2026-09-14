@@ -1,4 +1,4 @@
-# Capacitive Fuel Probes from Atlanta Systems Stopping Siphoning on Riyadh Ring Road Overnight Stops
+# Capacitive Fuel Probes from Atlanta Systems Stopping Siphoning Across Riyadh Province, Saudi Arabia
 
 * **Slug**: `capacitive-fuel-probes-from-atlanta-systems-stopping-siphoning-on-riyadh-ring-road-overnight-stops`
 * **Category**: Fuel Fraud
@@ -7,7 +7,7 @@
 * **Country**: Saudi Arabia
 * **Geo Region**: MENA
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
-* **Author**: Sandeep Narula, Co-Founder
+* **Author**: Atlanta Systems Marketing Team
 * **Published Date**: 2026-08-29
 * **Estimated Read Time**: 12 min read
 * **SEO Keywords**: Capacitive, Fuel, Probes, from, Atlanta, Riyadh Telematics, Fuel Fraud, Atlanta Systems, Fleet IoT
@@ -16,7 +16,7 @@
 
 ## The Vulnerability of Overnight Rest Stops on Riyadh Ring Road and Highway 40 connecting Riyadh to Dammam Port
 
-When transport directors in Riyadh review their quarterly operating statements, the hidden costs tied directly to Capacitive Fuel Probes from Atlanta Systems Stopping Siphoning on Riyadh Ring Road Overnight Stops consistently stand out as an urgent priority on Riyadh Ring Road and Highway 40 connecting Riyadh to Dammam Port.
+When transport directors in Riyadh review their quarterly operating statements, the hidden costs tied directly to Capacitive Fuel Probes from Atlanta Systems Stopping Siphoning Across Riyadh Province, Saudi Arabia consistently stand out as an urgent priority on Riyadh Ring Road and Highway 40 connecting Riyadh to Dammam Port.
 
 Unlit desert lay-bys and isolated parking aprons along Riyadh Ring Road and Highway 40 connecting Riyadh to Dammam Port outside Riyadh are the primary hunting grounds for organized fuel siphoning syndicates. While long-haul drivers sleep inside cabs after grueling shifts, specialized teams roll alongside in unmarked vans with low-noise transfer pumps. In under four minutes, they extract 150 liters of diesel without shaking the chassis enough to awaken the driver. When morning comes, the operator discovers an empty tank and zero forensic proof.
 
@@ -31,12 +31,9 @@ If liquid level drops unexpectedly while ignition is off, the gateway wakes imme
 +-----------------------------------------------------------------------------------+
 |             ATLANTA SYSTEMS INDUSTRIAL TELEMATICS HARDWARE ARCHITECTURE          |
 +-----------------------------------------------------------------------------------+
-|  [Core Processing] -> 32-Bit ARM Cortex-M4 Industrial Microcontroller             |
 |  [Satellite Engine] -> Quad-Constellation Multi-Frequency GNSS (Sub-2.5m CEP)     |
 |  [Motion Analytics] -> Internal 3-Axis MEMS Accelerometer (100Hz Event Sampling)  |
-|  [Power Conditioning] -> 9V-36V DC Input with 60V Transient Voltage Suppressor    |
 |  [Cellular Uplink] -> Industrial 4G Cat-1 / Cat-M1 with Embedded Multi-IMSI eSIM   |
-|  [Enclosure Rating] -> IP67 / IP68 / IP69K Die-Cast Aluminum Heat Sink Housing    |
 +-----------------------------------------------------------------------------------+
 
 ---
@@ -72,7 +69,7 @@ Yes. An optional in-cab buzzer sounds simultaneously with the external chassis a
 
 If you are running commercial transport operations across Riyadh or throughout MENA, you do not have to accept unmonitored fuel loss, preventable accidents, or regulatory fines as normal business costs.
 
-Our co-founders, Sujeet Narula and Sandeep Narula, alongside our dedicated engineering team, have spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
+The Atlanta Systems Marketing Team, alongside our dedicated engineering team, has spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
 
 * **Explore Commercial Trackers**: Review our [Atlanta Systems Vehicle Telematics](/trackers/vehicle-telematics) and [Asset & Personal Trackers](/trackers/assets-&-personal-telematics).
 * **Deploy AI Video Telematics**: Equip your fleet with [AI Video Dashcams and MDVR](/trackers/video-telematics) or [ADAS Collision Warning Systems](/adas).

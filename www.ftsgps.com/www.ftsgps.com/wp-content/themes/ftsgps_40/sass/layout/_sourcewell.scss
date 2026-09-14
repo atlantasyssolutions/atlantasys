@@ -1,0 +1,23 @@
+.sourcewell {
+
+    &__scroll {
+        background-color: #4b718f;
+        color: $white-color;
+        text-align: center;
+        padding: 30px 20px;
+
+        p {
+            text-transform: uppercase;
+            color: $white-color;
+        }
+
+        svg {
+            font-size: 24px;
+        }
+
+        svg path {
+            stroke: #ffffff;
+            stroke-width: 30px;
+        }
+    }
+}

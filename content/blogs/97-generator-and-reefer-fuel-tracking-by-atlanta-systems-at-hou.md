@@ -1,4 +1,4 @@
-# Generator and Reefer Fuel Tracking by Atlanta Systems at Houston Container Terminals
+# Generator and Reefer Fuel Tracking by Atlanta Systems Across Texas, USA
 
 * **Slug**: `generator-and-reefer-fuel-tracking-by-atlanta-systems-at-houston-container-terminals`
 * **Category**: Fuel Fraud
@@ -7,7 +7,7 @@
 * **Country**: United States
 * **Geo Region**: North America
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
-* **Author**: Sandeep Narula, Co-Founder
+* **Author**: Atlanta Systems Marketing Team
 * **Published Date**: 2026-08-29
 * **Estimated Read Time**: 12 min read
 * **SEO Keywords**: Generator, Reefer, Fuel, Tracking, Atlanta, Houston Telematics, Fuel Fraud, Atlanta Systems, Fleet IoT
@@ -16,7 +16,7 @@
 
 ## The Unmonitored Secondary Tank Burning Diesel on Interstate 10 (I-10) and Texas State Highway 225 Petrochemical Strip
 
-When you inspect commercial vehicles operating along Interstate 10 (I-10) and Texas State Highway 225 Petrochemical Strip in Houston, one reality that co-founders Sujeet Narula and Sandeep Narula have observed over three decades of hardware engineering becomes immediately obvious regarding Generator and Reefer Fuel Tracking by Atlanta Systems at Houston Container Terminals.
+When you inspect commercial vehicles operating along Interstate 10 (I-10) and Texas State Highway 225 Petrochemical Strip in Houston, one reality that the Atlanta Systems marketing and engineering team has observed over three decades of hardware engineering becomes immediately obvious regarding Generator and Reefer Fuel Tracking by Atlanta Systems Across Texas, USA Across Texas, USA.
 
 While fleet managers in Houston scrutinize tractor fuel consumption down to the tenth of a liter, refrigerated trailer auxiliary gensets along Interstate 10 (I-10) and Texas State Highway 225 Petrochemical Strip burn millions in unmonitored diesel. Belly-mounted reefer fuel tanks are rarely equipped with digital telemetry. Drivers and third-party contractors frequently top off reefer tanks with unauthorized fuel cards, siphon diesel into personal vehicles, or let gensets run out of fuel mid-transit, causing catastrophic perishable cargo spoilage.
 
@@ -31,12 +31,9 @@ The unit links wirelessly via Bluetooth Low Energy or over ruggedized conduit to
 +-----------------------------------------------------------------------------------+
 |             ATLANTA SYSTEMS INDUSTRIAL TELEMATICS HARDWARE ARCHITECTURE          |
 +-----------------------------------------------------------------------------------+
-|  [Core Processing] -> 32-Bit ARM Cortex-M4 Industrial Microcontroller             |
 |  [Satellite Engine] -> Quad-Constellation Multi-Frequency GNSS (Sub-2.5m CEP)     |
 |  [Motion Analytics] -> Internal 3-Axis MEMS Accelerometer (100Hz Event Sampling)  |
-|  [Power Conditioning] -> 9V-36V DC Input with 60V Transient Voltage Suppressor    |
 |  [Cellular Uplink] -> Industrial 4G Cat-1 / Cat-M1 with Embedded Multi-IMSI eSIM   |
-|  [Enclosure Rating] -> IP67 / IP68 / IP69K Die-Cast Aluminum Heat Sink Housing    |
 +-----------------------------------------------------------------------------------+
 
 ---
@@ -72,7 +69,7 @@ No. Our universal 5-bolt SAE mounting flange installs in under 35 minutes into s
 
 If you are running commercial transport operations across Houston or throughout North America, you do not have to accept unmonitored fuel loss, preventable accidents, or regulatory fines as normal business costs.
 
-Our co-founders, Sujeet Narula and Sandeep Narula, alongside our dedicated engineering team, have spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
+The Atlanta Systems Marketing Team, alongside our dedicated engineering team, has spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
 
 * **Explore Commercial Trackers**: Review our [Atlanta Systems Vehicle Telematics](/trackers/vehicle-telematics) and [Asset & Personal Trackers](/trackers/assets-&-personal-telematics).
 * **Deploy AI Video Telematics**: Equip your fleet with [AI Video Dashcams and MDVR](/trackers/video-telematics) or [ADAS Collision Warning Systems](/adas).

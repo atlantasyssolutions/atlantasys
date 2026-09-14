@@ -1,0 +1,128 @@
+.eld-rs {
+  &--link {
+    cursor: pointer;
+
+    &:hover {
+      > p {
+        color: #ee7f00;
+      }
+
+      > img {
+        box-shadow: 0 0 25px $light-gray-color;
+      }
+    }
+
+    img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+
+    p {
+      color: $gray-dark;
+    }
+  }
+
+  &__information {
+    background-color: #ee7f00;
+    color: $white-color;
+  }
+
+  &__documents {
+    &.row {
+      display: flex;
+      justify-content: space-between !important;
+      flex-wrap: nowrap;
+    }
+
+    h3 {
+      color: $gray-dark;
+
+      &:hover {
+        color: #d50051;
+      }
+    }
+
+    div {
+      color: $gray-dark;
+    }
+
+    .fmcsa-icon {
+      width: 100%;
+      max-width: 60px;
+    }
+
+    .fmcsa-text {
+      width: 100%;
+    }
+  }
+
+  &__regulations {
+    p {
+      color: #757575;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 1.6;
+    }
+
+    div {
+      font-size: 2rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 40px;
+    }
+
+    li {
+      display: list-item;
+      color: #757575;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    a {
+      display: inline-block;
+      font-family: "Poppins";
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 21px;
+      text-decoration: none;
+      color: #2d90de;
+
+      &:hover {
+        color: #d50051;
+      }
+    }
+
+    span {
+      display: inline-block;
+      font-size: 2rem;
+      padding-bottom: 10px;
+      border-bottom-color: #eeeeee;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      width: 100%;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+  }
+}
+
+.padding-top-email {
+  padding-top: 16px;
+}
+
+.main-- {
+  &eld__center {
+    a {
+    }
+  }
+
+  &eld__contactbox {
+    padding: 24px 36px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+  }
+}

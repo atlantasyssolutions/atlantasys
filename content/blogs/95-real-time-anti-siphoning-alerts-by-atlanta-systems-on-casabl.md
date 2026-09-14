@@ -1,4 +1,4 @@
-# Real-Time Anti-Siphoning Alerts by Atlanta Systems on Casablanca Port Access Roads
+# Real-Time Anti-Siphoning Alerts by Atlanta Systems Across Morocco
 
 * **Slug**: `real-time-anti-siphoning-alerts-by-atlanta-systems-on-casablanca-port-access-roads`
 * **Category**: Fuel Fraud
@@ -7,7 +7,7 @@
 * **Country**: Morocco
 * **Geo Region**: MENA
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
-* **Author**: Sandeep Narula, Co-Founder
+* **Author**: Atlanta Systems Marketing Team
 * **Published Date**: 2026-08-29
 * **Estimated Read Time**: 12 min read
 * **SEO Keywords**: Real, Casablanca Telematics, Fuel Fraud, Atlanta Systems, Fleet IoT
@@ -16,7 +16,7 @@
 
 ## Idling Waste and Pilferage Bottlenecks Near Casablanca Port Terminals
 
-Every fleet maintenance manager in Casablanca understands the operational friction that occurs on A1 Casablanca-Rabat Motorway and A3 Casablanca Bypass when dealing with Real-Time Anti-Siphoning Alerts by Atlanta Systems on Casablanca Port Access Roads.
+Every fleet maintenance manager in Casablanca understands the operational friction that occurs on A1 Casablanca-Rabat Motorway and A3 Casablanca Bypass when dealing with Real-Time Anti-Siphoning Alerts by Atlanta Systems Across Morocco Across Morocco.
 
 Creeping forward in multi-hour terminal queues along A1 Casablanca-Rabat Motorway and A3 Casablanca Bypass near Casablanca, heavy container chassis and bulk carriers face extreme operational drag. Drivers keep heavy turbodiesel engines idling for four to six continuous hours just to operate cabin climate systems while inching toward security gates. This prolonged low-load idling burns unmonitored diesel, gums up diesel particulate filters (DPFs), and creates prime conditions for quick fuel pilferage during slow terminal bottlenecks.
 
@@ -31,12 +31,9 @@ By synchronizing J1939 ECU injector pulse telemetry (PGN 65266) with sub-millime
 +-----------------------------------------------------------------------------------+
 |             ATLANTA SYSTEMS INDUSTRIAL TELEMATICS HARDWARE ARCHITECTURE          |
 +-----------------------------------------------------------------------------------+
-|  [Core Processing] -> 32-Bit ARM Cortex-M4 Industrial Microcontroller             |
 |  [Satellite Engine] -> Quad-Constellation Multi-Frequency GNSS (Sub-2.5m CEP)     |
 |  [Motion Analytics] -> Internal 3-Axis MEMS Accelerometer (100Hz Event Sampling)  |
-|  [Power Conditioning] -> 9V-36V DC Input with 60V Transient Voltage Suppressor    |
 |  [Cellular Uplink] -> Industrial 4G Cat-1 / Cat-M1 with Embedded Multi-IMSI eSIM   |
-|  [Enclosure Rating] -> IP67 / IP68 / IP69K Die-Cast Aluminum Heat Sink Housing    |
 +-----------------------------------------------------------------------------------+
 
 ---
@@ -72,7 +69,7 @@ Yes. Atlanta Systems telematics gateways export live MQTT and REST webhooks dire
 
 If you are running commercial transport operations across Casablanca or throughout MENA, you do not have to accept unmonitored fuel loss, preventable accidents, or regulatory fines as normal business costs.
 
-Our co-founders, Sujeet Narula and Sandeep Narula, alongside our dedicated engineering team, have spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
+The Atlanta Systems Marketing Team, alongside our dedicated engineering team, has spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
 
 * **Explore Commercial Trackers**: Review our [Atlanta Systems Vehicle Telematics](/trackers/vehicle-telematics) and [Asset & Personal Trackers](/trackers/assets-&-personal-telematics).
 * **Deploy AI Video Telematics**: Equip your fleet with [AI Video Dashcams and MDVR](/trackers/video-telematics) or [ADAS Collision Warning Systems](/adas).

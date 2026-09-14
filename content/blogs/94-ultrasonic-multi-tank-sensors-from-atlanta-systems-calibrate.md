@@ -1,4 +1,4 @@
-# Ultrasonic Multi-Tank Sensors from Atlanta Systems Calibrated for Dammam Petrochemical Tankers
+# Ultrasonic Multi-Tank Sensors from Atlanta Systems Calibrated Across Eastern Province, Saudi Arabia
 
 * **Slug**: `ultrasonic-multi-tank-sensors-from-atlanta-systems-calibrated-for-dammam-petrochemical-tankers`
 * **Category**: Fuel Fraud
@@ -7,7 +7,7 @@
 * **Country**: Saudi Arabia
 * **Geo Region**: MENA
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
-* **Author**: Sujeet Narula, Founder
+* **Author**: Atlanta Systems Marketing Team
 * **Published Date**: 2026-08-29
 * **Estimated Read Time**: 12 min read
 * **SEO Keywords**: Ultrasonic, Multi, Dammam Telematics, Fuel Fraud, Atlanta Systems, Fleet IoT
@@ -16,7 +16,7 @@
 
 ## Hazardous Liquid Integrity and Safety on Highway 613 (Dammam-Jubail Expressway) and King Abdulaziz Port access arteries
 
-Operating along Highway 613 (Dammam-Jubail Expressway) and King Abdulaziz Port access arteries outside Dammam will quickly prove whether your tracking electronics were built for heavy industrial duty when managing Ultrasonic Multi-Tank Sensors from Atlanta Systems Calibrated for Dammam Petrochemical Tankers.
+Operating along Highway 613 (Dammam-Jubail Expressway) and King Abdulaziz Port access arteries outside Dammam will quickly prove whether your tracking electronics were built for heavy industrial duty when managing Ultrasonic Multi-Tank Sensors from Atlanta Systems Calibrated Across Eastern Province, Saudi Arabia Across Eastern Province, Saudi Arabia.
 
 Hauling volatile bulk petrochemicals, solvents, and fuel across Highway 613 (Dammam-Jubail Expressway) and King Abdulaziz Port access arteries in Dammam leaves zero margin for equipment failure or safety lapses. Traditional immersion sensors that introduce live DC electrical circuits into volatile vapors are an unacceptable explosion hazard. Meanwhile, unauthorized compartment opening along highway shoulders exposes fleets to catastrophic chemical contamination, theft, and heavy regulatory penalties.
 
@@ -31,12 +31,9 @@ Our electronic tanker hatch locks monitor magnetic reed switches and optical sen
 +-----------------------------------------------------------------------------------+
 |             ATLANTA SYSTEMS INDUSTRIAL TELEMATICS HARDWARE ARCHITECTURE          |
 +-----------------------------------------------------------------------------------+
-|  [Core Processing] -> 32-Bit ARM Cortex-M4 Industrial Microcontroller             |
 |  [Satellite Engine] -> Quad-Constellation Multi-Frequency GNSS (Sub-2.5m CEP)     |
 |  [Motion Analytics] -> Internal 3-Axis MEMS Accelerometer (100Hz Event Sampling)  |
-|  [Power Conditioning] -> 9V-36V DC Input with 60V Transient Voltage Suppressor    |
 |  [Cellular Uplink] -> Industrial 4G Cat-1 / Cat-M1 with Embedded Multi-IMSI eSIM   |
-|  [Enclosure Rating] -> IP67 / IP68 / IP69K Die-Cast Aluminum Heat Sink Housing    |
 +-----------------------------------------------------------------------------------+
 
 ---
@@ -72,7 +69,7 @@ Yes. Each compartment is tracked independently with real-time volume logging bef
 
 If you are running commercial transport operations across Dammam or throughout MENA, you do not have to accept unmonitored fuel loss, preventable accidents, or regulatory fines as normal business costs.
 
-Our co-founders, Sujeet Narula and Sandeep Narula, alongside our dedicated engineering team, have spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
+The Atlanta Systems Marketing Team, alongside our dedicated engineering team, has spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
 
 * **Explore Commercial Trackers**: Review our [Atlanta Systems Vehicle Telematics](/trackers/vehicle-telematics) and [Asset & Personal Trackers](/trackers/assets-&-personal-telematics).
 * **Deploy AI Video Telematics**: Equip your fleet with [AI Video Dashcams and MDVR](/trackers/video-telematics) or [ADAS Collision Warning Systems](/adas).

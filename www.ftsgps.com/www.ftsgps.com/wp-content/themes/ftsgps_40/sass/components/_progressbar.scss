@@ -1,0 +1,28 @@
+.progress-label {
+    font-size: 14px;
+    font-family: 'Manrope';
+    font-weight: 400;
+    line-height: 19px;
+    color: $black-color;
+    padding: 1rem 0;
+}
+
+.progress, .progress__bar {
+    border-radius: 10px;
+    height: 2rem;
+}
+
+.progress {
+    background-color: $gray-color;
+    width: 100%;
+}
+
+.progress__bar {
+    background-color: $blue-color;
+    transition: width .3s ease-in;
+    -o-transition: width .3s ease-in;
+    -ms-transition: width .3s ease-in;
+    -moz-transition: width .3s ease-in;
+    -webkit-transition: width .3s ease-in;
+}
+

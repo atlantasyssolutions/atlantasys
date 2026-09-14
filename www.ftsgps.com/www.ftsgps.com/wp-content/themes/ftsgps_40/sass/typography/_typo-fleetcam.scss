@@ -1,0 +1,60 @@
+.fleetcam-headline {
+  font-family: "Poppins";
+  color: #000000;
+  font-weight: 500;
+  line-height: 7rem;
+  font-size: 6rem;
+}
+
+.fleetcam-subline {
+  font-family: "Poppins";
+  font-size: 2rem;
+  color: #313e49;
+  font-weight: 400;
+  line-height: 3.2rem;
+  text-align: center;
+}
+
+.fleetcam-innerhead {
+  margin-bottom: 12px;
+  color: $gray-dark;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 4rem;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 3px;
+    position: relative;
+    bottom: 12px;
+  }
+}
+
+.fleetcam-innertext {
+  font-family: "Manrope";
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  text-align: left;
+}
+
+.fleetcam-vehicle-heading {
+  font-family: "Poppins";
+  color: #030813;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 5px 0 9px;
+}
+
+.fleetcam-vehicle-text {
+  font-family: "Manrope";
+  color: #030813;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 240px;
+}

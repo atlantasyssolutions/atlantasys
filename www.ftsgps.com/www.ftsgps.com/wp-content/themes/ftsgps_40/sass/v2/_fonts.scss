@@ -1,0 +1,24 @@
+// =============================================================================
+//  HOME V2 — FONTS
+//  Self-hosted Arvo (new slab-serif display face for the v2 homepage).
+//  Manrope + Poppins are already loaded globally by the theme, so they are
+//  intentionally NOT re-declared here.
+// =============================================================================
+
+/* Arvo — Regular */
+@font-face {
+  font-family: 'Arvo';
+  src: url('../fonts/Arvo-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Arvo — Bold (hero / display headings) */
+@font-face {
+  font-family: 'Arvo';
+  src: url('../fonts/Arvo-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

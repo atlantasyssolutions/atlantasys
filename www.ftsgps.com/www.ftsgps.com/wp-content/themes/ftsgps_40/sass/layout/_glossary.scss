@@ -1,0 +1,118 @@
+.glossary {
+  &__baner {
+    margin: 70px 0 100px;
+
+    @include respond(phone) {
+      margin: 40px 0;
+    }
+
+    @include respond(tab-land) {
+      padding: 0 10px;
+    }
+
+    p {
+      margin-bottom: 50px;
+    }
+
+    h1 span {
+      @include respond(phone) {
+        display: none;
+      }
+    }
+  }
+
+  &__index {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 30px;
+    }
+
+    a {
+      // padding: 0 8px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #3b3b3b;
+
+      &:hover {
+        color: #217bc0;
+      }
+
+      &:active {
+        color: #3b3b3b !important;
+      }
+    }
+  }
+
+  &__form {
+    margin-bottom: 50px;
+  }
+
+  &__entry {
+    position: relative;
+
+    @include respond(tab-land) {
+      padding: 0 10px;
+    }
+
+    &__box {
+      margin-bottom: 70px;
+
+      div:nth-of-type(1) {
+        margin-bottom: 70px;
+
+        @include respond(phone) {
+          margin-bottom: 40px;
+        }
+      }
+
+      &--inner {
+        &:not(:last-child) {
+          margin-bottom: 60px;
+        }
+
+        a {
+          color: #217bc0;
+
+          &:hover {
+            color: #d50051;
+          }
+        }
+      }
+    }
+
+    &--btn {
+      display: none;
+      position: sticky;
+      right: 50%;
+      left: 50%;
+      bottom: 30px;
+      border: none;
+      z-index: 2;
+      padding: 12px 24px;
+      font-size: 20px;
+      color: #fff;
+      background-color: #000;
+      letter-spacing: -0.8px;
+      border-radius: 6px;
+      font-weight: 400;
+      transform: translateX(-50%);
+
+      &:hover {
+        background-color: #072d53;
+      }
+    }
+  }
+}
+
+.fts-glossary-group {
+  scroll-margin-top: 120px;
+}

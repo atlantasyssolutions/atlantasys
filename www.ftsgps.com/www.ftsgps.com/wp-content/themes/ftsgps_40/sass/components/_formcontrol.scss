@@ -1,0 +1,223 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+        font-size: 14px;
+        font-family: "Manrope";
+        font-weight: 400;
+        line-height: 19px;
+        color: $label-gray-color;
+        margin: 1rem 0;
+
+        &.required::after {
+            content: '*';
+            margin: 0 .25rem;
+            color: $require-red-color;
+        }
+    }
+
+    &__control {
+        font-size: 14px;
+        font-family: "Manrope";
+        font-weight: 400;
+        line-height: 19px;
+        color: $input-black-color;
+        background-color: $input-light-color;
+        padding: 10px;
+        border: 1px solid $dark-color;
+
+        &:focus-visible {
+            outline: 1px solid $input-focus-color;
+        }
+    }
+}
+
+/* checbox small */
+.form-control__input-sm {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form-control__label {
+    width: 100%;
+    border: 1px solid $light-borwn-color;
+    border-radius: 5px;
+    color: $light-borwn-color;
+    font-size: 16px;
+    padding: 1.5rem 3rem;
+    background-color: $light-color;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &.no-border {
+        border: 0;
+    }
+}
+
+.form-control__input-sm input:checked~.form-control__label {
+    color: #268ECC;
+    background-color: #E2F4FF;
+    border: 1px solid #268ECC;
+
+    &.no-border {
+        color: $label-gray-color;
+        background-color: transparent;
+        border: 0;
+    }
+}
+
+.form-control__input-sm>input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 25%;
+    left: .5rem;
+    height: 20px;
+    width: 20px;
+    background-color: $white-color;
+    border-radius: 2px;
+    border: 1px solid $light-borwn-color;
+}
+
+.form-control__input-sm:hover input~.form-control__label {
+    background-color: $background-light-color;
+    &.no-border {
+        background-color: transparent;
+    }
+}
+.form-control__input-sm:hover input:checked~.form-control__label {
+    background-color: #E2F4FF;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+}
+
+.form-control__input-sm input:checked~.form-control__label>.checkmark:after {
+    opacity: 1;
+}
+
+.form-control__input-sm .form-control__label>.checkmark:after {
+    left: 4px;
+    top: 4px;
+    width: 6px;
+    height: 6px;
+    border: solid #66758A;
+    background-color: #66758A;
+    border-width: 20px solid white;
+}
+
+
+input[type='checkbox'] {
+    display: none;
+}
+
+// .checkbox-big {
+//     font-size: 14px;
+//     font-family: "Manrope";
+//     line-height: 19px;
+//     font-weight: 400;
+//     color: #000000;
+//     text-align: center;
+//     max-width: 100%;
+//     margin: 0;
+//     cursor: pointer;
+//     &__wrapper {
+//         width: 240px;
+//     }
+
+//     &:before {
+//         content: '';
+//         background-repeat: no-repeat;
+//         background-position: -74px center;
+//         margin-bottom: 12px;
+//         background-color: #FAFAFA;
+//         border: 1px solid #E1E1E1;
+//         border-radius: 10px;
+//         width: 100%;
+//         height: 120px;
+//         display: flex;
+//         transition: all .3s ease-in-out;
+//     }
+
+//     &.goverment:before {
+//         background-image: url('https://www.ftsgps.com/wp-content/uploads/2022/09/Group-26501-1.svg');
+//     }
+
+//     &.commercial:before {
+//         background-image: url('https://www.ftsgps.com/wp-content/uploads/2022/09/Group-26502-1.svg');
+//     }
+
+//     &.reseller:before {
+//         background-image: url('https://www.ftsgps.com/wp-content/uploads/2022/09/Group-26503-1.svg');
+//     }
+
+//     &.misc:before {
+//         background-image: url('https://www.ftsgps.com/wp-content/uploads/2022/09/Group-26504-1.svg');
+//     }
+
+
+//     &.fleet-sm:before {
+//         background-image: url('https://www.ftsgps.com/wp-content/uploads/2022/09/1.svg');
+//         background-position: -235px center;
+//     }
+
+
+
+
+//     &.checked {
+//         &:before {
+//             background-position: 103px center !important;
+//             background-color: $input-light-focus-color;
+//             border: 1px solid $input-focus-color;
+//         }
+//     }
+
+//     &.fleet-md:before {
+//         background-image: url('https://www.ftsgps.com/wp-content/uploads/2022/09/2.svg');
+//         background-position: -324px center;
+
+//         &.checked {
+//             background-position: 74px center !important;
+//         }
+//     }
+
+//     &.fleet-lg:before {
+//         background-image: url('https://www.ftsgps.com/wp-content/uploads/2022/09/3.svg');
+//         background-position: -332px center;
+
+//         &.checked {
+//             background-position: 74px center !important;
+//         }
+//     }
+// }
+
+
+.step {
+    opacity: 0;
+    display: none;
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+
+    &.active {
+        opacity: 1;
+    }
+}

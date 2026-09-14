@@ -1,0 +1,25 @@
+.downloads {
+
+    div {
+        min-height: 75px;
+    }
+
+    p {
+        text-transform: uppercase;
+    }
+
+    a {
+        color: #2ca6de;
+
+        &:hover {
+            color: #d50051;
+        }
+    }
+
+    &--top {
+        p {
+            color: $primary-color;
+        }
+        
+    }
+}

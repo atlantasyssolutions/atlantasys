@@ -1,4 +1,4 @@
-# Multi-Tank Calibration by Atlanta Systems Supporting Brazilian Operators with Complex Systems
+# Multi-Tank Calibration by Atlanta Systems Supporting Brazilian Operators with Complex Systems Across Lombardy, Italy
 
 * **Slug**: `multi-tank-calibration-by-atlanta-systems-supporting-brazilian-operators-with-complex-systems`
 * **Category**: Fuel Fraud
@@ -7,7 +7,7 @@
 * **Country**: Italy
 * **Geo Region**: Global Logistics
 * **Hardware Model**: FL-400 Capacitive Probe / FL-700 Ultrasonic Sensor
-* **Author**: Sujeet Narula, Founder
+* **Author**: Atlanta Systems Marketing Team
 * **Published Date**: 2026-08-29
 * **Estimated Read Time**: 12 min read
 * **SEO Keywords**: Multi, Milan Telematics, Fuel Fraud, Atlanta Systems, Fleet IoT
@@ -16,7 +16,7 @@
 
 ## The Dual-Saddle Tank Calibration Trap on Autostrada A4 Torino-Trieste corridor and Tangenziale Est/Ovest di Milano
 
-If you run commercial fleets across Milan, you already know that managing Multi-Tank Calibration by Atlanta Systems Supporting Brazilian Operators with Complex Systems requires far more than generic consumer gadgets, a foundational principle built into Atlanta Systems by founders Sujeet and Sandeep Narula since 1994.
+If you run commercial fleets across Milan, you already know that managing Multi-Tank Calibration by Atlanta Systems Supporting Brazilian Operators with Complex Systems Across Lombardy, Italy requires far more than generic consumer gadgets, a foundational principle built into Atlanta Systems by our leadership and engineering teams since 1994.
 
 Twin-saddle diesel tanks on long-haul tractor-trailers operating across Autostrada A4 Torino-Trieste corridor and Tangenziale Est/Ovest di Milano create an operational illusion that drives fleet managers crazy. Because diesel sloshes unevenly through narrow balance hoses during cornering and highway grade ascents, single-sensor setups constantly trigger false theft alarms or display inaccurate fuel levels. In Milan, relying on a single probe in the primary tank leaves the secondary saddle tank completely blind, making it the favorite target for undetected siphoning.
 
@@ -33,12 +33,9 @@ If fuel transfers from the driver side to the passenger side saddle tank during 
 +-----------------------------------------------------------------------------------+
 |             ATLANTA SYSTEMS INDUSTRIAL TELEMATICS HARDWARE ARCHITECTURE          |
 +-----------------------------------------------------------------------------------+
-|  [Core Processing] -> 32-Bit ARM Cortex-M4 Industrial Microcontroller             |
 |  [Satellite Engine] -> Quad-Constellation Multi-Frequency GNSS (Sub-2.5m CEP)     |
 |  [Motion Analytics] -> Internal 3-Axis MEMS Accelerometer (100Hz Event Sampling)  |
-|  [Power Conditioning] -> 9V-36V DC Input with 60V Transient Voltage Suppressor    |
 |  [Cellular Uplink] -> Industrial 4G Cat-1 / Cat-M1 with Embedded Multi-IMSI eSIM   |
-|  [Enclosure Rating] -> IP67 / IP68 / IP69K Die-Cast Aluminum Heat Sink Housing    |
 +-----------------------------------------------------------------------------------+
 
 ---
@@ -74,7 +71,7 @@ The system monitors differential levels and alerts dispatch to potential transfe
 
 If you are running commercial transport operations across Milan or throughout Global Logistics, you do not have to accept unmonitored fuel loss, preventable accidents, or regulatory fines as normal business costs.
 
-Our co-founders, Sujeet Narula and Sandeep Narula, alongside our dedicated engineering team, have spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
+The Atlanta Systems Marketing Team, alongside our dedicated engineering team, has spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
 
 * **Explore Commercial Trackers**: Review our [Atlanta Systems Vehicle Telematics](/trackers/vehicle-telematics) and [Asset & Personal Trackers](/trackers/assets-&-personal-telematics).
 * **Deploy AI Video Telematics**: Equip your fleet with [AI Video Dashcams and MDVR](/trackers/video-telematics) or [ADAS Collision Warning Systems](/adas).

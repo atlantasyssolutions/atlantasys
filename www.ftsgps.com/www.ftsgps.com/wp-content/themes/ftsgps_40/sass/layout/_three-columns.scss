@@ -1,0 +1,18 @@
+.three-columns {
+  &--link {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: $gray-dark;
+    cursor: pointer;
+
+    &:hover {
+      color: #d81e66;
+    }
+  }
+
+  &__buttons {
+    margin: 40px auto 0;
+  }
+}

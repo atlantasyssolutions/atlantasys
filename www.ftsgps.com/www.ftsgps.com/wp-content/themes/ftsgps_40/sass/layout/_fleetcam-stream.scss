@@ -1,0 +1,25 @@
+.fleetcam-stream {
+    border: 1px solid #d8dde1;
+    border-left: 0;
+    border-right: 0;
+    background-color: #fcfcfc;
+    text-align: center;
+
+    &__wrapper {
+
+        div:nth-child(1) {
+
+            @include respond (tab-land) {
+                margin-bottom: 70px;
+            }
+            
+        }
+
+        @include respond (tab-land) {
+            justify-content: center !important;
+        }
+
+        
+    }
+    
+}

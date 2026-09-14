@@ -1,4 +1,4 @@
-# Full Stack Manufacturing by Atlanta Systems Producing Heat-Resistant Hardware for Kuwait City Fleets
+# Full Stack Manufacturing by Atlanta Systems Producing Heat-Resistant Hardware Across Kuwait
 
 * **Slug**: `full-stack-manufacturing-by-atlanta-systems-producing-heat-resistant-hardware-for-kuwait-city-fleets`
 * **Category**: Cross-Border Telematics
@@ -7,7 +7,7 @@
 * **Country**: Kuwait
 * **Geo Region**: MENA
 * **Hardware Model**: G-400 Dual-SIM Gateway
-* **Author**: Sujeet Narula, Founder
+* **Author**: Atlanta Systems Marketing Team
 * **Published Date**: 2026-08-29
 * **Estimated Read Time**: 12 min read
 * **SEO Keywords**: Full, Stack, Manufacturing, Atlanta, Systems, Kuwait City Telematics, Cross-Border Telematics, Atlanta Systems, Fleet IoT
@@ -16,9 +16,9 @@
 
 ## The Operational Blind Spots Squeezing Fleet Margins in Kuwait City
 
-In our 32 years designing and manufacturing industrial electronics at Atlanta Systems, my co-founder Sandeep Narula and I have seen few operational challenges cause as much frustration for fleet operators in Kuwait City as the core issue addressed here: Full Stack Manufacturing by Atlanta Systems Producing Heat-Resistant Hardware for Kuwait City Fleets.
+In over three decades designing and manufacturing industrial electronics at Atlanta Systems, our marketing and solutions engineering team has seen few operational challenges cause as much frustration for fleet operators in Kuwait City as the core issue addressed here: Full Stack Manufacturing by Atlanta Systems Producing Heat-Resistant Hardware Across Kuwait.
 
-Managing commercial vehicles across Sixth Ring Road and King Fahd Bin Abdulaziz Road (Route 40) requires total visibility over route compliance, driver behavior, and asset utilization. In Kuwait City, operators who rely on guesswork face high maintenance bills, erratic driver detours, and customer disputes that eat away profitability. Over our 32 years of electronic hardware manufacturing, my co-founder Sandeep Narula and I have seen that the difference between thriving transport companies and struggling ones has always been actionable, hardware-level intelligence from every single vehicle in the field.
+Managing commercial vehicles across Sixth Ring Road and King Fahd Bin Abdulaziz Road (Route 40) requires total visibility over route compliance, driver behavior, and asset utilization. In Kuwait City, operators who rely on guesswork face high maintenance bills, erratic driver detours, and customer disputes that eat away profitability. Over our three decades of electronic hardware manufacturing, our marketing and engineering team has seen that the difference between thriving transport companies and struggling ones has always been actionable, hardware-level intelligence from every single vehicle in the field.
 
 ---
 
@@ -35,12 +35,9 @@ Our hardware incorporates:
 +-----------------------------------------------------------------------------------+
 |             ATLANTA SYSTEMS INDUSTRIAL TELEMATICS HARDWARE ARCHITECTURE          |
 +-----------------------------------------------------------------------------------+
-|  [Core Processing] -> 32-Bit ARM Cortex-M4 Industrial Microcontroller             |
 |  [Satellite Engine] -> Quad-Constellation Multi-Frequency GNSS (Sub-2.5m CEP)     |
 |  [Motion Analytics] -> Internal 3-Axis MEMS Accelerometer (100Hz Event Sampling)  |
-|  [Power Conditioning] -> 9V-36V DC Input with 60V Transient Voltage Suppressor    |
 |  [Cellular Uplink] -> Industrial 4G Cat-1 / Cat-M1 with Embedded Multi-IMSI eSIM   |
-|  [Enclosure Rating] -> IP67 / IP68 / IP69K Die-Cast Aluminum Heat Sink Housing    |
 +-----------------------------------------------------------------------------------+
 
 ---
@@ -76,7 +73,7 @@ Yes. With Atlanta Web-FOTA, you can update device firmware, adjust event thresho
 
 If you are running commercial transport operations across Kuwait City or throughout MENA, you do not have to accept unmonitored fuel loss, preventable accidents, or regulatory fines as normal business costs.
 
-Our co-founders, Sujeet Narula and Sandeep Narula, alongside our dedicated engineering team, have spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
+The Atlanta Systems Marketing Team, alongside our dedicated engineering team, has spent more than three decades building rugged, industrial-grade electronics that survive the harshest working environments on the planet. Since establishing Atlanta Systems in 1994, our hardware has powered over a million connected commercial assets across 27+ countries. Our team is ready to help you eliminate operational blind spots and put verifiable savings back into your business.
 
 * **Explore Commercial Trackers**: Review our [Atlanta Systems Vehicle Telematics](/trackers/vehicle-telematics) and [Asset & Personal Trackers](/trackers/assets-&-personal-telematics).
 * **Deploy AI Video Telematics**: Equip your fleet with [AI Video Dashcams and MDVR](/trackers/video-telematics) or [ADAS Collision Warning Systems](/adas).

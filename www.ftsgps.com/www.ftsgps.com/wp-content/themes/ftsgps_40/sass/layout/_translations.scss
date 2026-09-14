@@ -1,0 +1,27 @@
+.translatepress-es_MX {
+    .fleetcam__obdii__options {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .trucks-cams__cams--header--text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        p {
+            position: relative;
+            top: 0;
+            transform: none;
+        }
+
+    }
+
+    .eld-link {
+        line-height: 24px;
+    }
+}
+
+.trp-language-switcher-container {
+    display: none !important;
+}

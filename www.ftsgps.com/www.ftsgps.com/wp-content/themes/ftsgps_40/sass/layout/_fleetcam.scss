@@ -1,0 +1,72 @@
+.fleetcam {
+
+    &__obdii {
+        padding: 150px 0;
+
+        h2 {
+            margin-bottom: 100px;
+
+            @include respond (phone) {
+                font-size: 50px
+            }
+        }
+
+        &__box {
+            margin-bottom: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 100px;
+
+            @include respond (tab-land) {
+                gap: 30px;
+            }
+
+            @include respond (tab-port) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        &__options {
+            display: flex;
+            justify-content: space-between;
+            gap: 94px;
+
+            @include respond (tab-land) {
+                gap: 30px;
+            }
+
+            @include respond (tab-port) {
+                flex-wrap: wrap;
+                gap: 40px;
+            }
+
+
+            &--box {
+                text-align: center;
+
+                @include respond (tab-port) {
+                    width: 25%;
+                }
+
+                @include respond (phone) {
+                    width: 40%;
+                }
+
+                svg {
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    color: #2B2C28;
+                    white-space: nowrap;
+
+                    @include respond (phone) {
+                        white-space: unset;
+                    }
+                }
+            }
+        }
+    }
+}

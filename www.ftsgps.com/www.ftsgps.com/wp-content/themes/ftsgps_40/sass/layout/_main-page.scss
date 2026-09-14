@@ -1,0 +1,486 @@
+.main-page {
+  &__baner {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    background-position: center;
+    background-size: cover;
+    .owl-prev,
+    .owl-next {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      display: block !important;
+      // background: #F2F2F2 !important;
+      // box-shadow: 0 3px 6px #00000029;
+
+      &:hover {
+        background: none !important;
+      }
+    }
+
+    .owl-prev {
+      left: 25px;
+    }
+    .owl-next {
+      right: 25px;
+    }
+
+    .owl-prev svg,
+    .owl-next svg {
+      font-size: 30px;
+      fill: #a19d9b;
+      width: 20px;
+    }
+
+    .owl-prev svg path,
+    .owl-next svg path {
+      fill: #a19d9b;
+      stroke: #a19d9b;
+      stroke-width: 25px;
+    }
+
+    .owl-theme .owl-nav {
+      margin-top: 0;
+    }
+
+    .owl-item {
+      height: 0;
+    }
+    .owl-item.active {
+      height: auto;
+    }
+
+    .owl-dots {
+      position: absolute;
+      width: 100%;
+      bottom: 20px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: center;
+      line-height: 1;
+    }
+
+    &--1 {
+      overflow: hidden;
+      background-image: url(../img/pattern-light-2.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      min-height: 600px;
+
+      & .container {
+        @include respond(tab-land) {
+          padding: 145px 20px;
+        }
+
+        @include respond(tab-port) {
+          padding: 186px 20px;
+        }
+
+        @include respond(phone) {
+          padding: 169px 20px;
+        }
+      }
+    }
+
+    &--2 {
+      overflow: hidden;
+      color: $white-color;
+      background-image: linear-gradient(150deg, #021622, #052f48);
+      background-color: #021622;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      min-height: 600px;
+    }
+
+    &--3 {
+      overflow: hidden;
+      color: $white-color;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../img/golden-gate-bridge-in-california.jpg);
+      background-color: #021622;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      min-height: 600px;
+
+      & .container {
+        @include respond(tab-land) {
+          padding: 115px 20px;
+        }
+
+        @include respond(tab-port) {
+          padding: 152px 20px;
+        }
+
+        @include respond(phone) {
+          padding: 235px 20px;
+        }
+      }
+    }
+
+    &--update {
+      display: inline-block;
+      padding: 8px 17px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-radius: 99px;
+    }
+
+    b {
+      font-weight: 500;
+    }
+  }
+
+  &__functions {
+
+    background-color: #fff;
+
+    &__box {
+      height: 183px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .col-3 {
+      width: calc(25% - 15px);
+      border-radius: 16px;
+
+      @media screen and (max-width: 1180px) {
+        width: calc(50% - 15px);
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+    }
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background-color: #F6F6F6;
+      border-radius: 16px;
+
+      &:hover {
+        background-color: #FFE15C;
+      }
+
+      color: $font-dark;
+    }
+
+    p {
+      color: $gray-dark;
+    }
+  }
+
+  &__management {
+    background-color: #031e2e;
+
+    p {
+      color: $white-color;
+    }
+
+    div {
+      color: rgba(255, 255, 255, 1);
+      text-align: center;
+    }
+
+    span {
+      font-size: 14px;
+      vertical-align: top;
+    }
+
+    &__box {
+      width: calc(33% - 20px);
+      border-radius: 7px;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
+
+      @include respond(tab-port) {
+        width: 45%;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+      }
+
+      &:nth-child(1) {
+        background-color: #2179be;
+      }
+
+      &:nth-child(2) {
+        background-color: #25a7bf;
+      }
+
+      &:nth-child(3) {
+        background-color: #635391;
+      }
+
+      &:nth-child(4) {
+        background-color: #d50050;
+      }
+
+      &:nth-child(5) {
+        background-color: #ff9364;
+      }
+
+      &:nth-child(6) {
+        background-color: #49c247;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      &--drive {
+        height: 160px;
+        padding: 30px 0;
+      }
+    }
+  }
+
+  &__fleet {
+    img {
+      width: 130px;
+      height: 130px;
+      margin: 0 auto;
+    }
+
+    &:nth-child(2) {
+      border: 1px solid #e5e5e5;
+      border-top: 0;
+      border-bottom: 0;
+
+      @include respond(phone) {
+        border: 0;
+      }
+    }
+
+    &:nth-child(5) {
+      border: 1px solid #e5e5e5;
+      border-top: 0;
+      border-bottom: 0;
+
+      @include respond(phone) {
+        border: 0;
+      }
+    }
+
+    a:hover {
+      p {
+        color: #268dca;
+      }
+    }
+  }
+
+  &__quotes {
+    min-height: 319px;
+    max-width: 670px;
+
+    .owl-prev,
+    .owl-next {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block !important;
+      background: #f2f2f2 !important;
+      box-shadow: 0 3px 6px #00000029;
+      border-radius: 8px;
+
+      &:hover {
+        background: #25a7bf !important;
+      }
+    }
+
+    .owl-prev {
+      left: -50px;
+      @include respond(phone) {
+        left: -20px;
+      }
+    }
+    .owl-next {
+      right: -50px;
+      @include respond(phone) {
+        right: -20px;
+      }
+    }
+
+    .owl-prev svg,
+    .owl-next svg {
+      font-size: 20px;
+      fill: $gray-dark;
+    }
+
+    .owl-prev svg path,
+    .owl-next svg path {
+      stroke: $gray-dark;
+      stroke-width: 20px;
+    }
+
+    .owl-dots .owl-dot span {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin: 0 4px;
+      background: #194854 !important;
+      border-radius: 5px;
+      overflow: hidden;
+      text-indent: -999em;
+      border: 2px solid #fff;
+      cursor: pointer;
+    }
+
+    .owl-dot.active span {
+      background: $white-color !important;
+    }
+
+    .owl-stage-outer {
+      padding-top: 50px;
+    }
+
+    .owl-carousel .owl-item img {
+      width: 45px !important;
+    }
+
+    &--box {
+      padding: 30px;
+      height: 100%;
+      color: #002b50;
+      background-color: #e3e9ea;
+      border-radius: 10px;
+      overflow: visible;
+      position: relative;
+
+      div:nth-child(2) {
+        opacity: 0.88;
+      }
+
+      &--ico {
+        padding: 5px 5px;
+        background-color: #f6f8f8;
+        border-radius: 50%;
+        position: absolute;
+        top: -22px;
+        left: 47%;
+        z-index: 1;
+
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  &__blog {
+    &__box {
+      width: 31%;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      background-color: $white-color;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 1px 0 #f4f4f4;
+
+      a {
+        display: inline-block;
+      }
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
+    }
+
+    &--img {
+      background-image: url(../img/pexels-kindel-media-9799997-768x499.webp); //dynamicaly on wp
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      width: 100%;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      picture,
+      img {
+        max-width: 100%;
+        height: auto;
+        source,
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+.fts-baner {
+  position: absolute;
+  top: -150px;
+  bottom: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+
+  @include respond(big-desktop) {
+    top: -88px;
+  }
+
+  @include respond(phone) {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    min-width: 100%;
+    min-height: 100%;
+    background: rgb(14,58,12);
+    background: -moz-linear-gradient(90deg, rgba(14,58,12,0.8) 0%, rgba(14,58,12,0.8) 35%, rgba(14,58,12,0) 58%, rgba(14,58,12,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(14,58,12,0.8) 0%, rgba(14,58,12,0.8) 35%, rgba(14,58,12,0) 58%, rgba(14,58,12,0) 100%);
+    background: linear-gradient(90deg, rgba(14,58,12,0.8) 0%, rgba(14,58,12,0.8) 35%, rgba(14,58,12,0) 58%, rgba(14,58,12,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e3a0c",endColorstr="#0e3a0c",GradientType=1);
+
+    @include respond(phone) {
+      background: rgb(14,58,12);
+      background: -moz-linear-gradient(90deg, rgba(14,58,12,0.8) 0%, rgba(14,58,12,0.8) 55%, rgba(14,58,12,0) 78%, rgba(14,58,12,0) 100%);
+      background: -webkit-linear-gradient(90deg, rgba(14,58,12,0.8) 0%, rgba(14,58,12,0.8) 55%, rgba(14,58,12,0) 78%, rgba(14,58,12,0) 100%);
+      background: linear-gradient(90deg, rgba(14,58,12,0.8) 0%, rgba(14,58,12,0.8) 55%, rgba(14,58,12,0) 78%, rgba(14,58,12,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e3a0c",endColorstr="#0e3a0c",GradientType=1);
+      z-index: 2;
+    }
+  }
+
+  .fts-video-baner {
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+
+    @include respond(phone) {
+      min-height: 100vh;
+      display: block;
+      position: relative;
+    }
+  }
+}

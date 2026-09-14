@@ -1,0 +1,1483 @@
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+'use strict';
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  var accordion = document.getElementsByClassName('FAQ-accordion__main');
+
+  for (var i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener('click', function () {
+
+      var panel = this.nextElementSibling;
+
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        this.classList.remove('active-FAQ');
+      } else {
+
+        for (var x = 0; x < accordion.length; x++) {
+          accordion[x].classList.remove('active-FAQ');
+          accordion[x].nextElementSibling.style.maxHeight = null;
+        }
+
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+        this.classList.toggle('active-FAQ');
+      }
+    });
+  }
+});
+jQuery(document).ready(function ($) {
+  $(".owl--rugged").owlCarousel({
+    loop: false,
+    nav: true,
+    // autoWidth: true,
+    items: 1,
+    dots: false,
+    navText: ["<svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z' /></svg>", "<svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z'/></svg>"],
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      },
+      1200: {
+        nav: true
+      }
+    }
+  });
+});
+jQuery(document).ready(function ($) {
+  $('#GallerySlider--1').owlCarousel({
+    dots: false,
+    loop: true,
+    nav: false,
+    autoplay: true,
+    rtl: false,
+    autoWidth: true,
+    margin: 0,
+    smartSpeed: 4500,
+    slideTransition: 'linear',
+    autoplayTimeout: 11000,
+    autoplaySpeed: 11000,
+    stagePadding: 0,
+
+    responsive: {
+      0: {
+        items: 6
+      },
+      600: {
+        items: 6
+      },
+      1000: {
+        items: 6
+      }
+    }
+  });
+
+  $('#GallerySlider--2').owlCarousel({
+    dots: false,
+    loop: true,
+    nav: false,
+    autoplay: true,
+    rtl: true,
+    autoWidth: true,
+    margin: 0,
+    smartSpeed: 4500,
+    slideTransition: 'linear',
+    autoplayTimeout: 11000,
+    autoplaySpeed: 11000,
+    responsive: {
+      0: {
+        items: 6
+      },
+      600: {
+        items: 6
+      },
+      1000: {
+        items: 6
+      }
+    }
+  });
+
+  $(".owl--comparison").owlCarousel({
+    dots: false,
+    nav: true,
+    margin: 0,
+    items: 6,
+    responsive: {
+      0: {
+        items: 1
+      },
+      480: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      989: {
+        items: 4
+      },
+      1300: {
+        items: 5
+      },
+      1600: {
+        items: 6
+      }
+    }
+  });
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+});
+
+jQuery(document).ready(function ($) {
+  $(".owl--garmin").owlCarousel({
+    loop: true,
+    nav: false,
+    autoplay: true,
+    smartSpeed: 4000,
+    // slideTransition: 'linear',
+    autoplayTimeout: 4000,
+    autoplaySpeed: 4000,
+    // autoWidth: true,
+    items: 1,
+    dots: true,
+    // navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      },
+      1200: {
+        nav: false
+      }
+    }
+  });
+});
+jQuery(document).ready(function ($) {
+  $(".owl-carousel--main-baner").owlCarousel({
+    loop: true,
+    autoplay: true,
+    nav: true,
+    autoHeight: false,
+    // autoWidth: true,
+    items: 1,
+    dots: true,
+    navText: ["<svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z'/></svg>", "<svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z'/></svg>"],
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      },
+      1200: {
+        nav: true
+      }
+    }
+  });
+});
+
+jQuery(document).ready(function ($) {
+  var _$$owlCarousel;
+
+  $(".owl-carousel--main-quotes").owlCarousel({
+    loop: true,
+    nav: true,
+    autoplay: false,
+    margin: 10,
+    itemsDesktop: 1000,
+    // autoWidth: true,
+    items: 1,
+    dots: true,
+    navText: ["<svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z'/></svg>", "<svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z'/></svg>"],
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      },
+      1200: {
+        nav: true
+      }
+    }
+  });
+
+  $(".owl--pets").owlCarousel((_$$owlCarousel = {
+    items: 1,
+    autoplay: false
+  }, _defineProperty(_$$owlCarousel, 'items', 1), _defineProperty(_$$owlCarousel, 'nav', true), _defineProperty(_$$owlCarousel, 'navText', ["<svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z'/></svg>", "<svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z'/></svg>"]), _$$owlCarousel));
+});
+
+jQuery(document).ready(function ($) {
+  $('#GallerySlider--integration').owlCarousel({
+    nav: true,
+    dots: true,
+    dotsEach: true,
+    loop: false,
+    autoplay: false,
+    autoWidth: false,
+    margin: 24,
+    stagePadding: 24,
+    navText: ["<img src='https://ftsgps.com/wp-content/uploads/2022/11/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg'>", "<img src='https://ftsgps.com/wp-content/uploads/2022/11/arrow_right_alt_FILL0_wght400_GRAD0_opsz48-1.svg'>"],
+
+    responsive: {
+      0: {
+        items: 2,
+        autoplay: true,
+        nav: false
+      },
+      600: {
+        items: 3,
+        autoplay: true,
+        nav: false
+      },
+      1000: {
+        items: 4,
+        autoplay: true,
+        nav: false
+
+      },
+      1350: {
+        items: 4,
+        autoplay: false,
+        nav: true
+
+      },
+      1600: {
+        items: 4
+      }
+    }
+  });
+});
+jQuery(document).ready(function ($) {
+  $(".owl-carousel--main-baner").owlCarousel({ loop: !0, autoplay: !0, nav: !0, autoHeight: !1, items: 1, dots: !0, navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"], responsive: { 0: { items: 1 }, 600: { items: 1 }, 1e3: { items: 1 }, 1200: { nav: !0 } } });
+}), jQuery(document).ready(function ($) {
+  var _$$owlCarousel2;
+
+  $(".owl-carousel--main-quotes").owlCarousel({ loop: !0, nav: !0, autoplay: !1, margin: 10, items: 1, dots: !0, navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"], responsive: { 0: { items: 1 }, 600: { items: 1 }, 1e3: { items: 1 }, 1200: { nav: !0 } } }), $(".owl--pets").owlCarousel((_$$owlCarousel2 = { items: 1, autoplay: !0 }, _defineProperty(_$$owlCarousel2, 'items', 1), _defineProperty(_$$owlCarousel2, 'nav', !0), _$$owlCarousel2));
+}), jQuery(document).ready(function ($) {
+  $("#GallerySlider--integration").owlCarousel({ nav: !0, dots: !0, dotsEach: !0, loop: !1, autoplay: !1, autoWidth: !1, margin: 24, stagePadding: 24, navText: ["<img src='https://ftsgps.com/wp-content/uploads/2022/11/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg'>", "<img src='https://ftsgps.com/wp-content/uploads/2022/11/arrow_right_alt_FILL0_wght400_GRAD0_opsz48-1.svg'>"], responsive: { 0: { items: 2, autoplay: !0, nav: !1 }, 600: { items: 3, autoplay: !0, nav: !1 }, 1e3: { items: 4, autoplay: !0, nav: !1 }, 1350: { items: 4, autoplay: !1, nav: !0 }, 1600: { items: 4 } } });
+});
+// document.addEventListener("DOMContentLoaded", () => {
+//   //Front Page
+
+//   document.querySelectorAll(".glide").forEach((element) => {
+//     let glideInstance = new Glide(element, {
+//       type: "carousel",
+//       autoplay: 4000,
+//     });
+//     glideInstance.mount();
+//   });
+
+//   document.querySelectorAll(".glide--quotes").forEach((element) => {
+//     let configQuote = new Glide(element, {
+//       type: "carousel",
+//       autoplay: 9000,
+//       animationDuration: 1000,
+//     });
+//     configQuote.mount();
+//   });
+
+//   document.querySelectorAll(".glide--carousel").forEach((element) => {
+//     let configQuote = new Glide(element, {
+//       type: "carousel",
+//       perView: 6,
+//       gap: 0,
+//       breakpoints: {
+//         610: {
+//           perView: 2,
+//         },
+//         800: {
+//           perView: 3,
+//         },
+//         1180: {
+//           perView: 4,
+//         },
+//         1600: {
+//           perView: 5,
+//         },
+//       },
+//       direction: "rtl",
+//       animationDuration: 9000,
+//       animationTimingFunc: "linear",
+//       autoplay: 9000,
+//       hoverpause: false,
+//       dragThreshold: 10,
+//     });
+//     configQuote.mount();
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   //Commercial Navigation
+
+//   document.querySelectorAll(".glide--rugged").forEach((element) => {
+//     let configRugged = new Glide(element, {
+//       type: "slider",
+//       rewind: false,
+//       // autoplay: 3000
+//     });
+//     configRugged.mount();
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   //Garmin
+
+//   document.querySelectorAll(".glide--garmin").forEach((element) => {
+//     let configGarmin = new Glide(element, {
+//       type: "carousel",
+//       animationDuration: 5000,
+//       animationTimingFunc: "ease-in",
+//       hoverpause: false,
+//       autoplay: 3000,
+//     });
+//     configGarmin.mount();
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   //Taxonomy Integration
+
+//   document.querySelectorAll(".glide--integration").forEach((element) => {
+//     let configIntegration = new Glide(element, {
+//       type: "carousel",
+//       perView: 4,
+//       breakpoints: {
+//         600: {
+//           perView: 1,
+//         },
+//         900: {
+//           perView: 2,
+//         },
+//         1220: {
+//           perView: 3,
+//         },
+//       },
+//     });
+//     configIntegration.mount();
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   //Archive Integrations
+
+//   document.querySelectorAll(".glide--integrations").forEach((element) => {
+//     let configIntegrations = new Glide(element, {
+//       type: "carousel",
+//       perView: 4,
+//       breakpoints: {
+//         600: {
+//           perView: 1,
+//         },
+//         900: {
+//           perView: 2,
+//         },
+//         1220: {
+//           perView: 3,
+//         },
+//       },
+//     });
+//     configIntegrations.mount();
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  //Asset Tracking
+
+  document.querySelectorAll(".glide--comparison").forEach(function (element) {
+    var configComparison = new Glide(element, {
+      type: "slider",
+      perView: 6,
+      rewind: false,
+      gap: 0,
+      bound: true,
+      breakpoints: {
+        0: {
+          perView: 1
+        },
+        480: {
+          perView: 2
+        },
+        768: {
+          perView: 3
+        },
+        989: {
+          perView: 4
+        },
+        1300: {
+          perView: 5
+        },
+        1600: {
+          perView: 6
+        }
+      }
+    });
+    configComparison.mount();
+  });
+
+  document.querySelectorAll(".glide--assets-1").forEach(function (element) {
+    var configAssets = new Glide(element, {
+      type: "carousel",
+      perView: 4,
+      gap: 0,
+      breakpoints: {
+        610: {
+          perView: 1
+        },
+        800: {
+          perView: 2
+        },
+        1180: {
+          perView: 3
+        },
+        1600: {
+          perView: 4
+        }
+      },
+      direction: "ltr",
+      animationDuration: 9000,
+      animationTimingFunc: "linear",
+      autoplay: 9000,
+      hoverpause: false,
+      dragThreshold: 10
+    });
+    configAssets.mount();
+  });
+
+  document.querySelectorAll(".glide--assets-2").forEach(function (element) {
+    var configAssets2 = new Glide(element, {
+      type: "carousel",
+      perView: 4,
+      gap: 0,
+      breakpoints: {
+        610: {
+          perView: 1
+        },
+        800: {
+          perView: 2
+        },
+        1180: {
+          perView: 3
+        },
+        1600: {
+          perView: 4
+        }
+      },
+      direction: "rtl",
+      animationDuration: 9000,
+      animationTimingFunc: "linear",
+      autoplay: 9000,
+      hoverpause: false,
+      dragThreshold: 10
+    });
+    configAssets2.mount();
+  });
+});
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   //T-mobile
+
+//   document.querySelectorAll(".glide--tmobile").forEach((element) => {
+//     let configTmobile = new Glide(element, {
+//       type: "slider",
+//       perView: 2,
+//       rewind: false,
+//       bound: true,
+//       breakpoints: {
+//         480: {
+//           perView: 1,
+//           gap: 10,
+//         },
+//         900: {
+//           perView: 1,
+//           gap: 30,
+//         },
+//         1280: {
+//           perView: 2,
+//           gap: 20,
+//         },
+//       },
+//       gap: 10,
+//     });
+//     configTmobile.mount();
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   //About Page
+
+//   document.querySelectorAll(".glide--pets").forEach((element) => {
+//     let configPets = new Glide(element, {
+//       type: "slider",
+//       rewind: false,
+//     });
+//     configPets.mount();
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   //Customer Stories
+
+//   document.querySelectorAll(".glide--stories").forEach((element) => {
+//     let configStories = new Glide(element, {
+//       type: "carousel",
+//       perView: 3,
+//       animationDuration: 5000,
+//       animationTimingFunc: "linear",
+//       hoverpause: false,
+//       autoplay: 1,
+//       bound: true,
+//     });
+//     configStories.mount();
+//   });
+// });
+
+/**
+ * FAQ Accordion
+ *
+ * Accessible accordion using aria-expanded / aria-controls / [hidden].
+ * Supports keyboard navigation (Enter, Space, Arrow keys, Home, End).
+ *
+ * Enqueue in functions.php:
+ *   wp_enqueue_script('faq-accordion', get_template_directory_uri() . '/js/faq-accordion.js', [], null, true);
+ */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  document.querySelectorAll('.faq-accordion').forEach(function (accordion) {
+
+    var headers = Array.from(accordion.querySelectorAll('.faq-accordion__header'));
+
+    // -------------------------------------------------------------------------
+    // Open / close a single item
+    // -------------------------------------------------------------------------
+
+    function openItem(header) {
+      var panel = document.getElementById(header.getAttribute('aria-controls'));
+      if (!panel) return;
+
+      header.setAttribute('aria-expanded', 'true');
+      panel.removeAttribute('hidden');
+      panel.style.visibility = '';
+
+      // Animate: set max-height to scrollHeight so CSS transition plays
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+
+    function closeItem(header) {
+      var panel = document.getElementById(header.getAttribute('aria-controls'));
+      if (!panel) return;
+
+      header.setAttribute('aria-expanded', 'false');
+      panel.style.maxHeight = '0';
+
+      // After transition ends restore [hidden] for accessibility
+      panel.addEventListener('transitionend', function () {
+        if (header.getAttribute('aria-expanded') === 'false') {
+          panel.setAttribute('hidden', '');
+          panel.style.visibility = 'hidden';
+        }
+      }, { once: true });
+    }
+
+    function toggleItem(header) {
+      var isOpen = header.getAttribute('aria-expanded') === 'true';
+      // Close all other items (single-open behaviour)
+      headers.forEach(function (h) {
+        if (h !== header && h.getAttribute('aria-expanded') === 'true') {
+          closeItem(h);
+        }
+      });
+      isOpen ? closeItem(header) : openItem(header);
+    }
+
+    // -------------------------------------------------------------------------
+    // Click handler
+    // -------------------------------------------------------------------------
+
+    headers.forEach(function (header) {
+      header.addEventListener('click', function () {
+        return toggleItem(header);
+      });
+    });
+
+    // -------------------------------------------------------------------------
+    // Keyboard navigation (ARIA Authoring Practices Guide – Accordion pattern)
+    // -------------------------------------------------------------------------
+
+    headers.forEach(function (header, index) {
+      header.addEventListener('keydown', function (e) {
+        var targetIndex = null;
+
+        switch (e.key) {
+          case 'ArrowDown':
+            targetIndex = (index + 1) % headers.length;
+            break;
+          case 'ArrowUp':
+            targetIndex = (index - 1 + headers.length) % headers.length;
+            break;
+          case 'Home':
+            targetIndex = 0;
+            break;
+          case 'End':
+            targetIndex = headers.length - 1;
+            break;
+          default:
+            return;
+        }
+
+        e.preventDefault();
+        headers[targetIndex].focus();
+      });
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = document.querySelector("#hamburger__icon"),
+      close = document.querySelector("#close"),
+      sidebar = document.querySelector("#mobile-menu");
+
+  toggle.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    sidebar.classList.add("show-nav");
+  });
+
+  close.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    sidebar.classList.remove("show-nav");
+  });
+
+  var dropdown = document.getElementsByClassName("mobile-menu__list--item");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function (e) {
+      e.stopPropagation();
+      this.classList.toggle("active");
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var imageCameras = document.querySelectorAll(".trucks-cams__trucks--image .icon");
+  var truckBox = document.querySelectorAll(".trucks-cams__cams__box");
+
+  imageCameras.forEach(function (item, index) {
+    item.addEventListener("mouseover", function (item) {
+      var elmId = item.target.getAttribute("data-href");
+      document.getElementById(elmId).classList.add("hover");
+    });
+    item.addEventListener("mouseout", function (item) {
+      var elmId = item.target.getAttribute("data-href");
+      document.getElementById(elmId).classList.remove("hover");
+    });
+  });
+
+  truckBox.forEach(function (item, index) {
+    item.addEventListener("mouseover", function (item) {
+      var elmId = item.target.getAttribute("data-target");
+      document.getElementById(elmId).classList.add("hover");
+    });
+    item.addEventListener("mouseout", function (item) {
+      var elmId = item.target.getAttribute("data-target");
+      document.getElementById(elmId).classList.remove("hover");
+    });
+  });
+
+  truckBox.forEach(function (item, index) {
+    item.addEventListener("mouseover", function (item) {
+      var elmId = item.target.getAttribute("data-href");
+      document.getElementById(elmId).classList.add("hover");
+    });
+    item.addEventListener("mouseout", function (item) {
+      var elmId = item.target.getAttribute("data-href");
+      document.getElementById(elmId).classList.remove("hover");
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (document.getElementById("hamburger__tmobile")) {
+    var myToggle = function myToggle() {
+      this.classList.toggle("visible-menu");
+    };
+
+    var hamburger = document.getElementById("hamburger__tmobile");
+    var navUL = document.querySelector(".navigation__tmobile__list");
+    var submenu = document.querySelector(".navigation__tmobile__list").getElementsByTagName("li");
+    var numSubmenu = submenu.length;
+    var menuOpen = false;
+
+    for (var i = 0; i < numSubmenu; i++) {
+      submenu[i].addEventListener("click", myToggle, false);
+    }
+
+    hamburger.addEventListener("click", function () {
+      navUL.classList.toggle("show-nav");
+
+      if (!menuOpen) {
+        hamburger.classList.add("open");
+        menuOpen = true;
+      } else {
+        hamburger.classList.remove("open");
+        menuOpen = false;
+      }
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+});
+
+/* Show submenus after load website */
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".sub-menu--resources--outer").classList.add("loaded");
+  document.querySelector(".sub-menu--solutions--outer").classList.add("loaded");
+  document.querySelector(".sub-menu--outer").classList.add("loaded");
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (document.querySelector("#fts-knowladge") && window.innerWidth <= 768) {
+    setTimeout(function () {
+      document.querySelector("#fts-knowladge").scrollIntoView();
+    }, 300);
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var itemsMenu = document.querySelectorAll("ul.nav-menu__list > li.nav-menu__list__li__parent"),
+      hoverTimeout = void 0;
+
+  itemsMenu.forEach(function (item) {
+    item.addEventListener("mouseover", function (ev) {
+      clearTimeout(hoverTimeout);
+      document.body.classList.add("hover-menu");
+    });
+    item.addEventListener("mouseout", function (ev) {
+      hoverTimeout = setTimeout(function () {
+        document.body.classList.remove("hover-menu");
+      }, 0);
+    });
+  });
+});
+
+//Glossary btn
+
+document.addEventListener("DOMContentLoaded", function () {
+  var glossaryBtn = document.querySelector(".glossary__entry--btn");
+
+  if (glossaryBtn) {
+    glossaryBtn.addEventListener("click", function (e) {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      });
+    });
+
+    window.addEventListener("scroll", function (e) {
+      glossaryBtn.style.display = window.scrollY > 500 ? "inline-block" : "none";
+    });
+  }
+});
+
+//Stories btn
+
+document.addEventListener("DOMContentLoaded", function () {
+  var storiesBtn = document.querySelector(".stories--btn");
+
+  if (storiesBtn) {
+    storiesBtn.addEventListener("click", function (e) {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      });
+    });
+
+    window.addEventListener("scroll", function (e) {
+      var scrollTop = window.scrollY;
+      var docHeight = document.body.offsetHeight;
+      var winHeight = window.innerHeight;
+      var scrollPercent = scrollTop / (docHeight - winHeight);
+      var scrollPercentRounded = Math.round(scrollPercent * 100);
+      storiesBtn.style.display = scrollPercentRounded > 50 ? "inline-block" : "none";
+    });
+  }
+});
+
+//Share copy
+
+document.addEventListener("DOMContentLoaded", function () {
+  var copyLinks = document.querySelectorAll(".share__widget--link");
+
+  copyLinks.forEach(function (copyLink) {
+    copyLink.addEventListener("click", function () {
+      copyLinks.forEach(function (copy) {
+        return copy.classList.remove("copied");
+      });
+      copyLink.classList.add("copied");
+    });
+  });
+});
+
+//Footer Mobile
+
+document.addEventListener("DOMContentLoaded", function () {
+  var footer_drop = document.querySelectorAll(".footer__box__inner__main--header");
+
+  footer_drop.forEach(function (drop) {
+    drop.addEventListener("click", function (e) {
+      e.target.parentNode.classList.toggle("open");
+    });
+  });
+});
+
+// wow elements
+
+document.addEventListener("DOMContentLoaded", function () {
+  new WOW().init();
+});
+
+$(document).ready(function () {
+  $(".owl-main").owlCarousel({
+    items: 1,
+    loop: true
+  });
+
+  $(".owl-quotes").owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    dotsContainer: '#owl-quotes-dots'
+  });
+
+  $(".owl-compare").owlCarousel({
+    items: 6,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+        autoplay: true
+      },
+      480: {
+        items: 2,
+        autoplay: true
+      },
+      768: {
+        items: 4
+      },
+      989: {
+        items: 5
+      },
+      1200: {
+        items: 6
+      }
+    }
+  });
+
+  $(".owl-industries1").owlCarousel({
+    items: 4,
+    loop: true,
+    autoplay: true,
+    nav: false,
+    dots: false,
+    autoplayTimeout: 4000,
+    smartSpeed: 8000,
+    responsive: {
+      0: {
+        items: 1,
+        autoplay: true
+      },
+      480: {
+        items: 2,
+        autoplay: true
+      },
+      768: {
+        items: 4
+      }
+    }
+  });
+
+  $(".owl-industries2").owlCarousel({
+    items: 4,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    smartSpeed: 8000,
+    rtl: true,
+    responsive: {
+      0: {
+        items: 1,
+        autoplay: true
+      },
+      480: {
+        items: 2,
+        autoplay: true
+      },
+      768: {
+        items: 4
+      }
+    }
+  });
+
+  $(".owl-waste").owlCarousel({
+    items: 5,
+    autoplayTimeout: 4000,
+    loop: true,
+    autoplay: true
+  });
+
+  $(".owl-ruged").owlCarousel({
+    items: 1,
+    autoplay: true
+  });
+
+  $(".owl-garmin").owlCarousel({
+    items: 1,
+    autoplay: true
+  });
+
+  $(".owl-pets").owlCarousel({
+    items: 1,
+    autoplay: true,
+    nav: true
+  });
+
+  $(".owl-itegration").owlCarousel({
+    items: 4,
+    margin: 10,
+    responsive: {
+      0: {
+        items: 1,
+        autoplay: true
+      },
+      480: {
+        items: 2,
+        autoplay: true
+      },
+      768: {
+        items: 4
+      }
+    }
+  });
+
+  $(".owl-case").owlCarousel({
+    items: 3,
+    autoplay: true,
+    margin: 100,
+    loop: true,
+    responsive: {
+      0: {
+        items: 2
+      },
+      480: {
+        items: 2
+      },
+      768: {
+        items: 3
+      }
+    }
+  });
+
+  $(".owl-logos").owlCarousel({
+    items: 5,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 3000,
+    margin: 100,
+    loop: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 2
+      },
+      480: {
+        items: 3
+      },
+      768: {
+        items: 4
+      }
+    }
+  });
+
+  // RC Related Articles Carousel
+  var $rcGrid = $('.rc-related__grid');
+  if ($rcGrid.length && $rcGrid.find('.rc-related__card').length > 3) {
+    $rcGrid.addClass('owl-carousel');
+    $rcGrid.owlCarousel({
+      items: 4,
+      loop: true,
+      nav: true,
+      dots: true,
+      margin: 24,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        900: {
+          items: 3
+        },
+        1200: {
+          items: 4
+        }
+      }
+    });
+  }
+
+  // Testimonial Owl Carousel
+  $('.testimonial-carousel').owlCarousel({
+    loop: true,
+    margin: 32,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoHeight: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      }
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Tab switching
+  $('.tabs-element .tab').on('click', function () {
+    var tabId = $(this).data('tab');
+
+    $('.tabs-element .tab').removeClass('tab--active');
+    $(this).addClass('tab--active');
+
+    $('.featured-tab-panels .featured-tab').hide();
+    $('#' + tabId).fadeIn(300);
+  });
+});
+
+var useNewsRoom = function useNewsRoom() {
+  var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+  var params = {
+    offset: 0,
+    per_page: 6,
+    page: 1
+  };
+
+  var element = null;
+
+  var setElement = function setElement(el) {
+    element = el;
+  };
+
+  var setOffset = function setOffset(offset) {
+
+    params.offset = offset;
+  };
+
+  var incrementPage = function incrementPage() {
+    params.page++;
+  };
+
+  var setPagesPerPage = function setPagesPerPage(per_page) {
+    params.per_page = per_page;
+  };
+
+  var parseDate = function parseDate(date) {
+    var d = new Date(date);
+    return monthNames[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+  };
+
+  var parsePosts = function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(posts) {
+      return regeneratorRuntime.wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              _context2.next = 2;
+              return posts.forEach(function () {
+                var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(post) {
+                  var tags_json, tags, parsedTags, text, div;
+                  return regeneratorRuntime.wrap(function _callee$(_context) {
+                    while (1) {
+                      switch (_context.prev = _context.next) {
+                        case 0:
+                          _context.next = 2;
+                          return fetch('/wp-json/wp/v2/newsroom-tags?post=' + post.id);
+
+                        case 2:
+                          tags_json = _context.sent;
+                          _context.next = 5;
+                          return tags_json.json();
+
+                        case 5:
+                          tags = _context.sent;
+                          parsedTags = [];
+
+                          if (tags.length > 0) {
+                            parsedTags = tags.map(function (tag) {
+                              return '<a href="' + tag.link + '">' + tag.name + '</a>';
+                            });
+                          }
+                          parsedTags = parsedTags.reverse().join(" ");
+                          text = '\n            <div class="display-flex column justify-content-space-between height-100">\n                    <div class="press__body">\n                        <div class="display-flex justify-content-space-between margin-bottom-l">\n                            <div class="press__latest--date">\n                                <p>' + parseDate(post.date) + '</p>\n                                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">\n                                    <circle cx="2" cy="2" r="2" fill="#5E5E5E"/>\n                                </svg>\n                                <span>Press Release</span>\n                            </div>\n                            <div class="press__latest--share">\n                                <div>\n                                    <div class="press__widget display-flex align-items-center">\n                                        <a href="https://www.facebook.com/sharer/sharer.php?u=' + post.link + ' ?>" target="_blank" class="">\n                                            <span class="fts-share-tooltip">share to Facebook</span>\n                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">\n                                                <path d="M13.6203 10.6767L14.0526 7.50975H11.3505V5.45459C11.3505 4.58834 11.7278 3.74342 12.9381 3.74342H14.1663V1.04732C14.1663 1.04732 13.0519 0.833496 11.986 0.833496C9.76093 0.833496 8.30656 2.35053 8.30656 5.09639V7.51029H5.83301V10.6772H8.30656V18.3335H11.3505V10.6772L13.6203 10.6767Z" fill="#8396A9"/>\n                                            </svg>\n                                        </a>\n                                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=' + post.link + ' ?>" target="_blank" class="">\n                                            <span class="fts-share-tooltip">share to Facebook</span>\n                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">\n                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66699 3.02492C1.66699 2.66465 1.81011 2.31913 2.06486 2.06438C2.31961 1.80962 2.66513 1.66651 3.02541 1.66651H16.5667C16.7452 1.66621 16.9221 1.70114 17.0871 1.76929C17.2521 1.83743 17.4021 1.93746 17.5284 2.06364C17.6547 2.18981 17.7549 2.33967 17.8232 2.50462C17.8915 2.66957 17.9267 2.84638 17.9266 3.02492V16.5662C17.9268 16.7448 17.8917 16.9216 17.8235 17.0867C17.7553 17.2517 17.6552 17.4016 17.529 17.5279C17.4027 17.6543 17.2528 17.7544 17.0878 17.8227C16.9228 17.8911 16.746 17.9262 16.5674 17.9261H3.02541C2.84695 17.9261 2.67025 17.8909 2.50539 17.8226C2.34053 17.7543 2.19075 17.6542 2.0646 17.5279C1.93845 17.4017 1.83841 17.2519 1.77018 17.087C1.70196 16.9221 1.6669 16.7454 1.66699 16.5669V3.02492ZM8.10283 7.86584H10.3045V8.97149C10.6223 8.33589 11.4353 7.76385 12.657 7.76385C14.9991 7.76385 15.5541 9.02988 15.5541 11.3528V15.6557H13.1839V11.882C13.1839 10.559 12.8661 9.81255 12.0591 9.81255C10.9394 9.81255 10.4738 10.6174 10.4738 11.882V15.6557H8.10283V7.86584ZM4.03793 15.5544H6.40888V7.76385H4.03793V15.5537V15.5544ZM6.74811 5.22292C6.75258 5.42592 6.71646 5.62777 6.64186 5.81662C6.56726 6.00548 6.4557 6.17753 6.31371 6.32268C6.17172 6.46783 6.00216 6.58316 5.815 6.6619C5.62783 6.74063 5.42683 6.78119 5.22377 6.78119C5.02072 6.78119 4.81972 6.74063 4.63255 6.6619C4.44539 6.58316 4.27583 6.46783 4.13384 6.32268C3.99185 6.17753 3.88028 6.00548 3.80569 5.81662C3.73109 5.62777 3.69497 5.42592 3.69944 5.22292C3.70821 4.82445 3.87267 4.44526 4.15758 4.16655C4.44249 3.88785 4.82521 3.73178 5.22377 3.73178C5.62234 3.73178 6.00506 3.88785 6.28997 4.16655C6.57488 4.44526 6.73934 4.82445 6.74811 5.22292Z" fill="#8396A9"/>\n                                            </svg>\n                                        </a>\n                                        <a href="https://twitter.com/intent/tweet?text=' + post.link + '" target="_blank" class="">\n                                            <span class="fts-share-tooltip">share to Facebook</span>\n                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">\n                                                <path d="M18.4483 4.95171C17.8312 5.22516 17.1683 5.40993 16.4713 5.49345C17.1904 5.06315 17.7285 4.38592 17.985 3.58812C17.3093 3.98943 16.5699 4.27191 15.7988 4.42327C15.2802 3.86961 14.5934 3.50263 13.8449 3.37931C13.0964 3.256 12.3282 3.38324 11.6594 3.74129C10.9907 4.09935 10.4588 4.66817 10.1465 5.35946C9.83412 6.05074 9.75874 6.82581 9.93203 7.56432C8.56304 7.49559 7.22379 7.13976 6.00122 6.51995C4.77865 5.90013 3.70006 5.03017 2.83546 3.96652C2.53984 4.47648 2.36985 5.06774 2.36985 5.69743C2.36952 6.26429 2.50911 6.82248 2.77625 7.32245C3.04338 7.82242 3.4298 8.24873 3.90121 8.56355C3.3545 8.54615 2.81985 8.39843 2.34176 8.13267V8.17701C2.34171 8.97206 2.61672 9.74265 3.12014 10.358C3.62356 10.9734 4.32438 11.3956 5.10367 11.5531C4.59651 11.6904 4.06479 11.7106 3.54867 11.6122C3.76854 12.2963 4.19683 12.8945 4.77358 13.3231C5.35033 13.7517 6.04667 13.9892 6.76511 14.0024C5.54552 14.9598 4.03933 15.4791 2.48884 15.4768C2.21419 15.4769 1.93977 15.4609 1.66699 15.4288C3.24083 16.4407 5.07288 16.9777 6.94396 16.9757C13.2778 16.9757 16.7404 11.7297 16.7404 7.18001C16.7404 7.03219 16.7367 6.8829 16.73 6.73509C17.4035 6.24802 17.9849 5.64488 18.4469 4.95392L18.4483 4.95171Z" fill="#8396A9"/>\n                                            </svg>\n                                        </a>\n                                        <a href="' + post.link + '" class="fts-link"  target="_blank">\n                                            <span class="fts-share-tooltip">share to Facebook</span>\n                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">\n                                                <path d="M12.3117 4.96724C13.2012 4.07434 14.5022 4.05559 15.2224 4.77863C15.944 5.50303 15.9246 6.81225 15.0346 7.70576L13.5315 9.21466C13.3502 9.39664 13.3508 9.69111 13.5328 9.87239C13.7148 10.0537 14.0092 10.0531 14.1905 9.87111L15.6936 8.36222C16.8788 7.17239 17.0276 5.27277 15.8815 4.12217C14.7339 2.97021 12.8385 3.12035 11.6527 4.31078L8.64658 7.32856C7.46136 8.51839 7.31255 10.418 8.4587 11.5686C8.63997 11.7506 8.93445 11.7512 9.11643 11.5699C9.29841 11.3886 9.29898 11.0941 9.1177 10.9122C8.3961 10.1878 8.41554 8.87852 9.30559 7.98502L12.3117 4.96724Z" fill="#8396A9"/>\n                                                <path d="M11.5406 8.4317C11.3593 8.24972 11.0649 8.24915 10.8829 8.43042C10.7009 8.6117 10.7003 8.90618 10.8816 9.08816C11.6032 9.81256 11.5838 11.1218 10.6937 12.0153L7.68764 15.0331C6.79819 15.926 5.49713 15.9447 4.77689 15.2217C4.05528 14.4973 4.07471 13.188 4.96477 12.2945L6.46784 10.7856C6.64911 10.6037 6.64854 10.3092 6.46656 10.1279C6.28458 9.94662 5.99011 9.94719 5.80883 10.1292L4.30576 11.6381C3.12053 12.8279 2.97173 14.7276 4.11788 15.8782C5.26539 17.0301 7.16081 16.88 8.34665 15.6895L11.3527 12.6717C12.538 11.4819 12.6868 9.5823 11.5406 8.4317Z" fill="#8396A9"/>\n                                            </svg>\n                                        </a>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                        <p class="font-size-20 color-black line-height-16 letter-spacing-1 max-width-100 margin-bottom-l">\n                        <a class="press__header font-size-20 color-black line-height-16 letter-spacing-1"  href="' + post.link + '">\n                        ' + post.title.rendered + '\n                        </a>\n                        </p>\n                        <div class="press__latest--tags">\n                            ' + parsedTags + '\n                        </div>\n                    </div>\n                    <span class="border-bottom-1 width-100 margin-desktop-y-xxl margin-mobile-y-l"></span>\n            ';
+                          div = document.createElement('div');
+
+                          div.innerHTML = text;
+                          div.classList.add('col-6', 'padding-desktop-xl-even-left', 'padding-desktop-xl-odd-right');
+                          if (element) {
+                            element.appendChild(div);
+                          }
+
+                        case 14:
+                        case 'end':
+                          return _context.stop();
+                      }
+                    }
+                  }, _callee, undefined);
+                }));
+
+                return function (_x2) {
+                  return _ref2.apply(this, arguments);
+                };
+              }());
+
+            case 2:
+              return _context2.abrupt('return', '');
+
+            case 3:
+            case 'end':
+              return _context2.stop();
+          }
+        }
+      }, _callee2, undefined);
+    }));
+
+    return function parsePosts(_x) {
+      return _ref.apply(this, arguments);
+    };
+  }();
+
+  var fetchPosts = function () {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
+      var uri, key, countOffset, wp_data_json, wp_data;
+      return regeneratorRuntime.wrap(function _callee3$(_context3) {
+        while (1) {
+          switch (_context3.prev = _context3.next) {
+            case 0:
+              _context3.prev = 0;
+              uri = '/wp-json/wp/v2/newsroom?';
+
+              for (key in params) {
+
+                if (params[key] !== 0) {
+                  if (key === 'offset') {
+                    countOffset = (params.page - 1) * params.per_page + params.offset;
+
+                    uri += 'offset=' + countOffset + '&';
+                  } else {
+                    uri += key + '=' + params[key] + '&';
+                  }
+                }
+              }
+              uri = uri.slice(0, -1);
+              _context3.next = 6;
+              return fetch(uri);
+
+            case 6:
+              wp_data_json = _context3.sent;
+
+              if (!(wp_data_json.status !== 200)) {
+                _context3.next = 10;
+                break;
+              }
+
+              document.getElementById('newsroom-see-more').innerHTML = 'Thats all news!';
+              return _context3.abrupt('return');
+
+            case 10:
+              _context3.next = 12;
+              return wp_data_json.json();
+
+            case 12:
+              wp_data = _context3.sent;
+
+              if (!(wp_data.length > 0)) {
+                _context3.next = 17;
+                break;
+              }
+
+              _context3.next = 16;
+              return parsePosts(wp_data);
+
+            case 16:
+              incrementPage();
+
+            case 17:
+
+              if (wp_data.length < params.per_page) {
+                document.getElementById('newsroom-see-more').innerHTML = 'Thats all news!';
+                document.getElementById('newsroom-see-more').disabled = true;
+              }
+
+              _context3.next = 23;
+              break;
+
+            case 20:
+              _context3.prev = 20;
+              _context3.t0 = _context3['catch'](0);
+
+              void 0;
+
+            case 23:
+            case 'end':
+              return _context3.stop();
+          }
+        }
+      }, _callee3, undefined, [[0, 20]]);
+    }));
+
+    return function fetchPosts() {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+
+  var copyLink = function copyLink(ev) {
+    void 0;
+
+    //     for 
+
+    // // for (copyText in)
+    // //fts-copy-link
+
+    // // Select the text field
+    // copyText.select();
+    // copyText.setSelectionRange(0, 99999); // For mobile devices
+
+    //  // Copy the text inside the text field
+    // navigator.clipboard.writeText(copyText.value);
+
+    // // Alert the copied text
+    // alert("Copied the text: " + copyText.value);
+  };
+
+  return {
+    fetchPosts: fetchPosts,
+    setOffset: setOffset,
+    incrementPage: incrementPage,
+    setPagesPerPage: setPagesPerPage,
+    setElement: setElement,
+    copyLink: copyLink
+  };
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+  if (document.getElementById('newsroom-see-more')) {
+    var _useNewsRoom = useNewsRoom(),
+        setElement = _useNewsRoom.setElement,
+        fetchPosts = _useNewsRoom.fetchPosts,
+        setOffset = _useNewsRoom.setOffset;
+
+    var nrElement = document.getElementById('newsroom-posts-list');
+    setElement(nrElement);
+    setOffset(Number(document.getElementById('newsroom-posts-list').dataset.postcount));
+    document.getElementById('newsroom-see-more').addEventListener('click', function (e) {
+      e.preventDefault();
+      fetchPosts();
+    });
+  }
+
+  var copyText = document.querySelectorAll(".fts-link");
+
+  document.addEventListener("click", function (ev) {
+    var target = ev.target.closest(".fts-link");
+
+    if (target) {
+      ev.preventDefault();
+      var element = target;
+
+      var storage = document.createElement('textarea');
+      storage.value = element.getAttribute("href");
+      element.appendChild(storage);
+
+      storage.select();
+      storage.setSelectionRange(0, 99999);
+      document.execCommand('copy');
+      element.removeChild(storage);
+
+      target.querySelector('.fts-share-tooltip').textContent = 'link copied';
+      setTimeout(function () {
+        target.querySelector('.fts-share-tooltip').textContent = 'copy link';
+      }, 1000);
+    }
+  });
+});
+if (document.querySelector("#accordeon-btn")) {
+
+  document.querySelector("#accordeon-btn").addEventListener("click", function (ev) {
+    ev.preventDefault();
+
+    // console.log('test');
+
+    document.querySelector('.accordeon-panel').classList.toggle('fts-showed-form');
+  });
+
+  // var observeDOM = (function(){
+  //     var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+
+  //     return function( obj, callback ){
+  //       if( !obj || obj.nodeType !== 1 ) return; 
+
+  //       if( MutationObserver ){
+  //         // define a new observer
+  //         var mutationObserver = new MutationObserver(callback)
+
+  //         // have the observer observe for changes in children
+  //         mutationObserver.observe( obj, { childList:true, subtree:true })
+  //         return mutationObserver
+  //       }
+
+  //       // browser support fallback
+  //       else if( window.addEventListener ){
+  //         obj.addEventListener('DOMNodeInserted', callback, false)
+  //         obj.addEventListener('DOMNodeRemoved', callback, false)
+  //       }
+  //     }
+  //   })()
+
+
+  // const acc = document.querySelector("#accordeon-btn");
+  // const panel = document.querySelector('.accordeon-panel');
+  // const open = {
+  //     value: false,
+  // }
+  // acc.addEventListener("click", function (e) {
+  //     e.preventDefault();
+  //     if (panel.style.maxHeight) {
+  //         panel.style.maxHeight = null;
+  //         open.value = false;
+  //     } else {
+  //         panel.style.maxHeight = panel.scrollHeight + "px";
+  //         open.value = true;
+  //     }
+  // });
+
+  // observeDOM(panel, (m)=> {
+  //     if(open.value) {
+  //         panel.style.maxHeight = panel.scrollHeight + "px";
+  //     }
+  // })
+}
+
+var btns = document.querySelectorAll('[data-tab]');
+var tabs = document.querySelectorAll('[data-tab-content]');
+
+tabs.forEach(function (tab) {
+  tab.style.display = "none";
+  if (tab.dataset.active === 'true') {
+    tab.classList.add('active');
+    tab.style.display = "block";
+    tab.style.maxHeight = "auto";
+    void 0;
+  }
+});
+btns.forEach(function (btn) {
+  if (btn.dataset.active === 'true') {
+    btn.classList.add('active');
+    btn.style.display = "block";
+  }
+  btn.addEventListener('click', function (e) {
+    if (!e.target.closest('[data-tab]')) {
+      return null;
+    }
+    var btnEl = e.target.closest('[data-tab]');
+    void 0;
+    if (typeof btnEl.parentElement.parentElement.id === 'undefined') {
+      //console.error('Tab parent element dose not have valid id')
+      return null;
+    }
+    //console.log({woot: document.querySelector(`#${btnEl.parentElement.parentElement.id} > .tab__header >.tab__nav.active`)})
+    document.querySelector('#' + btnEl.parentElement.parentElement.id + ' > .tab__header >.tab__nav.active').classList.remove(['active']);
+    btnEl.classList.add('active');
+    tabs.forEach(function (tab) {
+      if (tab.parentElement.parentElement.id === btn.parentElement.parentElement.id) {
+        if (tab.dataset.tabContent === btn.dataset.tab) {
+          setTimeout(function () {
+
+            tab.style.display = "block";
+            tab.style.maxHeight = "auto";
+            tab.classList.add('active');
+          }, 300);
+        } else {
+          setTimeout(function () {
+            tab.style.display = "none";
+          }, 300);
+          tab.classList.remove('active');
+        }
+      }
+    });
+  });
+});
+
+},{}]},{},[1]);

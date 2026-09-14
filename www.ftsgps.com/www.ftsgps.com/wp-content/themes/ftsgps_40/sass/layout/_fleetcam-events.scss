@@ -1,0 +1,261 @@
+.fleetcam-events {
+
+    // &--img {
+    //     margin-bottom: 34px;
+    // }
+
+    
+
+    &__box {
+        margin-bottom: 60px;
+        padding: 60px 0 80px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        background-color: #000000;
+        border-radius: 38px;
+        row-gap: 10px;
+
+        @include respond (tab-land) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include respond (phone) {
+            justify-content: flex-start;
+        }
+
+        &--wrapper {
+            margin-bottom: 20px;
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+
+            @include respond (tab-land) {
+                width: 100%;
+            }
+
+            @include respond (tab-port) {
+                width: 100%;
+            }
+
+            @include respond (s-phone) {
+                flex-direction: column;
+                justify-content: center;
+            }
+
+
+
+        }
+
+        &--header {
+            // padding-right: 20px;
+            margin-right: 25px;
+            width: 74px;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            
+
+            @include respond (phone) {
+                padding-right: 0;
+            }
+
+            &--1 {
+                display: flex;
+                justify-content: flex-end;
+                color: #FF9364;
+
+                @include respond (phone) {
+                    justify-content: unset;
+                }
+                
+                &::after {
+                    content: "";
+                    border-right: 8px solid #FF9364;
+                    display: block;
+                    height: 100%;
+                    margin-left: 5px;
+
+                    @include respond (phone) {
+                        border-right: 0;
+                    }
+                }
+                
+
+                @include respond (phone) {
+                   border-right: 0;
+                }
+            }
+
+            &--2 {
+                display: flex;
+                justify-content: flex-end;
+                color: #FFBA1A;
+
+                @include respond (phone) {
+                    justify-content: unset;
+                }
+
+                &::after {
+                    content: "";
+                    border-right: 8px solid #FFBA1A;
+                    display: block;
+                    height: 100%;
+                    margin-left: 5px;
+
+                    @include respond (phone) {
+                        border-right: 0;
+                    }
+                }
+            }
+
+            &--3 {
+                display: flex;
+                justify-content: flex-end;
+                color: #6DD2FF;
+
+                @include respond (phone) {
+                    justify-content: unset;
+                }
+
+                &::after {
+                    content: "";
+                    border-right: 8px solid #6DD2FF;
+                    display: block;
+                    height: 100%;
+                    margin-left: 5px;
+
+                    @include respond (phone) {
+                        border-right: 0;
+                    }
+                }
+
+                @include respond (phone) {
+                    border-right: 0;
+                 }
+            }
+
+            &--4 {
+                display: flex;
+                justify-content: flex-end;
+                color: #FFA5FF;
+
+                @include respond (phone) {
+                    justify-content: unset;
+                }
+
+                &::after {
+                    content: "";
+                    border-right: 8px solid #FFA5FF;
+                    display: block;
+                    height: 100%;
+                    margin-left: 5px;
+
+                    @include respond (phone) {
+                        border-right: 0;
+                    }
+                }
+
+                
+
+                @include respond (phone) {
+                    border-right: 0;
+                 }
+            }
+
+            &--5 {
+                display: flex;
+                justify-content: flex-end;
+                color: #FFFFFF;
+
+                @include respond (phone) {
+                    justify-content: unset;
+                }
+
+                &::after {
+                    content: "";
+                    border-right: 8px solid #FFFFFF;
+                    display: block;
+                    height: 100%;
+                    margin-left: 5px;
+
+                    @include respond (phone) {
+                        border-right: 0;
+                    }
+                }
+
+                @include respond (phone) {
+                    border-right: 0;
+                }
+            }
+            
+        }
+        
+        &__inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            flex-direction: column;
+            
+
+            @include respond (phone) {
+                display: block;
+            }
+
+            &--item {
+                padding: 30px 0 30px;
+                display: flex;
+            }
+            
+
+            &--image {
+                padding-right: 20px;
+            }
+
+            &--text {
+                max-width: 390px;
+                font-size: 1.6rem;
+                color: #ffffff;
+                text-align: left;
+                
+
+                &--title {
+                    padding-bottom: 10px;
+
+                    &-1 {
+                        color: #FF9364;
+                    }
+
+                    &-2 {
+                        color: #FFBA1A;
+                    }
+
+                    &-3 {
+                        color: #6DD2FF;
+                    }
+
+                    &-4 {
+                        color: #FFA5FF;
+                    }
+
+                    &-5 {
+                        color: #FFFFFF;
+                    }
+                }
+
+                &-2 {
+                    margin-top: 10px;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
+
+.fleetcam-events .fleetcam-headline {
+    max-width: 950px;
+    margin: 0 auto 47px;
+}

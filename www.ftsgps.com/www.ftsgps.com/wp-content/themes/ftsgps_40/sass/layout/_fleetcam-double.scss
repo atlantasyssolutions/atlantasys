@@ -1,0 +1,30 @@
+.fleetcam-double {
+   
+    background-color: #fcfcfc;
+
+    // &__wrapper {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    //     text-align: justify;
+    //     flex-wrap: wrap;
+    // }
+
+    // &__box {
+    //     max-width: 550px;
+    //     margin-bottom: 95px
+    // }
+
+    &__wrapper {
+        @include respond (tab-land) {
+            justify-content: center !important;
+        }
+    }
+}
+
+.fleetcam-double .fleetcam-double__box:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+
+

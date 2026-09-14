@@ -1,0 +1,56 @@
+.headtext-baner {
+  font-style: normal;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.subtext-baner {
+  // margin: 20px 0;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.9rem;
+}
+
+.maintext-baner {
+  margin-bottom: 20px;
+  font-size: 4.5rem;
+  font-weight: 200;
+  line-height: 1.2;
+  color: #ffffff;
+
+  &::after {
+    content: "®";
+    font-size: 0.75em;
+    vertical-align: super;
+  }
+}
+
+/* IntelliHub Baner Typo Styles */
+
+.baner-intelli .maintext-baner {
+  margin-bottom: 20px;
+  font-size: 5.5rem;
+  font-weight: 200;
+  line-height: 1.2;
+  color: #ffffff;
+
+  &::after {
+    content: "®";
+    font-size: 0.75em;
+    vertical-align: super;
+  }
+}
+
+.baner-intelli .headtext-baner {
+  font-style: italic;
+  font-size: 2.2rem;
+  margin: 5px 0;
+}
+
+.baner-intelli .subtext-baner {
+  max-width: 720px;
+  margin: 20px auto 40px;
+}

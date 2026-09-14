@@ -1,0 +1,13 @@
+.DVIR-solutions {
+
+    &__wrapper {
+        width: 33%;
+        justify-content: space-around;
+        max-width: 500px;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

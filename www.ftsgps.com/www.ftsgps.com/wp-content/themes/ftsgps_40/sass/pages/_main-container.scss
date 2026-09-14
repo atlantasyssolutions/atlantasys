@@ -1,0 +1,78 @@
+.container {
+    max-width: 1240px;
+    padding: 75px 20px;
+    margin: 0 auto;
+
+    
+
+    @include respond (tab-land) { 
+        max-width: 90rem;
+    }
+
+    @include respond (tab-port) { 
+        max-width: 67rem;
+    }
+
+    @include respond (phone) { 
+        max-width: 48rem;
+    }
+
+    @include respond (s-phone) { 
+        max-width: 100%;
+    }
+
+}
+
+.container--inner {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    @include respond (tab-land) { 
+        max-width: 90rem;
+    }
+
+    @include respond (tab-port) { 
+        max-width: 67rem;
+    }
+
+    @include respond (phone) { 
+        max-width: 48rem;
+    }
+
+    @include respond (s-phone) { 
+        max-width: 100%;
+    }
+}
+
+
+
+.container-img {
+    img {
+        max-width: 100%;
+    }
+}
+
+.container--monarch {
+    max-width: 1350px;
+    margin: 0 auto;
+
+    
+
+    @include respond (tab-land) { 
+        max-width: 90rem;
+    }
+
+    @include respond (tab-port) { 
+        max-width: 67rem;
+    }
+
+    @include respond (phone) { 
+        max-width: 48rem;
+    }
+
+    @include respond (s-phone) { 
+        max-width: 28rem;
+    }
+
+    
+}

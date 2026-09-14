@@ -1,0 +1,90 @@
+.disabled {
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+.h-padding-drive {
+    padding-bottom: 130px;
+}
+
+.h-before-green {
+    &::before {
+        background-color: #49c146;
+    }
+}
+
+.h-before-darkgreen {
+    &::before {
+        background-color: #064254 !important;
+    }
+}
+
+.h-before-red {
+    &::before {
+        background-color: #d50051 !important;
+    }
+}
+
+.h-before-purple {
+    &::before {
+        background-color: #966093 !important;
+    }
+}
+
+.h-before-brown {
+    &::before {
+        background-color: #755237 !important; 
+    }
+}
+
+.h-before-yellow {
+    &::before {
+        background-color: #fbaa19 !important;
+    }
+}
+
+.h-before-black {
+    &::before {
+        background-color:  #3f4752 !important;
+    }
+}
+
+.h-before-blue {
+    &::before {
+        background-color: #268ecc;
+    }
+}
+
+.h-padding-60 {
+    padding-top: 60px !important;
+}
+
+.h-mb-100 {
+    margin-bottom: 100px !important;
+}
+
+.h-bg-change {
+    background-color: #f4f4f4;
+}
+
+.h-padding-0 {
+    padding: 0 20px !important;
+}
+
+.h-nowrap {
+    flex-wrap: nowrap !important;   
+} 
+
+.accordeon-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+    &.fts-showed-form {
+        max-height: none;
+    }
+}
+
+body { 
+    padding-top: 71px;
+}
