@@ -1,15 +1,15 @@
 "use client";
 
-import { useRef, useMemo } from "react";
-import { motion } from "motion/react";
+import { useRef, useMemo, useState, useEffect } from "react";
 import DottedMap from "dotted-map";
 import { useTheme } from "next-themes";
 
-export function WorldMap({
+export default function WorldMap({
   dots = [],
   lineColor = "#0ea5e9"
 }) {
   const svgRef = useRef(null);
+  const [activeIdx, setActiveIdx] = useState(0);
 
   let currentTheme = "light";
   try {
@@ -19,83 +19,110 @@ export function WorldMap({
     currentTheme = "light";
   }
 
-  const svgMap = useMemo(() => {
+  // Generate DottedMap instance and background SVG
+  const { svgMap, mapInstance } = useMemo(() => {
     const DMap = DottedMap?.default || DottedMap;
     const map = new DMap({ height: 100, grid: "diagonal" });
-    return map.getSVG({
+    const svg = map.getSVG({
       radius: 0.22,
-      color: currentTheme === "dark" ? "#FFFFFF40" : "#00000040",
+      color: currentTheme === "dark" ? "#FFFFFF40" : "#00000030",
       shape: "circle",
       backgroundColor: currentTheme === "dark" ? "black" : "white",
     });
+    return { svgMap: svg, mapInstance: map };
   }, [currentTheme]);
 
+  // Exact projection matching DottedMap's SVG coordinates (viewBox 0 0 198 100)
   const projectPoint = (lat, lng) => {
-    const x = (lng + 180) * (800 / 360);
-    const y = (90 - lat) * (400 / 180);
+    try {
+      if (mapInstance && typeof mapInstance.getPin === "function") {
+        const pin = mapInstance.getPin({ lat, lng });
+        if (pin && typeof pin.x === "number" && typeof pin.y === "number") {
+          return { x: pin.x, y: pin.y };
+        }
+      }
+    } catch (e) {}
+    // Fallback:
+    const x = (lng + 180) * (198 / 360);
+    const y = (90 - lat) * (100 / 180);
     return { x, y };
   };
 
+  // Upward arced flight path between two projected coordinates
   const createCurvedPath = (start, end) => {
     const midX = (start.x + end.x) / 2;
-    const dist = Math.hypot(end.x - start.x, end.y - start.y);
-    const arcHeight = Math.min(Math.max(dist * 0.22, 28), 85);
+    const dx = end.x - start.x;
+    const dy = end.y - start.y;
+    const dist = Math.hypot(dx, dy);
+    const arcHeight = Math.min(Math.max(dist * 0.28, 4), 16);
     const midY = Math.min(start.y, end.y) - arcHeight;
     return `M ${start.x} ${start.y} Q ${midX} ${midY} ${end.x} ${end.y}`;
   };
 
-  // Deduplicate points so each city has a clean, non-overlapping pulse marker
+  // Sequential line rotation: shoots ONE pulse at a time like Probiota globe
+  useEffect(() => {
+    if (!dots || dots.length === 0) return;
+    const timer = setInterval(() => {
+      setActiveIdx((prev) => (prev + 1) % dots.length);
+    }, 2200);
+    return () => clearInterval(timer);
+  }, [dots.length]);
+
+  // Deduplicate points for clear radar markers
   const uniquePoints = useMemo(() => {
     const map = new Map();
-    dots.forEach((dot) => {
+    dots.forEach((dot, idx) => {
       if (dot.start) {
         const sKey = `${dot.start.lat.toFixed(2)},${dot.start.lng.toFixed(2)}`;
         if (!map.has(sKey)) {
-          map.set(sKey, { ...dot.start, isHQ: Boolean(dot.start.label?.includes("HQ")) });
+          map.set(sKey, { ...dot.start, isHQ: true, order: -1 });
         }
       }
       if (dot.end) {
         const eKey = `${dot.end.lat.toFixed(2)},${dot.end.lng.toFixed(2)}`;
         if (!map.has(eKey)) {
-          map.set(eKey, { ...dot.end, isHQ: Boolean(dot.end.label?.includes("HQ")) });
+          map.set(eKey, { ...dot.end, isHQ: false, order: idx });
         }
       }
     });
     return Array.from(map.values());
   }, [dots]);
 
+  const activeDot = dots[activeIdx];
+
   return (
     <div
-      className="w-full aspect-[2/1] dark:bg-black bg-white rounded-lg relative font-sans"
+      className="w-full aspect-[198/100] dark:bg-black bg-white rounded-lg relative font-sans"
       style={{
         width: "100%",
-        aspectRatio: "2 / 1",
+        aspectRatio: "198 / 100",
         position: "relative",
         borderRadius: "0.75rem",
         overflow: "hidden",
         backgroundColor: currentTheme === "dark" ? "black" : "white",
       }}
     >
+      {/* 1. Background Dotted World Map */}
       <img
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
-        className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
+        className="h-full w-full pointer-events-none select-none"
         style={{
           width: "100%",
           height: "100%",
           objectFit: "contain",
-          maskImage: "linear-gradient(to bottom, transparent, white 10%, white 90%, transparent)",
-          WebkitMaskImage: "linear-gradient(to bottom, transparent, white 10%, white 90%, transparent)",
+          maskImage: "linear-gradient(to bottom, transparent, white 5%, white 95%, transparent)",
+          WebkitMaskImage: "linear-gradient(to bottom, transparent, white 5%, white 95%, transparent)",
           pointerEvents: "none",
           userSelect: "none",
         }}
-        alt="world map"
-        height="495"
-        width="1056"
+        alt="Atlanta Global Telematics Network"
         draggable={false}
       />
+
+      {/* 2. Interactive SVG Overlay (Matches exact 198 x 100 viewBox of DottedMap) */}
       <svg
         ref={svgRef}
-        viewBox="0 0 800 400"
+        viewBox="0 0 198 100"
         className="w-full h-full absolute inset-0 pointer-events-none select-none"
         style={{
           width: "100%",
@@ -110,130 +137,161 @@ export function WorldMap({
         }}
       >
         <defs>
-          <linearGradient id="path-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#0169A9" stopOpacity="0" />
-            <stop offset="15%" stopColor="#0169A9" stopOpacity="0.9" />
+          <linearGradient id="active-pulse-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#0169A9" stopOpacity="0.2" />
+            <stop offset="20%" stopColor="#0169A9" stopOpacity="0.9" />
             <stop offset="85%" stopColor="#38BDF8" stopOpacity="1" />
-            <stop offset="100%" stopColor="#38BDF8" stopOpacity="0.2" />
+            <stop offset="100%" stopColor="#38BDF8" stopOpacity="0.1" />
           </linearGradient>
-          <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="2" result="blur" />
+          <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="0.4" result="blur" />
             <feComposite in="SourceGraphic" in2="blur" operator="over" />
           </filter>
         </defs>
 
-        {/* 1. Underlying Trajectory Tracks (subtle base lines like Probiota globe) */}
+        {/* Base Trajectory Tracks: subtle network grid */}
         {dots.map((dot, i) => {
           const startPoint = projectPoint(dot.start.lat, dot.start.lng);
           const endPoint = projectPoint(dot.end.lat, dot.end.lng);
           const pathD = createCurvedPath(startPoint, endPoint);
+          const isActive = i === activeIdx;
           return (
             <path
               key={`base-track-${i}`}
               d={pathD}
               fill="none"
-              stroke="#0169A9"
-              strokeWidth="0.85"
-              strokeOpacity="0.18"
+              stroke={isActive ? "#0169A9" : "#0F2D4E"}
+              strokeWidth={isActive ? "0.4" : "0.22"}
+              strokeOpacity={isActive ? "0.35" : "0.1"}
             />
           );
         })}
 
-        {/* 2. DYNAMIC FLYING DASH PULSES (Exact Probiota globe line behavior radiating from India) */}
-        {dots.map((dot, i) => {
-          const startPoint = projectPoint(dot.start.lat, dot.start.lng);
-          const endPoint = projectPoint(dot.end.lat, dot.end.lng);
+        {/* ACTIVE SEQUENTIAL PULSE: Fires ONE at a time, radiating from India */}
+        {activeDot && (() => {
+          const startPoint = projectPoint(activeDot.start.lat, activeDot.start.lng);
+          const endPoint = projectPoint(activeDot.end.lat, activeDot.end.lng);
           const pathD = createCurvedPath(startPoint, endPoint);
-          const delay = (i * 0.1) % 2.5;
           return (
             <path
-              key={`dynamic-beam-${i}`}
+              key={`active-beam-${activeIdx}`}
               d={pathD}
               fill="none"
-              stroke="url(#path-gradient)"
-              strokeWidth="2.2"
+              stroke="url(#active-pulse-gradient)"
+              strokeWidth="0.75"
               strokeLinecap="round"
               pathLength="100"
-              strokeDasharray="18 100"
-              style={{ filter: "url(#glow)" }}
+              strokeDasharray="22 100"
+              style={{ filter: "url(#subtle-glow)" }}
             >
               <animate
                 attributeName="stroke-dashoffset"
-                from="118"
+                from="122"
                 to="0"
-                dur="2.5s"
-                begin={`${delay}s`}
-                repeatCount="indefinite"
+                dur="2.0s"
+                repeatCount="1"
+                fill="freeze"
               />
             </path>
           );
-        })}
+        })()}
 
-        {/* 3. Central Origin & Destination Radar Pings */}
+        {/* Global Destination Pins & Central India HQ Radar */}
         {uniquePoints.map((point, i) => {
           const pt = projectPoint(point.lat, point.lng);
           const isHQ = point.isHQ;
+          const isActiveTarget = !isHQ && activeDot && activeDot.end.label === point.label;
+
           return (
-            <g key={`marker-${i}`} style={{ cursor: 'pointer' }}>
+            <g key={`marker-${i}`} style={{ cursor: "pointer" }}>
               <title>{point.label || `Lat: ${point.lat}, Lng: ${point.lng}`}</title>
-              {/* Core Dot */}
+              
+              {/* Static Pin Core */}
               <circle
                 cx={pt.x}
                 cy={pt.y}
-                r={isHQ ? "3.8" : "2.2"}
-                fill={isHQ ? "#0169A9" : "#0ea5e9"}
-                stroke="#ffffff"
-                strokeWidth={isHQ ? "1.5" : "0.5"}
+                r={isHQ ? "1.2" : isActiveTarget ? "0.8" : "0.55"}
+                fill={isHQ ? "#0169A9" : isActiveTarget ? "#38BDF8" : "#0284C7"}
+                stroke="#FFFFFF"
+                strokeWidth={isHQ ? "0.45" : "0.2"}
               />
-              {/* Radar Pulse Wave 1 */}
-              <circle
-                cx={pt.x}
-                cy={pt.y}
-                r={isHQ ? "3.8" : "2.2"}
-                fill={isHQ ? "#0169A9" : "#0ea5e9"}
-                opacity="0.6"
-              >
-                <animate
-                  attributeName="r"
-                  from={isHQ ? "3.8" : "2.2"}
-                  to={isHQ ? "14" : "7.5"}
-                  dur={isHQ ? "1.4s" : "2s"}
-                  begin={`${(i * 0.12) % 2}s`}
-                  repeatCount="indefinite"
-                />
-                <animate
-                  attributeName="opacity"
-                  from="0.75"
-                  to="0"
-                  dur={isHQ ? "1.4s" : "2s"}
-                  begin={`${(i * 0.12) % 2}s`}
-                  repeatCount="indefinite"
-                />
-              </circle>
-              {/* Secondary Wave for India HQ */}
+
+              {/* India HQ Continuous Pulsing Wave */}
               {isHQ && (
+                <>
+                  <circle
+                    cx={pt.x}
+                    cy={pt.y}
+                    r="1.2"
+                    fill="#0169A9"
+                    opacity="0.6"
+                  >
+                    <animate
+                      attributeName="r"
+                      from="1.2"
+                      to="4.5"
+                      dur="2.2s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="opacity"
+                      from="0.65"
+                      to="0"
+                      dur="2.2s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                  <circle
+                    cx={pt.x}
+                    cy={pt.y}
+                    r="1.2"
+                    fill="#38BDF8"
+                    opacity="0.5"
+                  >
+                    <animate
+                      attributeName="r"
+                      from="1.2"
+                      to="6.0"
+                      dur="2.2s"
+                      begin="0.7s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="opacity"
+                      from="0.55"
+                      to="0"
+                      dur="2.2s"
+                      begin="0.7s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                </>
+              )}
+
+              {/* Active Destination Landing Ping Wave */}
+              {isActiveTarget && (
                 <circle
                   cx={pt.x}
                   cy={pt.y}
-                  r="3.8"
-                  fill="#38bdf8"
-                  opacity="0.5"
+                  r="0.8"
+                  fill="#38BDF8"
+                  opacity="0.8"
                 >
                   <animate
                     attributeName="r"
-                    from="3.8"
-                    to="18"
-                    dur="1.8s"
-                    begin="0.6s"
-                    repeatCount="indefinite"
+                    from="0.8"
+                    to="3.8"
+                    dur="1.2s"
+                    begin="1.2s"
+                    repeatCount="2"
                   />
                   <animate
                     attributeName="opacity"
-                    from="0.6"
+                    from="0.85"
                     to="0"
-                    dur="1.8s"
-                    begin="0.6s"
-                    repeatCount="indefinite"
+                    dur="1.2s"
+                    begin="1.2s"
+                    repeatCount="2"
                   />
                 </circle>
               )}
@@ -244,5 +302,4 @@ export function WorldMap({
     </div>
   );
 }
-
-export default WorldMap;
+export { WorldMap };
