@@ -130,13 +130,13 @@ const globeConfig = {
   directionalLeftLight: "#ffffff",
   directionalTopLight: "#ffffff",
   pointLight: "#ffffff",
-  arcTime: 1000,
-  arcLength: 0.9,
+  arcTime: 2600, // Smooth, cinematic 2.6s trajectory speed (replaces rushed 1s)
+  arcLength: 0.45, // Sleek luminous pulse length
   rings: 1,
   maxRings: 3,
   initialPosition: { lat: 20.5937, lng: 78.9629 }, // Centered on India on load
   autoRotate: true,
-  autoRotateSpeed: 0.5,
+  autoRotateSpeed: 0.4,
 };
 
 // Match exact values from the legacy PHP/CSS source

@@ -33,8 +33,8 @@ export function Globe({
     emissive: "#062056",
     emissiveIntensity: 0.1,
     shininess: 0.9,
-    arcTime: 1000,
-    arcLength: 0.9,
+    arcTime: 2600,
+    arcLength: 0.45,
     rings: 1,
     maxRings: 3,
     ...globeConfig,
@@ -112,10 +112,12 @@ export function Globe({
       .arcEndLng((d) => (d).endLng * 1)
       .arcColor((e) => (e).color)
       .arcAltitude((e) => (e).arcAlt * 1)
-      .arcStroke(() => [0.32, 0.28, 0.3][Math.round(Math.random() * 2)])
+      .arcStroke(() => 0.4)
+      .arcCurveResolution(128)
+      .arcCircularResolution(8)
       .arcDashLength(defaultProps.arcLength)
-      .arcDashInitialGap((e) => (e).order * 1)
-      .arcDashGap(15)
+      .arcDashInitialGap((e) => ((e).order - 1) * 0.25)
+      .arcDashGap(2.5)
       .arcDashAnimateTime(() => defaultProps.arcTime);
 
     globeRef.current
