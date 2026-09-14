@@ -16,7 +16,7 @@
 
 ## Executive Summary
 
-Commercial fleets operating heavy vehicles along major transport corridors across Riyadh face some of the most demanding operational duty cycles in Saudi Arabia — continuous hauls, heavy loads, and relentless commercial deadlines. In these demanding environments, consumer-grade tracking electronics quickly fail. This technical report details how Atlanta Systems engineered the **G-400 Dual-SIM Gateway** to address providing industrial multi-IMSI eSIM connectivity that auto-switches to the strongest Tier-1 carrier across 140+ countries, and what commercial fleet operators and regional distributors can realistically expect from deploying our battle-tested hardware.
+On the demanding tarmac of Riyadh–Dammam Highway, commercial fleets face an operating environment where dual-sim and esim telematics hardware for cross-border reliability on the riyadh–dammam highway 40 requires uncompromising hardware resilience. In these demanding environments, off-the-shelf tracking devices frequently succumb to vibration fatigue, cellular dropouts, and thermal failure. This technical report examines how Atlanta Systems engineered the **G-400 Dual-SIM Gateway** to deliver robust edge telemetry and seamless integration, giving fleet executives in Riyadh complete operational visibility and uninterrupted statutory compliance.
 
 ## Table of Contents
 
@@ -30,9 +30,9 @@ Commercial fleets operating heavy vehicles along major transport corridors acros
 
 ## The Real-World Operational Challenge in Riyadh
 
-Ask any fleet maintenance director or operations manager in Riyadh about their worst calls, and you will usually hear some version of the same story: a commercial vehicle stranded along major transport corridors across Riyadh due to cellular roaming blackouts, dropped data packets at international borders, and astronomical roaming fees. A critical delivery stops dead in its tracks, trailers lose tracking for days across foreign borders, customs clearances stall, and cargo location remains completely dark.
+Out on Riyadh–Dammam Highway, commercial tractors encounter severe multi-axis shocks, aggressive electrical transients, and weather extremes that systematically degrade generic tracking dongles used for dual-sim and esim telematics hardware for cross-border reliability on the riyadh–dammam highway 40. The scenario is all too common: an international freight hauler crosses between regional network zones along Riyadh–Dammam Highway. The vehicle's cellular modem deadlocks during the carrier handover, plunging the vehicle into a total communications blackout. At the border customs checkpoint, automated clearance systems cannot authenticate the vehicle's transponder, forcing the driver into hours of manual inspection queues and holding up bonded cargo.
 
-The frustrating reality is that these operational crises are rarely sudden. In almost every case, consumer-grade single-operator SIM cards that fail to negotiate roaming agreements at international border crossings. Without an industrial-grade telemetry system actively monitoring and broadcasting that data to the dispatch desk in real time, no one catches it until the vehicle is broken down on the highway.
+The deeper operational reality is that single-operator SIM cards inevitably fail when traversing regional borders along Riyadh–Dammam Highway. When commercial vehicles transition between cellular towers, consumer modems frequently lock up in roaming negotiation loops. Eliminating communication dead zones requires intelligent dual-SIM hardware with automated Link Quality Analysis (LQA) that hot-switches between carriers in milliseconds.
 
 ---
 
