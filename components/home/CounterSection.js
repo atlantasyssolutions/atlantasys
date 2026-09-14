@@ -1,7 +1,16 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import WorldMap from '@/components/ui/WorldMap';
+import dynamic from 'next/dynamic';
+
+const World = dynamic(() => import('@/components/ui/Globe').then((m) => m.World), {
+  ssr: false,
+  loading: () => (
+    <div style={{ height: '540px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#64748B' }}>
+      <div className="spinner-border text-primary" role="status"></div>
+    </div>
+  ),
+});
 
 const INDIA_HQ = { lat: 28.6139, lng: 77.2090, label: "Atlanta Systems HQ & SMT Plant (New Delhi, India)" };
 
@@ -49,6 +58,36 @@ const WORLD_MAP_DOTS = TARGETED_DESTINATIONS.map((dest, idx) => ({
   start: INDIA_HQ,
   end: dest,
 }));
+
+const GLOBE_DATA = TARGETED_DESTINATIONS.map((dest, idx) => ({
+  order: idx,
+  startLat: INDIA_HQ.lat,
+  startLng: INDIA_HQ.lng,
+  endLat: dest.lat,
+  endLng: dest.lng,
+  arcAlt: 0.18 + ((idx % 4) * 0.05),
+  color: idx % 2 === 0 ? "#38bdf8" : "#0ea5e9",
+}));
+
+const globeConfig = {
+  pointSize: 1.4,
+  globeColor: "#0a192f",
+  showAtmosphere: true,
+  atmosphereColor: "#38bdf8",
+  atmosphereAltitude: 0.18,
+  polygonColor: "rgba(255, 255, 255, 0.78)",
+  emissive: "#000000",
+  emissiveIntensity: 0.1,
+  shininess: 0.9,
+  arcTime: 2600,
+  arcLength: 0.45,
+  rings: 2,
+  maxRings: 3,
+  ambientLight: "#ffffff",
+  directionalLeftLight: "#38bdf8",
+  directionalTopLight: "#ffffff",
+  pointLight: "#0ea5e9",
+};
 
 // Match exact values from the legacy PHP/CSS source
 const STATS = [
@@ -168,9 +207,9 @@ export default function CounterSection({ showMap = true }) {
               </p>
             </div>
             <div className="row align-items-center justify-content-center">
-              <div className="col-lg-8 col-md-10 col-12">
-                <div style={{ maxWidth: '820px', margin: '0 auto' }}>
-                  <WorldMap dots={WORLD_MAP_DOTS} lineColor="#0ea5e9" />
+              <div className="col-lg-10 col-12">
+                <div style={{ width: '100%', height: '560px', maxWidth: '820px', margin: '0 auto', position: 'relative' }}>
+                  <World data={GLOBE_DATA} globeConfig={globeConfig} />
                 </div>
               </div>
             </div>
