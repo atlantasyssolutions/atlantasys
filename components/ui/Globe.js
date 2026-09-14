@@ -74,11 +74,10 @@ export function Globe({
     let points = [];
     for (let i = 0; i < arcs.length; i++) {
       const arc = arcs[i];
-      const rgb = hexToRgb(arc.color);
       points.push({
-        size: defaultProps.pointSize,
+        size: defaultProps.pointSize * 1.5,
         order: arc.order,
-        color: arc.color,
+        color: "#38bdf8",
         lat: arc.startLat,
         lng: arc.startLng,
       });
@@ -124,7 +123,7 @@ export function Globe({
       .pointColor((e) => (e).color)
       .pointsMerge(true)
       .pointAltitude(0.0)
-      .pointRadius(2);
+      .pointRadius((d) => (d.size ? d.size / 2 : 2));
 
     globeRef.current
       .ringsData([])
@@ -155,13 +154,20 @@ export function Globe({
 
       const newNumbersOfRings = genRandomNumbers(0, data.length, Math.floor((data.length * 4) / 5));
 
-      const ringsData = data
-        .filter((d, i) => newNumbersOfRings.includes(i))
-        .map((d) => ({
-          lat: d.startLat,
-          lng: d.startLng,
-          color: d.color,
-        }));
+      const ringsData = [
+        {
+          lat: data[0]?.startLat || 28.6139,
+          lng: data[0]?.startLng || 77.2090,
+          color: "#38bdf8",
+        },
+        ...data
+          .filter((d, i) => newNumbersOfRings.includes(i))
+          .map((d) => ({
+            lat: d.endLat,
+            lng: d.endLng,
+            color: d.color,
+          })),
+      ];
 
       globeRef.current.ringsData(ringsData);
     }, 2000);
