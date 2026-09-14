@@ -59,34 +59,36 @@ const WORLD_MAP_DOTS = TARGETED_DESTINATIONS.map((dest, idx) => ({
   end: dest,
 }));
 
+const ARC_COLORS = ["#06b6d4", "#3b82f6", "#6366f1", "#a855f7", "#ec4899"];
+
 const GLOBE_DATA = TARGETED_DESTINATIONS.map((dest, idx) => ({
   order: idx,
   startLat: INDIA_HQ.lat,
   startLng: INDIA_HQ.lng,
   endLat: dest.lat,
   endLng: dest.lng,
-  arcAlt: 0.18 + ((idx % 4) * 0.05),
-  color: idx % 2 === 0 ? "#38bdf8" : "#0ea5e9",
+  arcAlt: 0.15 + ((idx % 4) * 0.05),
+  color: ARC_COLORS[idx % ARC_COLORS.length],
 }));
 
 const globeConfig = {
-  pointSize: 1.4,
-  globeColor: "#0a192f",
+  pointSize: 1,
+  atmosphereColor: "#ffffff",
   showAtmosphere: true,
-  atmosphereColor: "#38bdf8",
-  atmosphereAltitude: 0.18,
-  polygonColor: "rgba(255, 255, 255, 0.78)",
+  atmosphereAltitude: 0.1,
+  polygonColor: "rgba(255,255,255,0.7)",
+  globeColor: "#1d072e",
   emissive: "#000000",
   emissiveIntensity: 0.1,
   shininess: 0.9,
-  arcTime: 2600,
-  arcLength: 0.45,
-  rings: 2,
+  arcTime: 2000,
+  arcLength: 0.9,
+  rings: 1,
   maxRings: 3,
   ambientLight: "#ffffff",
-  directionalLeftLight: "#38bdf8",
+  directionalLeftLight: "#ffffff",
   directionalTopLight: "#ffffff",
-  pointLight: "#0ea5e9",
+  pointLight: "#ffffff",
 };
 
 // Match exact values from the legacy PHP/CSS source
@@ -207,8 +209,8 @@ export default function CounterSection({ showMap = true }) {
               </p>
             </div>
             <div className="row align-items-center justify-content-center">
-              <div className="col-lg-10 col-12">
-                <div style={{ width: '100%', height: '560px', maxWidth: '820px', margin: '0 auto', position: 'relative' }}>
+              <div className="col-12">
+                <div style={{ width: '100%', height: '620px', maxWidth: '620px', margin: '0 auto', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <World data={GLOBE_DATA} globeConfig={globeConfig} />
                 </div>
               </div>

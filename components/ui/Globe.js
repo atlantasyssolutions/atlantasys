@@ -54,10 +54,10 @@ export function Globe({
     if (!globeRef.current || !isInitialized) return;
 
     const globeMaterial = globeRef.current.globeMaterial();
-    globeMaterial.color = new Color(globeConfig.globeColor);
-    globeMaterial.emissive = new Color(globeConfig.emissive);
-    globeMaterial.emissiveIntensity = globeConfig.emissiveIntensity || 0.1;
-    globeMaterial.shininess = globeConfig.shininess || 0.9;
+    globeMaterial.color = new Color(globeConfig.globeColor || defaultProps.globeColor);
+    globeMaterial.emissive = new Color(globeConfig.emissive || defaultProps.emissive);
+    globeMaterial.emissiveIntensity = globeConfig.emissiveIntensity !== undefined ? globeConfig.emissiveIntensity : 0.1;
+    globeMaterial.shininess = globeConfig.shininess !== undefined ? globeConfig.shininess : 0.9;
   }, [
     isInitialized,
     globeConfig.globeColor,
@@ -124,7 +124,7 @@ export function Globe({
       .pointColor((e) => (e).color)
       .pointsMerge(true)
       .pointAltitude(0.0)
-      .pointRadius(2);
+      .pointRadius(1.2);
 
     globeRef.current
       .ringsData([])
@@ -175,13 +175,18 @@ export function Globe({
 }
 
 export function WebGLRendererConfig() {
-  const { gl, size } = useThree();
+  const { gl, size, camera } = useThree();
 
   useEffect(() => {
-    gl.setPixelRatio(window.devicePixelRatio);
+    gl.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     gl.setSize(size.width, size.height);
     gl.setClearColor(0xffaaff, 0);
-  }, []);
+    // Crucial: adjust camera aspect ratio to exact canvas dimensions so globe is a flawless circle, never an oval!
+    if (camera && size.height > 0) {
+      camera.aspect = size.width / size.height;
+      camera.updateProjectionMatrix();
+    }
+  }, [gl, size, camera]);
 
   return null;
 }
@@ -191,17 +196,21 @@ export function World(props) {
   const scene = new Scene();
   scene.fog = new Fog(0xffffff, 400, 2000);
   return (
-    <Canvas scene={scene} camera={new PerspectiveCamera(50, aspect, 180, 1800)}>
+    <Canvas 
+      scene={scene} 
+      camera={{ fov: 50, near: 180, far: 1800, position: [0, 0, cameraZ] }}
+      style={{ width: '100%', height: '100%' }}
+    >
       <WebGLRendererConfig />
-      <ambientLight color={globeConfig.ambientLight} intensity={0.6} />
+      <ambientLight color={globeConfig.ambientLight || "#ffffff"} intensity={0.6} />
       <directionalLight
-        color={globeConfig.directionalLeftLight}
+        color={globeConfig.directionalLeftLight || "#ffffff"}
         position={new Vector3(-400, 100, 400)} />
       <directionalLight
-        color={globeConfig.directionalTopLight}
+        color={globeConfig.directionalTopLight || "#ffffff"}
         position={new Vector3(-200, 500, 200)} />
       <pointLight
-        color={globeConfig.pointLight}
+        color={globeConfig.pointLight || "#ffffff"}
         position={new Vector3(-200, 500, 200)}
         intensity={0.8} />
       <Globe {...props} />
