@@ -38,22 +38,23 @@ const globeConfig = {
 const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
 
 const sampleArcs = [
+  // Order 1: Middle East, Western Europe, Southeast Asia
   {
     order: 1,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 19.076,
-    endLng: 72.8777,
-    arcAlt: 0.1,
+    endLat: 25.2048,
+    endLng: 55.2708, // Dubai, UAE
+    arcAlt: 0.2,
     color: colors[0],
   },
   {
     order: 1,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 25.2048,
-    endLng: 55.2708,
-    arcAlt: 0.2,
+    endLat: 51.5074,
+    endLng: -0.1278, // London, UK
+    arcAlt: 0.3,
     color: colors[1],
   },
   {
@@ -61,80 +62,86 @@ const sampleArcs = [
     startLat: 28.6139,
     startLng: 77.209,
     endLat: 1.3521,
-    endLng: 103.8198,
+    endLng: 103.8198, // Singapore
     arcAlt: 0.2,
     color: colors[2],
   },
-  {
-    order: 2,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 12.9716,
-    endLng: 77.5946,
-    arcAlt: 0.1,
-    color: colors[0],
-  },
-  {
-    order: 2,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 51.5074,
-    endLng: -0.1278,
-    arcAlt: 0.3,
-    color: colors[1],
-  },
+
+  // Order 2: Gulf, Central Europe, Southeast Asia
   {
     order: 2,
     startLat: 28.6139,
     startLng: 77.209,
     endLat: 24.7136,
-    endLng: 46.6753,
+    endLng: 46.6753, // Riyadh, Saudi Arabia
+    arcAlt: 0.2,
+    color: colors[0],
+  },
+  {
+    order: 2,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 50.1109,
+    endLng: 8.6821, // Frankfurt, Germany
+    arcAlt: 0.3,
+    color: colors[1],
+  },
+  {
+    order: 2,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 3.139,
+    endLng: 101.6869, // Kuala Lumpur, Malaysia
     arcAlt: 0.2,
     color: colors[2],
   },
+
+  // Order 3: Qatar, France, Thailand
   {
     order: 3,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 13.0827,
-    endLng: 80.2707,
-    arcAlt: 0.1,
+    endLat: 25.2854,
+    endLng: 51.531, // Doha, Qatar
+    arcAlt: 0.2,
     color: colors[0],
   },
   {
     order: 3,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 3.139,
-    endLng: 101.6869,
-    arcAlt: 0.2,
+    endLat: 48.8566,
+    endLng: 2.3522, // Paris, France
+    arcAlt: 0.3,
     color: colors[1],
   },
   {
     order: 3,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 50.1109,
-    endLng: 8.6821,
-    arcAlt: 0.3,
+    endLat: 13.7563,
+    endLng: 100.5018, // Bangkok, Thailand
+    arcAlt: 0.2,
     color: colors[2],
   },
+
+  // Order 4: Kuwait, Eastern Europe, Indonesia
   {
     order: 4,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 22.5726,
-    endLng: 88.3639,
-    arcAlt: 0.1,
+    endLat: 29.3759,
+    endLng: 47.9774, // Kuwait City, Kuwait
+    arcAlt: 0.2,
     color: colors[0],
   },
   {
     order: 4,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 25.2854,
-    endLng: 51.531,
-    arcAlt: 0.2,
+    endLat: 52.2297,
+    endLng: 21.0122, // Warsaw, Poland
+    arcAlt: 0.3,
     color: colors[1],
   },
   {
@@ -142,52 +149,56 @@ const sampleArcs = [
     startLat: 28.6139,
     startLng: 77.209,
     endLat: -6.2088,
-    endLng: 106.8456,
+    endLng: 106.8456, // Jakarta, Indonesia
     arcAlt: 0.3,
     color: colors[2],
   },
+
+  // Order 5: Oman, Netherlands, Philippines
   {
     order: 5,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 23.0225,
-    endLng: 72.5714,
-    arcAlt: 0.1,
-    color: colors[0],
-  },
-  {
-    order: 5,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 13.7563,
-    endLng: 100.5018,
+    endLat: 23.588,
+    endLng: 58.3829, // Muscat, Oman
     arcAlt: 0.2,
+    color: colors[0],
+  },
+  {
+    order: 5,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 51.9244,
+    endLng: 4.4777, // Rotterdam, Netherlands
+    arcAlt: 0.3,
     color: colors[1],
   },
   {
     order: 5,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 48.8566,
-    endLng: 2.3522,
+    endLat: 14.5995,
+    endLng: 120.9842, // Manila, Philippines
     arcAlt: 0.3,
     color: colors[2],
   },
+
+  // Order 6: UAE, Spain, Vietnam
   {
     order: 6,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 17.385,
-    endLng: 78.4867,
-    arcAlt: 0.1,
+    endLat: 24.4539,
+    endLng: 54.3773, // Abu Dhabi, UAE
+    arcAlt: 0.2,
     color: colors[0],
   },
   {
     order: 6,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 52.2297,
-    endLng: 21.0122,
+    endLat: 40.4168,
+    endLng: -3.7038, // Madrid, Spain
     arcAlt: 0.3,
     color: colors[1],
   },
@@ -195,162 +206,174 @@ const sampleArcs = [
     order: 6,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: -1.2921,
-    endLng: 36.8219,
-    arcAlt: 0.3,
+    endLat: 10.8231,
+    endLng: 106.6297, // Ho Chi Minh City, Vietnam
+    arcAlt: 0.2,
     color: colors[2],
+  },
+
+  // Order 7: Egypt, Italy, Japan
+  {
+    order: 7,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 30.0444,
+    endLng: 31.2357, // Cairo, Egypt
+    arcAlt: 0.2,
+    color: colors[0],
   },
   {
     order: 7,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 26.9124,
-    endLng: 75.7873,
-    arcAlt: 0.1,
-    color: colors[0],
+    endLat: 45.4642,
+    endLng: 9.19, // Milan, Italy
+    arcAlt: 0.3,
+    color: colors[1],
   },
   {
     order: 7,
     startLat: 28.6139,
     startLng: 77.209,
     endLat: 35.6762,
-    endLng: 139.6503,
+    endLng: 139.6503, // Tokyo, Japan
+    arcAlt: 0.3,
+    color: colors[2],
+  },
+
+  // Order 8: North Africa, Northern Europe, East Asia
+  {
+    order: 8,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 33.5731,
+    endLng: -7.5898, // Casablanca, Morocco
+    arcAlt: 0.3,
+    color: colors[0],
+  },
+  {
+    order: 8,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 53.5511,
+    endLng: 9.9937, // Hamburg, Germany
     arcAlt: 0.3,
     color: colors[1],
   },
   {
-    order: 7,
+    order: 8,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 40.7128,
-    endLng: -74.006,
+    endLat: 37.5665,
+    endLng: 126.978, // Seoul, South Korea
+    arcAlt: 0.3,
+    color: colors[2],
+  },
+
+  // Order 9: East Africa, Belgium, Australia
+  {
+    order: 9,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: -1.2921,
+    endLng: 36.8219, // Nairobi, Kenya
+    arcAlt: 0.3,
+    color: colors[0],
+  },
+  {
+    order: 9,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 51.2194,
+    endLng: 4.4025, // Antwerp, Belgium
+    arcAlt: 0.3,
+    color: colors[1],
+  },
+  {
+    order: 9,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: -33.8688,
+    endLng: 151.2093, // Sydney, Australia
     arcAlt: 0.4,
     color: colors[2],
   },
-  {
-    order: 8,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 30.901,
-    endLng: 75.8573,
-    arcAlt: 0.1,
-    color: colors[0],
-  },
-  {
-    order: 8,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 23.588,
-    endLng: 58.3829,
-    arcAlt: 0.2,
-    color: colors[1],
-  },
-  {
-    order: 8,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 51.9244,
-    endLng: 4.4777,
-    arcAlt: 0.3,
-    color: colors[2],
-  },
-  {
-    order: 9,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 22.7196,
-    endLng: 75.8577,
-    arcAlt: 0.1,
-    color: colors[0],
-  },
-  {
-    order: 9,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 14.5995,
-    endLng: 120.9842,
-    arcAlt: 0.2,
-    color: colors[1],
-  },
-  {
-    order: 9,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 29.7604,
-    endLng: -95.3698,
-    arcAlt: 0.4,
-    color: colors[2],
-  },
-  {
-    order: 10,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 9.9312,
-    endLng: 76.2673,
-    arcAlt: 0.1,
-    color: colors[0],
-  },
-  {
-    order: 10,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 40.4168,
-    endLng: -3.7038,
-    arcAlt: 0.3,
-    color: colors[1],
-  },
+
+  // Order 10: Southern Africa, Eurasia, Australia
   {
     order: 10,
     startLat: 28.6139,
     startLng: 77.209,
     endLat: -26.2041,
-    endLng: 28.0473,
+    endLng: 28.0473, // Johannesburg, South Africa
     arcAlt: 0.3,
+    color: colors[0],
+  },
+  {
+    order: 10,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 41.0082,
+    endLng: 28.9784, // Istanbul, Turkey
+    arcAlt: 0.3,
+    color: colors[1],
+  },
+  {
+    order: 10,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: -37.8136,
+    endLng: 144.9631, // Melbourne, Australia
+    arcAlt: 0.4,
     color: colors[2],
   },
+
+  // Order 11: US East & Midwest, New Zealand
   {
     order: 11,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 26.8467,
-    endLng: 80.9462,
-    arcAlt: 0.1,
+    endLat: 40.7128,
+    endLng: -74.006, // New York, USA
+    arcAlt: 0.4,
     color: colors[0],
   },
   {
     order: 11,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 29.3759,
-    endLng: 47.9774,
-    arcAlt: 0.2,
+    endLat: 41.8781,
+    endLng: -87.6298, // Chicago, USA
+    arcAlt: 0.4,
     color: colors[1],
   },
   {
     order: 11,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: -33.8688,
-    endLng: 151.2093,
-    arcAlt: 0.4,
+    endLat: -36.8485,
+    endLng: 174.7633, // Auckland, New Zealand
+    arcAlt: 0.5,
     color: colors[2],
   },
+
+  // Order 12: US South & West Coast
   {
     order: 12,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 20.2961,
-    endLng: 85.8245,
-    arcAlt: 0.1,
+    endLat: 29.7604,
+    endLng: -95.3698, // Houston, USA
+    arcAlt: 0.4,
     color: colors[0],
   },
   {
     order: 12,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 41.0082,
-    endLng: 28.9784,
-    arcAlt: 0.3,
+    endLat: 32.7767,
+    endLng: -96.797, // Dallas, USA
+    arcAlt: 0.4,
     color: colors[1],
   },
   {
@@ -358,61 +381,65 @@ const sampleArcs = [
     startLat: 28.6139,
     startLng: 77.209,
     endLat: 34.0522,
-    endLng: -118.2437,
+    endLng: -118.2437, // Los Angeles, USA
     arcAlt: 0.4,
     color: colors[2],
   },
+
+  // Order 13: US Southeast, Mexico, Colombia
   {
     order: 13,
     startLat: 28.6139,
     startLng: 77.209,
-    endLat: 17.6868,
-    endLng: 83.2185,
-    arcAlt: 0.1,
+    endLat: 25.7617,
+    endLng: -80.1918, // Miami, USA
+    arcAlt: 0.4,
     color: colors[0],
   },
   {
     order: 13,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 30.0444,
-    endLng: 31.2357,
-    arcAlt: 0.2,
-    color: colors[1],
-  },
-  {
-    order: 13,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: -23.5505,
-    endLng: -46.6333,
-    arcAlt: 0.5,
-    color: colors[2],
-  },
-  {
-    order: 14,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 26.1445,
-    endLng: 91.7362,
-    arcAlt: 0.1,
-    color: colors[0],
-  },
-  {
-    order: 14,
-    startLat: 28.6139,
-    startLng: 77.209,
-    endLat: 10.8231,
-    endLng: 106.6297,
-    arcAlt: 0.2,
-    color: colors[1],
-  },
-  {
-    order: 14,
     startLat: 28.6139,
     startLng: 77.209,
     endLat: 19.4326,
-    endLng: -99.1332,
+    endLng: -99.1332, // Mexico City, Mexico
+    arcAlt: 0.5,
+    color: colors[1],
+  },
+  {
+    order: 13,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: 4.711,
+    endLng: -74.0721, // Bogotá, Colombia
+    arcAlt: 0.5,
+    color: colors[2],
+  },
+
+  // Order 14: South America (Brazil, Peru, Chile)
+  {
+    order: 14,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: -23.5505,
+    endLng: -46.6333, // São Paulo, Brazil
+    arcAlt: 0.5,
+    color: colors[0],
+  },
+  {
+    order: 14,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: -12.0464,
+    endLng: -77.0428, // Lima, Peru
+    arcAlt: 0.5,
+    color: colors[1],
+  },
+  {
+    order: 14,
+    startLat: 28.6139,
+    startLng: 77.209,
+    endLat: -33.4489,
+    endLng: -70.6693, // Santiago, Chile
     arcAlt: 0.5,
     color: colors[2],
   },
