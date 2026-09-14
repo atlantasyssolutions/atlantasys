@@ -1,11 +1,22 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 export default function PartnerWithUsPage() {
+  const router = useRouter();
   const [openAccordion, setOpenAccordion] = useState(null);
+
+  const handlePartnerSubmit = (e) => {
+    e.preventDefault();
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem('formSubmitted', 'true');
+      sessionStorage.setItem('submittedSource', 'partner');
+    }
+    router.push('/thank-you');
+  };
 
   const toggleAccordion = (id) => {
     setOpenAccordion(prev => prev === id ? null : id);
@@ -234,7 +245,7 @@ export default function PartnerWithUsPage() {
             <h2>Partner With Us</h2>
           </div>
           <p>Note: <span style={{ color: 'red' }}>*</span> fields are mandatory</p>
-          <form id="partner_form" action="/api/partner" method="POST">
+          <form id="partner_form" onSubmit={handlePartnerSubmit}>
             <div className="row">
               <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <p><strong>Select the type of enquiry<span style={{ color: 'red' }}>*</span></strong></p>

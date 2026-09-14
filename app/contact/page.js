@@ -1,5 +1,6 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import ContactForm from '@/components/contact/ContactForm';
 
 export const metadata = {
   title: 'Contact Us | Atlanta Systems — GPS Tracking & Fleet Telematics',
@@ -100,40 +101,7 @@ export default function ContactPage() {
             <div className="col-md-6">
               <h2 className="self-h2">Enquiry Form</h2>
               <p>Note: <span style={{ color: 'red' }}>*</span> fields are mandatory</p>
-              <form id="contact_form2" action="/api/contact" method="POST">
-                <div className="row">
-                  <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                    <label><strong>Full Name<span style={{ color: 'red' }}>*</span></strong></label>
-                    <input type="text" className="form-control" name="name" placeholder="Full Name" />
-                  </div>
-                  <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                    <label><strong>Phone<span style={{ color: 'red' }}>*</span></strong></label>
-                    <input type="text" className="form-control" name="contact" placeholder="Contact No." />
-                  </div>
-                </div>
-                <br />
-                <div className="row">
-                  <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    <label><strong>Email Address<span style={{ color: 'red' }}>*</span></strong></label>
-                    <input type="text" className="form-control" name="email" placeholder="Email Address" />
-                  </div>
-                </div>
-                <br />
-                <div className="row">
-                  <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    <label><strong>Leave us a message</strong><span style={{ color: 'red' }}>*</span></label>
-                    <textarea className="form-control" name="message" rows={4}></textarea>
-                  </div>
-                </div>
-                <br />
-                <div className="row">
-                  <div className="col-md-12 col-lg-12" align="right">
-                    <button type="submit" id="submitBtnn2" className="btn btn-success">
-                      <i className="fas fa-paper-plane"></i> Submit
-                    </button>
-                  </div>
-                </div>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>

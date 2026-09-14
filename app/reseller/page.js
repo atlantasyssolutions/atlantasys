@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import styles from './Reseller.module.css';
@@ -167,8 +168,13 @@ export default function ResellerPage() {
       if (WEB3FORMS_ACCESS_KEY === 'YOUR_WEB3FORMS_ACCESS_KEY_HERE') {
         // Placeholder simulation: API key has not been inserted yet
         console.log('Atlanta Systems Reseller Inquiry submitted (Placeholder Mode):', formData);
-        await new Promise(res => setTimeout(res, 800));
-        setSubmitted(true);
+        await new Promise(res => setTimeout(res, 600));
+        if (typeof window !== 'undefined') {
+          sessionStorage.setItem('formSubmitted', 'true');
+          sessionStorage.setItem('submittedSource', 'reseller');
+        }
+        router.push('/thank-you');
+        return;
       } else {
         const payload = {
           access_key: WEB3FORMS_ACCESS_KEY,
@@ -195,7 +201,12 @@ export default function ResellerPage() {
 
         const data = await res.json();
         if (data.success) {
-          setSubmitted(true);
+          if (typeof window !== 'undefined') {
+            sessionStorage.setItem('formSubmitted', 'true');
+            sessionStorage.setItem('submittedSource', 'reseller');
+          }
+          router.push('/thank-you');
+          return;
         } else {
           setErrorMessage(data.message || 'Submission error. Please try again.');
         }
@@ -203,7 +214,12 @@ export default function ResellerPage() {
     } catch (err) {
       console.error('Submission error:', err);
       // Fallback graceful success in local/demo environment
-      setSubmitted(true);
+      if (typeof window !== 'undefined') {
+        sessionStorage.setItem('formSubmitted', 'true');
+        sessionStorage.setItem('submittedSource', 'reseller');
+      }
+      router.push('/thank-you');
+      return;
     } finally {
       setSubmitting(false);
     }

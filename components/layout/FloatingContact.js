@@ -1,18 +1,21 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function FloatingContact() {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setIsOpen(false);
-    }, 2500);
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem('formSubmitted', 'true');
+      sessionStorage.setItem('submittedSource', 'floating_contact');
+    }
+    setIsOpen(false);
+    router.push('/thank-you');
   };
 
   return (

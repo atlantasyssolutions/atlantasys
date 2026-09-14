@@ -1,11 +1,13 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import faqsData from '@/data/faqs.json';
 
 export default function SupportPage() {
+  const router = useRouter();
   const [ticketSubmitted, setTicketSubmitted] = useState(false);
   const [ticket, setTicket] = useState({
     name: '',
@@ -19,19 +21,11 @@ export default function SupportPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setTicketSubmitted(true);
-    setTimeout(() => {
-      setTicketSubmitted(false);
-      setTicket({
-        name: '',
-        email: '',
-        phone: '',
-        deviceModel: '',
-        serialNumber: '',
-        issueType: 'Technical Issue',
-        description: ''
-      });
-    }, 4000);
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem('formSubmitted', 'true');
+      sessionStorage.setItem('submittedSource', 'support');
+    }
+    router.push('/thank-you');
   };
 
   return (

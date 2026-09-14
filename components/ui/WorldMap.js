@@ -8,8 +8,13 @@ export default function WorldMap({
   dots = [],
   lineColor = "#0ea5e9"
 }) {
-  const svgRef = useRef(null);
-  const [activeIdx, setActiveIdx] = useState(0);
+  const [currentIdx, setCurrentIdx] = useState(0);
+
+  // SVG Refs for 60fps direct DOM animation (No React re-render lag)
+  const pathRef = useRef(null);
+  const beamRef = useRef(null);
+  const headRef = useRef(null);
+  const ringRef = useRef(null);
 
   let currentTheme = "light";
   try {
@@ -25,7 +30,7 @@ export default function WorldMap({
     const map = new DMap({ height: 100, grid: "diagonal" });
     const svg = map.getSVG({
       radius: 0.22,
-      color: currentTheme === "dark" ? "#FFFFFF40" : "#00000030",
+      color: currentTheme === "dark" ? "#FFFFFF40" : "#00000028",
       shape: "circle",
       backgroundColor: currentTheme === "dark" ? "black" : "white",
     });
@@ -54,19 +59,11 @@ export default function WorldMap({
     const dx = end.x - start.x;
     const dy = end.y - start.y;
     const dist = Math.hypot(dx, dy);
-    const arcHeight = Math.min(Math.max(dist * 0.28, 4), 16);
+    // Dynamic aerodynamic arc elevation
+    const arcHeight = Math.min(Math.max(dist * 0.26, 6), 22);
     const midY = Math.min(start.y, end.y) - arcHeight;
     return `M ${start.x} ${start.y} Q ${midX} ${midY} ${end.x} ${end.y}`;
   };
-
-  // Sequential line rotation: shoots ONE pulse at a time like Probiota globe
-  useEffect(() => {
-    if (!dots || dots.length === 0) return;
-    const timer = setInterval(() => {
-      setActiveIdx((prev) => (prev + 1) % dots.length);
-    }, 2200);
-    return () => clearInterval(timer);
-  }, [dots.length]);
 
   // Deduplicate points for clear radar markers
   const uniquePoints = useMemo(() => {
@@ -88,7 +85,115 @@ export default function WorldMap({
     return Array.from(map.values());
   }, [dots]);
 
-  const activeDot = dots[activeIdx];
+  // PROBIOTA-STYLE ARC ANIMATION:
+  // Launches from India HQ -> flies across the sky -> enters destination -> completely vanishes (no static lines!)
+  useEffect(() => {
+    if (!dots || dots.length === 0) return;
+
+    let animId;
+    let startTime = null;
+    const FLIGHT_DURATION = 1850; // 1.85s flight time
+    const PAUSE_DURATION = 250;   // 0.25s pause before next line launches
+    const TOTAL_CYCLE = FLIGHT_DURATION + PAUSE_DURATION;
+
+    const currentDot = dots[currentIdx];
+    if (!currentDot) return;
+
+    const startPt = projectPoint(currentDot.start.lat, currentDot.start.lng);
+    const endPt = projectPoint(currentDot.end.lat, currentDot.end.lng);
+    const pathD = createCurvedPath(startPt, endPt);
+
+    const pathEl = pathRef.current;
+    const beamEl = beamRef.current;
+    const headEl = headRef.current;
+    const ringEl = ringRef.current;
+
+    if (!pathEl || !beamEl) return;
+
+    // Set path data on both guide and beam
+    pathEl.setAttribute("d", pathD);
+    beamEl.setAttribute("d", pathD);
+
+    const totalLength = pathEl.getTotalLength() || 100;
+    // Comet beam length: 30% of total trajectory
+    const beamLength = Math.max(totalLength * 0.32, 12);
+
+    // Reset initial state to completely hidden
+    beamEl.setAttribute("stroke-dasharray", `0 ${totalLength * 3}`);
+    beamEl.setAttribute("stroke-dashoffset", "0");
+    if (headEl) headEl.setAttribute("opacity", "0");
+    if (ringEl) {
+      ringEl.setAttribute("cx", String(endPt.x));
+      ringEl.setAttribute("cy", String(endPt.y));
+      ringEl.setAttribute("opacity", "0");
+      ringEl.setAttribute("r", "0.8");
+    }
+
+    const step = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const elapsed = timestamp - startTime;
+
+      if (elapsed < FLIGHT_DURATION) {
+        const p = elapsed / FLIGHT_DURATION; // 0 to 1
+
+        // Smooth cubic acceleration & deceleration
+        const easedP = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+
+        // Head and tail distances along the arc
+        const dHead = easedP * (totalLength + beamLength);
+        const dTail = dHead - beamLength;
+
+        // Calculate clamped visible segment on [0, totalLength]
+        const s0 = Math.max(0, dTail);
+        const s1 = Math.min(totalLength, dHead);
+        const visibleDash = Math.max(0, s1 - s0);
+
+        // Update beam dasharray and offset (moves along curve)
+        beamEl.setAttribute("stroke-dasharray", `${visibleDash} ${totalLength * 3}`);
+        beamEl.setAttribute("stroke-dashoffset", `${-s0}`);
+
+        // Update Glowing Comet Head Particle
+        if (headEl) {
+          if (s1 > 0 && s1 < totalLength) {
+            const pt = pathEl.getPointAtLength(s1);
+            headEl.setAttribute("cx", String(pt.x));
+            headEl.setAttribute("cy", String(pt.y));
+            headEl.setAttribute("opacity", "1");
+          } else {
+            headEl.setAttribute("opacity", "0");
+          }
+        }
+
+        // Destination Impact Wave: bursts outward as the head touches the destination
+        if (ringEl && dHead >= totalLength * 0.82) {
+          const impactProgress = (dHead - totalLength * 0.82) / ((totalLength + beamLength) - totalLength * 0.82);
+          const ringR = 0.8 + impactProgress * 4.2;
+          const ringOp = Math.max(0, 0.9 * (1 - impactProgress));
+          ringEl.setAttribute("r", String(ringR));
+          ringEl.setAttribute("opacity", String(ringOp));
+        }
+
+        animId = requestAnimationFrame(step);
+      } else if (elapsed < TOTAL_CYCLE) {
+        // Pause period: the line has finished entering destination and completely DISAPPEARED ("then going")
+        beamEl.setAttribute("stroke-dasharray", `0 ${totalLength * 3}`);
+        if (headEl) headEl.setAttribute("opacity", "0");
+        if (ringEl) ringEl.setAttribute("opacity", "0");
+        animId = requestAnimationFrame(step);
+      } else {
+        // Launch cycle finished! Advance to next global destination
+        setCurrentIdx((prev) => (prev + 1) % dots.length);
+      }
+    };
+
+    animId = requestAnimationFrame(step);
+
+    return () => {
+      if (animId) cancelAnimationFrame(animId);
+    };
+  }, [currentIdx, dots, mapInstance]);
+
+  const activeDot = dots[currentIdx];
 
   return (
     <div
@@ -119,9 +224,8 @@ export default function WorldMap({
         draggable={false}
       />
 
-      {/* 2. Interactive SVG Overlay (Matches exact 198 x 100 viewBox of DottedMap) */}
+      {/* 2. Dynamic SVG Layer (ViewBox exactly 198 x 100 matching DottedMap) */}
       <svg
-        ref={svgRef}
         viewBox="0 0 198 100"
         className="w-full h-full absolute inset-0 pointer-events-none select-none"
         style={{
@@ -137,64 +241,61 @@ export default function WorldMap({
         }}
       >
         <defs>
-          <linearGradient id="active-pulse-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          {/* Luminous Comet Beam Gradient */}
+          <linearGradient id="comet-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#0169A9" stopOpacity="0.2" />
-            <stop offset="20%" stopColor="#0169A9" stopOpacity="0.9" />
+            <stop offset="35%" stopColor="#0284C7" stopOpacity="0.85" />
             <stop offset="85%" stopColor="#38BDF8" stopOpacity="1" />
-            <stop offset="100%" stopColor="#38BDF8" stopOpacity="0.1" />
+            <stop offset="100%" stopColor="#FFFFFF" stopOpacity="1" />
           </linearGradient>
-          <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="0.4" result="blur" />
-            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+
+          {/* High-Tech Glow Filter */}
+          <filter id="comet-glow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="0.5" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
           </filter>
         </defs>
 
-        {/* Base Trajectory Tracks: subtle network grid */}
-        {dots.map((dot, i) => {
-          const startPoint = projectPoint(dot.start.lat, dot.start.lng);
-          const endPoint = projectPoint(dot.end.lat, dot.end.lng);
-          const pathD = createCurvedPath(startPoint, endPoint);
-          const isActive = i === activeIdx;
-          return (
-            <path
-              key={`base-track-${i}`}
-              d={pathD}
-              fill="none"
-              stroke={isActive ? "#0169A9" : "#0F2D4E"}
-              strokeWidth={isActive ? "0.4" : "0.22"}
-              strokeOpacity={isActive ? "0.35" : "0.1"}
-            />
-          );
-        })}
+        {/* Hidden guide path used for math length and getPointAtLength calculation */}
+        <path
+          ref={pathRef}
+          fill="none"
+          stroke="none"
+          style={{ display: "none" }}
+        />
 
-        {/* ACTIVE SEQUENTIAL PULSE: Fires ONE at a time, radiating from India */}
-        {activeDot && (() => {
-          const startPoint = projectPoint(activeDot.start.lat, activeDot.start.lng);
-          const endPoint = projectPoint(activeDot.end.lat, activeDot.end.lng);
-          const pathD = createCurvedPath(startPoint, endPoint);
-          return (
-            <path
-              key={`active-beam-${activeIdx}`}
-              d={pathD}
-              fill="none"
-              stroke="url(#active-pulse-gradient)"
-              strokeWidth="0.75"
-              strokeLinecap="round"
-              pathLength="100"
-              strokeDasharray="22 100"
-              style={{ filter: "url(#subtle-glow)" }}
-            >
-              <animate
-                attributeName="stroke-dashoffset"
-                from="122"
-                to="0"
-                dur="2.0s"
-                repeatCount="1"
-                fill="freeze"
-              />
-            </path>
-          );
-        })()}
+        {/* ACTIVE LAUNCHING BEAM: Single comet/dash shooting from India, traveling, and vanishing */}
+        <path
+          ref={beamRef}
+          fill="none"
+          stroke="url(#comet-gradient)"
+          strokeWidth="0.8"
+          strokeLinecap="round"
+          style={{ filter: "url(#comet-glow)" }}
+        />
+
+        {/* COMET HEAD PARTICLE: Bright leading tip of the flying beam */}
+        <circle
+          ref={headRef}
+          r="1.1"
+          fill="#FFFFFF"
+          stroke="#38BDF8"
+          strokeWidth="0.5"
+          opacity="0"
+          style={{ filter: "url(#comet-glow)" }}
+        />
+
+        {/* DESTINATION IMPACT WAVE: Expanding ring triggered on arrival */}
+        <circle
+          ref={ringRef}
+          fill="none"
+          stroke="#38BDF8"
+          strokeWidth="0.45"
+          opacity="0"
+        />
 
         {/* Global Destination Pins & Central India HQ Radar */}
         {uniquePoints.map((point, i) => {
@@ -210,13 +311,13 @@ export default function WorldMap({
               <circle
                 cx={pt.x}
                 cy={pt.y}
-                r={isHQ ? "1.2" : isActiveTarget ? "0.8" : "0.55"}
+                r={isHQ ? "1.2" : isActiveTarget ? "0.85" : "0.55"}
                 fill={isHQ ? "#0169A9" : isActiveTarget ? "#38BDF8" : "#0284C7"}
                 stroke="#FFFFFF"
                 strokeWidth={isHQ ? "0.45" : "0.2"}
               />
 
-              {/* India HQ Continuous Pulsing Wave */}
+              {/* India HQ Continuous Radar Wave (Radiating origin) */}
               {isHQ && (
                 <>
                   <circle
@@ -229,7 +330,7 @@ export default function WorldMap({
                     <animate
                       attributeName="r"
                       from="1.2"
-                      to="4.5"
+                      to="4.8"
                       dur="2.2s"
                       repeatCount="indefinite"
                     />
@@ -251,9 +352,9 @@ export default function WorldMap({
                     <animate
                       attributeName="r"
                       from="1.2"
-                      to="6.0"
+                      to="6.2"
                       dur="2.2s"
-                      begin="0.7s"
+                      begin="0.75s"
                       repeatCount="indefinite"
                     />
                     <animate
@@ -261,39 +362,11 @@ export default function WorldMap({
                       from="0.55"
                       to="0"
                       dur="2.2s"
-                      begin="0.7s"
+                      begin="0.75s"
                       repeatCount="indefinite"
                     />
                   </circle>
                 </>
-              )}
-
-              {/* Active Destination Landing Ping Wave */}
-              {isActiveTarget && (
-                <circle
-                  cx={pt.x}
-                  cy={pt.y}
-                  r="0.8"
-                  fill="#38BDF8"
-                  opacity="0.8"
-                >
-                  <animate
-                    attributeName="r"
-                    from="0.8"
-                    to="3.8"
-                    dur="1.2s"
-                    begin="1.2s"
-                    repeatCount="2"
-                  />
-                  <animate
-                    attributeName="opacity"
-                    from="0.85"
-                    to="0"
-                    dur="1.2s"
-                    begin="1.2s"
-                    repeatCount="2"
-                  />
-                </circle>
               )}
             </g>
           );
