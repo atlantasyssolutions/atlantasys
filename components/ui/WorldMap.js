@@ -4,18 +4,12 @@ import { useRef, useMemo, useState, useEffect } from "react";
 import DottedMap from "dotted-map";
 import { useTheme } from "next-themes";
 
+const NUM_CONCURRENT = 3;
+
 export default function WorldMap({
   dots = [],
   lineColor = "#0ea5e9"
 }) {
-  const [currentIdx, setCurrentIdx] = useState(0);
-
-  // SVG Refs for 60fps direct DOM animation (No React re-render lag)
-  const pathRef = useRef(null);
-  const beamRef = useRef(null);
-  const headRef = useRef(null);
-  const ringRef = useRef(null);
-
   let currentTheme = "light";
   try {
     const themeContext = useTheme();
@@ -85,105 +79,162 @@ export default function WorldMap({
     return Array.from(map.values());
   }, [dots]);
 
-  // PROBIOTA-STYLE ARC ANIMATION:
-  // Launches from India HQ -> flies across the sky -> enters destination -> completely vanishes (no static lines!)
+  // Triple Concurrent Channel Refs
+  const pathRefs = [useRef(null), useRef(null), useRef(null)];
+  const beamRefs = [useRef(null), useRef(null), useRef(null)];
+  const headRefs = [useRef(null), useRef(null), useRef(null)];
+  const ringRefs = [useRef(null), useRef(null), useRef(null)];
+
+  // ANIMATION LOOP: 3 COMET BEAMS LAUNCHING AND FLYING AT ONCE
   useEffect(() => {
     if (!dots || dots.length === 0) return;
 
     let animId;
-    let startTime = null;
-    const FLIGHT_DURATION = 1850; // 1.85s flight time
-    const PAUSE_DURATION = 250;   // 0.25s pause before next line launches
+    const FLIGHT_DURATION = 1900; // 1.9s flight duration
+    const PAUSE_DURATION = 200;   // 0.2s pause before next destination in that channel
     const TOTAL_CYCLE = FLIGHT_DURATION + PAUSE_DURATION;
+    const STAGGER_OFFSET = 600;   // 600ms phase offset between the 3 channels
 
-    const currentDot = dots[currentIdx];
-    if (!currentDot) return;
+    // Initialize the 3 channels distributed across the global destination list
+    // e.g. Channel 0 -> Asia/East, Channel 1 -> Middle East/Europe, Channel 2 -> Americas
+    const channelState = [
+      {
+        dotIdx: 0,
+        startTime: null,
+        offsetMs: 0,
+        totalLength: 100,
+        beamLength: 25,
+        endPt: { x: 0, y: 0 }
+      },
+      {
+        dotIdx: Math.floor(dots.length / 3),
+        startTime: null,
+        offsetMs: STAGGER_OFFSET,
+        totalLength: 100,
+        beamLength: 25,
+        endPt: { x: 0, y: 0 }
+      },
+      {
+        dotIdx: Math.floor((dots.length * 2) / 3),
+        startTime: null,
+        offsetMs: STAGGER_OFFSET * 2,
+        totalLength: 100,
+        beamLength: 25,
+        endPt: { x: 0, y: 0 }
+      }
+    ];
 
-    const startPt = projectPoint(currentDot.start.lat, currentDot.start.lng);
-    const endPt = projectPoint(currentDot.end.lat, currentDot.end.lng);
-    const pathD = createCurvedPath(startPt, endPt);
+    const setupChannel = (c) => {
+      const state = channelState[c];
+      const dot = dots[state.dotIdx % dots.length];
+      if (!dot) return;
 
-    const pathEl = pathRef.current;
-    const beamEl = beamRef.current;
-    const headEl = headRef.current;
-    const ringEl = ringRef.current;
+      const startPt = projectPoint(dot.start.lat, dot.start.lng);
+      const endPt = projectPoint(dot.end.lat, dot.end.lng);
+      state.endPt = endPt;
 
-    if (!pathEl || !beamEl) return;
+      const pathD = createCurvedPath(startPt, endPt);
+      const pathEl = pathRefs[c].current;
+      const beamEl = beamRefs[c].current;
+      const headEl = headRefs[c].current;
+      const ringEl = ringRefs[c].current;
 
-    // Set path data on both guide and beam
-    pathEl.setAttribute("d", pathD);
-    beamEl.setAttribute("d", pathD);
+      if (pathEl && beamEl) {
+        pathEl.setAttribute("d", pathD);
+        beamEl.setAttribute("d", pathD);
+        state.totalLength = pathEl.getTotalLength() || 100;
+        state.beamLength = Math.max(state.totalLength * 0.32, 12);
 
-    const totalLength = pathEl.getTotalLength() || 100;
-    // Comet beam length: 30% of total trajectory
-    const beamLength = Math.max(totalLength * 0.32, 12);
+        beamEl.setAttribute("stroke-dasharray", `0 ${state.totalLength * 3}`);
+        beamEl.setAttribute("stroke-dashoffset", "0");
+      }
+      if (headEl) headEl.setAttribute("opacity", "0");
+      if (ringEl) {
+        ringEl.setAttribute("cx", String(endPt.x));
+        ringEl.setAttribute("cy", String(endPt.y));
+        ringEl.setAttribute("opacity", "0");
+        ringEl.setAttribute("r", "0.8");
+      }
+    };
 
-    // Reset initial state to completely hidden
-    beamEl.setAttribute("stroke-dasharray", `0 ${totalLength * 3}`);
-    beamEl.setAttribute("stroke-dashoffset", "0");
-    if (headEl) headEl.setAttribute("opacity", "0");
-    if (ringEl) {
-      ringEl.setAttribute("cx", String(endPt.x));
-      ringEl.setAttribute("cy", String(endPt.y));
-      ringEl.setAttribute("opacity", "0");
-      ringEl.setAttribute("r", "0.8");
+    // Initial setup for all 3 channels
+    for (let c = 0; c < NUM_CONCURRENT; c++) {
+      setupChannel(c);
     }
 
     const step = (timestamp) => {
-      if (!startTime) startTime = timestamp;
-      const elapsed = timestamp - startTime;
+      for (let c = 0; c < NUM_CONCURRENT; c++) {
+        const state = channelState[c];
+        const pathEl = pathRefs[c].current;
+        const beamEl = beamRefs[c].current;
+        const headEl = headRefs[c].current;
+        const ringEl = ringRefs[c].current;
 
-      if (elapsed < FLIGHT_DURATION) {
-        const p = elapsed / FLIGHT_DURATION; // 0 to 1
+        if (!pathEl || !beamEl) continue;
 
-        // Smooth cubic acceleration & deceleration
-        const easedP = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+        if (state.startTime === null) {
+          state.startTime = timestamp + state.offsetMs;
+        }
 
-        // Head and tail distances along the arc
-        const dHead = easedP * (totalLength + beamLength);
-        const dTail = dHead - beamLength;
+        const elapsed = timestamp - state.startTime;
 
-        // Calculate clamped visible segment on [0, totalLength]
-        const s0 = Math.max(0, dTail);
-        const s1 = Math.min(totalLength, dHead);
-        const visibleDash = Math.max(0, s1 - s0);
+        if (elapsed < 0) {
+          // Channel is waiting for initial stagger delay
+          continue;
+        }
 
-        // Update beam dasharray and offset (moves along curve)
-        beamEl.setAttribute("stroke-dasharray", `${visibleDash} ${totalLength * 3}`);
-        beamEl.setAttribute("stroke-dashoffset", `${-s0}`);
+        if (elapsed < FLIGHT_DURATION) {
+          const p = elapsed / FLIGHT_DURATION; // 0 to 1
 
-        // Update Glowing Comet Head Particle
-        if (headEl) {
-          if (s1 > 0 && s1 < totalLength) {
-            const pt = pathEl.getPointAtLength(s1);
-            headEl.setAttribute("cx", String(pt.x));
-            headEl.setAttribute("cy", String(pt.y));
-            headEl.setAttribute("opacity", "1");
-          } else {
-            headEl.setAttribute("opacity", "0");
+          // Smooth aerodynamic easing
+          const easedP = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+
+          // Head and tail distance along the arc
+          const dHead = easedP * (state.totalLength + state.beamLength);
+          const dTail = dHead - state.beamLength;
+
+          const s0 = Math.max(0, dTail);
+          const s1 = Math.min(state.totalLength, dHead);
+          const visibleDash = Math.max(0, s1 - s0);
+
+          // Update beam segment (moves along curve)
+          beamEl.setAttribute("stroke-dasharray", `${visibleDash} ${state.totalLength * 3}`);
+          beamEl.setAttribute("stroke-dashoffset", `${-s0}`);
+
+          // Update Leading Comet Head Particle
+          if (headEl) {
+            if (s1 > 0 && s1 < state.totalLength) {
+              const pt = pathEl.getPointAtLength(s1);
+              headEl.setAttribute("cx", String(pt.x));
+              headEl.setAttribute("cy", String(pt.y));
+              headEl.setAttribute("opacity", "1");
+            } else {
+              headEl.setAttribute("opacity", "0");
+            }
           }
-        }
 
-        // Destination Impact Wave: bursts outward as the head touches the destination
-        if (ringEl && dHead >= totalLength * 0.82) {
-          const impactProgress = (dHead - totalLength * 0.82) / ((totalLength + beamLength) - totalLength * 0.82);
-          const ringR = 0.8 + impactProgress * 4.2;
-          const ringOp = Math.max(0, 0.9 * (1 - impactProgress));
-          ringEl.setAttribute("r", String(ringR));
-          ringEl.setAttribute("opacity", String(ringOp));
+          // Destination Impact Wave
+          if (ringEl && dHead >= state.totalLength * 0.82) {
+            const impactProgress = (dHead - state.totalLength * 0.82) / ((state.totalLength + state.beamLength) - state.totalLength * 0.82);
+            const ringR = 0.8 + impactProgress * 4.2;
+            const ringOp = Math.max(0, 0.9 * (1 - impactProgress));
+            ringEl.setAttribute("r", String(ringR));
+            ringEl.setAttribute("opacity", String(ringOp));
+          }
+        } else if (elapsed < TOTAL_CYCLE) {
+          // Pause phase: beam has finished entering destination and disappeared
+          beamEl.setAttribute("stroke-dasharray", `0 ${state.totalLength * 3}`);
+          if (headEl) headEl.setAttribute("opacity", "0");
+          if (ringEl) ringEl.setAttribute("opacity", "0");
+        } else {
+          // Cycle complete for this channel! Advance to next destination in partition
+          state.dotIdx = (state.dotIdx + 1) % dots.length;
+          state.startTime = timestamp;
+          setupChannel(c);
         }
-
-        animId = requestAnimationFrame(step);
-      } else if (elapsed < TOTAL_CYCLE) {
-        // Pause period: the line has finished entering destination and completely DISAPPEARED ("then going")
-        beamEl.setAttribute("stroke-dasharray", `0 ${totalLength * 3}`);
-        if (headEl) headEl.setAttribute("opacity", "0");
-        if (ringEl) ringEl.setAttribute("opacity", "0");
-        animId = requestAnimationFrame(step);
-      } else {
-        // Launch cycle finished! Advance to next global destination
-        setCurrentIdx((prev) => (prev + 1) % dots.length);
       }
+
+      animId = requestAnimationFrame(step);
     };
 
     animId = requestAnimationFrame(step);
@@ -191,9 +242,7 @@ export default function WorldMap({
     return () => {
       if (animId) cancelAnimationFrame(animId);
     };
-  }, [currentIdx, dots, mapInstance]);
-
-  const activeDot = dots[currentIdx];
+  }, [dots, mapInstance]);
 
   return (
     <div
@@ -259,49 +308,53 @@ export default function WorldMap({
           </filter>
         </defs>
 
-        {/* Hidden guide path used for math length and getPointAtLength calculation */}
-        <path
-          ref={pathRef}
-          fill="none"
-          stroke="none"
-          style={{ display: "none" }}
-        />
+        {/* 3 CONCURRENT BEAM CHANNELS */}
+        {[0, 1, 2].map((c) => (
+          <g key={`channel-${c}`}>
+            {/* Hidden guide path used for math length and getPointAtLength */}
+            <path
+              ref={pathRefs[c]}
+              fill="none"
+              stroke="none"
+              style={{ display: "none" }}
+            />
 
-        {/* ACTIVE LAUNCHING BEAM: Single comet/dash shooting from India, traveling, and vanishing */}
-        <path
-          ref={beamRef}
-          fill="none"
-          stroke="url(#comet-gradient)"
-          strokeWidth="0.8"
-          strokeLinecap="round"
-          style={{ filter: "url(#comet-glow)" }}
-        />
+            {/* ACTIVE LAUNCHING BEAM: Single comet/dash shooting from India, traveling, and vanishing */}
+            <path
+              ref={beamRefs[c]}
+              fill="none"
+              stroke="url(#comet-gradient)"
+              strokeWidth="0.8"
+              strokeLinecap="round"
+              style={{ filter: "url(#comet-glow)" }}
+            />
 
-        {/* COMET HEAD PARTICLE: Bright leading tip of the flying beam */}
-        <circle
-          ref={headRef}
-          r="1.1"
-          fill="#FFFFFF"
-          stroke="#38BDF8"
-          strokeWidth="0.5"
-          opacity="0"
-          style={{ filter: "url(#comet-glow)" }}
-        />
+            {/* COMET HEAD PARTICLE: Bright leading tip of the flying beam */}
+            <circle
+              ref={headRefs[c]}
+              r="1.1"
+              fill="#FFFFFF"
+              stroke="#38BDF8"
+              strokeWidth="0.5"
+              opacity="0"
+              style={{ filter: "url(#comet-glow)" }}
+            />
 
-        {/* DESTINATION IMPACT WAVE: Expanding ring triggered on arrival */}
-        <circle
-          ref={ringRef}
-          fill="none"
-          stroke="#38BDF8"
-          strokeWidth="0.45"
-          opacity="0"
-        />
+            {/* DESTINATION IMPACT WAVE: Expanding ring triggered on arrival */}
+            <circle
+              ref={ringRefs[c]}
+              fill="none"
+              stroke="#38BDF8"
+              strokeWidth="0.45"
+              opacity="0"
+            />
+          </g>
+        ))}
 
         {/* Global Destination Pins & Central India HQ Radar */}
         {uniquePoints.map((point, i) => {
           const pt = projectPoint(point.lat, point.lng);
           const isHQ = point.isHQ;
-          const isActiveTarget = !isHQ && activeDot && activeDot.end.label === point.label;
 
           return (
             <g key={`marker-${i}`} style={{ cursor: "pointer" }}>
@@ -311,8 +364,8 @@ export default function WorldMap({
               <circle
                 cx={pt.x}
                 cy={pt.y}
-                r={isHQ ? "1.2" : isActiveTarget ? "0.85" : "0.55"}
-                fill={isHQ ? "#0169A9" : isActiveTarget ? "#38BDF8" : "#0284C7"}
+                r={isHQ ? "1.2" : "0.6"}
+                fill={isHQ ? "#0169A9" : "#0284C7"}
                 stroke="#FFFFFF"
                 strokeWidth={isHQ ? "0.45" : "0.2"}
               />
