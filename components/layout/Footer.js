@@ -151,7 +151,7 @@ export default function Footer() {
                   {[
                     { label: 'Privacy & Policy', href: '/privacy-policy' },
                     { label: 'Terms & Conditions', href: '/terms-and-condition' },
-                    { label: 'Reseller Program', href: '/reseller' },
+                    { label: 'Partner Program', href: '/partner-program' },
                     { label: 'Warranty & Repairs', href: '/warranty-and-repairs' },
                     { label: 'Cookie Policy', href: '/cookie-policy' },
                     { label: 'Reach Us', href: '/contact' }

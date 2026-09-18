@@ -38,7 +38,7 @@ export default function ThankYouPage() {
     );
   }
 
-  const isReseller = submittedSource === 'reseller';
+  const isPartner = submittedSource === 'partner-program' || submittedSource === 'reseller' || submittedSource === 'partner';
 
   return (
     <>
@@ -99,7 +99,7 @@ export default function ThankYouPage() {
                   marginBottom: '14px'
                 }}
               >
-                {isReseller ? 'Reseller Application Logged' : 'Enquiry Received & Dispatched'}
+                {isPartner ? 'Partner Application Logged' : 'Enquiry Received & Dispatched'}
               </span>
             </div>
 
@@ -119,8 +119,8 @@ export default function ThankYouPage() {
 
             {/* Subtitle */}
             <p style={{ color: '#475569', fontSize: '1.1rem', lineHeight: '1.6', maxWidth: '620px', margin: '0 auto 32px auto' }}>
-              {isReseller 
-                ? 'Thank you for applying to the Atlanta Systems Authorized Reseller & Distributor Network. Our commercial partnerships team is currently evaluating your territory allocation.'
+              {isPartner 
+                ? 'Thank you for applying to the Atlanta Systems Global Hardware Partner Network. Our commercial OEM partnerships team is currently evaluating your territory allocation and volume requirements.'
                 : 'Thank you for reaching out to Atlanta Systems. Our senior fleet engineering desk has received your details and is preparing your tailored telematics specifications.'}
             </p>
 

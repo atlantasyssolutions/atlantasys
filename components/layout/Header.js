@@ -82,16 +82,16 @@ export default function Header() {
                         </div>
                         <div className="col-md-6">
                           <li>
-                            <Link href="/reseller">
+                            <Link href="/partner-program">
                               <div className="row">
                                 <div className="col-md-2">
-                                  <center><img src="/assets/img/icon/partner.png" alt="Reseller Program" style={{ width: '70%' }} /></center>
+                                  <center><img src="/assets/img/icon/partner.png" alt="Partner Program" style={{ width: '70%' }} /></center>
                                 </div>
                                 <div className="col-md-10">
                                   <p className="product_menu_name">
-                                    Reseller Program<br />
+                                    Partner Program<br />
                                     <span className="product_menu_description">
-                                      Join our global telematics network with wholesale margins, white-label options, and dedicated partner support.
+                                      Join our global telematics hardware network with direct OEM margins, custom firmware integration, and dedicated partner support.
                                     </span>
                                   </p>
                                 </div>
@@ -354,9 +354,9 @@ export default function Header() {
                     </ul>
                   </li>
 
-                  {/* Reseller Program Link */}
+                  {/* Partner Program Link */}
                   <li className="nav-item">
-                    <Link href="/reseller" className="nav-link">Reseller</Link>
+                    <Link href="/partner-program" className="nav-link">Partner Program</Link>
                   </li>
 
                   {/* Blogs Link */}
@@ -438,7 +438,7 @@ export default function Header() {
             <li><Link href="/about" onClick={() => setDrawerOpen(false)}>About Us</Link></li>
             <li><Link href="/trackers/vehicle-telematics" onClick={() => setDrawerOpen(false)}>Products</Link></li>
             <li><Link href="/vehicle-telematics" onClick={() => setDrawerOpen(false)}>Solutions</Link></li>
-            <li><Link href="/reseller" onClick={() => setDrawerOpen(false)}>Reseller Program</Link></li>
+            <li><Link href="/partner-program" onClick={() => setDrawerOpen(false)}>Partner Program</Link></li>
             <li><Link href="/blog" onClick={() => setDrawerOpen(false)}>Blogs</Link></li>
             <li><Link href="/contact" onClick={() => setDrawerOpen(false)}>Contact</Link></li>
           </ul>

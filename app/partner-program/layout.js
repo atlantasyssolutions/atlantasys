@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Global Telematics Hardware Partner Program | Atlanta Systems OEM',
-  description: 'Join the Atlanta Systems Global Partner Program. Factory-direct OEM telematics hardware, AIS-140/CE/FCC certified GPS trackers, AI dashcams, and dedicated tier-3 engineering support.',
+  description: 'Join the Atlanta Systems Global Partner Program. Partner directly with an enterprise telematics hardware manufacturer for factory-direct GPS trackers, AI dashcams, fuel sensors, and tier-3 firmware engineering support.',
   keywords: 'telematics partner program, GPS hardware distributor, OEM telematics manufacturer, fleet hardware partner, GPS tracker factory wholesale, Atlanta Systems partner',
   alternates: {
     canonical: 'https://www.atlantasys.com/partner-program',
@@ -9,7 +9,7 @@ export const metadata = {
     title: 'Global Telematics Hardware Partner Program | Atlanta Systems',
     description: 'Partner directly with a premier global telematics hardware OEM for high-performance GPS devices, AI video dashcams, and industrial IoT sensors.',
     url: 'https://www.atlantasys.com/partner-program',
-    siteName: 'Atlanta Systems',
+    type: 'website',
     images: [
       {
         url: '/assets/img/reseller/three-img.webp',
@@ -18,10 +18,9 @@ export const metadata = {
         alt: 'Atlanta Systems Global Partner Program',
       },
     ],
-    type: 'website',
   },
 };
 
-export default function ResellerLayout({ children }) {
+export default function PartnerProgramLayout({ children }) {
   return children;
 }

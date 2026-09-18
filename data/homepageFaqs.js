@@ -1,8 +1,8 @@
 export const ORIGINAL_HOMEPAGE_FAQS = [
   {
     id: 1,
-    question: "What’s the difference between a GPS Tracking Device and Fleet Management Software?",
-    answer: "A GPS Tracking Device captures real-time data; Fleet Management Software converts it into dashboards, alerts and reports for routes, driver behavior, fuel, maintenance and compliance."
+    question: "What telematics hardware does Atlanta Systems manufacture?",
+    answer: "Atlanta Systems manufactures enterprise-grade telematics hardware, including 4G/5G GPS vehicle trackers, AI dual-lens dash cams, digital capacitive fuel probes, CAN-bus decoders, BLE temperature sensors, and 4-channel mobile DVRs."
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ export const ORIGINAL_HOMEPAGE_FAQS = [
   },
   {
     id: 6,
-    question: "Can we integrate with TMS/ERP?",
-    answer: "Yes. Secure APIs and webhooks connect fleet data to TMS, WMS, ERP, HRMS and insurance systems."
+    question: "Can Atlanta Systems hardware integrate with third-party software or backend?",
+    answer: "Yes. Our devices support open industry protocols including raw TCP/UDP, MQTT, and HTTP webhooks, streaming telemetry directly into any third-party fleet software, TMS, ERP, or proprietary cloud backend."
   }
 ];

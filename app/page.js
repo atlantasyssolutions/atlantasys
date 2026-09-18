@@ -9,18 +9,18 @@ import CounterSection from '@/components/home/CounterSection';
 import { ORIGINAL_HOMEPAGE_FAQS } from '@/data/homepageFaqs';
 
 export const metadata = {
-  title: 'GPS Tracking Devices & Fleet Management Software | Atlanta Systems',
+  title: 'IoT & Telematics Hardware OEM Manufacturer | Atlanta Systems',
   description:
-    'Atlanta Systems delivers enterprise-grade GPS Tracking Devices and Fleet Management Software with Dash Cam video telematics, Video Surveillance, AIS 140 compliant hardware, and Mobile Video Recording for global fleets.',
+    'Atlanta Systems is a premier global OEM hardware manufacturer of enterprise GPS Tracking Devices, AI Video Dash Cams, Asset Trackers, Fuel Sensors, and MDVR hardware.',
   alternates: {
     canonical: 'https://www.atlantasys.com/',
   },
   openGraph: {
     siteName: 'Atlanta Systems Pvt. Ltd.',
     type: 'website',
-    title: 'GPS Tracking Devices & Fleet Management Software | Atlanta Systems',
+    title: 'IoT & Telematics Hardware OEM Manufacturer | Atlanta Systems',
     description:
-      'Enterprise GPS tracking, fleet software, Dash Cams, Video Surveillance, AIS 140 compliant devices and Mobile Video Recording for global operations.',
+      'Enterprise GPS tracking devices, AI dash cams, asset trackers, fuel level probes, and rugged IoT hardware for global fleet operations.',
     url: 'https://www.atlantasys.com/',
     images: ['/assets/img/logo.svg'],
   },
@@ -67,7 +67,7 @@ export default function HomePage() {
                   marginBottom: '15px',
                 }}
               >
-                Enterprise Telematics for Global Fleets
+                Enterprise Telematics Hardware for Global Fleets
               </h1>
               <p
                 style={{
@@ -79,8 +79,8 @@ export default function HomePage() {
                   textAlign: 'center',
                 }}
               >
-                We combine GPS Tracking Devices, Fleet Management Software, and integrated video—Dash Cam, Video
-                Surveillance, and Mobile Video Recording—to deliver measurable safety, productivity, and compliance outcomes.
+                We engineer and manufacture high-precision GPS tracking devices, AI video dash cams,
+                digital capacitive fuel sensors, and mobile DVR hardware designed for demanding commercial fleets and system integrators worldwide.
               </p>
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function HomePage() {
                     <div className="bxx_content">
                       <div className="bxx_title">Design</div>
                       <div className="bxx_description">
-                        Concept-to-production design across PCB, enclosure and firmware for robust GPS Tracking Devices and AIS 140 compliant hardware.
+                        Concept-to-production engineering across multilayer PCB schematics, IP-rated enclosures, and embedded firmware for robust GPS tracking devices.
                       </div>
                     </div>
                   </div>
@@ -115,12 +115,12 @@ export default function HomePage() {
                       decoding="async"
                       src="/assets/img/create.webp"
                       loading="lazy"
-                      alt="Manufacturing and software integration for fleet solutions"
+                      alt="High-volume electronics and hardware SMT manufacturing"
                     />
                     <div className="bxx_content">
                       <div className="bxx_title">Create</div>
                       <div className="bxx_description">
-                        Integrated hardware + cloud platform for Fleet Management Software, video telematics, and IoT sensors at scale.
+                        State-of-the-art SMT surface-mount manufacturing facility producing rugged telematics hardware, video dashcams, and IoT sensors built to international standards.
                       </div>
                     </div>
                   </div>
@@ -354,7 +354,7 @@ export default function HomePage() {
             </div>
             <div className="col-md-7 catalog_row">
               <h2 className="catalog_heading">Ready to explore our products?</h2>
-              <p>Explore GPS Tracking Devices, Fleet Management Software, Dash Cam video, Video Surveillance and AIS 140 compliant hardware.</p>
+              <p>Explore enterprise GPS Tracking Devices, AI Dash Cams, Asset Trackers, Digital Fuel Sensors, and Mobile DVR hardware.</p>
               <Link href="/contact" className="catalog_margin default-btn btn-bg-two border-radius-50">
                 Download
               </Link>

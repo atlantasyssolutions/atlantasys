@@ -11,7 +11,7 @@ export default async function sitemap() {
     '',
     '/about',
     '/contact',
-    '/reseller',
+    '/partner-program',
     '/all-product',
     '/asset-management',
     '/locations',

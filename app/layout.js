@@ -3,10 +3,10 @@ import './globals.css';
 export const metadata = {
   metadataBase: new URL('https://www.atlantasys.com'),
   title: {
-    default: 'Atlanta Systems | GPS Tracking Devices, Fleet Management & Video Telematics',
+    default: 'Atlanta Systems | IoT & Telematics Hardware OEM Manufacturer',
     template: '%s',
   },
-  description: 'Atlanta Systems delivers enterprise-grade GPS Tracking Devices and Fleet Management Software with Dash Cam video telematics, Video Surveillance, AIS 140 compliant hardware, and Mobile Video Recording for global fleets.',
+  description: 'Atlanta Systems delivers enterprise-grade GPS Tracking Devices, AI Video Dash Cams, Asset Trackers, Fuel Sensors, and Mobile DVR hardware for global commercial fleets.',
   alternates: {
     canonical: 'https://www.atlantasys.com/',
   },

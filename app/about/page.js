@@ -28,15 +28,15 @@ export default function AboutPage() {
           <div className="row about-top pt-20">
             <div className="col-md-12">
               <p style={{ textAlign: 'justify' }}>
-                Established in 1994, Atlanta Systems Private Limited has been a cornerstone in India&apos;s ICT landscape for nearly three decades. As a trusted leader in IoT-GPS Telematics hardware products &amp; solutions, we have delivered over a million connected devices to thousands of users around the world, reflecting our unwavering commitment to quality and innovation. Our product range is designed to cater to diverse market needs, making us a preferred partner for our clients and channel partners alike.
+                Established in 1994, Atlanta Systems Private Limited has been a pioneering force in the global IoT &amp; telematics hardware engineering landscape for over three decades. As a trusted leader in telematics hardware products, we have delivered over a million connected devices to enterprise fleets and distributors around the world, reflecting our unwavering commitment to manufacturing quality and innovation. Our product range is designed to cater to diverse international market needs, making us a preferred hardware OEM partner for clients and channel distributors alike.
               </p>
               <br />
               <p style={{ textAlign: 'justify' }}>
-                Our core strength is rooted in our in-house expertise spanning hardware product conceptualization, design ideation and development, implementation of embedded systems, software development. In addition, we indigenously manufacture our products with the help of a state-of-the-art SMT manufacturing facility, fully equipped with advanced quality control technologies and certified governance practices, ensuring the highest standards of product excellence and innovation.
+                Our core strength is rooted in our in-house expertise spanning hardware product conceptualization, PCB design and development, RF engineering, and embedded firmware implementation. We manufacture our products in our state-of-the-art SMT manufacturing facility, fully equipped with advanced automated optical inspection, quality control technologies, and certified governance practices, ensuring the highest standards of physical product excellence and field durability.
               </p>
               <br />
               <p style={{ textAlign: 'justify' }}>
-                With a strong commitment to the Make-In-India initiative, we integrate certified governance standards to ensure excellence in every aspect of our operations. Our dedicated team of professionals drives our success, ensuring we remain at the forefront of industry evolution and transformation.
+                With an unwavering commitment to international engineering excellence, we integrate certified quality standards (ISO 9001, CE, FCC, RoHS) across every aspect of our manufacturing operations. Our dedicated team of hardware and firmware engineers drives our success, ensuring our telematics devices remain at the forefront of the global connected fleet revolution.
               </p>
               <br />
 
@@ -182,7 +182,7 @@ export default function AboutPage() {
                 <p className="self-h2" style={{ textAlign: 'center' }}>Our Vision</p>
                 <br />
                 <p className="new-p" style={{ textAlign: 'center' }}>
-                  We are on the path of driving innovation in the products and solutions that enable the global transition to connected platforms, while cultivating a robust network of strategic partners. Our focus is on fostering mutual loyalty and delivering sustainable value. Through collaboration, we aim to shape the future of seamless connectivity with a vision to become one of the biggest IoT solution providers in India and eventually the world.
+                  We are on the path of driving innovation in hardware products that enable the global transition to connected fleets, while cultivating a robust network of strategic partners. Our focus is on fostering mutual loyalty and delivering sustainable value. Through collaboration, we aim to shape the future of seamless connectivity with a vision to be a world-leading IoT and telematics hardware OEM manufacturer.
                 </p>
                 <center><img src="/assets/img/about/vision.webp" alt="GPS Tracking Vision" /></center>
               </div>

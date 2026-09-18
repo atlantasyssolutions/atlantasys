@@ -98,7 +98,7 @@ export default function PricingPage() {
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '32px', flex: 1, fontSize: '0.9rem', color: '#334155' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><CheckCircle2 size={16} style={{ color: '#10B981' }} /> Direct SMT Factory Price Breaks</div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><CheckCircle2 size={16} style={{ color: '#10B981' }} /> White-Label Enclosure & Laser Etching</div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><CheckCircle2 size={16} style={{ color: '#10B981' }} /> Custom OEM Enclosure & Laser Etching</div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><CheckCircle2 size={16} style={{ color: '#10B981' }} /> Private APN & Firmware Compilation</div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><CheckCircle2 size={16} style={{ color: '#10B981' }} /> High-Throughput OpenAPI 3.0 SDK</div>
               </div>

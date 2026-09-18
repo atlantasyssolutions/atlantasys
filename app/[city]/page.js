@@ -63,10 +63,10 @@ export default async function CityLocationPage({ params }) {
               📍 {location.region} Region • {location.country}
             </span>
             <h1 style={{ fontSize: '34px', color: '#0F2D4E', fontWeight: '800', marginBottom: '15px' }}>
-              GPS Tracking Devices &amp; Fleet Management Software in {location.city}
+              GPS Tracking &amp; Telematics Hardware in {location.city}
             </h1>
             <p style={{ fontSize: '16px', color: '#64748B', maxWidth: '850px', margin: '0 auto', lineHeight: '1.6' }}>
-              End-to-end telematics hardware manufacturing, cloud software, capacitive fuel sensors, AI video dash cams, and regional compliance solutions for commercial fleets operating in {location.city}.
+              End-to-end telematics hardware manufacturing, GPS tracking devices, capacitive fuel sensors, AI video dash cams, and rugged hardware compliance for commercial fleets operating in {location.city}.
             </p>
           </div>
         </div>
@@ -150,7 +150,7 @@ export default async function CityLocationPage({ params }) {
                   Deploy in {location.city}
                 </h3>
                 <p style={{ fontSize: '14px', color: '#CBD5E1', lineHeight: '1.6', marginBottom: '20px' }}>
-                  Consult with Atlanta Systems telematics engineers to request hardware samples, cloud software demos, or custom API integration specs for your fleet in {location.city}.
+                  Consult with Atlanta Systems hardware engineers to request evaluation samples, protocol documentation, or custom firmware integration specs for your fleet in {location.city}.
                 </p>
                 <Link href="/contact" className="default-btn w-100 text-center" style={{ background: '#0169A9', color: '#FFFFFF', padding: '12px', borderRadius: '6px', display: 'block', fontWeight: '700', textDecoration: 'none' }}>
                   Contact {location.city} Team <i className="fas fa-paper-plane ms-2"></i>

@@ -655,7 +655,7 @@ export default async function BlogPostPage({ params }) {
                 B2B Telematics OEM &amp; Manufacturing
               </span>
               <h3 style={{ fontSize: '1.9rem', fontWeight: '800', color: '#FFFFFF', marginBottom: '10px' }}>
-                Accelerate Your Fleet Operations or Reseller Business
+                Accelerate Your Fleet Operations or Channel Distribution
               </h3>
               <p style={{ color: '#E2E8F0', maxWidth: '640px', margin: '0 auto', fontSize: '1rem', lineHeight: '1.6' }}>
                 32+ years of indigenous SMT manufacturing. Choose your partnership path below for priority dispatch and factory-direct access:
@@ -714,7 +714,7 @@ export default async function BlogPostPage({ params }) {
                 </div>
               </div>
 
-              {/* Channel 2: Distributors & Resellers */}
+              {/* Channel 2: Distributors & Partners */}
               <div style={{ padding: '2.5rem 2rem', background: '#FFFFFF', display: 'flex', flexDirection: 'column' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
                   <span style={{ background: '#0F2D4E', color: '#38BDF8', padding: '3px 10px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase' }}>
@@ -723,14 +723,14 @@ export default async function BlogPostPage({ params }) {
                   <span style={{ color: '#64748B', fontSize: '0.85rem', fontWeight: '600' }}>Wholesale OEM</span>
                 </div>
                 <h4 style={{ fontSize: '1.35rem', fontWeight: '800', color: '#0F2D4E', marginBottom: '10px' }}>
-                  Become an Atlanta Authorized Reseller
+                  Become an Atlanta Certified Hardware Partner
                 </h4>
                 <p style={{ color: '#475569', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '18px', flex: 1 }}>
-                  Unlock 30%+ reseller profit margins, bulk OEM hardware pricing, custom firmware compilation, and white-label cloud telematics for your regional market.
+                  Unlock 30%+ profit margins, bulk factory OEM hardware pricing, custom firmware compilation, and dedicated tier-3 engineering support for your regional market.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   <Link 
-                    href="/reseller" 
+                    href="/partner-program" 
                     style={{
                       background: '#0F2D4E',
                       color: '#FFFFFF',
@@ -745,7 +745,7 @@ export default async function BlogPostPage({ params }) {
                       boxShadow: '0 4px 12px rgba(15, 45, 78, 0.2)'
                     }}
                   >
-                    Join Reseller Program &rarr;
+                    Join Partner Program &rarr;
                   </Link>
                   <span style={{ textAlign: 'center', color: '#64748B', fontSize: '0.85rem', padding: '8px' }}>
                     ⚡ Instant Tier Evaluation &bull; Zero Application Fee
