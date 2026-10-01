@@ -7,9 +7,33 @@ export default function FloatingContact() {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
+    const payload = {
+      name: formData.get('name'),
+      contact: formData.get('contact'),
+      email: formData.get('email'),
+      message: formData.get('message'),
+      source: 'Floating "Let\'s Connect" Widget'
+    };
+
+    try {
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+    } catch (err) {
+      console.error('Floating contact submit error:', err);
+    } finally {
+      setSubmitting(false);
+    }
+
     if (typeof window !== 'undefined') {
       sessionStorage.setItem('formSubmitted', 'true');
       sessionStorage.setItem('submittedSource', 'floating_contact');
@@ -54,8 +78,8 @@ export default function FloatingContact() {
             </div>
             <div className="row">
               <div className="col-12 text-end">
-                <button type="submit" id="submitBtn" className="btn btn-primary" style={{ background: '#0169A9', borderColor: '#0169A9' }}>
-                  Submit
+                <button type="submit" id="submitBtn" disabled={submitting} className="btn btn-primary" style={{ background: '#0169A9', borderColor: '#0169A9' }}>
+                  {submitting ? 'Sending...' : 'Submit'}
                 </button>
               </div>
             </div>

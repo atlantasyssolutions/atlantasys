@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 export default function ContactForm() {
   const router = useRouter();
   const [submitting, setSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   const [form, setForm] = useState({
     name: '',
     contact: '',
@@ -16,29 +17,37 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
+    setErrorMessage('');
 
     try {
-      // Optional: Post to Web3Forms or endpoint if configured
-      await fetch('https://api.web3forms.com/submit', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...form,
-          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY_HERE',
-          subject: 'New Inquiry on Atlanta Systems Website'
+          source: 'Contact Page Inquiry'
         })
-      }).catch(() => {});
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Failed to submit inquiry. Please try again.');
+      }
+
+      // Set one-time authorization token for /thank-you page
+      if (typeof window !== 'undefined') {
+        sessionStorage.setItem('formSubmitted', 'true');
+        sessionStorage.setItem('submittedSource', 'enquiry');
+      }
+
+      router.push('/thank-you');
     } catch (err) {
-      console.warn('Form network request warning:', err);
+      console.error('Contact form submission error:', err);
+      setErrorMessage(err.message || 'Something went wrong. Please try again or contact us directly.');
+    } finally {
+      setSubmitting(false);
     }
-
-    // Set one-time authorization token for /thank-you page
-    if (typeof window !== 'undefined') {
-      sessionStorage.setItem('formSubmitted', 'true');
-      sessionStorage.setItem('submittedSource', 'enquiry');
-    }
-
-    router.push('/thank-you');
   };
 
   return (
@@ -106,6 +115,14 @@ export default function ContactForm() {
             style={{ borderRadius: '8px', padding: '12px 14px', border: '1px solid #CBD5E1' }}
           ></textarea>
         </div>
+
+        {errorMessage && (
+          <div className="col-12">
+            <div className="alert alert-danger" style={{ borderRadius: '8px', fontSize: '14px', margin: 0, padding: '10px 14px' }}>
+              <i className="fas fa-exclamation-circle me-2"></i> {errorMessage}
+            </div>
+          </div>
+        )}
 
         <div className="col-12 text-end pt-2">
           <button 
