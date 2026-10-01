@@ -7,6 +7,44 @@ const rawCategories = JSON.parse(fs.readFileSync(path.join(dataDir, 'categories.
 const rawFeatures = JSON.parse(fs.readFileSync(path.join(dataDir, 'features.json'), 'utf8'));
 const rawSpecs = JSON.parse(fs.readFileSync(path.join(dataDir, 'specifications.json'), 'utf8'));
 const rawSpecCats = JSON.parse(fs.readFileSync(path.join(dataDir, 'spec_categories.json'), 'utf8'));
+const rawProImages = JSON.parse(fs.readFileSync(path.join(dataDir, 'pro_images.json'), 'utf8'));
+
+const pubGlbs = fs.readdirSync(path.join('d:', 'WizzIot', 'atlantasys-website', 'public', 'assets', 'product_img')).filter(f => f.endsWith('.glb'));
+
+const dbMap = {};
+rawProImages.forEach(pi => { dbMap[pi.pro_id] = pi.pro_img; });
+
+function resolveGlb(p) {
+  const dbVal = dbMap[p.id];
+  let file = null;
+
+  // 1. Direct match with dbVal
+  if (dbVal && pubGlbs.includes(dbVal)) {
+    file = dbVal;
+  }
+
+  // 2. By pro_name
+  if (!file) {
+    const clean = p.pro_name.replace(/[^a-zA-Z0-9+]/g, '').toLowerCase();
+    file = pubGlbs.find(f => {
+      const fClean = f.replace('.glb', '').replace(/^ATL-?/i, '').replace(/[^a-zA-Z0-9+]/g, '').toLowerCase();
+      return fClean === clean;
+    });
+  }
+
+  // 3. Known specific aliases
+  if (!file) {
+    if (p.pro_name === 'AT-100') file = pubGlbs.find(f => f === 'ATL-AT10.glb');
+    if (p.pro_name === 'ATL-DSM-V1') file = pubGlbs.find(f => f === 'ATL-Dashcam.glb');
+    if (p.pro_name === 'OBD-400') file = pubGlbs.find(f => f === 'ATL-O400.glb');
+    if (p.pro_name === 'MTC-500') file = pubGlbs.find(f => f === 'ATC-MTC500.glb');
+    if (p.pro_name === 'TSI-10') file = pubGlbs.find(f => f === 'ATL-TS10.glb');
+    if (p.pro_name === 'AVD-201') file = pubGlbs.find(f => f === '1770115507AVD-201.glb');
+    if (p.pro_name === 'GP-1000') file = pubGlbs.find(f => f === 'ATL-GP1000.glb');
+  }
+
+  return file ? `/assets/product_img/${file}` : null;
+}
 
 // Build lookup maps
 const categoryMap = {};
@@ -96,6 +134,8 @@ const productsData = rawProducts.map(p => {
   if (!specsFlat.powersupply) specsFlat.powersupply = '9-90V DC';
   if (!specsFlat.ingressprotection) specsFlat.ingressprotection = 'IP65';
 
+  const glbUrl = resolveGlb(p);
+
   return {
     id: p.slug || p.pro_name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
     productId: p.id,
@@ -106,6 +146,7 @@ const productsData = rawProducts.map(p => {
     categoryName: cat.name,
     catId: parseInt(p.pro_cat, 10),
     image: p.image && p.image !== 'default.png' ? `/assets/product_img/${p.image}` : '/assets/img/product.png',
+    glb: glbUrl,
     tag: cat.name,
     description: p.description,
     brochure: p.brochure && p.brochure !== 'Null' ? `/assets/brochure/${p.brochure}` : null,
@@ -142,3 +183,5 @@ export function getProductsByCategory(catSlug) {
 
 fs.writeFileSync(path.join(dataDir, 'products.js'), fileContent, 'utf8');
 console.log(`Successfully compiled data/products.js with ${productsData.length} products and ${categories.length} categories!`);
+const countWithGlb = productsData.filter(p => p.glb).length;
+console.log(`Products with GLB: ${countWithGlb} / ${productsData.length}`);

@@ -2,11 +2,13 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Script from 'next/script';
 
 export default function ProductDetailClient({ product, relatedProducts = [] }) {
   const [modalOpen, setModalOpen] = useState(false);
   const [expandedAll, setExpandedAll] = useState(false);
   const [openPanels, setOpenPanels] = useState({});
+  const [viewMode, setViewMode] = useState('image'); // 'image' or '360'
 
   const togglePanel = (idx) => {
     setOpenPanels(prev => ({
@@ -21,6 +23,11 @@ export default function ProductDetailClient({ product, relatedProducts = [] }) {
 
   return (
     <>
+      <Script 
+        type="module" 
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js" 
+        strategy="afterInteractive" 
+      />
       <style dangerouslySetInnerHTML={{__html: `
         .banner-btn .default-btn {
           color: #222;
@@ -31,6 +38,22 @@ export default function ProductDetailClient({ product, relatedProducts = [] }) {
           .container, .container-lg, .container-md, .container-sm, .container-xl {
             max-width: 1140px !important;
           }
+        }
+        model-viewer {
+          width: 100% !important;
+          height: 400px !important;
+          margin: 0 auto;
+          outline: none;
+        }
+        .view-mode-toggle label {
+          font-size: 15px;
+          cursor: pointer;
+          user-select: none;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          margin: 0 10px;
+          font-weight: 500;
         }
       `}} />
 
@@ -52,9 +75,52 @@ export default function ProductDetailClient({ product, relatedProducts = [] }) {
             </div>
             <div className="col-lg-1"></div>
             <div className="col-lg-6" style={{ zIndex: 100 }} align="center">
-              <div id="contents1" className="contents">
+              <div id="contents1" className="contents" style={{ display: viewMode === 'image' || !product.glb ? 'block' : 'none' }}>
                 <img src={product.image} itemProp="thumbnail" alt={product.name} className="w-100 d-block" style={{ maxHeight: '400px', objectFit: 'contain', margin: '0 auto' }} />
               </div>
+
+              {product.glb && (
+                <div id="contents2" className="contents" style={{ display: viewMode === '360' ? 'block' : 'none', minHeight: '350px' }}>
+                  <model-viewer 
+                    src={product.glb} 
+                    alt={product.name} 
+                    exposure="1.45" 
+                    shadow-intensity="1" 
+                    camera-controls 
+                    interaction-prompt="auto" 
+                    auto-rotate 
+                    ar 
+                    magic-leap
+                    style={{ width: '100%', height: '400px', margin: '0 auto' }}
+                  ></model-viewer>
+                </div>
+              )}
+
+              {product.glb && (
+                <div className="view-mode-toggle pt-20" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                  <label>
+                    <input 
+                      type="radio" 
+                      name="viewMode" 
+                      value="image" 
+                      checked={viewMode === 'image'} 
+                      onChange={() => setViewMode('image')} 
+                    />
+                    &nbsp;Image
+                  </label>
+                  &nbsp;&nbsp;
+                  <label>
+                    <input 
+                      type="radio" 
+                      name="viewMode" 
+                      value="360" 
+                      checked={viewMode === '360'} 
+                      onChange={() => setViewMode('360')} 
+                    />
+                    &nbsp;360°
+                  </label>
+                </div>
+              )}
             </div>
           </div>
         </div>
